@@ -9,6 +9,7 @@ import {
   AnalysisRoutes,
   VehicleDetailsPage,
 } from "./features/analysis";
+import { BlacklistPage, BlacklistRoutes } from "./features/blacklist";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -31,6 +32,7 @@ function App() {
           <Route path={AuthRoutes.login} element={<LoginPage />} />
           <Route path={DashboardRoutes.home} element={<DashboardPage />} />
           <Route path={VehiclesRoutes.list} element={<VehiclesPage />} />
+          <Route path={BlacklistRoutes.list} element={<BlacklistPage />} />
           <Route path={VideoRoutes.upload} element={<VideoUploadPage />} />
           <Route
             path={VideoRoutes.list}

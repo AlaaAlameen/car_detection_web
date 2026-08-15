@@ -21,39 +21,45 @@ export function VehiclesFilterBar({
   onAddClick,
 }: VehiclesFilterBarProps) {
   return (
-    <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
-      <div className="flex flex-1 flex-col gap-3 sm:flex-row sm:items-center">
-        <div className="min-w-0 flex-1 sm:max-w-sm">
-          <Input
-            value={filters.search}
-            onChange={(e) => onSearchChange(e.target.value)}
-            placeholder="يبحث عن لوحة أو مالك..."
-            className="border-white/10 bg-white/5 text-white placeholder:text-white/35 focus:border-blue-500 focus:ring-blue-500/20"
+    <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
+        {/* مجموعة البحث والفلاتر */}
+        <div className="flex flex-1 flex-col gap-3 sm:flex-row sm:items-center">
+          <div className="relative min-w-0 flex-1 sm:max-w-md">
+            <Input
+              value={filters.search}
+              onChange={(e) => onSearchChange(e.target.value)}
+              placeholder="يبحث عن لوحة أو مالك..."
+              className="w-full border-white/10 bg-white/5 py-3 text-white placeholder:text-white/35 focus:border-blue-500 focus:ring-blue-500/20"
+            />
+          </div>
+
+          <FilterSelect
+            label="النوع"
+            value={filters.type}
+            options={[...vehicleTypeOptions]}
+            onChange={onTypeChange}
+          />
+
+          <FilterSelect
+            label="اللون"
+            value={filters.color}
+            options={[...vehicleColorOptions]}
+            onChange={onColorChange}
           />
         </div>
 
-        <FilterSelect
-          label="النوع"
-          value={filters.type}
-          options={[...vehicleTypeOptions]}
-          onChange={onTypeChange}
-        />
-
-        <FilterSelect
-          label="اللون"
-          value={filters.color}
-          options={[...vehicleColorOptions]}
-          onChange={onColorChange}
-        />
+        {/* حاوية زر الإضافة لضمان ظهوره بشكل متناسق */}
+        <div className="flex items-center justify-end">
+          <Button
+            type="button"
+            onClick={onAddClick}
+            className="w-auto shrink-0 whitespace-nowrap px-5 shadow-[0_0_24px_rgba(99,102,241,0.35)]"
+          >
+            + إضافة مركبة
+          </Button>
+        </div>
       </div>
-
-      <Button
-        type="button"
-        onClick={onAddClick}
-        className="w-auto shrink-0 whitespace-nowrap px-5 shadow-[0_0_24px_rgba(99,102,241,0.35)]"
-      >
-        + إضافة مركبة
-      </Button>
     </div>
   );
 }
@@ -70,7 +76,7 @@ function FilterSelect({
   onChange: (value: string) => void;
 }) {
   return (
-    <div className="relative min-w-[140px]">
+    <div className="relative min-w-[150px] sm:min-w-[160px]">
       <select
         aria-label={label}
         value={value}

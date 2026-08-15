@@ -5,7 +5,6 @@ import {
   VehicleDetailsHeader,
   VehicleDetailsSummaryCards,
   VehicleInfoCard,
-  VehicleRiskSection,
 } from "../components";
 
 export function VehicleDetailsPage() {
@@ -25,13 +24,7 @@ export function VehicleDetailsPage() {
       <div className="mx-auto flex max-w-[1600px] flex-col gap-4 sm:gap-5">
         <VehicleDetailsHeader onBack={vm.handleBack} />
 
-        <CardContainer>
-          <VehicleInfoCard vehicle={vm.vehicle} />
-        </CardContainer>
-
-        <CardContainer>
-          <VehicleRiskSection vehicle={vm.vehicle} />
-        </CardContainer>
+        <VehicleInfoCard vehicle={vm.vehicle} />
 
         <CardContainer title="مقارنة البيانات">
           <VehicleComparisonTable rows={vm.comparisonRows} />

@@ -21,7 +21,7 @@ export function Input({
       {label && (
         <label
           htmlFor={inputId}
-          className="text-sm font-medium text-slate-700"
+          className="text-sm font-medium text-white/70"
         >
           {label}
         </label>
@@ -29,18 +29,18 @@ export function Input({
       <div className="relative">
         <input
           id={inputId}
-          className={`w-full rounded-xl border bg-white px-4 py-3 text-sm text-slate-800 outline-none transition placeholder:text-slate-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 ${
-            error ? "border-red-400" : "border-slate-200"
-          } ${rightElement ? "pr-11" : ""} ${className}`}
+          className={`w-full rounded-xl border bg-white/5 px-4 py-3 text-sm text-white outline-none transition placeholder:text-white/35 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 ${
+            error ? "border-rose-500/60" : "border-white/10"
+          } ${rightElement ? "pl-11" : ""} ${className}`}
           {...props}
         />
         {rightElement && (
-          <div className="absolute inset-y-0 right-0 flex items-center pr-3">
+          <div className="absolute inset-y-0 left-0 flex items-center pl-3">
             {rightElement}
           </div>
         )}
       </div>
-      {error && <p className="text-xs text-red-500">{error}</p>}
+      {error && <p className="text-xs text-rose-400">{error}</p>}
     </div>
   );
 }

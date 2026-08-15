@@ -6,7 +6,6 @@ export { AnalysisAlertsTable } from "./AnalysisAlertsTable";
 export { SeverityBadge } from "./SeverityBadge";
 export { VehicleDetailsHeader } from "./VehicleDetailsHeader";
 export { VehicleInfoCard } from "./VehicleInfoCard";
-export { VehicleRiskSection } from "./VehicleRiskSection";
 export { VehicleComparisonTable } from "./VehicleComparisonTable";
 export { VehicleDetailsSummaryCards } from "./VehicleDetailsSummaryCards";
 export { ConfidenceBar } from "./ConfidenceBar";

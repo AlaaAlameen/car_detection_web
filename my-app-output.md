@@ -3,8 +3,8 @@
 ## 📊 Project Information
 
 - **Project Name**: `my-app`
-- **Generated On**: 2026-08-14 16:15:38 (Europe/Istanbul / GMT+03:00)
-- **Total Files Processed**: 117
+- **Generated On**: 2026-08-15 00:58:07 (Europe/Istanbul / GMT+03:00)
+- **Total Files Processed**: 128
 - **Export Tool**: Easy Whole Project to Single Text File for LLMs v1.1.0
 - **Tool Author**: Jota / José Guilherme Pandolfi
 
@@ -35,45 +35,44 @@
 │   │   │   │   ├── 📄 AnalysisFilterBar.tsx (2.27 KB)
 │   │   │   │   ├── 📄 AnalysisResultsHeader.tsx (979 B)
 │   │   │   │   ├── 📄 AnalysisStatsGrid.tsx (939 B)
-│   │   │   │   ├── 📄 ConfidenceBar.tsx (741 B)
-│   │   │   │   ├── 📄 index.ts (710 B)
+│   │   │   │   ├── 📄 ConfidenceBar.tsx (768 B)
+│   │   │   │   ├── 📄 index.ts (651 B)
 │   │   │   │   ├── 📄 SeverityBadge.tsx (778 B)
-│   │   │   │   ├── 📄 VehicleComparisonTable.tsx (2.76 KB)
-│   │   │   │   ├── 📄 VehicleDetailsHeader.tsx (1.85 KB)
-│   │   │   │   ├── 📄 VehicleDetailsSummaryCards.tsx (737 B)
-│   │   │   │   ├── 📄 VehicleInfoCard.tsx (745 B)
-│   │   │   │   ├── 📄 VehicleRiskSection.tsx (1.51 KB)
+│   │   │   │   ├── 📄 VehicleComparisonTable.tsx (2.85 KB)
+│   │   │   │   ├── 📄 VehicleDetailsHeader.tsx (2.18 KB)
+│   │   │   │   ├── 📄 VehicleDetailsSummaryCards.tsx (760 B)
+│   │   │   │   ├── 📄 VehicleInfoCard.tsx (2.41 KB)
 │   │   │   │   └── 📄 VideoSummaryCard.tsx (2.58 KB)
 │   │   │   ├── 📁 data/
 │   │   │   │   ├── 📄 mockAnalysisData.ts (4.38 KB)
-│   │   │   │   └── 📄 mockVehicleDetailsData.ts (3.59 KB)
+│   │   │   │   └── 📄 mockVehicleDetailsData.ts (3.71 KB)
 │   │   │   ├── 📁 hooks/
 │   │   │   │   ├── 📄 useAnalysisResultsViewModel.ts (4.08 KB)
-│   │   │   │   └── 📄 useVehicleDetailsViewModel.ts (2.28 KB)
+│   │   │   │   └── 📄 useVehicleDetailsViewModel.ts (2.36 KB)
 │   │   │   ├── 📁 models/
 │   │   │   │   ├── 📄 analysis.types.ts (931 B)
-│   │   │   │   └── 📄 vehicleDetails.types.ts (677 B)
+│   │   │   │   └── 📄 vehicleDetails.types.ts (709 B)
 │   │   │   ├── 📁 pages/
 │   │   │   │   ├── 📄 AnalysisResultsPage.tsx (2.15 KB)
-│   │   │   │   └── 📄 VehicleDetailsPage.tsx (1.29 KB)
+│   │   │   │   └── 📄 VehicleDetailsPage.tsx (1.15 KB)
 │   │   │   ├── 📁 routes/
 │   │   │   │   └── 📄 analysisRoutes.ts (314 B)
 │   │   │   ├── 📁 services/
 │   │   │   │   └── 📄 AnalysisService.ts (762 B)
-│   │   │   └── 📄 index.ts (441 B)
+│   │   │   └── 📄 index.ts (501 B)
 │   │   ├── 📁 auth/
 │   │   │   ├── 📁 components/
 │   │   │   │   ├── 📁 feature/
 │   │   │   │   │   ├── 📄 index.ts (42 B)
-│   │   │   │   │   └── 📄 LoginForm.tsx (1.85 KB)
+│   │   │   │   │   └── 📄 LoginForm.tsx (1.95 KB)
 │   │   │   │   ├── 📁 shared/
-│   │   │   │   │   ├── 📄 AuthBrandPanel.tsx (5.3 KB)
-│   │   │   │   │   ├── 📄 AuthSplitLayout.tsx (703 B)
+│   │   │   │   │   ├── 📄 AuthBrandPanel.tsx (5.62 KB)
+│   │   │   │   │   ├── 📄 AuthSplitLayout.tsx (832 B)
 │   │   │   │   │   ├── 📄 index.ts (156 B)
 │   │   │   │   │   └── 📄 PasswordInput.tsx (1.93 KB)
 │   │   │   │   └── 📁 ui/
-│   │   │   │       ├── 📄 Button.tsx (1.13 KB)
-│   │   │   │       ├── 📄 Checkbox.tsx (751 B)
+│   │   │   │       ├── 📄 Button.tsx (1.17 KB)
+│   │   │   │       ├── 📄 Checkbox.tsx (780 B)
 │   │   │   │       ├── 📄 index.ts (110 B)
 │   │   │   │       └── 📄 Input.tsx (1.27 KB)
 │   │   │   ├── 📁 hooks/
@@ -89,8 +88,28 @@
 │   │   │   ├── 📁 store/
 │   │   │   │   └── 📄 authStore.ts (623 B)
 │   │   │   ├── 📁 validators/
-│   │   │   │   └── 📄 loginSchema.ts (488 B)
+│   │   │   │   └── 📄 loginSchema.ts (604 B)
 │   │   │   └── 📄 index.ts (329 B)
+│   │   ├── 📁 blacklist/
+│   │   │   ├── 📁 components/
+│   │   │   │   ├── 📄 BlacklistFilters.tsx (4.27 KB)
+│   │   │   │   ├── 📄 BlacklistHeader.tsx (938 B)
+│   │   │   │   ├── 📄 BlacklistStats.tsx (922 B)
+│   │   │   │   ├── 📄 BlacklistTable.tsx (5.53 KB)
+│   │   │   │   └── 📄 index.ts (213 B)
+│   │   │   ├── 📁 data/
+│   │   │   │   └── 📄 mockBlacklistData.ts (5.33 KB)
+│   │   │   ├── 📁 hooks/
+│   │   │   │   └── 📄 useBlacklistViewModel.ts (4.94 KB)
+│   │   │   ├── 📁 models/
+│   │   │   │   └── 📄 blacklist.types.ts (907 B)
+│   │   │   ├── 📁 pages/
+│   │   │   │   └── 📄 BlacklistPage.tsx (2.05 KB)
+│   │   │   ├── 📁 routes/
+│   │   │   │   └── 📄 blacklistRoutes.ts (155 B)
+│   │   │   ├── 📁 services/
+│   │   │   │   └── 📄 BlacklistService.ts (1.21 KB)
+│   │   │   └── 📄 index.ts (250 B)
 │   │   ├── 📁 dashboard/
 │   │   │   ├── 📁 components/
 │   │   │   │   ├── 📁 feature/
@@ -115,7 +134,7 @@
 │   │   │   │       ├── 📄 ProgressCircle.tsx (1.81 KB)
 │   │   │   │       └── 📄 StatCard.tsx (1.64 KB)
 │   │   │   ├── 📁 data/
-│   │   │   │   └── 📄 mockDashboardData.ts (4.71 KB)
+│   │   │   │   └── 📄 mockDashboardData.ts (4.79 KB)
 │   │   │   ├── 📁 hooks/
 │   │   │   │   └── 📄 useDashboardViewModel.ts (1.77 KB)
 │   │   │   ├── 📁 models/
@@ -132,9 +151,9 @@
 │   │   ├── 📁 vehicles/
 │   │   │   ├── 📁 components/
 │   │   │   │   ├── 📄 index.ts (270 B)
-│   │   │   │   ├── 📄 VehiclesFilterBar.tsx (2.67 KB)
+│   │   │   │   ├── 📄 VehiclesFilterBar.tsx (3.05 KB)
 │   │   │   │   ├── 📄 VehiclesHeader.tsx (914 B)
-│   │   │   │   ├── 📄 VehiclesPagination.tsx (2.26 KB)
+│   │   │   │   ├── 📄 VehiclesPagination.tsx (4.42 KB)
 │   │   │   │   ├── 📄 VehiclesStats.tsx (917 B)
 │   │   │   │   └── 📄 VehiclesTable.tsx (7.15 KB)
 │   │   │   ├── 📁 data/
@@ -177,7 +196,7 @@
 │   │       │   └── 📄 videoUploadSchema.ts (1.1 KB)
 │   │       └── 📄 index.ts (308 B)
 │   ├── 📄 App.css (2.82 KB)
-│   ├── 📄 App.tsx (1.72 KB)
+│   ├── 📄 App.tsx (1.87 KB)
 │   ├── 📄 index.css (167 B)
 │   └── 📄 main.tsx (230 B)
 ├── 📄 eslint.config.js (591 B)
@@ -208,7 +227,6 @@
 - [📄 src/features/analysis/components/VehicleDetailsHeader.tsx](#📄-src-features-analysis-components-vehicledetailsheader-tsx)
 - [📄 src/features/analysis/components/VehicleDetailsSummaryCards.tsx](#📄-src-features-analysis-components-vehicledetailssummarycards-tsx)
 - [📄 src/features/analysis/components/VehicleInfoCard.tsx](#📄-src-features-analysis-components-vehicleinfocard-tsx)
-- [📄 src/features/analysis/components/VehicleRiskSection.tsx](#📄-src-features-analysis-components-vehiclerisksection-tsx)
 - [📄 src/features/analysis/components/VideoSummaryCard.tsx](#📄-src-features-analysis-components-videosummarycard-tsx)
 - [📄 src/features/analysis/data/mockAnalysisData.ts](#📄-src-features-analysis-data-mockanalysisdata-ts)
 - [📄 src/features/analysis/data/mockVehicleDetailsData.ts](#📄-src-features-analysis-data-mockvehicledetailsdata-ts)
@@ -239,6 +257,18 @@
 - [📄 src/features/auth/store/authStore.ts](#📄-src-features-auth-store-authstore-ts)
 - [📄 src/features/auth/validators/loginSchema.ts](#📄-src-features-auth-validators-loginschema-ts)
 - [📄 src/features/auth/index.ts](#📄-src-features-auth-index-ts)
+- [📄 src/features/blacklist/components/BlacklistFilters.tsx](#📄-src-features-blacklist-components-blacklistfilters-tsx)
+- [📄 src/features/blacklist/components/BlacklistHeader.tsx](#📄-src-features-blacklist-components-blacklistheader-tsx)
+- [📄 src/features/blacklist/components/BlacklistStats.tsx](#📄-src-features-blacklist-components-blackliststats-tsx)
+- [📄 src/features/blacklist/components/BlacklistTable.tsx](#📄-src-features-blacklist-components-blacklisttable-tsx)
+- [📄 src/features/blacklist/components/index.ts](#📄-src-features-blacklist-components-index-ts)
+- [📄 src/features/blacklist/data/mockBlacklistData.ts](#📄-src-features-blacklist-data-mockblacklistdata-ts)
+- [📄 src/features/blacklist/hooks/useBlacklistViewModel.ts](#📄-src-features-blacklist-hooks-useblacklistviewmodel-ts)
+- [📄 src/features/blacklist/models/blacklist.types.ts](#📄-src-features-blacklist-models-blacklist-types-ts)
+- [📄 src/features/blacklist/pages/BlacklistPage.tsx](#📄-src-features-blacklist-pages-blacklistpage-tsx)
+- [📄 src/features/blacklist/routes/blacklistRoutes.ts](#📄-src-features-blacklist-routes-blacklistroutes-ts)
+- [📄 src/features/blacklist/services/BlacklistService.ts](#📄-src-features-blacklist-services-blacklistservice-ts)
+- [📄 src/features/blacklist/index.ts](#📄-src-features-blacklist-index-ts)
 - [📄 src/features/dashboard/components/feature/AlertsSection.tsx](#📄-src-features-dashboard-components-feature-alertssection-tsx)
 - [📄 src/features/dashboard/components/feature/AnalyticsSection.tsx](#📄-src-features-dashboard-components-feature-analyticssection-tsx)
 - [📄 src/features/dashboard/components/feature/index.ts](#📄-src-features-dashboard-components-feature-index-ts)
@@ -316,18 +346,18 @@
 
 | Metric | Count |
 |--------|-------|
-| Total Files | 117 |
-| Total Directories | 54 |
-| Text Files | 112 |
+| Total Files | 128 |
+| Total Directories | 62 |
+| Text Files | 123 |
 | Binary Files | 5 |
-| Total Size | 332.93 KB |
+| Total Size | 363.8 KB |
 
 ### 📄 File Types Distribution
 
 | Extension | Count |
 |-----------|-------|
-| `.tsx` | 52 |
-| `.ts` | 49 |
+| `.tsx` | 56 |
+| `.ts` | 56 |
 | `.json` | 5 |
 | `.svg` | 4 |
 | `.css` | 2 |
@@ -362,7 +392,7 @@ The following files were not included in the text content:
 - **Location**: `src/features/analysis/components/AnalysisAlertsTable.tsx`
 - **Relative Path**: `src/features/analysis/components`
 - **Created**: 2026-08-13 17:22:57 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 14:51:20 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-14 23:36:29 (Europe/Istanbul / GMT+03:00)
 - **MD5**: `616ef3dace484655ae14aaa152407499`
 - **SHA256**: `05e69c8243a78300b3a0de7743de451d29c8a5b4e2280277d4c5981d0cd1c9fc`
 - **Encoding**: UTF-8
@@ -770,15 +800,15 @@ export function AnalysisStatsGrid({ stats }: AnalysisStatsGridProps) {
 ### <a id="📄-src-features-analysis-components-confidencebar-tsx"></a>📄 `src/features/analysis/components/ConfidenceBar.tsx`
 
 **File Info:**
-- **Size**: 741 B
+- **Size**: 768 B
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/analysis/components/ConfidenceBar.tsx`
 - **Relative Path**: `src/features/analysis/components`
 - **Created**: 2026-08-14 14:51:13 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 14:51:13 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `f9b18eb91e1b9ff07c869c9660f68c8f`
-- **SHA256**: `2f4dfaeb1a2c381278c368428ba15825aa8ec147bebdd90fee06c8c627c0a829`
+- **Modified**: 2026-08-14 23:36:29 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `059bbb23322fb85db25064f9e39a4dc6`
+- **SHA256**: `8a80b07aedf4d7224b1d401501fa148cc553999da12ca1c0b5a4f11bbfc85034`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -819,15 +849,15 @@ export function ConfidenceBar({ value, label }: ConfidenceBarProps) {
 ### <a id="📄-src-features-analysis-components-index-ts"></a>📄 `src/features/analysis/components/index.ts`
 
 **File Info:**
-- **Size**: 710 B
+- **Size**: 651 B
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/analysis/components/index.ts`
 - **Relative Path**: `src/features/analysis/components`
 - **Created**: 2026-08-13 17:23:01 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 14:51:21 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `150d653c3622dbe61d0f49a4ec24974f`
-- **SHA256**: `73b71ec04544a2e180213ccd365eae034c4dc9cf844b4c938ff339cf08241efc`
+- **Modified**: 2026-08-15 00:33:45 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `54414125fecb0e566311fa4fd01069ee`
+- **SHA256**: `4937561e263da3e0eb30dbcb267fd407c8c50981adedddc654ac84def85032ca`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -841,7 +871,6 @@ export { AnalysisAlertsTable } from "./AnalysisAlertsTable";
 export { SeverityBadge } from "./SeverityBadge";
 export { VehicleDetailsHeader } from "./VehicleDetailsHeader";
 export { VehicleInfoCard } from "./VehicleInfoCard";
-export { VehicleRiskSection } from "./VehicleRiskSection";
 export { VehicleComparisonTable } from "./VehicleComparisonTable";
 export { VehicleDetailsSummaryCards } from "./VehicleDetailsSummaryCards";
 export { ConfidenceBar } from "./ConfidenceBar";
@@ -908,15 +937,15 @@ export function SeverityBadge({ severity }: SeverityBadgeProps) {
 ### <a id="📄-src-features-analysis-components-vehiclecomparisontable-tsx"></a>📄 `src/features/analysis/components/VehicleComparisonTable.tsx`
 
 **File Info:**
-- **Size**: 2.76 KB
+- **Size**: 2.85 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/analysis/components/VehicleComparisonTable.tsx`
 - **Relative Path**: `src/features/analysis/components`
 - **Created**: 2026-08-14 14:51:15 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 14:51:15 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `6880041ecc5323211a84f06205d0c774`
-- **SHA256**: `b8dbfe93fc844d2e8907279d4dc0f5033d7ce9f7c0afddb58e5378971d9e99a5`
+- **Modified**: 2026-08-14 23:36:29 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `a722048be452fa67717387dde08b2760`
+- **SHA256**: `8b0a1c3a27cd793225ee9a07cfcdbcdee7cd9afb0db994a36bee195607861c1a`
 - **Encoding**: UTF-8
 
 **File code content:**
@@ -1021,15 +1050,15 @@ function MismatchBadge({ mismatch }: { mismatch: boolean }) {
 ### <a id="📄-src-features-analysis-components-vehicledetailsheader-tsx"></a>📄 `src/features/analysis/components/VehicleDetailsHeader.tsx`
 
 **File Info:**
-- **Size**: 1.85 KB
+- **Size**: 2.18 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/analysis/components/VehicleDetailsHeader.tsx`
 - **Relative Path**: `src/features/analysis/components`
 - **Created**: 2026-08-14 14:51:10 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 14:51:10 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `e7ebf5b7ba728a59871ced0d71c8fef8`
-- **SHA256**: `9ed923afc7fd94a8eb8a9ae598e8c0e48cba52ca7d77cd2231708064c31606a8`
+- **Modified**: 2026-08-15 00:17:46 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `c5f785dc56664c9fb96e5a98cfa17697`
+- **SHA256**: `23173f2cffbae353945b89933d0ad5f475571fab932ace1770aca5287a334ee3`
 - **Encoding**: UTF-8
 
 **File code content:**
@@ -1045,42 +1074,40 @@ interface VehicleDetailsHeaderProps {
 
 export function VehicleDetailsHeader({ onBack }: VehicleDetailsHeaderProps) {
   return (
-    <div className="flex flex-col gap-3">
+    <div className="flex flex-col gap-4">
+      {/* مسار التنقل (Breadcrumbs) */}
       <nav className="flex flex-wrap items-center gap-2 text-xs text-white/40">
-        <Link
-          to={AnalysisRoutes.results}
-          className="transition hover:text-white/70"
-        >
+        <Link to={AnalysisRoutes.results} className="transition hover:text-white/70">
           نتائج التحليل
         </Link>
         <span>/</span>
-        <Link
-          to={AnalysisRoutes.results}
-          className="transition hover:text-white/70"
-        >
+        <Link to={AnalysisRoutes.results} className="transition hover:text-white/70">
           السيارات المكتشفة
         </Link>
         <span>/</span>
-        <span className="text-white/70">تفاصيل المركبة</span>
+        <span className="font-medium text-white/70">تفاصيل المركبة</span>
       </nav>
 
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
-        <div>
-          <h1 className="text-2xl font-bold text-white">تفاصيل المركبة</h1>
-          <p className="mt-1 text-sm text-white/45">
+      {/* العنوان الرئيسي وزر الرجوع */}
+      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <div className="min-w-0 flex-1 space-y-1">
+          <h1 className="text-2xl font-bold tracking-tight text-white">تفاصيل المركبة</h1>
+          <p className="text-sm text-white/50">
             عرض ومقارنة بيانات المركبة المكتشفة بالبيانات الفعلية في النظام
           </p>
         </div>
 
-        <Button
-          type="button"
-          variant="secondary"
-          onClick={onBack}
-          className="w-auto shrink-0 border-white/10 bg-white/5 px-5 text-white hover:bg-white/10 focus:ring-blue-500/30 focus:ring-offset-[#0B1220]"
-        >
-          <BackIcon />
-          رجوع
-        </Button>
+        <div className="flex shrink-0 items-center">
+          <Button
+            type="button"
+            variant="secondary"
+            onClick={onBack}
+            className="inline-flex w-auto items-center justify-center gap-2 border-white/10 bg-white/5 px-5 py-2.5 text-white hover:bg-white/10 focus:ring-blue-500/30 focus:ring-offset-[#0B1220]"
+          >
+            <BackIcon />
+            <span>رجوع</span>
+          </Button>
+        </div>
       </div>
     </div>
   );
@@ -1090,7 +1117,7 @@ function BackIcon() {
   return (
     <svg
       viewBox="0 0 24 24"
-      className="h-4 w-4"
+      className="h-4 w-4 shrink-0 rtl:rotate-180"
       fill="none"
       stroke="currentColor"
       strokeWidth="2"
@@ -1100,7 +1127,6 @@ function BackIcon() {
     </svg>
   );
 }
-
 ```
 
 ---
@@ -1108,15 +1134,15 @@ function BackIcon() {
 ### <a id="📄-src-features-analysis-components-vehicledetailssummarycards-tsx"></a>📄 `src/features/analysis/components/VehicleDetailsSummaryCards.tsx`
 
 **File Info:**
-- **Size**: 737 B
+- **Size**: 760 B
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/analysis/components/VehicleDetailsSummaryCards.tsx`
 - **Relative Path**: `src/features/analysis/components`
 - **Created**: 2026-08-14 14:51:15 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 14:51:15 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `0703fa5a7705120fb0172d00e02b89c0`
-- **SHA256**: `7f167f49d133992cee6956fc86aaedebea5fb01af742b399f7019c1a44e19bff`
+- **Modified**: 2026-08-14 23:36:29 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `b6b4aee9c4329739127e85028e265e47`
+- **SHA256**: `108f4d8a9567e3c6feed2774bb737e9c4736168e3b92433cddf3bbbcf829a370`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -1153,61 +1179,15 @@ export function VehicleDetailsSummaryCards({
 ### <a id="📄-src-features-analysis-components-vehicleinfocard-tsx"></a>📄 `src/features/analysis/components/VehicleInfoCard.tsx`
 
 **File Info:**
-- **Size**: 745 B
+- **Size**: 2.41 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/analysis/components/VehicleInfoCard.tsx`
 - **Relative Path**: `src/features/analysis/components`
 - **Created**: 2026-08-14 14:51:11 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 14:51:11 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `69b7ca9435fc10f7fb53012ebe24d603`
-- **SHA256**: `cd5e15b9c43934cb401fb96b74b82bdfe6e2a46b1bf6a0e27c0ae22eb591fc2a`
-- **Encoding**: UTF-8
-
-**File code content:**
-
-```typescript
-import type { VehicleDetails } from "../models/vehicleDetails.types";
-
-interface VehicleInfoCardProps {
-  vehicle: VehicleDetails;
-}
-
-export function VehicleInfoCard({ vehicle }: VehicleInfoCardProps) {
-  return (
-    <div className="flex flex-col gap-5 lg:flex-row lg:items-center">
-      <img
-        src={vehicle.imageUrl}
-        alt={vehicle.plateNumber}
-        className="h-48 w-full rounded-xl object-cover ring-1 ring-white/10 lg:h-44 lg:w-72 lg:shrink-0"
-      />
-
-      <div className="min-w-0 flex-1">
-        <p className="text-sm text-white/45">رقم المركبة (original)</p>
-        <p className="mt-1 text-2xl font-bold tracking-wide text-white">
-          {vehicle.plateNumber}
-        </p>
-      </div>
-    </div>
-  );
-}
-
-```
-
----
-
-### <a id="📄-src-features-analysis-components-vehiclerisksection-tsx"></a>📄 `src/features/analysis/components/VehicleRiskSection.tsx`
-
-**File Info:**
-- **Size**: 1.51 KB
-- **Extension**: `.tsx`
-- **Language**: `typescript`
-- **Location**: `src/features/analysis/components/VehicleRiskSection.tsx`
-- **Relative Path**: `src/features/analysis/components`
-- **Created**: 2026-08-14 14:51:12 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 14:51:12 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `3aaf91a7d99194f9f7b9180f3c96b257`
-- **SHA256**: `21bd03c591a4cf5827b1c39b78936021cd8f3fd2d6fd7d8e804409b9825796f2`
+- **Modified**: 2026-08-15 00:38:47 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `963d2a66fc5d50a45ad92819e3f10682`
+- **SHA256**: `3ce7599a98dce58e5cccf699e4628792492170f2bc2da029da81bd0c0ff0a04c`
 - **Encoding**: UTF-8
 
 **File code content:**
@@ -1216,46 +1196,64 @@ export function VehicleInfoCard({ vehicle }: VehicleInfoCardProps) {
 import { SeverityBadge } from "./SeverityBadge";
 import type { VehicleDetails } from "../models/vehicleDetails.types";
 
-interface VehicleRiskSectionProps {
+interface VehicleInfoCardProps {
   vehicle: VehicleDetails;
 }
 
-export function VehicleRiskSection({ vehicle }: VehicleRiskSectionProps) {
+export function VehicleInfoCard({ vehicle }: VehicleInfoCardProps) {
   return (
-    <div className="rounded-xl border border-rose-500/20 bg-gradient-to-l from-rose-600/10 to-orange-600/5 p-4 sm:p-5">
-      <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <div className="flex flex-wrap items-center gap-3">
-          <span className="text-sm text-white/50">درجة الخطورة:</span>
-          <SeverityBadge severity={vehicle.severity} />
-        </div>
+    <div className="rounded-xl border border-white/10 bg-white/5 p-4 sm:p-5">
+      <div className="flex flex-col gap-5 lg:flex-row lg:items-stretch">
+        {/* الصورة */}
+        <img
+          src={vehicle.imageUrl}
+          alt={vehicle.plateNumber}
+          className="h-48 w-full rounded-xl object-cover ring-1 ring-white/10 lg:h-auto lg:w-64 lg:shrink-0"
+        />
 
-        <div className="flex items-center gap-2">
-          <span className="text-sm text-white/50">Score:</span>
-          <span className="text-xl font-bold text-white">
-            {vehicle.score}
-            <span className="text-sm font-normal text-white/40"> / 100</span>
-          </span>
-        </div>
-      </div>
+        {/* كل المعلومات بجانب الصورة */}
+        <div className="flex min-w-0 flex-1 flex-col justify-center gap-4">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div className="min-w-0">
+              <p className="text-sm text-white/45">رقم المركبة (original)</p>
+              <p className="mt-1 text-2xl font-bold tracking-wide text-white">
+                {vehicle.plateNumber}
+              </p>
+            </div>
 
-      <div className="mt-4 grid gap-3 sm:grid-cols-2">
-        <div>
-          <p className="text-xs text-white/40">نوع التنبيه</p>
-          <p className="mt-1 text-sm font-medium text-white/85">
-            {vehicle.alertType}
-          </p>
-        </div>
-        <div>
-          <p className="text-xs text-white/40">رسالة توضيحية</p>
-          <p className="mt-1 text-sm leading-relaxed text-white/65">
-            {vehicle.alertMessage}
-          </p>
+            <div className="flex items-center gap-2 sm:shrink-0">
+              <span className="text-sm text-white/50">Score:</span>
+              <span className="text-xl font-bold text-white">
+                {vehicle.score}
+                <span className="text-sm font-normal text-white/40"> / 100</span>
+              </span>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-3 border-t border-white/10 pt-3">
+            <span className="text-sm text-white/50">درجة الخطورة:</span>
+            <SeverityBadge severity={vehicle.severity} />
+          </div>
+
+          <div className="grid gap-3 border-t border-white/10 pt-3 sm:grid-cols-2">
+            <div>
+              <p className="text-xs text-white/40">نوع التنبيه</p>
+              <p className="mt-1 text-sm font-medium text-white/85">
+                {vehicle.alertType}
+              </p>
+            </div>
+            <div>
+              <p className="text-xs text-white/40">رسالة توضيحية</p>
+              <p className="mt-1 text-sm leading-relaxed text-white/65">
+                {vehicle.alertMessage}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
 }
-
 ```
 
 ---
@@ -1560,15 +1558,15 @@ export const mockAnalysisAlerts: AnalysisAlert[] = [
 ### <a id="📄-src-features-analysis-data-mockvehicledetailsdata-ts"></a>📄 `src/features/analysis/data/mockVehicleDetailsData.ts`
 
 **File Info:**
-- **Size**: 3.59 KB
+- **Size**: 3.71 KB
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/analysis/data/mockVehicleDetailsData.ts`
 - **Relative Path**: `src/features/analysis/data`
 - **Created**: 2026-08-14 14:51:01 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 14:51:01 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `8cb585d1d217351a9dd069b1f804fff4`
-- **SHA256**: `fd1920e9d38168bacf2a33bac7ef0941ce2853bc19c628df3ab8a889f5154490`
+- **Modified**: 2026-08-14 23:36:29 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `77bdc18d0b2f0caafcc5658de4f1a984`
+- **SHA256**: `5fe514d86d5a05c333ad7ce95ff02a1952293a3cd3433b8f5921709ceddff611`
 - **Encoding**: UTF-8
 
 **File code content:**
@@ -1710,7 +1708,7 @@ export const defaultVehicleDetails = mockVehicleDetailsMap.a4;
 - **Location**: `src/features/analysis/hooks/useAnalysisResultsViewModel.ts`
 - **Relative Path**: `src/features/analysis/hooks`
 - **Created**: 2026-08-13 17:22:18 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 14:51:06 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-14 23:36:29 (Europe/Istanbul / GMT+03:00)
 - **MD5**: `a8de5e1d5afa25e6126fd353fe3626df`
 - **SHA256**: `bfcbbba4847e36a3fa2a1e107643cfdc6c70604ed3ab648cd032bbff8f616932`
 - **Encoding**: ASCII
@@ -1877,15 +1875,15 @@ export function useAnalysisResultsViewModel() {
 ### <a id="📄-src-features-analysis-hooks-usevehicledetailsviewmodel-ts"></a>📄 `src/features/analysis/hooks/useVehicleDetailsViewModel.ts`
 
 **File Info:**
-- **Size**: 2.28 KB
+- **Size**: 2.36 KB
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/analysis/hooks/useVehicleDetailsViewModel.ts`
 - **Relative Path**: `src/features/analysis/hooks`
 - **Created**: 2026-08-14 14:51:02 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 14:51:02 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `4618a8c0c098bfddceb48c2f2fda5cc5`
-- **SHA256**: `81d1bfbdb0dfaf585e917755f170c0f858a3c781c43ea575caee3b8c1e08dc55`
+- **Modified**: 2026-08-14 23:36:29 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `22f0bf1f42300eede77015579fecd07c`
+- **SHA256**: `c1cb4b75c45e77dd5896172be695c33c05caccdf284be68689e7128f8651e146`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -2047,15 +2045,15 @@ export interface AnalysisFilters {
 ### <a id="📄-src-features-analysis-models-vehicledetails-types-ts"></a>📄 `src/features/analysis/models/vehicleDetails.types.ts`
 
 **File Info:**
-- **Size**: 677 B
+- **Size**: 709 B
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/analysis/models/vehicleDetails.types.ts`
 - **Relative Path**: `src/features/analysis/models`
 - **Created**: 2026-08-14 14:51:01 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 14:51:01 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `6ea3321d4d6f411451fef470ba222c95`
-- **SHA256**: `9b91194ced9455f59ff38272be1ead514b1bebd79ca3e032f211e9084e072c56`
+- **Modified**: 2026-08-14 23:36:29 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `35a7a79966e3095253b95dfc9cceaf7c`
+- **SHA256**: `f0d891124259e6ce3a89db52ab2d676177151f0ff87d95f9f6807ad13ca80586`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -2107,7 +2105,7 @@ export interface VehicleDetailsSummaryCard {
 - **Location**: `src/features/analysis/pages/AnalysisResultsPage.tsx`
 - **Relative Path**: `src/features/analysis/pages`
 - **Created**: 2026-08-13 17:23:02 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 14:51:19 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-14 23:36:29 (Europe/Istanbul / GMT+03:00)
 - **MD5**: `0c856112d6bac6559d36c25b3771d6ce`
 - **SHA256**: `62b51bbdad5d6e146e40c8a1102601a7c47c885eedd62e1ee11e440c741379e1`
 - **Encoding**: ASCII
@@ -2194,16 +2192,16 @@ export function AnalysisResultsPage() {
 ### <a id="📄-src-features-analysis-pages-vehicledetailspage-tsx"></a>📄 `src/features/analysis/pages/VehicleDetailsPage.tsx`
 
 **File Info:**
-- **Size**: 1.29 KB
+- **Size**: 1.15 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/analysis/pages/VehicleDetailsPage.tsx`
 - **Relative Path**: `src/features/analysis/pages`
 - **Created**: 2026-08-14 14:51:18 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 14:51:18 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `230073a0587acc170f80179322c890ce`
-- **SHA256**: `4f50e5b54ffa96c311bc315c26b97421c8d543e20d894734039a4eefd9e411de`
-- **Encoding**: ASCII
+- **Modified**: 2026-08-15 00:34:13 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `75b9d20195e6d80239dc450e7bcb5691`
+- **SHA256**: `9494b6fa856e04a629e44410598efeb1f4eca4f190b108285cfed426aca97621`
+- **Encoding**: UTF-8
 
 **File code content:**
 
@@ -2215,7 +2213,6 @@ import {
   VehicleDetailsHeader,
   VehicleDetailsSummaryCards,
   VehicleInfoCard,
-  VehicleRiskSection,
 } from "../components";
 
 export function VehicleDetailsPage() {
@@ -2235,13 +2232,7 @@ export function VehicleDetailsPage() {
       <div className="mx-auto flex max-w-[1600px] flex-col gap-4 sm:gap-5">
         <VehicleDetailsHeader onBack={vm.handleBack} />
 
-        <CardContainer>
-          <VehicleInfoCard vehicle={vm.vehicle} />
-        </CardContainer>
-
-        <CardContainer>
-          <VehicleRiskSection vehicle={vm.vehicle} />
-        </CardContainer>
+        <VehicleInfoCard vehicle={vm.vehicle} />
 
         <CardContainer title="مقارنة البيانات">
           <VehicleComparisonTable rows={vm.comparisonRows} />
@@ -2252,7 +2243,6 @@ export function VehicleDetailsPage() {
     </DashboardLayout>
   );
 }
-
 ```
 
 ---
@@ -2266,7 +2256,7 @@ export function VehicleDetailsPage() {
 - **Location**: `src/features/analysis/routes/analysisRoutes.ts`
 - **Relative Path**: `src/features/analysis/routes`
 - **Created**: 2026-08-13 17:22:07 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 14:51:01 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-14 23:36:29 (Europe/Istanbul / GMT+03:00)
 - **MD5**: `41e537ea225bead89b908f4a0e0caf5d`
 - **SHA256**: `56d2448ee511aecd9d76a2b282a9915ccbe6e51e0ad838cdd0f74c1f8ae624c5`
 - **Encoding**: ASCII
@@ -2299,7 +2289,7 @@ export function buildVehicleDetailsPath(id: string): string {
 - **Location**: `src/features/analysis/services/AnalysisService.ts`
 - **Relative Path**: `src/features/analysis/services`
 - **Created**: 2026-08-13 17:22:18 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 14:51:01 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-14 23:36:29 (Europe/Istanbul / GMT+03:00)
 - **MD5**: `3c2ae7138d55f5a03f255e185bbf3c6d`
 - **SHA256**: `1da4b8a6d5e6ded1f133acebcb31bbe39a8f371e92df56dcc9118caee8191022`
 - **Encoding**: UTF-8
@@ -2341,15 +2331,15 @@ export const analysisService = new AnalysisService();
 ### <a id="📄-src-features-analysis-index-ts"></a>📄 `src/features/analysis/index.ts`
 
 **File Info:**
-- **Size**: 441 B
+- **Size**: 501 B
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/analysis/index.ts`
 - **Relative Path**: `src/features/analysis`
 - **Created**: 2026-08-13 17:23:02 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 14:51:19 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `deffe625295b4e8712ad004f16436231`
-- **SHA256**: `ce3dbcc359dd86f8f14c2c21472d34bdf53467c3ef7baaa86c9270dcf7e5e67e`
+- **Modified**: 2026-08-14 23:54:59 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `c2664bdee0bba9d3c369d23402b706a4`
+- **SHA256**: `934b81e2e61fdc66ebbe62ea02040567b9bf1999c1f5b69cf32c8d1780906b26`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -2361,6 +2351,7 @@ export { AnalysisRoutes, buildVehicleDetailsPath } from "./routes/analysisRoutes
 export { analysisService } from "./services/AnalysisService";
 export { useAnalysisResultsViewModel } from "./hooks/useAnalysisResultsViewModel";
 export { useVehicleDetailsViewModel } from "./hooks/useVehicleDetailsViewModel";
+export { SeverityBadge } from "./components/SeverityBadge";
 
 ```
 
@@ -2392,16 +2383,16 @@ export { LoginForm } from "./LoginForm";
 ### <a id="📄-src-features-auth-components-feature-loginform-tsx"></a>📄 `src/features/auth/components/feature/LoginForm.tsx`
 
 **File Info:**
-- **Size**: 1.85 KB
+- **Size**: 1.95 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/auth/components/feature/LoginForm.tsx`
 - **Relative Path**: `src/features/auth/components/feature`
 - **Created**: 2026-07-18 19:10:28 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:14:41 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `78dda7a40ca8ef0340b75d215f0a333f`
-- **SHA256**: `78f6c89d7107e60e4372ca88c1b200fb74e55396443ca5af4644752152d37563`
-- **Encoding**: ASCII
+- **Modified**: 2026-08-15 00:45:09 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `5aa5a165e5da38a565f5d64b0a989683`
+- **SHA256**: `60e9d05ca8056ebb4aa2baad4a9e9b3754c02159de452d3da66b2f34e25f5661`
+- **Encoding**: UTF-8
 
 **File code content:**
 
@@ -2427,42 +2418,42 @@ export function LoginForm({ form, onSubmit, isSubmitting }: LoginFormProps) {
   return (
     <div>
       <div className="mb-8 text-center">
-        <h2 className="text-2xl font-bold text-slate-900">System Access</h2>
-        <p className="mt-1.5 text-sm text-slate-500">
-          Authorized personnel only
+        <h2 className="text-2xl font-bold text-white">الدخول إلى النظام</h2>
+        <p className="mt-1.5 text-sm text-white/50">
+          للموظفين المخوّلين فقط
         </p>
       </div>
 
       <form onSubmit={onSubmit} className="flex flex-col gap-4" noValidate>
         <Input
-          label="Officer ID"
+          label="رقم الضابط"
           type="text"
-          placeholder="Enter your Officer ID"
+          placeholder="أدخل رقم الضابط"
           autoComplete="username"
           error={errors.OfficerID?.message}
           {...register("OfficerID")}
         />
 
         <PasswordInput
-          label="Password"
-          placeholder="Enter your password"
+          label="كلمة المرور"
+          placeholder="أدخل كلمة المرور"
           autoComplete="current-password"
           error={errors.password?.message}
           {...register("password")}
         />
 
         <div className="flex items-center justify-between">
-          <Checkbox label="Remember Me" {...register("rememberMe")} />
+          <Checkbox label="تذكرني" {...register("rememberMe")} />
           <button
             type="button"
-            className="text-sm font-medium text-indigo-600 transition hover:text-indigo-500"
+            className="text-sm font-medium text-blue-400 transition hover:text-blue-300"
           >
-            Forgot Password?
+            نسيت كلمة المرور؟
           </button>
         </div>
 
         <Button type="submit" isLoading={isSubmitting} className="mt-1">
-          Login
+          تسجيل الدخول
         </Button>
       </form>
     </div>
@@ -2475,16 +2466,16 @@ export function LoginForm({ form, onSubmit, isSubmitting }: LoginFormProps) {
 ### <a id="📄-src-features-auth-components-shared-authbrandpanel-tsx"></a>📄 `src/features/auth/components/shared/AuthBrandPanel.tsx`
 
 **File Info:**
-- **Size**: 5.3 KB
+- **Size**: 5.62 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/auth/components/shared/AuthBrandPanel.tsx`
 - **Relative Path**: `src/features/auth/components/shared`
 - **Created**: 2026-07-18 19:10:06 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:14:41 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `0bca80655af74d5df5f3ecd4172ad865`
-- **SHA256**: `14dad7982eaecb019ef97bc5a213438a751599678a4d3aab730a96994c4f68a2`
-- **Encoding**: ASCII
+- **Modified**: 2026-08-15 00:58:07 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `01a3040acc9b62eabcca871f1e3d1dc1`
+- **SHA256**: `144d3a778d6bd5338d5184633ad1ec886aa6e0ee13d579e557b959478b319fd2`
+- **Encoding**: UTF-8
 
 **File code content:**
 
@@ -2495,27 +2486,30 @@ interface AuthBrandPanelProps {
 
 export function AuthBrandPanel({ activeDot = 0 }: AuthBrandPanelProps) {
   return (
-    <div className="relative flex min-h-[280px] w-full flex-col justify-between overflow-hidden bg-gradient-to-br from-[#1e3a8a] via-[#4c1d95] to-[#6d28d9] px-8 py-10 text-white md:min-h-screen md:w-1/2 md:px-12 md:py-14 lg:px-16">
+    <div className="relative flex min-h-[280px] w-full flex-col justify-between overflow-hidden bg-gradient-to-br from-blue-950 via-[#0B1220] to-violet-950 px-8 py-10 text-white md:min-h-screen md:w-1/2 md:px-12 md:py-14 lg:px-16">
       {/* Decorative blobs */}
-      <div className="pointer-events-none absolute -top-24 -left-24 h-72 w-72 rounded-full bg-white/10 blur-2xl" />
-      <div className="pointer-events-none absolute top-1/3 -right-16 h-64 w-64 rounded-full bg-fuchsia-400/20 blur-3xl" />
-      <div className="pointer-events-none absolute bottom-20 left-1/4 h-40 w-40 rounded-full bg-cyan-400/15 blur-2xl" />
+      <div className="pointer-events-none absolute -top-24 -right-24 h-72 w-72 rounded-full bg-blue-500/10 blur-2xl" />
+      <div className="pointer-events-none absolute top-1/3 -left-16 h-64 w-64 rounded-full bg-violet-500/20 blur-3xl" />
+      <div className="pointer-events-none absolute bottom-20 right-1/4 h-40 w-40 rounded-full bg-blue-400/15 blur-2xl" />
 
       <div className="relative z-10">
-        <p className="text-2xl font-bold tracking-tight">TrafficEye</p>
+        <p className="text-xl font-bold leading-tight tracking-tight">
+          نظام المراقبة المرورية
+        </p>
+        <p className="mt-0.5 text-sm text-white/40">TrafficEye</p>
       </div>
 
       <div className="relative z-10 my-8 flex flex-1 flex-col justify-center md:my-0">
         <h1 className="max-w-md text-3xl font-bold leading-tight tracking-tight md:text-4xl lg:text-5xl">
-          Detect Faster. Identify Smarter. Secure Better.
+          كشف أسرع. تمييز أذكى. أمان أكثر.
         </h1>
-        <p className="mt-4 max-w-sm text-sm leading-relaxed text-indigo-100/90 md:text-base">
-          AI-powered license plate recognition and vehicle specification lookup, built for traffic police and security agencies.
+        <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/60 md:text-base">
+          نظام ذكاء اصطناعي للتعرف على لوحات المركبات وبيانات المركبات، مصمم
+          لرجال المرور وجهات الأمن.
         </p>
 
         {/* Camera + vehicle data readout illustration */}
-        {/* <div className="relative mt-10 hidden h-56 w-full max-w-sm md:block lg:h-64"> */}
-          <div className="relative mt-8 hidden h-72 w-full max-w-lg md:block lg:h-96 lg:max-w-xl">
+        <div className="relative mt-8 hidden h-72 w-full max-w-lg md:block lg:h-96 lg:max-w-xl">
           <svg
             viewBox="0 0 680 380"
             className="h-full w-full"
@@ -2523,16 +2517,13 @@ export function AuthBrandPanel({ activeDot = 0 }: AuthBrandPanelProps) {
             role="img"
             aria-label="كاميرا مراقبة ترصد سيارة وتعرض بياناتها الفنية"
           >
-            {/* Ground line */}
             <line x1="0" y1="300" x2="680" y2="300" stroke="#a78bfa" strokeWidth="1" opacity="0.3" />
 
-            {/* Camera pole */}
             <rect x="60" y="60" width="8" height="120" fill="#4438a3" />
             <rect x="50" y="55" width="60" height="30" rx="6" fill="#8b7cf6" />
             <circle cx="105" cy="70" r="8" fill="#1c1440" />
             <circle cx="105" cy="70" r="4" fill="#38bdf8" />
 
-            {/* Camera field of view */}
             <path d="M110 65 L280 210 L280 250 L110 90 Z" fill="#8b7cf6" opacity="0.12" />
             <line x1="110" y1="65" x2="280" y2="210" stroke="#a78bfa" strokeWidth="1" strokeDasharray="4 4" opacity="0.6" />
             <line x1="110" y1="90" x2="280" y2="250" stroke="#a78bfa" strokeWidth="1" strokeDasharray="4 4" opacity="0.6" />
@@ -2560,25 +2551,29 @@ export function AuthBrandPanel({ activeDot = 0 }: AuthBrandPanelProps) {
             {/* Connector to data panel */}
             <line x1="335" y1="255" x2="400" y2="255" stroke="#a78bfa" strokeWidth="1" strokeDasharray="4 4" opacity="0.6" />
 
-            {/* Data readout panel */}
-            <rect x="410" y="150" width="230" height="175" rx="12" fill="#3b2f7a" stroke="#6d5fd8" strokeWidth="0.5" />
-            <line x1="428" y1="188" x2="622" y2="188" stroke="#6d5fd8" strokeWidth="0.5" opacity="0.5" />
-            <text x="428" y="176" fontFamily="sans-serif" fontSize="13" fontWeight="700" fill="#f5f4ff">
-              AB 123
-            </text>
-            <text x="428" y="212" fontFamily="sans-serif" fontSize="10" fill="#c9c2f7">
-             Model: Toyota Corolla
-            </text>
-            <text x="428" y="234" fontFamily="sans-serif" fontSize="10" fill="#c9c2f7">
-              Color: White
-            </text>
-            <text x="428" y="256" fontFamily="sans-serif" fontSize="10" fill="#c9c2f7">
-              Type: Sedan
-            </text>
-            <circle cx="612" cy="288" r="5" fill="#4ade80" />
-            <text x="600" y="292" fontFamily="sans-serif" fontSize="9" fill="#86efac" textAnchor="end">
-             Verified
-            </text>
+            {/* Data readout panel — إحداثيات نسبية داخل مجموعة واحدة لضمان بقاء النص داخل الصندوق */}
+            <g transform="translate(410,150)">
+              <rect width="230" height="175" rx="12" fill="#3b2f7a" stroke="#6d5fd8" strokeWidth="0.5" />
+              <line x1="18" y1="42" x2="212" y2="42" stroke="#6d5fd8" strokeWidth="0.5" opacity="0.5" />
+
+              <text x="80" y="28" textAnchor="start" fontFamily="sans-serif" fontSize="14" fontWeight="700" fill="#f5f4ff">
+                AB 123
+              </text>
+              <text x="200" y="64" textAnchor="start" fontFamily="sans-serif" fontSize="12" fill="#c9c2f7">
+                الموديل: تويوتا كورولا
+              </text>
+              <text x="200" y="86" textAnchor="start" fontFamily="sans-serif" fontSize="12" fill="#c9c2f7">
+                اللون: أبيض
+              </text>
+              <text x="200" y="108" textAnchor="start" fontFamily="sans-serif" fontSize="12" fill="#c9c2f7">
+                النوع: سيدان
+              </text>
+
+              <circle cx="202" cy="145" r="5" fill="#4ade80" />
+              <text x="190" y="148" textAnchor="start" fontFamily="sans-serif" fontSize="10" fill="#86efac">
+                تم التحقق
+              </text>
+            </g>
           </svg>
         </div>
       </div>
@@ -2588,7 +2583,7 @@ export function AuthBrandPanel({ activeDot = 0 }: AuthBrandPanelProps) {
           <span
             key={i}
             className={`h-2 w-2 rounded-full transition ${
-              i === activeDot ? "bg-white" : "bg-white/35"
+              i === activeDot ? "bg-white" : "bg-white/25"
             }`}
           />
         ))}
@@ -2596,7 +2591,6 @@ export function AuthBrandPanel({ activeDot = 0 }: AuthBrandPanelProps) {
     </div>
   );
 }
-
 ```
 
 ---
@@ -2604,15 +2598,15 @@ export function AuthBrandPanel({ activeDot = 0 }: AuthBrandPanelProps) {
 ### <a id="📄-src-features-auth-components-shared-authsplitlayout-tsx"></a>📄 `src/features/auth/components/shared/AuthSplitLayout.tsx`
 
 **File Info:**
-- **Size**: 703 B
+- **Size**: 832 B
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/auth/components/shared/AuthSplitLayout.tsx`
 - **Relative Path**: `src/features/auth/components/shared`
 - **Created**: 2026-07-18 19:10:07 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:14:41 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `62a01a2df0ca88d6c4e0b0d90f45ddf6`
-- **SHA256**: `6a59add012fa428cb48e6ce16a3c091edb14b264d174f60aa55610014ae40376`
+- **Modified**: 2026-08-15 00:44:43 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `4bc7419dccfa0598dd7b4da466d4bb73`
+- **SHA256**: `7d9e1fe0acad71fbf2f679604b2338e0589cec3b7a15698d0c3d8d49c1549df4`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -2631,17 +2625,20 @@ export function AuthSplitLayout({
   activeDot = 0,
 }: AuthSplitLayoutProps) {
   return (
-    <div className="flex min-h-screen w-full flex-col md:flex-row">
+    <div
+      dir="rtl"
+      lang="ar"
+      className="flex min-h-screen w-full flex-col bg-[#0B1220] font-[Cairo,Tahoma,sans-serif] md:flex-row"
+    >
       <AuthBrandPanel activeDot={activeDot} />
-      <div className="flex w-full flex-1 items-center justify-center bg-slate-50 px-4 py-10 md:w-1/2 md:px-8 lg:px-12">
-        <div className="w-full max-w-md rounded-2xl bg-white p-6 shadow-xl shadow-slate-200/60 sm:p-8">
+      <div className="flex w-full flex-1 items-center justify-center px-4 py-10 md:w-1/2 md:px-8 lg:px-12">
+        <div className="w-full max-w-md rounded-2xl border border-white/10 bg-white/5 p-6 shadow-[0_0_40px_rgba(59,130,246,0.08)] backdrop-blur-xl sm:p-8">
           {children}
         </div>
       </div>
     </div>
   );
 }
-
 ```
 
 ---
@@ -2775,15 +2772,15 @@ export function PasswordInput({
 ### <a id="📄-src-features-auth-components-ui-button-tsx"></a>📄 `src/features/auth/components/ui/Button.tsx`
 
 **File Info:**
-- **Size**: 1.13 KB
+- **Size**: 1.17 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/auth/components/ui/Button.tsx`
 - **Relative Path**: `src/features/auth/components/ui`
 - **Created**: 2026-07-18 19:09:54 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:14:41 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `decfaf6bda3fe6f9051286815152e97e`
-- **SHA256**: `d7b60b15d41d86bd456f9d258f10924f3e7f5572d6be2a59bd51299824b8bf02`
+- **Modified**: 2026-08-15 00:53:19 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `32ee67761ed4ae6554fad75564cefdf5`
+- **SHA256**: `08fb4b1aa0f185ad3506188995de9a8f120d88e6ffe91721ae20cd000544a43e`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -2806,13 +2803,13 @@ export function Button({
   ...props
 }: ButtonProps) {
   const base =
-    "inline-flex w-full items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60";
+    "inline-flex w-full items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[#0B1220] disabled:cursor-not-allowed disabled:opacity-60";
 
   const variants = {
     primary:
-      "bg-gradient-to-r from-indigo-600 to-violet-600 text-white shadow-md shadow-indigo-500/25 hover:from-indigo-500 hover:to-violet-500 focus:ring-indigo-500",
+      "bg-gradient-to-l from-blue-600 to-violet-600 text-white shadow-[0_0_24px_rgba(99,102,241,0.35)] hover:from-blue-500 hover:to-violet-500 focus:ring-blue-500",
     secondary:
-      "border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 focus:ring-slate-300",
+      "border border-white/10 bg-white/5 text-white/80 hover:bg-white/10 focus:ring-white/20",
   };
 
   return (
@@ -2821,11 +2818,10 @@ export function Button({
       disabled={disabled || isLoading}
       {...props}
     >
-      {isLoading ? "Please wait..." : children}
+      {isLoading ? "جارٍ التحقق..." : children}
     </button>
   );
 }
-
 ```
 
 ---
@@ -2833,15 +2829,15 @@ export function Button({
 ### <a id="📄-src-features-auth-components-ui-checkbox-tsx"></a>📄 `src/features/auth/components/ui/Checkbox.tsx`
 
 **File Info:**
-- **Size**: 751 B
+- **Size**: 780 B
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/auth/components/ui/Checkbox.tsx`
 - **Relative Path**: `src/features/auth/components/ui`
 - **Created**: 2026-07-18 19:09:55 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:14:41 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `bb3d9e40447cc0f4c3472ac06fd201a2`
-- **SHA256**: `afd9eaa7ff56c33f253d117dce22671cdc01780d5c37c40bcdcc7931a6635b83`
+- **Modified**: 2026-08-15 00:53:17 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `c95c83dffe3f99b06c7cd04b0e246a8c`
+- **SHA256**: `e137ad85e25e94be6190b439baafa224496e04c089a17b2560109f71dd6beff2`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -2865,14 +2861,13 @@ export function Checkbox({ label, id, className = "", ...props }: CheckboxProps)
       <input
         id={checkboxId}
         type="checkbox"
-        className="h-4 w-4 rounded border-slate-300 text-indigo-600 accent-indigo-600 focus:ring-indigo-500"
+        className="h-4 w-4 rounded border-white/20 bg-white/5 text-blue-600 accent-blue-600 focus:ring-blue-500 focus:ring-offset-[#0B1220]"
         {...props}
       />
-      {label ? <span className="text-sm text-slate-600">{label}</span> : null}
+      {label ? <span className="text-sm text-white/60">{label}</span> : null}
     </label>
   );
 }
-
 ```
 
 ---
@@ -2911,9 +2906,9 @@ export { Checkbox } from "./Checkbox";
 - **Location**: `src/features/auth/components/ui/Input.tsx`
 - **Relative Path**: `src/features/auth/components/ui`
 - **Created**: 2026-07-18 19:09:52 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:14:41 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `893dcefe13b75497466e90cbe6894c39`
-- **SHA256**: `5233a06f1183d14b72e870729e02bf1d8ff90aa1948cff0fb0eb477c2da5b206`
+- **Modified**: 2026-08-15 00:45:35 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `85a3fe509e9b26eb8ac710eae4c7874e`
+- **SHA256**: `14fe9fb791c923e7185d6903ba77a9c79605c2120b08cb055045c4f3390fff69`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -2942,7 +2937,7 @@ export function Input({
       {label && (
         <label
           htmlFor={inputId}
-          className="text-sm font-medium text-slate-700"
+          className="text-sm font-medium text-white/70"
         >
           {label}
         </label>
@@ -2950,22 +2945,21 @@ export function Input({
       <div className="relative">
         <input
           id={inputId}
-          className={`w-full rounded-xl border bg-white px-4 py-3 text-sm text-slate-800 outline-none transition placeholder:text-slate-400 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 ${
-            error ? "border-red-400" : "border-slate-200"
-          } ${rightElement ? "pr-11" : ""} ${className}`}
+          className={`w-full rounded-xl border bg-white/5 px-4 py-3 text-sm text-white outline-none transition placeholder:text-white/35 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 ${
+            error ? "border-rose-500/60" : "border-white/10"
+          } ${rightElement ? "pl-11" : ""} ${className}`}
           {...props}
         />
         {rightElement && (
-          <div className="absolute inset-y-0 right-0 flex items-center pr-3">
+          <div className="absolute inset-y-0 left-0 flex items-center pl-3">
             {rightElement}
           </div>
         )}
       </div>
-      {error && <p className="text-xs text-red-500">{error}</p>}
+      {error && <p className="text-xs text-rose-400">{error}</p>}
     </div>
   );
 }
-
 ```
 
 ---
@@ -3232,16 +3226,16 @@ export const useAuthStore = create<AuthStore>((set) => ({
 ### <a id="📄-src-features-auth-validators-loginschema-ts"></a>📄 `src/features/auth/validators/loginSchema.ts`
 
 **File Info:**
-- **Size**: 488 B
+- **Size**: 604 B
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/auth/validators/loginSchema.ts`
 - **Relative Path**: `src/features/auth/validators`
 - **Created**: 2026-07-18 19:09:44 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:14:41 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `9c8c6c32ba7ae19729be8e8345661d81`
-- **SHA256**: `56f4d49ef542dfa903157a033a5617af13b7319a152b024470f2f6b28d2f720b`
-- **Encoding**: ASCII
+- **Modified**: 2026-08-15 00:53:23 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `76b12e3216a0ab8af8fc90cc2c02374f`
+- **SHA256**: `92432b1b35b9190a111ef7f39154560b8828f91cb6942e40f3bb14a16cc31912`
+- **Encoding**: UTF-8
 
 **File code content:**
 
@@ -3251,20 +3245,18 @@ import { z } from "zod";
 export const loginSchema = z.object({
   OfficerID: z
     .string()
-    .min(1, "Officer ID is required")
-    .min(3, "Officer ID must be at least 3 characters.")
-    .max(20, "Officer ID must be at most 20 characters."),
+    .min(1, "رقم الضابط مطلوب")
+    .min(3, "يجب أن يتكوّن رقم الضابط من 3 أحرف على الأقل")
+    .max(20, "يجب ألا يتجاوز رقم الضابط 20 حرفًا"),
 
   password: z
     .string()
-    .min(1, "Password is required")
-    .min(6, "Password must be at least 6 characters"),
+    .min(1, "كلمة المرور مطلوبة")
+    .min(6, "يجب أن تتكوّن كلمة المرور من 6 أحرف على الأقل"),
   rememberMe: z.boolean().optional(),
 });
 
 export type LoginFormValues = z.infer<typeof loginSchema>;
-
-
 ```
 
 ---
@@ -3292,6 +3284,1259 @@ export { useAuthStore } from "./store/authStore";
 export { authService } from "./services/AuthService";
 export { useLoginViewModel } from "./hooks/useLoginViewModel";
 export { Input, Button, Checkbox } from "./components/ui";
+
+```
+
+---
+
+### <a id="📄-src-features-blacklist-components-blacklistfilters-tsx"></a>📄 `src/features/blacklist/components/BlacklistFilters.tsx`
+
+**File Info:**
+- **Size**: 4.27 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/features/blacklist/components/BlacklistFilters.tsx`
+- **Relative Path**: `src/features/blacklist/components`
+- **Created**: 2026-08-14 23:55:48 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-15 00:04:07 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `943412bccb8b6543bf859693c8fa8183`
+- **SHA256**: `274cb7d389b483eeadd02885a0c8bfdc81b2f3b5a6035b1ee53861e16ab2a022`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```typescript
+import { Button, Input } from "../../auth";
+import {
+  blacklistColorOptions,
+  blacklistSeverityOptions,
+  blacklistTypeOptions,
+} from "../data/mockBlacklistData";
+import type { BlacklistFilters } from "../models/blacklist.types";
+
+interface BlacklistFiltersProps {
+  filters: BlacklistFilters;
+  onSearchChange: (value: string) => void;
+  onSeverityChange: (value: string) => void;
+  onTypeChange: (value: string) => void;
+  onColorChange: (value: string) => void;
+  onReset: () => void; // يمكنك إبقاؤها في الـ Interface حتى لا تتأثر المكونات الأب (Parent Components)
+  onExport: () => void; // نفس الأمر هنا
+  onAddClick: () => void;
+}
+
+export function BlacklistFiltersBar({
+  filters,
+  onSearchChange,
+  onSeverityChange,
+  onTypeChange,
+  onColorChange,
+  onAddClick,
+}: BlacklistFiltersProps) {
+  return (
+    <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
+        <div className="flex flex-1 flex-col gap-3 sm:flex-row sm:items-center">
+          <div className="relative min-w-0 flex-1 sm:max-w-sm">
+            <span className="pointer-events-none absolute inset-y-0 start-3 flex items-center text-white/35">
+              <SearchIcon />
+            </span>
+            <Input
+              value={filters.search}
+              onChange={(e) => onSearchChange(e.target.value)}
+              placeholder="بحث برقم المركبة أو اسم المالك..."
+              className="border-white/10 bg-white/5 ps-10 text-white placeholder:text-white/35 focus:border-blue-500 focus:ring-blue-500/20"
+            />
+          </div>
+
+          <FilterSelect
+            label="كل درجات الخطورة"
+            value={filters.severity}
+            options={[...blacklistSeverityOptions]}
+            onChange={onSeverityChange}
+          />
+
+          <FilterSelect
+            label="كل الأنواع"
+            value={filters.type}
+            options={[...blacklistTypeOptions]}
+            onChange={onTypeChange}
+          />
+
+          <FilterSelect
+            label="كل الألوان"
+            value={filters.color}
+            options={[...blacklistColorOptions]}
+            onChange={onColorChange}
+          />
+        </div>
+
+        {/* الحفاظ على حاوية الأزرار لضمان بقاء زر الإضافة في مكانه الصحيح عبر استخدام justify-end */}
+        <div className="flex flex-wrap items-center justify-end gap-2">
+          <Button
+            type="button"
+            onClick={onAddClick}
+            className="w-auto shrink-0 whitespace-nowrap px-5 shadow-[0_0_24px_rgba(99,102,241,0.35)]"
+          >
+            <PlusIcon />
+            إضافة إلى القائمة السوداء
+          </Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function FilterSelect({
+  label,
+  value,
+  options,
+  onChange,
+}: {
+  label: string;
+  value: string;
+  options: string[];
+  onChange: (value: string) => void;
+}) {
+  return (
+    <div className="relative min-w-[150px]">
+      <select
+        aria-label={label}
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        className="w-full appearance-none rounded-xl border border-white/10 bg-white/5 px-4 py-3 pe-9 text-sm text-white outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
+      >
+        {options.map((option) => (
+          <option
+            key={option}
+            value={option}
+            className="bg-[#0f172a] text-white"
+          >
+            {option === "الكل" ? label : option}
+          </option>
+        ))}
+      </select>
+      <span className="pointer-events-none absolute inset-y-0 end-3 flex items-center text-white/40">
+        ▾
+      </span>
+    </div>
+  );
+}
+
+function SearchIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className="h-4 w-4"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      aria-hidden
+    >
+      <circle cx="11" cy="11" r="7" />
+      <path d="m20 20-3.5-3.5" />
+    </svg>
+  );
+}
+
+function PlusIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className="h-4 w-4"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      aria-hidden
+    >
+      <path d="M12 5v14M5 12h14" />
+    </svg>
+  );
+}
+```
+
+---
+
+### <a id="📄-src-features-blacklist-components-blacklistheader-tsx"></a>📄 `src/features/blacklist/components/BlacklistHeader.tsx`
+
+**File Info:**
+- **Size**: 938 B
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/features/blacklist/components/BlacklistHeader.tsx`
+- **Relative Path**: `src/features/blacklist/components`
+- **Created**: 2026-08-14 23:55:31 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-14 23:55:31 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `789fcf5e866658100c2510056e6c7e52`
+- **SHA256**: `9ea842393fdfaa41e3d14d7ba904db44a2db4bb7fd95b9e5f6f17f3fb9591fe4`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```typescript
+import { Link } from "react-router-dom";
+import { DashboardRoutes } from "../../dashboard";
+
+interface BlacklistHeaderProps {
+  title?: string;
+  subtitle?: string;
+}
+
+export function BlacklistHeader({
+  title = "القائمة السوداء",
+  subtitle = "إدارة المركبات المدرجة في القائمة السوداء",
+}: BlacklistHeaderProps) {
+  return (
+    <div className="flex flex-col gap-2">
+      <nav className="flex items-center gap-2 text-xs text-white/40">
+        <Link
+          to={DashboardRoutes.home}
+          className="transition hover:text-white/70"
+        >
+          لوحة التحكم
+        </Link>
+        <span>/</span>
+        <span className="text-white/70">القائمة السوداء</span>
+      </nav>
+      <div>
+        <h1 className="text-2xl font-bold text-white">{title}</h1>
+        <p className="mt-1 text-sm text-white/45">{subtitle}</p>
+      </div>
+    </div>
+  );
+}
+
+```
+
+---
+
+### <a id="📄-src-features-blacklist-components-blackliststats-tsx"></a>📄 `src/features/blacklist/components/BlacklistStats.tsx`
+
+**File Info:**
+- **Size**: 922 B
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/features/blacklist/components/BlacklistStats.tsx`
+- **Relative Path**: `src/features/blacklist/components`
+- **Created**: 2026-08-14 23:55:38 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-14 23:55:38 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `c4189d68753c32d8480d1b0178b9a523`
+- **SHA256**: `f7cf6864a78dbbb7b72787b9222d2e234f3665cb7a2c17077ced985bf10c4631`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import { StatCard, MenuGlyph } from "../../dashboard";
+
+interface FormattedBlacklistStat {
+  id: string;
+  title: string;
+  displayValue: string;
+  subtitle: string;
+  displayChange: string;
+  isPositive: boolean;
+  gradient: string;
+  icon: "blacklist" | "wanted" | "scans" | "units";
+}
+
+interface BlacklistStatsProps {
+  stats: FormattedBlacklistStat[];
+}
+
+export function BlacklistStats({ stats }: BlacklistStatsProps) {
+  return (
+    <section className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
+      {stats.map((stat) => (
+        <StatCard
+          key={stat.id}
+          title={stat.title}
+          displayValue={stat.displayValue}
+          subtitle={stat.subtitle}
+          displayChange={stat.displayChange}
+          isPositive={stat.isPositive}
+          gradient={stat.gradient}
+          icon={<MenuGlyph name={stat.icon} className="h-5 w-5" />}
+        />
+      ))}
+    </section>
+  );
+}
+
+```
+
+---
+
+### <a id="📄-src-features-blacklist-components-blacklisttable-tsx"></a>📄 `src/features/blacklist/components/BlacklistTable.tsx`
+
+**File Info:**
+- **Size**: 5.53 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/features/blacklist/components/BlacklistTable.tsx`
+- **Relative Path**: `src/features/blacklist/components`
+- **Created**: 2026-08-14 23:55:49 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-14 23:55:58 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `cae068ef1e0268716020466bfc77f459`
+- **SHA256**: `4686bb5e50187d7ca035a83f4da6908ed0f75e3c467d19992e7efadbea6f161e`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```typescript
+import type { ReactNode } from "react";
+import { SeverityBadge } from "../../analysis";
+import { MenuGlyph } from "../../dashboard";
+import type { BlacklistedVehicle } from "../models/blacklist.types";
+
+interface BlacklistTableProps {
+  vehicles: BlacklistedVehicle[];
+  onEdit: (id: string) => void;
+  onDelete: (id: string) => void;
+  onMore: (id: string) => void;
+}
+
+export function BlacklistTable({
+  vehicles,
+  onEdit,
+  onDelete,
+  onMore,
+}: BlacklistTableProps) {
+  return (
+    <div className="overflow-hidden rounded-xl border border-white/10">
+      <div className="overflow-x-auto">
+        <table className="w-full min-w-[960px] border-collapse text-sm">
+          <thead>
+            <tr className="border-b border-white/10 bg-white/[0.03] text-white/50">
+              <th className="px-4 py-3.5 text-start font-medium">رقم المركبة</th>
+              <th className="px-4 py-3.5 text-start font-medium">اسم المالك</th>
+              <th className="px-4 py-3.5 text-start font-medium">سبب الطلب</th>
+              <th className="px-4 py-3.5 text-start font-medium">درجة الخطورة</th>
+              <th className="px-4 py-3.5 text-start font-medium">اللون</th>
+              <th className="px-4 py-3.5 text-start font-medium">النوع</th>
+              <th className="px-4 py-3.5 text-start font-medium">الإجراءات</th>
+            </tr>
+          </thead>
+          <tbody>
+            {vehicles.length === 0 ? (
+              <tr>
+                <td
+                  colSpan={7}
+                  className="px-4 py-12 text-center text-white/40"
+                >
+                  لا توجد مركبات مطابقة للبحث
+                </td>
+              </tr>
+            ) : (
+              vehicles.map((vehicle) => (
+                <BlacklistTableRow
+                  key={vehicle.id}
+                  vehicle={vehicle}
+                  onEdit={onEdit}
+                  onDelete={onDelete}
+                  onMore={onMore}
+                />
+              ))
+            )}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
+interface BlacklistTableRowProps {
+  vehicle: BlacklistedVehicle;
+  onEdit: (id: string) => void;
+  onDelete: (id: string) => void;
+  onMore: (id: string) => void;
+}
+
+function BlacklistTableRow({
+  vehicle,
+  onEdit,
+  onDelete,
+  onMore,
+}: BlacklistTableRowProps) {
+  return (
+    <tr className="border-b border-white/5 transition hover:bg-white/[0.04]">
+      <td className="px-4 py-3.5">
+        <span className="inline-flex rounded-lg bg-gradient-to-l from-blue-600/30 to-violet-600/20 px-2.5 py-1 font-semibold tracking-wide text-blue-200 ring-1 ring-blue-500/30">
+          {vehicle.plateNumber}
+        </span>
+      </td>
+      <td className="px-4 py-3.5 text-white/80">{vehicle.ownerName}</td>
+      <td className="px-4 py-3.5 text-white/65">{vehicle.reason}</td>
+      <td className="px-4 py-3.5">
+        <SeverityBadge severity={vehicle.severity} />
+      </td>
+      <td className="px-4 py-3.5">
+        <span className="inline-flex items-center gap-2 text-white/75">
+          <span
+            className="h-3 w-3 rounded-full ring-1 ring-white/20"
+            style={{ backgroundColor: vehicle.colorCode }}
+          />
+          {vehicle.color}
+        </span>
+      </td>
+      <td className="px-4 py-3.5">
+        <span className="inline-flex items-center gap-2 text-white/75">
+          <MenuGlyph name="vehicles" className="h-4 w-4 text-white/45" />
+          {vehicle.type}
+        </span>
+      </td>
+      <td className="px-4 py-3.5">
+        <div className="flex items-center gap-1.5">
+          <ActionButton
+            label="حذف"
+            danger
+            onClick={() => onDelete(vehicle.id)}
+          >
+            <TrashIcon />
+          </ActionButton>
+          <ActionButton label="تعديل" onClick={() => onEdit(vehicle.id)}>
+            <EditIcon />
+          </ActionButton>
+          <ActionButton label="المزيد" muted onClick={() => onMore(vehicle.id)}>
+            <MoreIcon />
+          </ActionButton>
+        </div>
+      </td>
+    </tr>
+  );
+}
+
+function ActionButton({
+  children,
+  label,
+  onClick,
+  danger = false,
+  muted = false,
+}: {
+  children: ReactNode;
+  label: string;
+  onClick: () => void;
+  danger?: boolean;
+  muted?: boolean;
+}) {
+  return (
+    <button
+      type="button"
+      aria-label={label}
+      onClick={onClick}
+      className={`flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 bg-white/5 transition hover:bg-white/10 ${
+        danger
+          ? "text-rose-400 hover:text-rose-300"
+          : muted
+            ? "text-white/55 hover:text-white"
+            : "text-blue-400 hover:text-blue-300"
+      }`}
+    >
+      {children}
+    </button>
+  );
+}
+
+function TrashIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className="h-3.5 w-3.5"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      aria-hidden
+    >
+      <path d="M4 7h16M9 7V5h6v2M8 7l1 12h6l1-12" />
+    </svg>
+  );
+}
+
+function EditIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className="h-3.5 w-3.5"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      aria-hidden
+    >
+      <path d="M4 20h4l10.5-10.5a2.1 2.1 0 0 0-3-3L5 17v3Z" />
+      <path d="M13 6.5l3 3" />
+    </svg>
+  );
+}
+
+function MoreIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className="h-3.5 w-3.5"
+      fill="currentColor"
+      aria-hidden
+    >
+      <circle cx="12" cy="5" r="1.6" />
+      <circle cx="12" cy="12" r="1.6" />
+      <circle cx="12" cy="19" r="1.6" />
+    </svg>
+  );
+}
+
+```
+
+---
+
+### <a id="📄-src-features-blacklist-components-index-ts"></a>📄 `src/features/blacklist/components/index.ts`
+
+**File Info:**
+- **Size**: 213 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/blacklist/components/index.ts`
+- **Relative Path**: `src/features/blacklist/components`
+- **Created**: 2026-08-14 23:56:01 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-14 23:56:01 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `0c44bec903b3820d46608e2cb66f02f4`
+- **SHA256**: `d942562bc7a6a07a0dd85c2ac944546f4da594f82535217ebd6e9c9990677843`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+export { BlacklistHeader } from "./BlacklistHeader";
+export { BlacklistStats } from "./BlacklistStats";
+export { BlacklistFiltersBar } from "./BlacklistFilters";
+export { BlacklistTable } from "./BlacklistTable";
+
+```
+
+---
+
+### <a id="📄-src-features-blacklist-data-mockblacklistdata-ts"></a>📄 `src/features/blacklist/data/mockBlacklistData.ts`
+
+**File Info:**
+- **Size**: 5.33 KB
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/blacklist/data/mockBlacklistData.ts`
+- **Relative Path**: `src/features/blacklist/data`
+- **Created**: 2026-08-14 23:55:11 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-14 23:55:11 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `257293201d681ca89023e6cff052012d`
+- **SHA256**: `b05536278be8654575c54dee1324109cd6bc2b7dc76ea9773488bed3f7ecabe7`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```typescript
+import type {
+  BlacklistStat,
+  BlacklistedVehicle,
+} from "../models/blacklist.types";
+
+export const BLACKLIST_DEFAULT_PAGE_SIZE = 7;
+
+export const blacklistPageSizeOptions = [7, 10, 25] as const;
+
+export const blacklistSeverityOptions = [
+  "الكل",
+  "منخفضة",
+  "متوسطة",
+  "عالية",
+] as const;
+
+export const blacklistTypeOptions = [
+  "الكل",
+  "سيدان",
+  "دفع رباعي",
+  "هاتشباك",
+  "بيك أب",
+  "شاحنة",
+] as const;
+
+export const blacklistColorOptions = [
+  "الكل",
+  "أبيض",
+  "أسود",
+  "أحمر",
+  "أزرق",
+  "رمادي",
+  "فضي",
+] as const;
+
+/** Fixed reference stats from design (not derived from mock list length). */
+export const mockBlacklistStats: BlacklistStat[] = [
+  {
+    id: "low",
+    title: "منخفضة الخطورة",
+    value: 36,
+    subtitle: "23.1% من الإجمالي",
+    changePercent: 23.1,
+    icon: "units",
+    gradient: "from-emerald-600/40 to-teal-700/30",
+    isPositive: true,
+  },
+  {
+    id: "medium",
+    title: "متوسطة الخطورة",
+    value: 58,
+    subtitle: "37.2% من الإجمالي",
+    changePercent: 37.2,
+    icon: "scans",
+    gradient: "from-amber-600/40 to-yellow-700/30",
+    isPositive: false,
+  },
+  {
+    id: "high",
+    title: "عالية الخطورة",
+    value: 62,
+    subtitle: "39.7% من الإجمالي",
+    changePercent: 39.7,
+    icon: "wanted",
+    gradient: "from-rose-600/40 to-orange-700/30",
+    isPositive: false,
+  },
+  {
+    id: "total",
+    title: "إجمالي المركبات بالقائمة السوداء",
+    value: 156,
+    subtitle: "جميع المركبات المدرجة",
+    changePercent: 100,
+    icon: "blacklist",
+    gradient: "from-blue-600/40 to-indigo-700/30",
+    isPositive: true,
+  },
+];
+
+export const mockBlacklistedVehicles: BlacklistedVehicle[] = [
+  {
+    id: "b1",
+    plateNumber: "أ ب 1234",
+    ownerName: "أحمد محمد علي",
+    reason: "سرقة مركبة",
+    severity: "عالية",
+    color: "أبيض",
+    colorCode: "#E2E8F0",
+    type: "سيدان",
+  },
+  {
+    id: "b2",
+    plateNumber: "ف 5678 م",
+    ownerName: "محمد خالد الدوسري",
+    reason: "مطلوب في قضية",
+    severity: "عالية",
+    color: "أسود",
+    colorCode: "#1E293B",
+    type: "دفع رباعي",
+  },
+  {
+    id: "b3",
+    plateNumber: "ن 9101 ك",
+    ownerName: "سارة إبراهيم الحربي",
+    reason: "تهريب مخدرات",
+    severity: "عالية",
+    color: "أحمر",
+    colorCode: "#F43F5E",
+    type: "سيدان",
+  },
+  {
+    id: "b4",
+    plateNumber: "ج 2468 ط",
+    ownerName: "ناصر عبدالعزيز",
+    reason: "إطلاق نار",
+    severity: "متوسطة",
+    color: "رمادي",
+    colorCode: "#64748B",
+    type: "بيك أب",
+  },
+  {
+    id: "b5",
+    plateNumber: "ف 9753 م",
+    ownerName: "عبدالله سليمان",
+    reason: "مطلوب للتحقيق",
+    severity: "متوسطة",
+    color: "أزرق",
+    colorCode: "#3B82F6",
+    type: "هاتشباك",
+  },
+  {
+    id: "b6",
+    plateNumber: "ش 8642 هـ",
+    ownerName: "يوسف ماجد",
+    reason: "حيازة أسلحة",
+    severity: "عالية",
+    color: "فضي",
+    colorCode: "#94A3B8",
+    type: "دفع رباعي",
+  },
+  {
+    id: "b7",
+    plateNumber: "م 7531 ت",
+    ownerName: "فاطمة خالد",
+    reason: "التورط في حادث",
+    severity: "منخفضة",
+    color: "أبيض",
+    colorCode: "#E2E8F0",
+    type: "سيدان",
+  },
+  {
+    id: "b8",
+    plateNumber: "ر 3344 س",
+    ownerName: "خالد العتيبي",
+    reason: "مطلوب في قضية",
+    severity: "متوسطة",
+    color: "أسود",
+    colorCode: "#1E293B",
+    type: "شاحنة",
+  },
+  {
+    id: "b9",
+    plateNumber: "د 1122 هـ",
+    ownerName: "نورة القحطاني",
+    reason: "سرقة مركبة",
+    severity: "عالية",
+    color: "رمادي",
+    colorCode: "#64748B",
+    type: "سيدان",
+  },
+  {
+    id: "b10",
+    plateNumber: "ك 8899 ل",
+    ownerName: "سلمان الحربي",
+    reason: "مطلوب للتحقيق",
+    severity: "منخفضة",
+    color: "أزرق",
+    colorCode: "#3B82F6",
+    type: "بيك أب",
+  },
+  {
+    id: "b11",
+    plateNumber: "ط 4455 و",
+    ownerName: "ريم الشمري",
+    reason: "التورط في حادث",
+    severity: "منخفضة",
+    color: "فضي",
+    colorCode: "#94A3B8",
+    type: "هاتشباك",
+  },
+  {
+    id: "b12",
+    plateNumber: "هـ 6677 ي",
+    ownerName: "ماجد الكتبي",
+    reason: "تهريب مخدرات",
+    severity: "عالية",
+    color: "أحمر",
+    colorCode: "#F43F5E",
+    type: "دفع رباعي",
+  },
+  {
+    id: "b13",
+    plateNumber: "ع 2211 ب",
+    ownerName: "هند المنصوري",
+    reason: "حيازة أسلحة",
+    severity: "متوسطة",
+    color: "أبيض",
+    colorCode: "#E2E8F0",
+    type: "سيدان",
+  },
+  {
+    id: "b14",
+    plateNumber: "غ 9988 ن",
+    ownerName: "فهد الصباح",
+    reason: "إطلاق نار",
+    severity: "عالية",
+    color: "أسود",
+    colorCode: "#1E293B",
+    type: "شاحنة",
+  },
+  {
+    id: "b15",
+    plateNumber: "ص 5566 ق",
+    ownerName: "علي البلوشي",
+    reason: "مطلوب في قضية",
+    severity: "متوسطة",
+    color: "رمادي",
+    colorCode: "#64748B",
+    type: "بيك أب",
+  },
+];
+
+```
+
+---
+
+### <a id="📄-src-features-blacklist-hooks-useblacklistviewmodel-ts"></a>📄 `src/features/blacklist/hooks/useBlacklistViewModel.ts`
+
+**File Info:**
+- **Size**: 4.94 KB
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/blacklist/hooks/useBlacklistViewModel.ts`
+- **Relative Path**: `src/features/blacklist/hooks`
+- **Created**: 2026-08-14 23:55:29 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-14 23:55:29 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `e2def8eb42bf8edab509430370ad744e`
+- **SHA256**: `462de0a8b1f6e1652cba553303c96f55feaee89f551e2dc9f1ce37950acf61f6`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```typescript
+import { useEffect, useMemo, useState } from "react";
+import {
+  mockDashboardData,
+  useDashboardStore,
+} from "../../dashboard";
+import {
+  BLACKLIST_DEFAULT_PAGE_SIZE,
+  mockBlacklistStats,
+  mockBlacklistedVehicles,
+} from "../data/mockBlacklistData";
+import type { BlacklistFilters } from "../models/blacklist.types";
+
+function formatNumber(value: number): string {
+  return new Intl.NumberFormat("ar-EG").format(value);
+}
+
+const initialFilters: BlacklistFilters = {
+  search: "",
+  severity: "الكل",
+  type: "الكل",
+  color: "الكل",
+};
+
+export function useBlacklistViewModel() {
+  const isSidebarOpen = useDashboardStore((s) => s.isSidebarOpen);
+  const toggleSidebar = useDashboardStore((s) => s.toggleSidebar);
+  const setSidebarOpen = useDashboardStore((s) => s.setSidebarOpen);
+  const setActiveMenuId = useDashboardStore((s) => s.setActiveMenuId);
+
+  const [filters, setFilters] = useState<BlacklistFilters>(initialFilters);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [pageSize, setPageSize] = useState(BLACKLIST_DEFAULT_PAGE_SIZE);
+
+  useEffect(() => {
+    setActiveMenuId("blacklist");
+  }, [setActiveMenuId]);
+
+  const filteredVehicles = useMemo(() => {
+    const query = filters.search.trim().toLowerCase();
+
+    return mockBlacklistedVehicles.filter((vehicle) => {
+      const matchesSearch =
+        query.length === 0 ||
+        vehicle.plateNumber.toLowerCase().includes(query) ||
+        vehicle.ownerName.toLowerCase().includes(query);
+
+      const matchesSeverity =
+        filters.severity === "الكل" || vehicle.severity === filters.severity;
+
+      const matchesType =
+        filters.type === "الكل" || vehicle.type === filters.type;
+
+      const matchesColor =
+        filters.color === "الكل" || vehicle.color === filters.color;
+
+      return matchesSearch && matchesSeverity && matchesType && matchesColor;
+    });
+  }, [filters]);
+
+  const totalCount = filteredVehicles.length;
+  const totalPages = Math.max(1, Math.ceil(totalCount / pageSize));
+  const safePage = Math.min(currentPage, totalPages);
+
+  const paginatedVehicles = useMemo(() => {
+    const start = (safePage - 1) * pageSize;
+    return filteredVehicles.slice(start, start + pageSize);
+  }, [filteredVehicles, safePage, pageSize]);
+
+  const rangeStart = totalCount === 0 ? 0 : (safePage - 1) * pageSize + 1;
+  const rangeEnd = Math.min(safePage * pageSize, totalCount);
+
+  const pageNumbers = useMemo(() => {
+    const maxVisible = 5;
+    if (totalPages <= maxVisible + 2) {
+      return Array.from({ length: totalPages }, (_, i) => i + 1);
+    }
+
+    const pages: number[] = [1];
+    let start = Math.max(2, safePage - 1);
+    let end = Math.min(totalPages - 1, safePage + 1);
+
+    if (safePage <= 3) {
+      start = 2;
+      end = 4;
+    }
+    if (safePage >= totalPages - 2) {
+      start = totalPages - 3;
+      end = totalPages - 1;
+    }
+
+    if (start > 2) pages.push(-1);
+    for (let i = start; i <= end; i++) pages.push(i);
+    if (end < totalPages - 1) pages.push(-2);
+    pages.push(totalPages);
+    return pages;
+  }, [totalPages, safePage]);
+
+  const formattedStats = useMemo(
+    () =>
+      mockBlacklistStats.map((stat) => ({
+        ...stat,
+        displayValue: formatNumber(stat.value),
+        displayChange:
+          stat.id === "total" ? "100%" : `${stat.changePercent}%`,
+      })),
+    [],
+  );
+
+  const setSearch = (search: string) => {
+    setFilters((prev) => ({ ...prev, search }));
+    setCurrentPage(1);
+  };
+
+  const setSeverityFilter = (severity: string) => {
+    setFilters((prev) => ({ ...prev, severity }));
+    setCurrentPage(1);
+  };
+
+  const setTypeFilter = (type: string) => {
+    setFilters((prev) => ({ ...prev, type }));
+    setCurrentPage(1);
+  };
+
+  const setColorFilter = (color: string) => {
+    setFilters((prev) => ({ ...prev, color }));
+    setCurrentPage(1);
+  };
+
+  const resetFilters = () => {
+    setFilters(initialFilters);
+    setCurrentPage(1);
+  };
+
+  const changePageSize = (size: number) => {
+    setPageSize(size);
+    setCurrentPage(1);
+  };
+
+  const goToPage = (page: number) => {
+    if (page < 1 || page > totalPages) return;
+    setCurrentPage(page);
+  };
+
+  const handleFullscreen = () => {
+    if (!document.fullscreenElement) {
+      void document.documentElement.requestFullscreen();
+    } else {
+      void document.exitFullscreen();
+    }
+  };
+
+  return {
+    user: mockDashboardData.user,
+    menuItems: mockDashboardData.menuItems,
+    activeMenuId: "blacklist",
+    isSidebarOpen,
+    toggleSidebar,
+    setSidebarOpen,
+    setActiveMenuId,
+    handleFullscreen,
+    formattedStats,
+    filters,
+    setSearch,
+    setSeverityFilter,
+    setTypeFilter,
+    setColorFilter,
+    resetFilters,
+    vehicles: paginatedVehicles,
+    totalCount,
+    currentPage: safePage,
+    totalPages,
+    pageNumbers,
+    pageSize,
+    changePageSize,
+    rangeStart,
+    rangeEnd,
+    goToPage,
+    handleAdd: () => {},
+    handleExport: () => {},
+    handleEdit: (_id: string) => {},
+    handleDelete: (_id: string) => {},
+    handleMore: (_id: string) => {},
+  };
+}
+
+```
+
+---
+
+### <a id="📄-src-features-blacklist-models-blacklist-types-ts"></a>📄 `src/features/blacklist/models/blacklist.types.ts`
+
+**File Info:**
+- **Size**: 907 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/blacklist/models/blacklist.types.ts`
+- **Relative Path**: `src/features/blacklist/models`
+- **Created**: 2026-08-14 23:54:59 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-14 23:54:59 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `e1caa17f083d21eccfd0db967d2176f8`
+- **SHA256**: `e68724d330dced383d12e1dfc73254dd3e760bc0d5d0d6aff85143406b154734`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```typescript
+export type BlacklistSeverity = "عالية" | "متوسطة" | "منخفضة";
+
+export type BlacklistVehicleType =
+  | "سيدان"
+  | "دفع رباعي"
+  | "هاتشباك"
+  | "بيك أب"
+  | "شاحنة";
+
+export type BlacklistVehicleColor =
+  | "أبيض"
+  | "أسود"
+  | "أحمر"
+  | "أزرق"
+  | "رمادي"
+  | "فضي";
+
+export interface BlacklistedVehicle {
+  id: string;
+  plateNumber: string;
+  ownerName: string;
+  reason: string;
+  severity: BlacklistSeverity;
+  color: BlacklistVehicleColor;
+  colorCode: string;
+  type: BlacklistVehicleType;
+}
+
+export interface BlacklistFilters {
+  search: string;
+  severity: string;
+  type: string;
+  color: string;
+}
+
+export interface BlacklistStat {
+  id: string;
+  title: string;
+  value: number;
+  subtitle: string;
+  changePercent: number;
+  icon: "blacklist" | "wanted" | "scans" | "units";
+  gradient: string;
+  isPositive: boolean;
+}
+
+```
+
+---
+
+### <a id="📄-src-features-blacklist-pages-blacklistpage-tsx"></a>📄 `src/features/blacklist/pages/BlacklistPage.tsx`
+
+**File Info:**
+- **Size**: 2.05 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/features/blacklist/pages/BlacklistPage.tsx`
+- **Relative Path**: `src/features/blacklist/pages`
+- **Created**: 2026-08-14 23:56:02 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-14 23:56:02 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `cb201c54069c1728ebb710a60259737e`
+- **SHA256**: `f32eb1f2766f8b2560d1c5058d432f309fed4b154ec3134a2d1f7a318f32839f`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import { DashboardLayout, CardContainer } from "../../dashboard";
+import { VehiclesPagination } from "../../vehicles";
+import { useBlacklistViewModel } from "../hooks/useBlacklistViewModel";
+import { blacklistPageSizeOptions } from "../data/mockBlacklistData";
+import {
+  BlacklistFiltersBar,
+  BlacklistHeader,
+  BlacklistStats,
+  BlacklistTable,
+} from "../components";
+
+export function BlacklistPage() {
+  const vm = useBlacklistViewModel();
+
+  return (
+    <DashboardLayout
+      user={vm.user}
+      menuItems={vm.menuItems}
+      activeMenuId={vm.activeMenuId}
+      isSidebarOpen={vm.isSidebarOpen}
+      onToggleSidebar={vm.toggleSidebar}
+      onCloseSidebar={() => vm.setSidebarOpen(false)}
+      onSelectMenu={vm.setActiveMenuId}
+      onFullscreen={vm.handleFullscreen}
+    >
+      <div className="mx-auto flex max-w-[1600px] flex-col gap-4 sm:gap-5">
+        <BlacklistHeader />
+
+        <BlacklistStats stats={vm.formattedStats} />
+
+        <CardContainer className="flex flex-col gap-4 p-4 sm:p-5">
+          <BlacklistFiltersBar
+            filters={vm.filters}
+            onSearchChange={vm.setSearch}
+            onSeverityChange={vm.setSeverityFilter}
+            onTypeChange={vm.setTypeFilter}
+            onColorChange={vm.setColorFilter}
+            onReset={vm.resetFilters}
+            onExport={vm.handleExport}
+            onAddClick={vm.handleAdd}
+          />
+
+          <BlacklistTable
+            vehicles={vm.vehicles}
+            onEdit={vm.handleEdit}
+            onDelete={vm.handleDelete}
+            onMore={vm.handleMore}
+          />
+
+          <VehiclesPagination
+            currentPage={vm.currentPage}
+            totalPages={vm.totalPages}
+            pageNumbers={vm.pageNumbers}
+            totalCount={vm.totalCount}
+            onPageChange={vm.goToPage}
+            pageSize={vm.pageSize}
+            pageSizeOptions={blacklistPageSizeOptions}
+            onPageSizeChange={vm.changePageSize}
+            rangeStart={vm.rangeStart}
+            rangeEnd={vm.rangeEnd}
+          />
+        </CardContainer>
+      </div>
+    </DashboardLayout>
+  );
+}
+
+```
+
+---
+
+### <a id="📄-src-features-blacklist-routes-blacklistroutes-ts"></a>📄 `src/features/blacklist/routes/blacklistRoutes.ts`
+
+**File Info:**
+- **Size**: 155 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/blacklist/routes/blacklistRoutes.ts`
+- **Relative Path**: `src/features/blacklist/routes`
+- **Created**: 2026-08-14 23:55:00 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-14 23:55:00 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `031a7c3711796a897c2dace3b1c5971b`
+- **SHA256**: `3a1e577cfaafb2706cde7860004611e6fbb8ccd7727b6fa9fe5f2a7059da63cd`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+export const BlacklistRoutes = {
+  list: "/blacklist",
+} as const;
+
+export type BlacklistRoute =
+  (typeof BlacklistRoutes)[keyof typeof BlacklistRoutes];
+
+```
+
+---
+
+### <a id="📄-src-features-blacklist-services-blacklistservice-ts"></a>📄 `src/features/blacklist/services/BlacklistService.ts`
+
+**File Info:**
+- **Size**: 1.21 KB
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/blacklist/services/BlacklistService.ts`
+- **Relative Path**: `src/features/blacklist/services`
+- **Created**: 2026-08-14 23:55:11 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-14 23:55:11 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `548ba3731f8b85ff5df3749823bf40eb`
+- **SHA256**: `72d0a885950acc6e0748543a49bd6f6cef483c31b6e8b6dc983a28c4ba0aea45`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```typescript
+import type { BlacklistedVehicle } from "../models/blacklist.types";
+
+/**
+ * BlacklistService — prepared for future API integration.
+ * Methods are placeholders and throw until implemented.
+ */
+class BlacklistService {
+  async getVehicles(): Promise<BlacklistedVehicle[]> {
+    // TODO: integrate with API
+    throw new Error("BlacklistService.getVehicles is not implemented yet");
+  }
+
+  async getVehicle(_id: string): Promise<BlacklistedVehicle> {
+    // TODO: integrate with API
+    throw new Error("BlacklistService.getVehicle is not implemented yet");
+  }
+
+  async createVehicle(
+    _data: Omit<BlacklistedVehicle, "id">,
+  ): Promise<BlacklistedVehicle> {
+    // TODO: integrate with API
+    throw new Error("BlacklistService.createVehicle is not implemented yet");
+  }
+
+  async updateVehicle(
+    _id: string,
+    _data: Partial<BlacklistedVehicle>,
+  ): Promise<BlacklistedVehicle> {
+    // TODO: integrate with API
+    throw new Error("BlacklistService.updateVehicle is not implemented yet");
+  }
+
+  async deleteVehicle(_id: string): Promise<void> {
+    // TODO: integrate with API
+    throw new Error("BlacklistService.deleteVehicle is not implemented yet");
+  }
+}
+
+export const blacklistService = new BlacklistService();
+
+```
+
+---
+
+### <a id="📄-src-features-blacklist-index-ts"></a>📄 `src/features/blacklist/index.ts`
+
+**File Info:**
+- **Size**: 250 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/blacklist/index.ts`
+- **Relative Path**: `src/features/blacklist`
+- **Created**: 2026-08-14 23:56:03 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-14 23:56:03 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `9e8444d84929628c67d0cfc9ca4a8173`
+- **SHA256**: `0a9811a66469c8d326d06a5822b320f011e377d488d51a0c0b5fabce5d8b5357`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+export { BlacklistPage } from "./pages/BlacklistPage";
+export { BlacklistRoutes } from "./routes/blacklistRoutes";
+export { blacklistService } from "./services/BlacklistService";
+export { useBlacklistViewModel } from "./hooks/useBlacklistViewModel";
 
 ```
 
@@ -4716,15 +5961,15 @@ export function StatCard({
 ### <a id="📄-src-features-dashboard-data-mockdashboarddata-ts"></a>📄 `src/features/dashboard/data/mockDashboardData.ts`
 
 **File Info:**
-- **Size**: 4.71 KB
+- **Size**: 4.79 KB
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/dashboard/data/mockDashboardData.ts`
 - **Relative Path**: `src/features/dashboard/data`
 - **Created**: 2026-07-26 21:25:01 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 18:50:02 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `4560e2fa1d1a32349e361529477e11f9`
-- **SHA256**: `cb820de61040c6ccc26223d0dd0795e6c6c2d928717328515c78008267542270`
+- **Modified**: 2026-08-14 23:56:06 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `16714f329c24816693868a3de0b32353`
+- **SHA256**: `873bbf88b6a5ecb794f4f1552acaed17b0f67eb1ba2d42c277a829bf9901269a`
 - **Encoding**: UTF-8
 
 **File code content:**
@@ -4735,6 +5980,7 @@ import { DashboardRoutes } from "../routes/dashboardRoutes";
 import { VehiclesRoutes } from "../../vehicles/routes/vehiclesRoutes";
 import { VideoRoutes } from "../../video/routes/videoRoutes";
 import { AnalysisRoutes } from "../../analysis/routes/analysisRoutes";
+import { BlacklistRoutes } from "../../blacklist/routes/blacklistRoutes";
 
 export const mockDashboardData: DashboardData = {
   user: {
@@ -4760,7 +6006,7 @@ export const mockDashboardData: DashboardData = {
       id: "blacklist",
       label: "القائمة السوداء",
       icon: "blacklist",
-      path: "#",
+      path: BlacklistRoutes.list,
     },
     {
       id: "video",
@@ -5330,15 +6576,15 @@ export { VehiclesPagination } from "./VehiclesPagination";
 ### <a id="📄-src-features-vehicles-components-vehiclesfilterbar-tsx"></a>📄 `src/features/vehicles/components/VehiclesFilterBar.tsx`
 
 **File Info:**
-- **Size**: 2.67 KB
+- **Size**: 3.05 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/vehicles/components/VehiclesFilterBar.tsx`
 - **Relative Path**: `src/features/vehicles/components`
 - **Created**: 2026-08-01 19:58:35 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:14:41 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `125d02922dd02a15315a51effff94b27`
-- **SHA256**: `cb1b6a930cc1d44a5c6b685b575a3164bc7c30c724e96a2026d8720d288dd437`
+- **Modified**: 2026-08-15 00:06:01 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `67ffe04a2d053c8769c4f495d65aa572`
+- **SHA256**: `09f7e9a38aae3f8f8809145ba07c01bc4094cace8dbae95afac316c56c543d9b`
 - **Encoding**: UTF-8
 
 **File code content:**
@@ -5367,39 +6613,45 @@ export function VehiclesFilterBar({
   onAddClick,
 }: VehiclesFilterBarProps) {
   return (
-    <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
-      <div className="flex flex-1 flex-col gap-3 sm:flex-row sm:items-center">
-        <div className="min-w-0 flex-1 sm:max-w-sm">
-          <Input
-            value={filters.search}
-            onChange={(e) => onSearchChange(e.target.value)}
-            placeholder="يبحث عن لوحة أو مالك..."
-            className="border-white/10 bg-white/5 text-white placeholder:text-white/35 focus:border-blue-500 focus:ring-blue-500/20"
+    <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
+        {/* مجموعة البحث والفلاتر */}
+        <div className="flex flex-1 flex-col gap-3 sm:flex-row sm:items-center">
+          <div className="relative min-w-0 flex-1 sm:max-w-md">
+            <Input
+              value={filters.search}
+              onChange={(e) => onSearchChange(e.target.value)}
+              placeholder="يبحث عن لوحة أو مالك..."
+              className="w-full border-white/10 bg-white/5 py-3 text-white placeholder:text-white/35 focus:border-blue-500 focus:ring-blue-500/20"
+            />
+          </div>
+
+          <FilterSelect
+            label="النوع"
+            value={filters.type}
+            options={[...vehicleTypeOptions]}
+            onChange={onTypeChange}
+          />
+
+          <FilterSelect
+            label="اللون"
+            value={filters.color}
+            options={[...vehicleColorOptions]}
+            onChange={onColorChange}
           />
         </div>
 
-        <FilterSelect
-          label="النوع"
-          value={filters.type}
-          options={[...vehicleTypeOptions]}
-          onChange={onTypeChange}
-        />
-
-        <FilterSelect
-          label="اللون"
-          value={filters.color}
-          options={[...vehicleColorOptions]}
-          onChange={onColorChange}
-        />
+        {/* حاوية زر الإضافة لضمان ظهوره بشكل متناسق */}
+        <div className="flex items-center justify-end">
+          <Button
+            type="button"
+            onClick={onAddClick}
+            className="w-auto shrink-0 whitespace-nowrap px-5 shadow-[0_0_24px_rgba(99,102,241,0.35)]"
+          >
+            + إضافة مركبة
+          </Button>
+        </div>
       </div>
-
-      <Button
-        type="button"
-        onClick={onAddClick}
-        className="w-auto shrink-0 whitespace-nowrap px-5 shadow-[0_0_24px_rgba(99,102,241,0.35)]"
-      >
-        + إضافة مركبة
-      </Button>
     </div>
   );
 }
@@ -5416,7 +6668,7 @@ function FilterSelect({
   onChange: (value: string) => void;
 }) {
   return (
-    <div className="relative min-w-[140px]">
+    <div className="relative min-w-[150px] sm:min-w-[160px]">
       <select
         aria-label={label}
         value={value}
@@ -5435,7 +6687,6 @@ function FilterSelect({
     </div>
   );
 }
-
 ```
 
 ---
@@ -5496,15 +6747,15 @@ export function VehiclesHeader({
 ### <a id="📄-src-features-vehicles-components-vehiclespagination-tsx"></a>📄 `src/features/vehicles/components/VehiclesPagination.tsx`
 
 **File Info:**
-- **Size**: 2.26 KB
+- **Size**: 4.42 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/vehicles/components/VehiclesPagination.tsx`
 - **Relative Path**: `src/features/vehicles/components`
 - **Created**: 2026-08-01 19:58:39 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:14:41 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `bc4cbeab3d96b756207427dc1498c55d`
-- **SHA256**: `e082d9d261c72016758864e5f9b9a1e8244b1171fd6b130f3da3df7216c7a9fc`
+- **Modified**: 2026-08-14 23:55:56 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `ad1bb142eeeb9a3628cf357bfd71ee85`
+- **SHA256**: `ec224675800d00ec8ff6abd777a6fad57212e185bd6adc369158bab2829da1be`
 - **Encoding**: UTF-8
 
 **File code content:**
@@ -5518,6 +6769,11 @@ interface VehiclesPaginationProps {
   pageNumbers: number[];
   totalCount: number;
   onPageChange: (page: number) => void;
+  pageSize?: number;
+  pageSizeOptions?: readonly number[];
+  onPageSizeChange?: (size: number) => void;
+  rangeStart?: number;
+  rangeEnd?: number;
 }
 
 export function VehiclesPagination({
@@ -5526,13 +6782,64 @@ export function VehiclesPagination({
   pageNumbers,
   totalCount,
   onPageChange,
+  pageSize,
+  pageSizeOptions,
+  onPageSizeChange,
+  rangeStart,
+  rangeEnd,
 }: VehiclesPaginationProps) {
+  const showRange =
+    typeof rangeStart === "number" &&
+    typeof rangeEnd === "number" &&
+    totalCount > 0;
+
   return (
-    <div className="flex flex-col items-center justify-between gap-3 sm:flex-row">
-      <p className="text-xs text-white/40">
-        إجمالي النتائج:{" "}
-        <span className="font-semibold text-white/70">{totalCount}</span>
-      </p>
+    <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+      <div className="flex flex-wrap items-center gap-3">
+        <p className="text-xs text-white/40">
+          {showRange ? (
+            <>
+              عرض{" "}
+              <span className="font-semibold text-white/70">{rangeStart}</span>
+              {" - "}
+              <span className="font-semibold text-white/70">{rangeEnd}</span>
+              {" من "}
+              <span className="font-semibold text-white/70">{totalCount}</span>
+            </>
+          ) : (
+            <>
+              إجمالي النتائج:{" "}
+              <span className="font-semibold text-white/70">{totalCount}</span>
+            </>
+          )}
+        </p>
+
+        {pageSize !== undefined &&
+          pageSizeOptions &&
+          onPageSizeChange && (
+            <div className="relative">
+              <select
+                aria-label="عدد العناصر في الصفحة"
+                value={pageSize}
+                onChange={(e) => onPageSizeChange(Number(e.target.value))}
+                className="appearance-none rounded-lg border border-white/10 bg-white/5 py-1.5 pe-7 ps-2.5 text-xs text-white/70 outline-none transition focus:border-blue-500"
+              >
+                {pageSizeOptions.map((size) => (
+                  <option
+                    key={size}
+                    value={size}
+                    className="bg-[#0f172a] text-white"
+                  >
+                    {size} عرض
+                  </option>
+                ))}
+              </select>
+              <span className="pointer-events-none absolute inset-y-0 end-2 flex items-center text-white/40 text-[10px]">
+                ▾
+              </span>
+            </div>
+          )}
+      </div>
 
       <div className="flex items-center gap-1.5">
         <PageButton
@@ -5543,20 +6850,29 @@ export function VehiclesPagination({
           السابق
         </PageButton>
 
-        {pageNumbers.map((page) => (
-          <button
-            key={page}
-            type="button"
-            onClick={() => onPageChange(page)}
-            className={`flex h-9 min-w-9 items-center justify-center rounded-lg px-2.5 text-sm font-medium transition ${
-              page === currentPage
-                ? "bg-gradient-to-l from-blue-600 to-violet-600 text-white shadow-[0_0_16px_rgba(99,102,241,0.4)]"
-                : "border border-white/10 bg-white/5 text-white/60 hover:bg-white/10 hover:text-white"
-            }`}
-          >
-            {page}
-          </button>
-        ))}
+        {pageNumbers.map((page, index) =>
+          page < 0 ? (
+            <span
+              key={`ellipsis-${index}`}
+              className="px-1 text-sm text-white/40"
+            >
+              ...
+            </span>
+          ) : (
+            <button
+              key={page}
+              type="button"
+              onClick={() => onPageChange(page)}
+              className={`flex h-9 min-w-9 items-center justify-center rounded-lg px-2.5 text-sm font-medium transition ${
+                page === currentPage
+                  ? "bg-gradient-to-l from-blue-600 to-violet-600 text-white shadow-[0_0_16px_rgba(99,102,241,0.4)]"
+                  : "border border-white/10 bg-white/5 text-white/60 hover:bg-white/10 hover:text-white"
+              }`}
+            >
+              {page}
+            </button>
+          ),
+        )}
 
         <PageButton
           label="التالي"
@@ -8134,15 +9450,15 @@ export { VideoStatusBadge } from "./components/VideoStatusBadge";
 ### <a id="📄-src-app-tsx"></a>📄 `src/App.tsx`
 
 **File Info:**
-- **Size**: 1.72 KB
+- **Size**: 1.87 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/App.tsx`
 - **Relative Path**: `src`
 - **Created**: 2026-06-15 12:29:35 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 14:51:23 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `a2043417909b5fe10957dd5aa1beb13b`
-- **SHA256**: `6d8d8f876501cd1989d5fc3448c88a8c7c9c95a74546bb0f3e4c43eb23af2a78`
+- **Modified**: 2026-08-14 23:56:06 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `fa7d224504cd6e5010ce59ec3b03c37a`
+- **SHA256**: `1e86a244fc399ab3b237c85998e0c49659a3b4501df959f10f9ac9a3d2d3446b`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -8159,6 +9475,7 @@ import {
   AnalysisRoutes,
   VehicleDetailsPage,
 } from "./features/analysis";
+import { BlacklistPage, BlacklistRoutes } from "./features/blacklist";
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -8181,6 +9498,7 @@ function App() {
           <Route path={AuthRoutes.login} element={<LoginPage />} />
           <Route path={DashboardRoutes.home} element={<DashboardPage />} />
           <Route path={VehiclesRoutes.list} element={<VehiclesPage />} />
+          <Route path={BlacklistRoutes.list} element={<BlacklistPage />} />
           <Route path={VideoRoutes.upload} element={<VideoUploadPage />} />
           <Route
             path={VideoRoutes.list}

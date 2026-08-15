@@ -15,13 +15,13 @@ export function Button({
   ...props
 }: ButtonProps) {
   const base =
-    "inline-flex w-full items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60";
+    "inline-flex w-full items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm font-semibold transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[#0B1220] disabled:cursor-not-allowed disabled:opacity-60";
 
   const variants = {
     primary:
-      "bg-gradient-to-r from-indigo-600 to-violet-600 text-white shadow-md shadow-indigo-500/25 hover:from-indigo-500 hover:to-violet-500 focus:ring-indigo-500",
+      "bg-gradient-to-l from-blue-600 to-violet-600 text-white shadow-[0_0_24px_rgba(99,102,241,0.35)] hover:from-blue-500 hover:to-violet-500 focus:ring-blue-500",
     secondary:
-      "border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 focus:ring-slate-300",
+      "border border-white/10 bg-white/5 text-white/80 hover:bg-white/10 focus:ring-white/20",
   };
 
   return (
@@ -30,7 +30,7 @@ export function Button({
       disabled={disabled || isLoading}
       {...props}
     >
-      {isLoading ? "Please wait..." : children}
+      {isLoading ? "جارٍ التحقق..." : children}
     </button>
   );
 }

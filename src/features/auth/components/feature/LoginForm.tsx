@@ -19,42 +19,42 @@ export function LoginForm({ form, onSubmit, isSubmitting }: LoginFormProps) {
   return (
     <div>
       <div className="mb-8 text-center">
-        <h2 className="text-2xl font-bold text-slate-900">System Access</h2>
-        <p className="mt-1.5 text-sm text-slate-500">
-          Authorized personnel only
+        <h2 className="text-2xl font-bold text-white">الدخول إلى النظام</h2>
+        <p className="mt-1.5 text-sm text-white/50">
+          للموظفين المخوّلين فقط
         </p>
       </div>
 
       <form onSubmit={onSubmit} className="flex flex-col gap-4" noValidate>
         <Input
-          label="Officer ID"
+          label="رقم الضابط"
           type="text"
-          placeholder="Enter your Officer ID"
+          placeholder="أدخل رقم الضابط"
           autoComplete="username"
           error={errors.OfficerID?.message}
           {...register("OfficerID")}
         />
 
         <PasswordInput
-          label="Password"
-          placeholder="Enter your password"
+          label="كلمة المرور"
+          placeholder="أدخل كلمة المرور"
           autoComplete="current-password"
           error={errors.password?.message}
           {...register("password")}
         />
 
         <div className="flex items-center justify-between">
-          <Checkbox label="Remember Me" {...register("rememberMe")} />
+          <Checkbox label="تذكرني" {...register("rememberMe")} />
           <button
             type="button"
-            className="text-sm font-medium text-indigo-600 transition hover:text-indigo-500"
+            className="text-sm font-medium text-blue-400 transition hover:text-blue-300"
           >
-            Forgot Password?
+            نسيت كلمة المرور؟
           </button>
         </div>
 
         <Button type="submit" isLoading={isSubmitting} className="mt-1">
-          Login
+          تسجيل الدخول
         </Button>
       </form>
     </div>

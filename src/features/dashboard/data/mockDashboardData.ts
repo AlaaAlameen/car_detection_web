@@ -3,6 +3,7 @@ import { DashboardRoutes } from "../routes/dashboardRoutes";
 import { VehiclesRoutes } from "../../vehicles/routes/vehiclesRoutes";
 import { VideoRoutes } from "../../video/routes/videoRoutes";
 import { AnalysisRoutes } from "../../analysis/routes/analysisRoutes";
+import { BlacklistRoutes } from "../../blacklist/routes/blacklistRoutes";
 
 export const mockDashboardData: DashboardData = {
   user: {
@@ -28,7 +29,7 @@ export const mockDashboardData: DashboardData = {
       id: "blacklist",
       label: "القائمة السوداء",
       icon: "blacklist",
-      path: "#",
+      path: BlacklistRoutes.list,
     },
     {
       id: "video",

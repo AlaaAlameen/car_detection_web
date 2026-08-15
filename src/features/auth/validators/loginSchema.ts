@@ -3,16 +3,15 @@ import { z } from "zod";
 export const loginSchema = z.object({
   OfficerID: z
     .string()
-    .min(1, "Officer ID is required")
-    .min(3, "Officer ID must be at least 3 characters.")
-    .max(20, "Officer ID must be at most 20 characters."),
+    .min(1, "رقم الضابط مطلوب")
+    .min(3, "يجب أن يتكوّن رقم الضابط من 3 أحرف على الأقل")
+    .max(20, "يجب ألا يتجاوز رقم الضابط 20 حرفًا"),
 
   password: z
     .string()
-    .min(1, "Password is required")
-    .min(6, "Password must be at least 6 characters"),
+    .min(1, "كلمة المرور مطلوبة")
+    .min(6, "يجب أن تتكوّن كلمة المرور من 6 أحرف على الأقل"),
   rememberMe: z.boolean().optional(),
 });
 
 export type LoginFormValues = z.infer<typeof loginSchema>;
-
