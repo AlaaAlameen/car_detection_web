@@ -3,3 +3,7 @@ export { VideoUploadZone } from "./VideoUploadZone";
 export { SelectedVideoCard } from "./SelectedVideoCard";
 export { RecentVideosTable } from "./RecentVideosTable";
 export { VideoStatusBadge } from "./VideoStatusBadge";
+export { VideosHeader } from "./VideosHeader";
+export { VideosStats } from "./VideosStats";
+export { VideosFilterBar } from "./VideosFilterBar";
+export { VideosTable } from "./VideosTable";

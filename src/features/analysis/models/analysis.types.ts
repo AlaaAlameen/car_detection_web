@@ -11,6 +11,7 @@ export interface AnalysisVideoSummary {
   id: string;
   fileName: string;
   thumbnailUrl: string;
+  videoUrl: string;
   processedAt: string;
   duration: string;
   formattedSize: string;

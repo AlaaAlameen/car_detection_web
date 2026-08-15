@@ -3,8 +3,8 @@
 ## 📊 Project Information
 
 - **Project Name**: `my-app`
-- **Generated On**: 2026-08-15 00:58:07 (Europe/Istanbul / GMT+03:00)
-- **Total Files Processed**: 128
+- **Generated On**: 2026-08-15 11:18:28 (Europe/Istanbul / GMT+03:00)
+- **Total Files Processed**: 135
 - **Export Tool**: Easy Whole Project to Single Text File for LLMs v1.1.0
 - **Tool Author**: Jota / José Guilherme Pandolfi
 
@@ -36,24 +36,25 @@
 │   │   │   │   ├── 📄 AnalysisResultsHeader.tsx (979 B)
 │   │   │   │   ├── 📄 AnalysisStatsGrid.tsx (939 B)
 │   │   │   │   ├── 📄 ConfidenceBar.tsx (768 B)
-│   │   │   │   ├── 📄 index.ts (651 B)
+│   │   │   │   ├── 📄 index.ts (705 B)
 │   │   │   │   ├── 📄 SeverityBadge.tsx (778 B)
 │   │   │   │   ├── 📄 VehicleComparisonTable.tsx (2.85 KB)
 │   │   │   │   ├── 📄 VehicleDetailsHeader.tsx (2.18 KB)
 │   │   │   │   ├── 📄 VehicleDetailsSummaryCards.tsx (760 B)
 │   │   │   │   ├── 📄 VehicleInfoCard.tsx (2.41 KB)
+│   │   │   │   ├── 📄 VideoPlayerModal.tsx (2.31 KB)
 │   │   │   │   └── 📄 VideoSummaryCard.tsx (2.58 KB)
 │   │   │   ├── 📁 data/
 │   │   │   │   ├── 📄 mockAnalysisData.ts (4.38 KB)
 │   │   │   │   └── 📄 mockVehicleDetailsData.ts (3.71 KB)
 │   │   │   ├── 📁 hooks/
-│   │   │   │   ├── 📄 useAnalysisResultsViewModel.ts (4.08 KB)
+│   │   │   │   ├── 📄 useAnalysisResultsViewModel.ts (4.28 KB)
 │   │   │   │   └── 📄 useVehicleDetailsViewModel.ts (2.36 KB)
 │   │   │   ├── 📁 models/
-│   │   │   │   ├── 📄 analysis.types.ts (931 B)
+│   │   │   │   ├── 📄 analysis.types.ts (951 B)
 │   │   │   │   └── 📄 vehicleDetails.types.ts (709 B)
 │   │   │   ├── 📁 pages/
-│   │   │   │   ├── 📄 AnalysisResultsPage.tsx (2.15 KB)
+│   │   │   │   ├── 📄 AnalysisResultsPage.tsx (2.31 KB)
 │   │   │   │   └── 📄 VehicleDetailsPage.tsx (1.15 KB)
 │   │   │   ├── 📁 routes/
 │   │   │   │   └── 📄 analysisRoutes.ts (314 B)
@@ -173,19 +174,25 @@
 │   │   │   └── 📄 index.ts (376 B)
 │   │   └── 📁 video/
 │   │       ├── 📁 components/
-│   │       │   ├── 📄 index.ts (279 B)
+│   │       │   ├── 📄 index.ts (468 B)
 │   │       │   ├── 📄 RecentVideosTable.tsx (5.27 KB)
 │   │       │   ├── 📄 SelectedVideoCard.tsx (3.52 KB)
+│   │       │   ├── 📄 VideosFilterBar.tsx (2.25 KB)
+│   │       │   ├── 📄 VideosHeader.tsx (978 B)
+│   │       │   ├── 📄 VideosStats.tsx (934 B)
+│   │       │   ├── 📄 VideosTable.tsx (5.09 KB)
 │   │       │   ├── 📄 VideoStatusBadge.tsx (859 B)
 │   │       │   ├── 📄 VideoUploadHeader.tsx (975 B)
 │   │       │   └── 📄 VideoUploadZone.tsx (4.29 KB)
 │   │       ├── 📁 data/
-│   │       │   └── 📄 mockVideoData.ts (1017 B)
+│   │       │   └── 📄 mockVideoData.ts (3.66 KB)
 │   │       ├── 📁 hooks/
+│   │       │   ├── 📄 useProcessedVideosViewModel.ts (4.88 KB)
 │   │       │   └── 📄 useVideoUploadViewModel.ts (6.21 KB)
 │   │       ├── 📁 models/
 │   │       │   └── 📄 video.types.ts (549 B)
 │   │       ├── 📁 pages/
+│   │       │   ├── 📄 ProcessedVideosPage.tsx (1.69 KB)
 │   │       │   └── 📄 VideoUploadPage.tsx (2.07 KB)
 │   │       ├── 📁 routes/
 │   │       │   └── 📄 videoRoutes.ts (160 B)
@@ -194,12 +201,12 @@
 │   │       ├── 📁 validators/
 │   │       │   ├── 📄 videoUpload.constants.ts (238 B)
 │   │       │   └── 📄 videoUploadSchema.ts (1.1 KB)
-│   │       └── 📄 index.ts (308 B)
+│   │       └── 📄 index.ts (457 B)
 │   ├── 📄 App.css (2.82 KB)
-│   ├── 📄 App.tsx (1.87 KB)
+│   ├── 📄 App.tsx (1.83 KB)
 │   ├── 📄 index.css (167 B)
 │   └── 📄 main.tsx (230 B)
-├── 📄 eslint.config.js (591 B)
+├── 📄 eslint.config.js (771 B)
 ├── 📄 index.html (679 B)
 ├── 📄 package-lock.json (121.98 KB)
 ├── 📄 package.json (1.03 KB)
@@ -227,6 +234,7 @@
 - [📄 src/features/analysis/components/VehicleDetailsHeader.tsx](#📄-src-features-analysis-components-vehicledetailsheader-tsx)
 - [📄 src/features/analysis/components/VehicleDetailsSummaryCards.tsx](#📄-src-features-analysis-components-vehicledetailssummarycards-tsx)
 - [📄 src/features/analysis/components/VehicleInfoCard.tsx](#📄-src-features-analysis-components-vehicleinfocard-tsx)
+- [📄 src/features/analysis/components/VideoPlayerModal.tsx](#📄-src-features-analysis-components-videoplayermodal-tsx)
 - [📄 src/features/analysis/components/VideoSummaryCard.tsx](#📄-src-features-analysis-components-videosummarycard-tsx)
 - [📄 src/features/analysis/data/mockAnalysisData.ts](#📄-src-features-analysis-data-mockanalysisdata-ts)
 - [📄 src/features/analysis/data/mockVehicleDetailsData.ts](#📄-src-features-analysis-data-mockvehicledetailsdata-ts)
@@ -312,12 +320,18 @@
 - [📄 src/features/video/components/index.ts](#📄-src-features-video-components-index-ts)
 - [📄 src/features/video/components/RecentVideosTable.tsx](#📄-src-features-video-components-recentvideostable-tsx)
 - [📄 src/features/video/components/SelectedVideoCard.tsx](#📄-src-features-video-components-selectedvideocard-tsx)
+- [📄 src/features/video/components/VideosFilterBar.tsx](#📄-src-features-video-components-videosfilterbar-tsx)
+- [📄 src/features/video/components/VideosHeader.tsx](#📄-src-features-video-components-videosheader-tsx)
+- [📄 src/features/video/components/VideosStats.tsx](#📄-src-features-video-components-videosstats-tsx)
+- [📄 src/features/video/components/VideosTable.tsx](#📄-src-features-video-components-videostable-tsx)
 - [📄 src/features/video/components/VideoStatusBadge.tsx](#📄-src-features-video-components-videostatusbadge-tsx)
 - [📄 src/features/video/components/VideoUploadHeader.tsx](#📄-src-features-video-components-videouploadheader-tsx)
 - [📄 src/features/video/components/VideoUploadZone.tsx](#📄-src-features-video-components-videouploadzone-tsx)
 - [📄 src/features/video/data/mockVideoData.ts](#📄-src-features-video-data-mockvideodata-ts)
+- [📄 src/features/video/hooks/useProcessedVideosViewModel.ts](#📄-src-features-video-hooks-useprocessedvideosviewmodel-ts)
 - [📄 src/features/video/hooks/useVideoUploadViewModel.ts](#📄-src-features-video-hooks-usevideouploadviewmodel-ts)
 - [📄 src/features/video/models/video.types.ts](#📄-src-features-video-models-video-types-ts)
+- [📄 src/features/video/pages/ProcessedVideosPage.tsx](#📄-src-features-video-pages-processedvideospage-tsx)
 - [📄 src/features/video/pages/VideoUploadPage.tsx](#📄-src-features-video-pages-videouploadpage-tsx)
 - [📄 src/features/video/routes/videoRoutes.ts](#📄-src-features-video-routes-videoroutes-ts)
 - [📄 src/features/video/services/VideoService.ts](#📄-src-features-video-services-videoservice-ts)
@@ -346,18 +360,18 @@
 
 | Metric | Count |
 |--------|-------|
-| Total Files | 128 |
+| Total Files | 135 |
 | Total Directories | 62 |
-| Text Files | 123 |
+| Text Files | 130 |
 | Binary Files | 5 |
-| Total Size | 363.8 KB |
+| Total Size | 385.48 KB |
 
 ### 📄 File Types Distribution
 
 | Extension | Count |
 |-----------|-------|
-| `.tsx` | 56 |
-| `.ts` | 56 |
+| `.tsx` | 62 |
+| `.ts` | 57 |
 | `.json` | 5 |
 | `.svg` | 4 |
 | `.css` | 2 |
@@ -849,15 +863,15 @@ export function ConfidenceBar({ value, label }: ConfidenceBarProps) {
 ### <a id="📄-src-features-analysis-components-index-ts"></a>📄 `src/features/analysis/components/index.ts`
 
 **File Info:**
-- **Size**: 651 B
+- **Size**: 705 B
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/analysis/components/index.ts`
 - **Relative Path**: `src/features/analysis/components`
 - **Created**: 2026-08-13 17:23:01 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-15 00:33:45 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `54414125fecb0e566311fa4fd01069ee`
-- **SHA256**: `4937561e263da3e0eb30dbcb267fd407c8c50981adedddc654ac84def85032ca`
+- **Modified**: 2026-08-15 11:12:04 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `e6dc1b2c58917a4fe9dc8814df34a1b6`
+- **SHA256**: `fe4a8c862207e707db3c81da58351468f544647e3118522afc6eff10ef4748d0`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -874,7 +888,7 @@ export { VehicleInfoCard } from "./VehicleInfoCard";
 export { VehicleComparisonTable } from "./VehicleComparisonTable";
 export { VehicleDetailsSummaryCards } from "./VehicleDetailsSummaryCards";
 export { ConfidenceBar } from "./ConfidenceBar";
-
+export { VideoPlayerModal } from "./VideoPlayerModal";
 ```
 
 ---
@@ -1252,6 +1266,103 @@ export function VehicleInfoCard({ vehicle }: VehicleInfoCardProps) {
         </div>
       </div>
     </div>
+  );
+}
+```
+
+---
+
+### <a id="📄-src-features-analysis-components-videoplayermodal-tsx"></a>📄 `src/features/analysis/components/VideoPlayerModal.tsx`
+
+**File Info:**
+- **Size**: 2.31 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/features/analysis/components/VideoPlayerModal.tsx`
+- **Relative Path**: `src/features/analysis/components`
+- **Created**: 2026-08-15 11:11:41 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-15 11:11:49 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `d8eed2dd59e7ef008f9e150a2bbd5850`
+- **SHA256**: `dda7964e45e1ece8d4ae88f5ded079fd4d4766f515655db532f49f998f9f3bdb`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```typescript
+import { useEffect } from "react";
+import type { AnalysisVideoSummary } from "../models/analysis.types";
+
+interface VideoPlayerModalProps {
+  video: AnalysisVideoSummary;
+  onClose: () => void;
+}
+
+export function VideoPlayerModal({ video, onClose }: VideoPlayerModalProps) {
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") onClose();
+    };
+    document.addEventListener("keydown", handleKeyDown);
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "";
+    };
+  }, [onClose]);
+
+  return (
+    <div className="fixed inset-0 z-[60] flex items-center justify-center p-4">
+      <button
+        type="button"
+        aria-label="إغلاق المشغل"
+        onClick={onClose}
+        className="fixed inset-0 bg-black/70 backdrop-blur-sm"
+      />
+
+      <div className="relative z-10 flex w-full max-w-4xl flex-col gap-4 rounded-2xl border border-white/10 bg-[#0f172a] p-4 shadow-[0_0_60px_rgba(59,130,246,0.15)] sm:p-5">
+        <div className="flex items-center justify-between gap-3">
+          <p className="min-w-0 truncate text-sm font-semibold text-white/90">
+            {video.fileName}
+          </p>
+          <button
+            type="button"
+            aria-label="إغلاق"
+            onClick={onClose}
+            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-white/60 transition hover:bg-white/10 hover:text-white"
+          >
+            <CloseIcon />
+          </button>
+        </div>
+
+        <div className="overflow-hidden rounded-xl bg-black ring-1 ring-white/10">
+          <video
+            src={video.videoUrl}
+            poster={video.thumbnailUrl}
+            controls
+            autoPlay
+            className="aspect-video w-full"
+          >
+            متصفحك لا يدعم عرض الفيديو.
+          </video>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function CloseIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className="h-4 w-4"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      aria-hidden
+    >
+      <path d="M6 6l12 12M18 6L6 18" />
+    </svg>
   );
 }
 ```
@@ -1702,15 +1813,15 @@ export const defaultVehicleDetails = mockVehicleDetailsMap.a4;
 ### <a id="📄-src-features-analysis-hooks-useanalysisresultsviewmodel-ts"></a>📄 `src/features/analysis/hooks/useAnalysisResultsViewModel.ts`
 
 **File Info:**
-- **Size**: 4.08 KB
+- **Size**: 4.28 KB
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/analysis/hooks/useAnalysisResultsViewModel.ts`
 - **Relative Path**: `src/features/analysis/hooks`
 - **Created**: 2026-08-13 17:22:18 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 23:36:29 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `a8de5e1d5afa25e6126fd353fe3626df`
-- **SHA256**: `bfcbbba4847e36a3fa2a1e107643cfdc6c70604ed3ab648cd032bbff8f616932`
+- **Modified**: 2026-08-15 11:18:25 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `a558547b5d1e4df59e0ccf5909c6dd87`
+- **SHA256**: `ca1bc0f918a1561507d4c5b3a4d95da1a649533462ecaddcc599739bc0fe4f5b`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -1749,6 +1860,7 @@ export function useAnalysisResultsViewModel() {
     severity: "الكل",
   });
   const [currentPage, setCurrentPage] = useState(1);
+  const [isPlayerOpen, setIsPlayerOpen] = useState(false);
 
   useEffect(() => {
     setActiveMenuId("analysis");
@@ -1827,7 +1939,13 @@ export function useAnalysisResultsViewModel() {
     }
   };
 
-  const handleViewProcessedVideo = () => {};
+  const handleViewProcessedVideo = () => {
+    setIsPlayerOpen(true);
+  };
+
+  const handleCloseVideoPlayer = () => {
+    setIsPlayerOpen(false);
+  };
 
   const handleRowClick = (id: string) => {
     navigate(buildVehicleDetailsPath(id));
@@ -1862,6 +1980,8 @@ export function useAnalysisResultsViewModel() {
     pageNumbers,
     goToPage,
     handleViewProcessedVideo,
+    handleCloseVideoPlayer,
+    isPlayerOpen,
     handleRowClick,
     handleViewAlert,
     handlePlayAlert,
@@ -1979,15 +2099,15 @@ export function useVehicleDetailsViewModel() {
 ### <a id="📄-src-features-analysis-models-analysis-types-ts"></a>📄 `src/features/analysis/models/analysis.types.ts`
 
 **File Info:**
-- **Size**: 931 B
+- **Size**: 951 B
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/analysis/models/analysis.types.ts`
 - **Relative Path**: `src/features/analysis/models`
 - **Created**: 2026-08-13 17:21:54 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 17:21:54 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `d61ea3e85d3d186638fab6df2053f860`
-- **SHA256**: `9595ca358de8f3d79efbb2b07c312b34476dc83c6cf6e0a65f6c3220897bacb7`
+- **Modified**: 2026-08-15 10:57:11 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `ff7b80344b34f940345bba97de674c4e`
+- **SHA256**: `6aa73ac286192d03545ee3073311379a61baee61266eea63137461f7a1818b3b`
 - **Encoding**: UTF-8
 
 **File code content:**
@@ -2006,6 +2126,7 @@ export interface AnalysisVideoSummary {
   id: string;
   fileName: string;
   thumbnailUrl: string;
+  videoUrl: string;
   processedAt: string;
   duration: string;
   formattedSize: string;
@@ -2099,15 +2220,15 @@ export interface VehicleDetailsSummaryCard {
 ### <a id="📄-src-features-analysis-pages-analysisresultspage-tsx"></a>📄 `src/features/analysis/pages/AnalysisResultsPage.tsx`
 
 **File Info:**
-- **Size**: 2.15 KB
+- **Size**: 2.31 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/analysis/pages/AnalysisResultsPage.tsx`
 - **Relative Path**: `src/features/analysis/pages`
 - **Created**: 2026-08-13 17:23:02 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 23:36:29 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `0c856112d6bac6559d36c25b3771d6ce`
-- **SHA256**: `62b51bbdad5d6e146e40c8a1102601a7c47c885eedd62e1ee11e440c741379e1`
+- **Modified**: 2026-08-15 11:18:27 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `8e7f83482b753e57694d31c34694d123`
+- **SHA256**: `c813f5a7f63419e426240115096daf47c13b56052eefaea9dccfa5af1ee09532`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -2122,6 +2243,7 @@ import {
   AnalysisFilterBar,
   AnalysisResultsHeader,
   AnalysisStatsGrid,
+  VideoPlayerModal,
   VideoSummaryCard,
 } from "../components";
 
@@ -2140,6 +2262,13 @@ export function AnalysisResultsPage() {
       onSelectMenu={vm.setActiveMenuId}
       onFullscreen={vm.handleFullscreen}
     >
+      {vm.isPlayerOpen && (
+        <VideoPlayerModal
+          video={vm.video}
+          onClose={vm.handleCloseVideoPlayer}
+        />
+      )}
+
       <div className="mx-auto flex max-w-[1600px] flex-col gap-4 sm:gap-5">
         <AnalysisResultsHeader />
 
@@ -7947,15 +8076,15 @@ export { VehiclesPagination } from "./components/VehiclesPagination";
 ### <a id="📄-src-features-video-components-index-ts"></a>📄 `src/features/video/components/index.ts`
 
 **File Info:**
-- **Size**: 279 B
+- **Size**: 468 B
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/video/components/index.ts`
 - **Relative Path**: `src/features/video/components`
 - **Created**: 2026-08-13 14:39:40 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:39:40 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `3cc134a054ab2b6c053226aa390e6968`
-- **SHA256**: `1a345cc6b278fb6a0c3ba0ba67ac72589872808bec5edd18db4a2c7246ae4315`
+- **Modified**: 2026-08-15 10:31:26 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `4783a1be1e3a7106a228bf94c33ff86e`
+- **SHA256**: `6981d07da316348e191696997c652de3cfc7864b08828adf31b4ad7dc581e4ae`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -7966,7 +8095,10 @@ export { VideoUploadZone } from "./VideoUploadZone";
 export { SelectedVideoCard } from "./SelectedVideoCard";
 export { RecentVideosTable } from "./RecentVideosTable";
 export { VideoStatusBadge } from "./VideoStatusBadge";
-
+export { VideosHeader } from "./VideosHeader";
+export { VideosStats } from "./VideosStats";
+export { VideosFilterBar } from "./VideosFilterBar";
+export { VideosTable } from "./VideosTable";
 ```
 
 ---
@@ -8302,6 +8434,377 @@ function PlayIcon() {
 
 ---
 
+### <a id="📄-src-features-video-components-videosfilterbar-tsx"></a>📄 `src/features/video/components/VideosFilterBar.tsx`
+
+**File Info:**
+- **Size**: 2.25 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/features/video/components/VideosFilterBar.tsx`
+- **Relative Path**: `src/features/video/components`
+- **Created**: 2026-08-15 10:27:51 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-15 10:27:57 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `c2e05d910e01873bafaf167927718c14`
+- **SHA256**: `97f2acc294989a0c447d4493b2f2494575c0f3540974e645a1cecaf0e01ac684`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```typescript
+import { Button, Input } from "../../auth";
+import { videoStatusOptions } from "../data/mockVideoData";
+
+interface VideosFilterBarProps {
+  search: string;
+  status: string;
+  onSearchChange: (value: string) => void;
+  onStatusChange: (value: string) => void;
+  onUploadClick: () => void;
+}
+
+export function VideosFilterBar({
+  search,
+  status,
+  onSearchChange,
+  onStatusChange,
+  onUploadClick,
+}: VideosFilterBarProps) {
+  return (
+    <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
+      <div className="flex flex-1 flex-col gap-3 sm:flex-row sm:items-center">
+        <div className="relative min-w-0 flex-1 sm:max-w-md">
+          <Input
+            value={search}
+            onChange={(e) => onSearchChange(e.target.value)}
+            placeholder="ابحث باسم الفيديو..."
+            className="w-full border-white/10 bg-white/5 py-3 text-white placeholder:text-white/35 focus:border-blue-500 focus:ring-blue-500/20"
+          />
+        </div>
+
+        <div className="relative min-w-[160px]">
+          <select
+            aria-label="الحالة"
+            value={status}
+            onChange={(e) => onStatusChange(e.target.value)}
+            className="w-full appearance-none rounded-xl border border-white/10 bg-white/5 px-4 py-3 pe-9 text-sm text-white outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
+          >
+            {videoStatusOptions.map((option) => (
+              <option
+                key={option}
+                value={option}
+                className="bg-[#0f172a] text-white"
+              >
+                {option === "الكل" ? "الحالة" : option}
+              </option>
+            ))}
+          </select>
+          <span className="pointer-events-none absolute inset-y-0 end-3 flex items-center text-white/40">
+            ▾
+          </span>
+        </div>
+      </div>
+
+      <div className="flex items-center justify-end">
+        <Button
+          type="button"
+          onClick={onUploadClick}
+          className="w-auto shrink-0 whitespace-nowrap px-5 shadow-[0_0_24px_rgba(99,102,241,0.35)]"
+        >
+          + رفع فيديو جديد
+        </Button>
+      </div>
+    </div>
+  );
+}
+```
+
+---
+
+### <a id="📄-src-features-video-components-videosheader-tsx"></a>📄 `src/features/video/components/VideosHeader.tsx`
+
+**File Info:**
+- **Size**: 978 B
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/features/video/components/VideosHeader.tsx`
+- **Relative Path**: `src/features/video/components`
+- **Created**: 2026-08-15 10:26:51 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-15 10:26:57 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `1a025f7376a28031d9844810553e5240`
+- **SHA256**: `1aa84336929a1f43d165ce00a085e0c22b0a63a064ccc190cafef9896a9c7efd`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```typescript
+import { Link } from "react-router-dom";
+import { DashboardRoutes } from "../../dashboard";
+
+interface VideosHeaderProps {
+  title?: string;
+  subtitle?: string;
+}
+
+export function VideosHeader({
+  title = "الفيديوهات المعالجة",
+  subtitle = "سجل جميع الفيديوهات المرفوعة وحالة معالجتها",
+}: VideosHeaderProps) {
+  return (
+    <div className="flex flex-col gap-2">
+      <nav className="flex items-center gap-2 text-xs text-white/40">
+        <Link
+          to={DashboardRoutes.home}
+          className="transition hover:text-white/70"
+        >
+          لوحة التحكم
+        </Link>
+        <span>/</span>
+        <span className="text-white/70">الفيديوهات المعالجة</span>
+      </nav>
+      <div>
+        <h1 className="text-2xl font-bold text-white">{title}</h1>
+        <p className="mt-1 text-sm text-white/45">{subtitle}</p>
+      </div>
+    </div>
+  );
+}
+```
+
+---
+
+### <a id="📄-src-features-video-components-videosstats-tsx"></a>📄 `src/features/video/components/VideosStats.tsx`
+
+**File Info:**
+- **Size**: 934 B
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/features/video/components/VideosStats.tsx`
+- **Relative Path**: `src/features/video/components`
+- **Created**: 2026-08-15 10:27:19 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-15 10:27:33 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `6062e867cd0326ea341bdd71792356a2`
+- **SHA256**: `422a17d1666f6ad3749b5efaea6f8a66944c8e04dee5576500a9bb7069920de2`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import { StatCard, MenuGlyph } from "../../dashboard";
+
+interface FormattedVideoStat {
+  id: string;
+  title: string;
+  displayValue: string;
+  subtitle: string;
+  displayChange: string;
+  isPositive: boolean;
+  gradient: string;
+  icon: "processedVideos" | "video" | "alerts";
+}
+
+interface VideosStatsProps {
+  stats: FormattedVideoStat[];
+}
+
+export function VideosStats({ stats }: VideosStatsProps) {
+  return (
+    <section className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
+      {stats.map((stat) => (
+        <StatCard
+          key={stat.id}
+          title={stat.title}
+          displayValue={stat.displayValue}
+          subtitle={stat.subtitle}
+          displayChange={stat.displayChange}
+          isPositive={stat.isPositive}
+          gradient={stat.gradient}
+          icon={<MenuGlyph name={stat.icon} className="h-5 w-5" />}
+        />
+      ))}
+    </section>
+  );
+}
+```
+
+---
+
+### <a id="📄-src-features-video-components-videostable-tsx"></a>📄 `src/features/video/components/VideosTable.tsx`
+
+**File Info:**
+- **Size**: 5.09 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/features/video/components/VideosTable.tsx`
+- **Relative Path**: `src/features/video/components`
+- **Created**: 2026-08-15 10:28:11 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-15 10:28:19 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `916147aee5b794da777d5d817d383da9`
+- **SHA256**: `badfcea65659b4904d5248b5c9ff94b5397eb3e7a0dc010f589575cd9853fe8e`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```typescript
+import type { ReactNode } from "react";
+import type { VideoFile } from "../models/video.types";
+import { VideoStatusBadge } from "./VideoStatusBadge";
+
+interface VideosTableProps {
+  videos: VideoFile[];
+  onPreview: (id: string) => void;
+  onPlay: (id: string) => void;
+  onMore: (id: string) => void;
+}
+
+export function VideosTable({
+  videos,
+  onPreview,
+  onPlay,
+  onMore,
+}: VideosTableProps) {
+  return (
+    <div className="overflow-hidden rounded-xl border border-white/10">
+      <div className="overflow-x-auto">
+        <table className="w-full min-w-[800px] border-collapse text-sm">
+          <thead>
+            <tr className="border-b border-white/10 bg-white/[0.03] text-white/50">
+              <th className="px-4 py-3.5 text-start font-medium">
+                اسم الفيديو
+              </th>
+              <th className="px-4 py-3.5 text-start font-medium">
+                تاريخ الرفع
+              </th>
+              <th className="px-4 py-3.5 text-start font-medium">المدة</th>
+              <th className="px-4 py-3.5 text-start font-medium">الحجم</th>
+              <th className="px-4 py-3.5 text-start font-medium">الحالة</th>
+              <th className="px-4 py-3.5 text-start font-medium">
+                الإجراءات
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {videos.length === 0 ? (
+              <tr>
+                <td
+                  colSpan={6}
+                  className="px-4 py-12 text-center text-white/40"
+                >
+                  لا توجد فيديوهات مطابقة للبحث
+                </td>
+              </tr>
+            ) : (
+              videos.map((video) => (
+                <tr
+                  key={video.id}
+                  className="border-b border-white/5 transition hover:bg-white/[0.04]"
+                >
+                  <td className="px-4 py-3.5">
+                    <div className="flex items-center gap-3">
+                      <img
+                        src={video.thumbnailUrl}
+                        alt=""
+                        className="h-10 w-14 shrink-0 rounded-md object-cover ring-1 ring-white/10"
+                      />
+                      <span className="font-medium text-white/90">
+                        {video.name}
+                      </span>
+                    </div>
+                  </td>
+                  <td className="px-4 py-3.5 text-white/60">
+                    {video.uploadedAt}
+                  </td>
+                  <td className="px-4 py-3.5 text-white/60">
+                    {video.duration}
+                  </td>
+                  <td className="px-4 py-3.5 text-white/60">
+                    {video.formattedSize}
+                  </td>
+                  <td className="px-4 py-3.5">
+                    <VideoStatusBadge status={video.status} />
+                  </td>
+                  <td className="px-4 py-3.5">
+                    <div className="flex items-center gap-1.5">
+                      <ActionButton
+                        label="معاينة"
+                        onClick={() => onPreview(video.id)}
+                      >
+                        <EyeIcon />
+                      </ActionButton>
+                      <ActionButton
+                        label="تشغيل"
+                        onClick={() => onPlay(video.id)}
+                      >
+                        <PlayIcon />
+                      </ActionButton>
+                      <ActionButton
+                        label="المزيد"
+                        onClick={() => onMore(video.id)}
+                      >
+                        <MoreIcon />
+                      </ActionButton>
+                    </div>
+                  </td>
+                </tr>
+              ))
+            )}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
+function ActionButton({
+  children,
+  label,
+  onClick,
+}: {
+  children: ReactNode;
+  label: string;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      type="button"
+      aria-label={label}
+      onClick={onClick}
+      className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-white/55 transition hover:bg-white/10 hover:text-white"
+    >
+      {children}
+    </button>
+  );
+}
+
+function EyeIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden>
+      <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z" />
+      <circle cx="12" cy="12" r="3" />
+    </svg>
+  );
+}
+
+function PlayIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="currentColor" aria-hidden>
+      <path d="M8 5v14l11-7L8 5Z" />
+    </svg>
+  );
+}
+
+function MoreIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="currentColor" aria-hidden>
+      <circle cx="12" cy="5" r="1.6" />
+      <circle cx="12" cy="12" r="1.6" />
+      <circle cx="12" cy="19" r="1.6" />
+    </svg>
+  );
+}
+```
+
+---
+
 ### <a id="📄-src-features-video-components-videostatusbadge-tsx"></a>📄 `src/features/video/components/VideoStatusBadge.tsx`
 
 **File Info:**
@@ -8585,15 +9088,15 @@ function FolderIcon({ className }: { className?: string }) {
 ### <a id="📄-src-features-video-data-mockvideodata-ts"></a>📄 `src/features/video/data/mockVideoData.ts`
 
 **File Info:**
-- **Size**: 1017 B
+- **Size**: 3.66 KB
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/video/data/mockVideoData.ts`
 - **Relative Path**: `src/features/video/data`
 - **Created**: 2026-08-13 14:39:16 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:39:16 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `70ae4f1e83bb3ee424043ac874c90187`
-- **SHA256**: `dc471524607333c91ae0a0be041e3aa4df8a83676cbdaf72153836dbde34dec6`
+- **Modified**: 2026-08-15 10:26:26 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `8e61d0682b6e3fa6b292fc4f103fe655`
+- **SHA256**: `7f9dd8e5888e12aec0078e71e9eba26e5b8335dd8a01299c5b74e1ff7bd7d361`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -8639,7 +9142,308 @@ export const mockRecentVideos: VideoFile[] = [
     status: "failed",
   },
 ];
+export const VIDEOS_PAGE_SIZE = 8;
 
+export const videoStatusOptions = [
+  "الكل",
+  "مكتمل",
+  "قيد المعالجة",
+  "فشل",
+] as const;
+
+export const statusLabelToKey: Record<string, VideoFile["status"]> = {
+  مكتمل: "completed",
+  "قيد المعالجة": "processing",
+  فشل: "failed",
+};
+
+export const mockAllVideos: VideoFile[] = [
+  ...mockRecentVideos,
+  {
+    id: "v4",
+    name: "traffic_video_2026_08_06.mp4",
+    size: 219021312,
+    formattedSize: "209 MB",
+    duration: "04:52",
+    format: "MP4",
+    thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
+    uploadedAt: "2026-08-06 16:10",
+    status: "completed",
+  },
+  {
+    id: "v5",
+    name: "traffic_video_2026_08_05.mp4",
+    size: 98566144,
+    formattedSize: "94 MB",
+    duration: "01:47",
+    format: "MP4",
+    thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
+    uploadedAt: "2026-08-05 08:33",
+    status: "processing",
+  },
+  {
+    id: "v6",
+    name: "traffic_video_2026_08_04.mp4",
+    size: 288358400,
+    formattedSize: "275 MB",
+    duration: "05:29",
+    format: "MP4",
+    thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
+    uploadedAt: "2026-08-04 19:02",
+    status: "completed",
+  },
+  {
+    id: "v7",
+    name: "traffic_video_2026_08_03.mp4",
+    size: 146800640,
+    formattedSize: "140 MB",
+    duration: "02:58",
+    format: "MP4",
+    thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
+    uploadedAt: "2026-08-03 12:47",
+    status: "completed",
+  },
+  {
+    id: "v8",
+    name: "traffic_video_2026_08_02.mp4",
+    size: 62914560,
+    formattedSize: "60 MB",
+    duration: "01:12",
+    format: "MP4",
+    thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
+    uploadedAt: "2026-08-02 07:15",
+    status: "failed",
+  },
+  {
+    id: "v9",
+    name: "traffic_video_2026_08_01.mp4",
+    size: 356515840,
+    formattedSize: "340 MB",
+    duration: "07:03",
+    format: "MP4",
+    thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
+    uploadedAt: "2026-08-01 21:40",
+    status: "completed",
+  },
+  {
+    id: "v10",
+    name: "traffic_video_2026_07_31.mp4",
+    size: 125829120,
+    formattedSize: "120 MB",
+    duration: "02:34",
+    format: "MP4",
+    thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
+    uploadedAt: "2026-07-31 15:58",
+    status: "processing",
+  },
+  {
+    id: "v11",
+    name: "traffic_video_2026_07_30.mp4",
+    size: 178257920,
+    formattedSize: "170 MB",
+    duration: "03:41",
+    format: "MP4",
+    thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
+    uploadedAt: "2026-07-30 10:21",
+    status: "completed",
+  },
+  {
+    id: "v12",
+    name: "traffic_video_2026_07_29.mp4",
+    size: 83886080,
+    formattedSize: "80 MB",
+    duration: "01:39",
+    format: "MP4",
+    thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
+    uploadedAt: "2026-07-29 09:04",
+    status: "completed",
+  },
+];
+```
+
+---
+
+### <a id="📄-src-features-video-hooks-useprocessedvideosviewmodel-ts"></a>📄 `src/features/video/hooks/useProcessedVideosViewModel.ts`
+
+**File Info:**
+- **Size**: 4.88 KB
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/video/hooks/useProcessedVideosViewModel.ts`
+- **Relative Path**: `src/features/video/hooks`
+- **Created**: 2026-08-15 10:29:07 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-15 10:35:40 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `4231cbd6536a00ad4fadbb5e33d1c9c6`
+- **SHA256**: `7379bd38f402ccc2514435193131ee8a60bf15cf710b49535ea47df8729a682d`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```typescript
+import { useEffect, useMemo, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { mockDashboardData, useDashboardStore } from "../../dashboard";
+import {
+  mockAllVideos,
+  statusLabelToKey,
+  VIDEOS_PAGE_SIZE,
+} from "../data/mockVideoData";
+import { VideoRoutes } from "../routes/videoRoutes";
+import type { VideoFile } from "../models/video.types";
+
+function formatNumber(value: number): string {
+  return new Intl.NumberFormat("ar-EG").format(value);
+}
+
+export function useProcessedVideosViewModel() {
+  const navigate = useNavigate();
+  const isSidebarOpen = useDashboardStore((s) => s.isSidebarOpen);
+  const toggleSidebar = useDashboardStore((s) => s.toggleSidebar);
+  const setSidebarOpen = useDashboardStore((s) => s.setSidebarOpen);
+  const setActiveMenuId = useDashboardStore((s) => s.setActiveMenuId);
+
+  const [videos] = useState<VideoFile[]>(mockAllVideos);
+  const [search, setSearchState] = useState("");
+  const [status, setStatusState] = useState("الكل");
+  const [currentPage, setCurrentPage] = useState(1);
+
+  useEffect(() => {
+    setActiveMenuId("processedVideos");
+  }, [setActiveMenuId]);
+
+  const filteredVideos = useMemo(() => {
+    const query = search.trim().toLowerCase();
+
+    return videos.filter((video) => {
+      const matchesSearch =
+        query.length === 0 || video.name.toLowerCase().includes(query);
+
+      const matchesStatus =
+        status === "الكل" || video.status === statusLabelToKey[status];
+
+      return matchesSearch && matchesStatus;
+    });
+  }, [videos, search, status]);
+
+  const totalPages = Math.max(
+    1,
+    Math.ceil(filteredVideos.length / VIDEOS_PAGE_SIZE),
+  );
+  const safePage = Math.min(currentPage, totalPages);
+
+  const paginatedVideos = useMemo(() => {
+    const start = (safePage - 1) * VIDEOS_PAGE_SIZE;
+    return filteredVideos.slice(start, start + VIDEOS_PAGE_SIZE);
+  }, [filteredVideos, safePage]);
+
+  const pageNumbers = useMemo(
+    () => Array.from({ length: totalPages }, (_, i) => i + 1),
+    [totalPages],
+  );
+
+  const stats = useMemo(() => {
+    const total = videos.length;
+    const completed = videos.filter((v) => v.status === "completed").length;
+    const processing = videos.filter((v) => v.status === "processing").length;
+    const failed = videos.filter((v) => v.status === "failed").length;
+
+    return [
+      {
+        id: "total",
+        title: "إجمالي الفيديوهات",
+        displayValue: formatNumber(total),
+        subtitle: "منذ بداية التشغيل",
+        displayChange: "",
+        isPositive: true,
+        gradient: "from-blue-600/40 to-indigo-700/30",
+        icon: "processedVideos" as const,
+      },
+      {
+        id: "completed",
+        title: "مكتملة",
+        displayValue: formatNumber(completed),
+        subtitle: "تمت معالجتها بنجاح",
+        displayChange: "",
+        isPositive: true,
+        gradient: "from-emerald-600/40 to-teal-700/30",
+        icon: "processedVideos" as const,
+      },
+      {
+        id: "processing",
+        title: "قيد المعالجة",
+        displayValue: formatNumber(processing),
+        subtitle: "جارٍ تحليلها الآن",
+        displayChange: "",
+        isPositive: true,
+        gradient: "from-amber-600/40 to-yellow-700/30",
+        icon: "video" as const,
+      },
+      {
+        id: "failed",
+        title: "فشلت",
+        displayValue: formatNumber(failed),
+        subtitle: "تحتاج إعادة رفع",
+        displayChange: "",
+        isPositive: false,
+        gradient: "from-rose-600/40 to-orange-700/30",
+        icon: "alerts" as const,
+      },
+    ];
+  }, [videos]);
+
+  const setSearch = (value: string) => {
+    setSearchState(value);
+    setCurrentPage(1);
+  };
+
+  const setStatus = (value: string) => {
+    setStatusState(value);
+    setCurrentPage(1);
+  };
+
+  const goToPage = (page: number) => {
+    if (page < 1 || page > totalPages) return;
+    setCurrentPage(page);
+  };
+
+  const handleFullscreen = () => {
+    if (!document.fullscreenElement) {
+      void document.documentElement.requestFullscreen();
+    } else {
+      void document.exitFullscreen();
+    }
+  };
+
+  const handleUploadClick = () => {
+    navigate(VideoRoutes.upload);
+  };
+
+  return {
+    user: mockDashboardData.user,
+    menuItems: mockDashboardData.menuItems,
+    activeMenuId: "processedVideos",
+    isSidebarOpen,
+    toggleSidebar,
+    setSidebarOpen,
+    setActiveMenuId,
+    handleFullscreen,
+    stats,
+    search,
+    status,
+    setSearch,
+    setStatus,
+    videos: paginatedVideos,
+    totalCount: filteredVideos.length,
+    currentPage: safePage,
+    totalPages,
+    pageNumbers,
+    goToPage,
+    handleUploadClick,
+    handlePreviewVideo: (_id: string) => {},
+    handlePlayVideo: (_id: string) => {},
+    handleMoreVideo: (_id: string) => {},
+  };
+}
 ```
 
 ---
@@ -8954,6 +9758,84 @@ export interface VideoUploadConfig {
 
 ---
 
+### <a id="📄-src-features-video-pages-processedvideospage-tsx"></a>📄 `src/features/video/pages/ProcessedVideosPage.tsx`
+
+**File Info:**
+- **Size**: 1.69 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/features/video/pages/ProcessedVideosPage.tsx`
+- **Relative Path**: `src/features/video/pages`
+- **Created**: 2026-08-15 10:29:56 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-15 10:47:16 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `df6d945000a7b0d7ac13a4757ebe79ed`
+- **SHA256**: `e1f7311e6d716e79b9de55d8bd9ba90fa21499e5901270821bcf28f93e49b80b`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import { DashboardLayout, CardContainer } from "../../dashboard";
+import { VehiclesPagination } from "../../vehicles";
+import { useProcessedVideosViewModel } from "../hooks/useProcessedVideosViewModel";
+import {
+  VideosFilterBar,
+  VideosHeader,
+  VideosStats,
+  VideosTable,
+} from "../components";
+
+export function ProcessedVideosPage() {
+  const vm = useProcessedVideosViewModel();
+
+  return (
+    <DashboardLayout
+      user={vm.user}
+      menuItems={vm.menuItems}
+      activeMenuId={vm.activeMenuId}
+      isSidebarOpen={vm.isSidebarOpen}
+      onToggleSidebar={vm.toggleSidebar}
+      onCloseSidebar={() => vm.setSidebarOpen(false)}
+      onSelectMenu={vm.setActiveMenuId}
+      onFullscreen={vm.handleFullscreen}
+    >
+      <div className="mx-auto flex max-w-[1600px] flex-col gap-4 sm:gap-5">
+        <VideosHeader />
+
+        <VideosStats stats={vm.stats} />
+
+        <CardContainer className="flex flex-col gap-4 p-4 sm:p-5">
+          <VideosFilterBar
+            search={vm.search}
+            status={vm.status}
+            onSearchChange={vm.setSearch}
+            onStatusChange={vm.setStatus}
+            onUploadClick={vm.handleUploadClick}
+          />
+
+          <VideosTable
+            videos={vm.videos}
+            onPreview={vm.handlePreviewVideo}
+            onPlay={vm.handlePlayVideo}
+            onMore={vm.handleMoreVideo}
+          />
+
+          <VehiclesPagination
+            currentPage={vm.currentPage}
+            totalPages={vm.totalPages}
+            pageNumbers={vm.pageNumbers}
+            totalCount={vm.totalCount}
+            onPageChange={vm.goToPage}
+          />
+        </CardContainer>
+      </div>
+    </DashboardLayout>
+  );
+}
+```
+
+---
+
 ### <a id="📄-src-features-video-pages-videouploadpage-tsx"></a>📄 `src/features/video/pages/VideoUploadPage.tsx`
 
 **File Info:**
@@ -9217,26 +10099,27 @@ export function validateVideoFile(file: File): {
 ### <a id="📄-src-features-video-index-ts"></a>📄 `src/features/video/index.ts`
 
 **File Info:**
-- **Size**: 308 B
+- **Size**: 457 B
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/video/index.ts`
 - **Relative Path**: `src/features/video`
 - **Created**: 2026-08-13 14:39:44 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 17:23:11 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `1b8fc730a14aedf611708d755a1d12aa`
-- **SHA256**: `14d63ef3f0e15de980c48620cb06534d675dd05529d0c3de84ce7aea511cd178`
+- **Modified**: 2026-08-15 10:31:22 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `0fa938641b44c2da8d4797b76f89cf13`
+- **SHA256**: `337a9c61fb01dd5f4f07607049b08aa8dda75673502c9ca856f745485b6ca0b7`
 - **Encoding**: ASCII
 
 **File code content:**
 
 ```typescript
 export { VideoUploadPage } from "./pages/VideoUploadPage";
+export { ProcessedVideosPage } from "./pages/ProcessedVideosPage";
 export { VideoRoutes } from "./routes/videoRoutes";
 export { videoService } from "./services/VideoService";
 export { useVideoUploadViewModel } from "./hooks/useVideoUploadViewModel";
+export { useProcessedVideosViewModel } from "./hooks/useProcessedVideosViewModel";
 export { VideoStatusBadge } from "./components/VideoStatusBadge";
-
 ```
 
 ---
@@ -9450,15 +10333,15 @@ export { VideoStatusBadge } from "./components/VideoStatusBadge";
 ### <a id="📄-src-app-tsx"></a>📄 `src/App.tsx`
 
 **File Info:**
-- **Size**: 1.87 KB
+- **Size**: 1.83 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/App.tsx`
 - **Relative Path**: `src`
 - **Created**: 2026-06-15 12:29:35 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 23:56:06 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `fa7d224504cd6e5010ce59ec3b03c37a`
-- **SHA256**: `1e86a244fc399ab3b237c85998e0c49659a3b4501df959f10f9ac9a3d2d3446b`
+- **Modified**: 2026-08-15 10:33:22 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `2e493c2ef9aa2f577e7c1d0c5d9c52f8`
+- **SHA256**: `49873817e80655a11151dc41e6ad58d5c1ca59dbca56a135e5fce7c2ae170c5b`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -9469,8 +10352,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { LoginPage, AuthRoutes } from "./features/auth";
 import { DashboardPage, DashboardRoutes } from "./features/dashboard";
 import { VehiclesPage, VehiclesRoutes } from "./features/vehicles";
-import { VideoUploadPage, VideoRoutes } from "./features/video";
-import {
+import { VideoUploadPage, ProcessedVideosPage, VideoRoutes } from "./features/video";import {
   AnalysisResultsPage,
   AnalysisRoutes,
   VehicleDetailsPage,
@@ -9500,10 +10382,7 @@ function App() {
           <Route path={VehiclesRoutes.list} element={<VehiclesPage />} />
           <Route path={BlacklistRoutes.list} element={<BlacklistPage />} />
           <Route path={VideoRoutes.upload} element={<VideoUploadPage />} />
-          <Route
-            path={VideoRoutes.list}
-            element={<Navigate to={VideoRoutes.upload} replace />}
-          />
+          <Route path={VideoRoutes.list} element={<ProcessedVideosPage />} />
           <Route
             path={AnalysisRoutes.results}
             element={<AnalysisResultsPage />}
@@ -9597,15 +10476,15 @@ createRoot(document.getElementById('root')!).render(
 ### <a id="📄-eslint-config-js"></a>📄 `eslint.config.js`
 
 **File Info:**
-- **Size**: 591 B
+- **Size**: 771 B
 - **Extension**: `.js`
 - **Language**: `javascript`
 - **Location**: `eslint.config.js`
 - **Relative Path**: `root`
 - **Created**: 2026-06-15 12:29:35 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-06-15 10:40:12 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `0355276bc79439afe3c53e3a2470ca1e`
-- **SHA256**: `cf80a7510234dcd5ae594b30b44682b8b45ba13c0fcb5bf8928bea143802aa1c`
+- **Modified**: 2026-08-15 10:48:50 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `1e80434e4125e23131fb26f7b4881502`
+- **SHA256**: `ff642f2009fe4976484585b94354ae348b7c2df9d51723bf17500ed92c0fbcbf`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -9631,9 +10510,17 @@ export default defineConfig([
     languageOptions: {
       globals: globals.browser,
     },
+    rules: {
+      '@typescript-eslint/no-unused-vars': [
+        'warn',
+        {
+          argsIgnorePattern: '^_',
+          varsIgnorePattern: '^_',
+        },
+      ],
+    },
   },
 ])
-
 ```
 
 ---

@@ -31,6 +31,7 @@ export function useAnalysisResultsViewModel() {
     severity: "الكل",
   });
   const [currentPage, setCurrentPage] = useState(1);
+  const [isPlayerOpen, setIsPlayerOpen] = useState(false);
 
   useEffect(() => {
     setActiveMenuId("analysis");
@@ -109,7 +110,13 @@ export function useAnalysisResultsViewModel() {
     }
   };
 
-  const handleViewProcessedVideo = () => {};
+  const handleViewProcessedVideo = () => {
+    setIsPlayerOpen(true);
+  };
+
+  const handleCloseVideoPlayer = () => {
+    setIsPlayerOpen(false);
+  };
 
   const handleRowClick = (id: string) => {
     navigate(buildVehicleDetailsPath(id));
@@ -144,6 +151,8 @@ export function useAnalysisResultsViewModel() {
     pageNumbers,
     goToPage,
     handleViewProcessedVideo,
+    handleCloseVideoPlayer,
+    isPlayerOpen,
     handleRowClick,
     handleViewAlert,
     handlePlayAlert,

@@ -3,8 +3,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { LoginPage, AuthRoutes } from "./features/auth";
 import { DashboardPage, DashboardRoutes } from "./features/dashboard";
 import { VehiclesPage, VehiclesRoutes } from "./features/vehicles";
-import { VideoUploadPage, VideoRoutes } from "./features/video";
-import {
+import { VideoUploadPage, ProcessedVideosPage, VideoRoutes } from "./features/video";import {
   AnalysisResultsPage,
   AnalysisRoutes,
   VehicleDetailsPage,
@@ -34,10 +33,7 @@ function App() {
           <Route path={VehiclesRoutes.list} element={<VehiclesPage />} />
           <Route path={BlacklistRoutes.list} element={<BlacklistPage />} />
           <Route path={VideoRoutes.upload} element={<VideoUploadPage />} />
-          <Route
-            path={VideoRoutes.list}
-            element={<Navigate to={VideoRoutes.upload} replace />}
-          />
+          <Route path={VideoRoutes.list} element={<ProcessedVideosPage />} />
           <Route
             path={AnalysisRoutes.results}
             element={<AnalysisResultsPage />}

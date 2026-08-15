@@ -9,3 +9,4 @@ export { VehicleInfoCard } from "./VehicleInfoCard";
 export { VehicleComparisonTable } from "./VehicleComparisonTable";
 export { VehicleDetailsSummaryCards } from "./VehicleDetailsSummaryCards";
 export { ConfidenceBar } from "./ConfidenceBar";
+export { VideoPlayerModal } from "./VideoPlayerModal";

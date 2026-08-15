@@ -7,6 +7,7 @@ import {
   AnalysisFilterBar,
   AnalysisResultsHeader,
   AnalysisStatsGrid,
+  VideoPlayerModal,
   VideoSummaryCard,
 } from "../components";
 
@@ -25,6 +26,13 @@ export function AnalysisResultsPage() {
       onSelectMenu={vm.setActiveMenuId}
       onFullscreen={vm.handleFullscreen}
     >
+      {vm.isPlayerOpen && (
+        <VideoPlayerModal
+          video={vm.video}
+          onClose={vm.handleCloseVideoPlayer}
+        />
+      )}
+
       <div className="mx-auto flex max-w-[1600px] flex-col gap-4 sm:gap-5">
         <AnalysisResultsHeader />
 
