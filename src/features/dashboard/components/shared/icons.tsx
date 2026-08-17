@@ -117,10 +117,6 @@ export function MenuIcon({ className = "h-5 w-5" }: IconProps) {
   );
 }
 
-/**
- * نتائج التحليل — رسم بياني + عدسة تفحص، للتمييز عن "التقارير" (مستند)
- * وعن "تحليل الفيديو" (كاميرا).
- */
 export function AnalysisIcon({ className = "h-5 w-5" }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className={className} aria-hidden>
@@ -131,10 +127,6 @@ export function AnalysisIcon({ className = "h-5 w-5" }: IconProps) {
   );
 }
 
-/**
- * الفيديوهات المعالجة — إطار فيديو + شارة صح، للتمييز عن "تحليل الفيديو"
- * (كاميرا) ويدل أن المعالجة اكتملت.
- */
 export function ProcessedVideosIcon({ className = "h-5 w-5" }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className={className} aria-hidden>
@@ -146,9 +138,7 @@ export function ProcessedVideosIcon({ className = "h-5 w-5" }: IconProps) {
   );
 }
 
-/**
- * تسجيل الخروج — باب + سهم خارج، أيقونة الخروج التقليدية.
- */
+
 export function LogoutIcon({ className = "h-5 w-5" }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className={className} aria-hidden>
@@ -159,10 +149,7 @@ export function LogoutIcon({ className = "h-5 w-5" }: IconProps) {
   );
 }
 
-/**
- * شعار النظام — درع أمني وبداخله سيارة، يرمز لدور الشرطة/الأمن
- * بمراقبة المركبات. اختير من بين عدة تصاميم مقترحة.
- */
+
 export function LogoIcon({ className = "h-8 w-8" }: IconProps) {
   return (
     <svg viewBox="0 0 40 40" className={className} aria-hidden>

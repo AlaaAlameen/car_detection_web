@@ -3,10 +3,21 @@ import type { AnalysisVideoSummary } from "../models/analysis.types";
 
 interface VideoPlayerModalProps {
   video: AnalysisVideoSummary;
+  videoUrl: string | null;
+  isLoading: boolean;
+  isError: boolean;
+  onRetry: () => void;
   onClose: () => void;
 }
 
-export function VideoPlayerModal({ video, onClose }: VideoPlayerModalProps) {
+export function VideoPlayerModal({
+  video,
+  videoUrl,
+  isLoading,
+  isError,
+  onRetry,
+  onClose,
+}: VideoPlayerModalProps) {
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") onClose();
@@ -44,16 +55,34 @@ export function VideoPlayerModal({ video, onClose }: VideoPlayerModalProps) {
           </button>
         </div>
 
-        <div className="overflow-hidden rounded-xl bg-black ring-1 ring-white/10">
-          <video
-            src={video.videoUrl}
-            poster={video.thumbnailUrl}
-            controls
-            autoPlay
-            className="aspect-video w-full"
-          >
-            متصفحك لا يدعم عرض الفيديو.
-          </video>
+        <div className="flex aspect-video w-full items-center justify-center overflow-hidden rounded-xl bg-black ring-1 ring-white/10">
+          {isLoading ? (
+            <div className="flex flex-col items-center gap-3 text-white/50">
+              <span className="h-8 w-8 animate-spin rounded-full border-2 border-white/20 border-t-blue-500" />
+              <p className="text-sm">جاري تحميل الفيديو...</p>
+            </div>
+          ) : isError ? (
+            <div className="flex flex-col items-center gap-3 px-4 text-center text-white/60">
+              <p className="text-sm">تعذر تحميل الفيديو المعالج</p>
+              <button
+                type="button"
+                onClick={onRetry}
+                className="rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-xs font-medium text-white/80 transition hover:bg-white/10"
+              >
+                إعادة المحاولة
+              </button>
+            </div>
+          ) : (
+            <video
+              src={videoUrl ?? undefined}
+              poster={video.thumbnailUrl}
+              controls
+              autoPlay
+              className="h-full w-full"
+            >
+              متصفحك لا يدعم عرض الفيديو.
+            </video>
+          )}
         </div>
       </div>
     </div>

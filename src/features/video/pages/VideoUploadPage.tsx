@@ -1,4 +1,9 @@
 import { DashboardLayout, CardContainer } from "../../dashboard";
+import {
+  VehiclesEmptyState,
+  VehiclesErrorState,
+  VehiclesTableSkeleton,
+} from "../../vehicles";
 import { useVideoUploadViewModel } from "../hooks/useVideoUploadViewModel";
 import {
   RecentVideosTable,
@@ -40,6 +45,19 @@ export function VideoUploadPage() {
             onFileChange={vm.handleFileChange}
           />
 
+          {vm.feedback && (
+            <p
+              className={`mt-3 text-sm ${
+                vm.feedback.type === "success"
+                  ? "text-emerald-400"
+                  : "text-rose-400"
+              }`}
+              role="status"
+            >
+              {vm.feedback.message}
+            </p>
+          )}
+
           {vm.selectedVideo && (
             <SelectedVideoCard
               video={vm.selectedVideo}
@@ -52,12 +70,21 @@ export function VideoUploadPage() {
         </CardContainer>
 
         <CardContainer title="الفيديوهات المرفوعة مؤخراً">
-          <RecentVideosTable
+          {vm.isRecentVideosLoading ? (
+            <VehiclesTableSkeleton message="جاري تحميل الفيديوهات..." />
+          ) : vm.isRecentVideosError ? (
+            <VehiclesErrorState
+              message="تعذر تحميل الفيديوهات المرفوعة مؤخراً"
+              onRetry={() => void vm.refetchRecentVideos()}
+            />
+          ) : vm.recentVideos.length === 0 ? (
+            <VehiclesEmptyState message="لا توجد فيديوهات مرفوعة بعد" />
+          ) : (
+            <RecentVideosTable
             videos={vm.recentVideos}
-            onPreview={vm.handlePreviewVideo}
-            onPlay={vm.handlePlayVideo}
-            onMore={vm.handleMoreVideo}
+            onRowClick={vm.handleRowClick}
           />
+          )}
         </CardContainer>
       </div>
     </DashboardLayout>

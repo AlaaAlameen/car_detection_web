@@ -18,6 +18,12 @@ export function AlertItem({
       <img
         src={imageUrl}
         alt={carType}
+        loading="lazy"
+        onError={(e) => {
+          e.currentTarget.onerror = null;
+          e.currentTarget.src =
+            "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=200&h=140&fit=crop";
+        }}
         className="h-14 w-20 shrink-0 rounded-lg object-cover ring-1 ring-white/10"
       />
       <div className="min-w-0 flex-1">

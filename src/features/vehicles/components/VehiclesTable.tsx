@@ -11,6 +11,7 @@ interface VehiclesTableProps {
   onToggleOne: (id: string) => void;
   onEdit: (id: string) => void;
   onDelete: (id: string) => void;
+  onAddToBlacklist: (id: string) => void;
 }
 
 export function VehiclesTable({
@@ -21,6 +22,7 @@ export function VehiclesTable({
   onToggleOne,
   onEdit,
   onDelete,
+  onAddToBlacklist,
 }: VehiclesTableProps) {
   return (
     <div className="overflow-hidden rounded-xl border border-white/10">
@@ -104,7 +106,7 @@ export function VehiclesTable({
                       </span>
                     </td>
                     <td className="px-4 py-3.5 text-white/70">
-                      {vehicle.modelYear}
+                      {vehicle.model}
                     </td>
                     <td className="px-4 py-3.5 text-white/80">
                       {vehicle.ownerName}
@@ -124,9 +126,21 @@ export function VehiclesTable({
                         >
                           <DeleteIcon />
                         </ActionButton>
-                        <ActionButton label="المزيد">
+                        {/* <ActionButton label="المزيد">
                           <MoreIcon />
-                        </ActionButton>
+                        </ActionButton> */}
+                        <ActionButton
+                            label={
+                              vehicle.isBlacklisted
+                                ? "مضافة أصلًا للقائمة السوداء"
+                                : "إضافة للقائمة السوداء"
+                            }
+                            onClick={() => onAddToBlacklist(vehicle.id)}
+                            disabled={vehicle.isBlacklisted}
+                            warn
+                          >
+                            <BlacklistFlagIcon />
+                          </ActionButton>
                       </div>
                     </td>
                   </tr>
@@ -145,21 +159,29 @@ function ActionButton({
   label,
   onClick,
   danger = false,
+  warn = false,
+  disabled = false,
 }: {
   children: ReactNode;
   label: string;
   onClick?: () => void;
   danger?: boolean;
+  warn?: boolean;
+  disabled?: boolean;
 }) {
   return (
     <button
       type="button"
       aria-label={label}
+      title={label}
       onClick={onClick}
-      className={`flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 bg-white/5 transition hover:bg-white/10 ${
+      disabled={disabled}
+      className={`flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 bg-white/5 transition hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-white/5 ${
         danger
           ? "text-rose-400 hover:text-rose-300"
-          : "text-white/55 hover:text-white"
+          : warn
+            ? "text-amber-400 hover:text-amber-300"
+            : "text-white/55 hover:text-white"
       }`}
     >
       {children}
@@ -197,18 +219,33 @@ function DeleteIcon() {
     </svg>
   );
 }
-
-function MoreIcon() {
+function BlacklistFlagIcon() {
   return (
     <svg
       viewBox="0 0 24 24"
       className="h-3.5 w-3.5"
-      fill="currentColor"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
       aria-hidden
     >
-      <circle cx="12" cy="5" r="1.6" />
-      <circle cx="12" cy="12" r="1.6" />
-      <circle cx="12" cy="19" r="1.6" />
+      <path d="M5 3v18" />
+      <path d="M5 4h12l-2.5 4L17 12H5" />
     </svg>
   );
 }
+
+// function MoreIcon() {
+//   return (
+//     <svg
+//       viewBox="0 0 24 24"
+//       className="h-3.5 w-3.5"
+//       fill="currentColor"
+//       aria-hidden
+//     >
+//       <circle cx="12" cy="5" r="1.6" />
+//       <circle cx="12" cy="12" r="1.6" />
+//       <circle cx="12" cy="19" r="1.6" />
+//     </svg>
+//   );
+// }

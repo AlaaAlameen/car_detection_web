@@ -1,28 +1,48 @@
+import { apiClient } from "../../../api/axios";
+import { VideosApiEndpoints } from "../api/videos.endpoints";
+import type {
+  CreateVideoRequest,
+  CreateVideoResponse,
+  ProcessedVideoResponse,
+  VideosApiResponse,
+} from "../api/videos.types";
 import type { VideoFile } from "../models/video.types";
+import { mapVideoApiToUi } from "../utils/mapVideoApiToUi";
 
-/**
- * VideoService — prepared for future API integration.
- * Methods are placeholders and throw until implemented.
- */
 class VideoService {
-  async getRecentVideos(): Promise<VideoFile[]> {
-    // TODO: integrate with API
-    throw new Error("VideoService.getRecentVideos is not implemented yet");
+  async getVideos(): Promise<VideoFile[]> {
+    const response = await apiClient.get<VideosApiResponse>(
+      VideosApiEndpoints.list,
+    );
+
+    return response.data.videos.map(mapVideoApiToUi);
   }
 
-  async uploadVideo(_file: File): Promise<VideoFile> {
-    // TODO: integrate with API
-    throw new Error("VideoService.uploadVideo is not implemented yet");
+  async getRecentVideos(): Promise<VideoFile[]> {
+    const videos = await this.getVideos();
+    return videos.slice(0, 3);
+  }
+
+  async getProcessedVideoUrl(videoId: number): Promise<string> {
+    const response = await apiClient.get<ProcessedVideoResponse>(
+      VideosApiEndpoints.processed(videoId),
+    );
+
+    return response.data.url;
+  }
+
+  async createVideo(data: CreateVideoRequest): Promise<CreateVideoResponse> {
+    const response = await apiClient.post<CreateVideoResponse>(
+      VideosApiEndpoints.list,
+      data,
+    );
+
+    return response.data;
   }
 
   async deleteVideo(_id: string): Promise<void> {
-    // TODO: integrate with API
+    // TODO: integrate with delete API when available
     throw new Error("VideoService.deleteVideo is not implemented yet");
-  }
-
-  async startProcessing(_id: string): Promise<void> {
-    // TODO: integrate with API
-    throw new Error("VideoService.startProcessing is not implemented yet");
   }
 }
 

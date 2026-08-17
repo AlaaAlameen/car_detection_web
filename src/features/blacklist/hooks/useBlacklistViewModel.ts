@@ -1,17 +1,25 @@
 import { useEffect, useMemo, useState } from "react";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import {
   mockDashboardData,
   useDashboardStore,
 } from "../../dashboard";
+import type { UpdateBlacklistRequest } from "../api/blacklist.types";
 import {
   BLACKLIST_DEFAULT_PAGE_SIZE,
-  mockBlacklistStats,
-  mockBlacklistedVehicles,
-} from "../data/mockBlacklistData";
-import type { BlacklistFilters } from "../models/blacklist.types";
+  blacklistQueryKeys,
+  type BlacklistedVehicle,
+  type BlacklistFilters,
+} from "../models/blacklist.types";
+import { blacklistService } from "../services/BlacklistService";
 
 function formatNumber(value: number): string {
   return new Intl.NumberFormat("ar-EG").format(value);
+}
+
+function toPercent(count: number, total: number): number {
+  if (total === 0) return 0;
+  return Math.round((count / total) * 1000) / 10;
 }
 
 const initialFilters: BlacklistFilters = {
@@ -30,41 +38,108 @@ export function useBlacklistViewModel() {
   const [filters, setFilters] = useState<BlacklistFilters>(initialFilters);
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState(BLACKLIST_DEFAULT_PAGE_SIZE);
+  const [editingEntry, setEditingEntry] = useState<BlacklistedVehicle | null>(
+    null,
+  );
+  const [deletingEntry, setDeletingEntry] =
+    useState<BlacklistedVehicle | null>(null);
+
+  const queryClient = useQueryClient();
 
   useEffect(() => {
     setActiveMenuId("blacklist");
   }, [setActiveMenuId]);
 
-  const filteredVehicles = useMemo(() => {
+  const blacklistQuery = useQuery({
+    queryKey: blacklistQueryKeys.list(),
+    queryFn: () => blacklistService.getBlacklist(),
+  });
+
+  const allEntries = useMemo(
+    () => blacklistQuery.data ?? [],
+    [blacklistQuery.data],
+  );
+
+  const updateMutation = useMutation({
+    mutationFn: ({
+      id,
+      payload,
+    }: {
+      id: string;
+      payload: UpdateBlacklistRequest;
+    }) => blacklistService.updateBlacklistEntry(id, payload),
+    onSuccess: async () => {
+      await queryClient.invalidateQueries({
+        queryKey: blacklistQueryKeys.all,
+      });
+      setEditingEntry(null);
+    },
+  });
+
+  const deleteMutation = useMutation({
+    mutationFn: (id: string) => blacklistService.deleteBlacklistEntry(id),
+    onSuccess: async () => {
+      await queryClient.invalidateQueries({
+        queryKey: blacklistQueryKeys.all,
+      });
+      setDeletingEntry(null);
+    },
+  });
+
+  const severityOptions = useMemo(() => {
+    const unique = Array.from(
+      new Set(allEntries.map((entry) => entry.severity)),
+    ).sort((a, b) => a.localeCompare(b, "ar"));
+    return ["الكل", ...unique];
+  }, [allEntries]);
+
+  const typeOptions = useMemo(() => {
+    const unique = Array.from(
+      new Set(allEntries.map((entry) => entry.type).filter(Boolean)),
+    ).sort((a, b) => a.localeCompare(b, "ar"));
+    return ["الكل", ...unique];
+  }, [allEntries]);
+
+  const colorOptions = useMemo(() => {
+    const unique = Array.from(
+      new Set(allEntries.map((entry) => entry.color).filter(Boolean)),
+    ).sort((a, b) => a.localeCompare(b, "ar"));
+    return ["الكل", ...unique];
+  }, [allEntries]);
+
+  const filteredEntries = useMemo(() => {
     const query = filters.search.trim().toLowerCase();
 
-    return mockBlacklistedVehicles.filter((vehicle) => {
+    return allEntries.filter((entry) => {
       const matchesSearch =
         query.length === 0 ||
-        vehicle.plateNumber.toLowerCase().includes(query) ||
-        vehicle.ownerName.toLowerCase().includes(query);
+        entry.plateNumber.toLowerCase().includes(query) ||
+        entry.ownerName.toLowerCase().includes(query) ||
+        entry.type.toLowerCase().includes(query) ||
+        entry.color.toLowerCase().includes(query) ||
+        entry.reason.toLowerCase().includes(query);
 
       const matchesSeverity =
-        filters.severity === "الكل" || vehicle.severity === filters.severity;
+        filters.severity === "الكل" || entry.severity === filters.severity;
 
       const matchesType =
-        filters.type === "الكل" || vehicle.type === filters.type;
+        filters.type === "الكل" || entry.type === filters.type;
 
       const matchesColor =
-        filters.color === "الكل" || vehicle.color === filters.color;
+        filters.color === "الكل" || entry.color === filters.color;
 
       return matchesSearch && matchesSeverity && matchesType && matchesColor;
     });
-  }, [filters]);
+  }, [allEntries, filters]);
 
-  const totalCount = filteredVehicles.length;
+  const totalCount = filteredEntries.length;
   const totalPages = Math.max(1, Math.ceil(totalCount / pageSize));
   const safePage = Math.min(currentPage, totalPages);
 
-  const paginatedVehicles = useMemo(() => {
+  const paginatedEntries = useMemo(() => {
     const start = (safePage - 1) * pageSize;
-    return filteredVehicles.slice(start, start + pageSize);
-  }, [filteredVehicles, safePage, pageSize]);
+    return filteredEntries.slice(start, start + pageSize);
+  }, [filteredEntries, safePage, pageSize]);
 
   const rangeStart = totalCount === 0 ? 0 : (safePage - 1) * pageSize + 1;
   const rangeEnd = Math.min(safePage * pageSize, totalCount);
@@ -95,16 +170,73 @@ export function useBlacklistViewModel() {
     return pages;
   }, [totalPages, safePage]);
 
-  const formattedStats = useMemo(
-    () =>
-      mockBlacklistStats.map((stat) => ({
-        ...stat,
-        displayValue: formatNumber(stat.value),
-        displayChange:
-          stat.id === "total" ? "100%" : `${stat.changePercent}%`,
-      })),
-    [],
-  );
+  const formattedStats = useMemo(() => {
+    const total = allEntries.length;
+    const low = allEntries.filter((e) => e.priority === "low").length;
+    const medium = allEntries.filter((e) => e.priority === "medium").length;
+    const high = allEntries.filter((e) => e.priority === "high").length;
+
+    const lowPercent = toPercent(low, total);
+    const mediumPercent = toPercent(medium, total);
+    const highPercent = toPercent(high, total);
+
+    return [
+      {
+        id: "low",
+        title: "منخفضة الخطورة",
+        value: low,
+        subtitle: `${lowPercent}% من الإجمالي`,
+        changePercent: lowPercent,
+        icon: "units" as const,
+        gradient: "from-emerald-600/40 to-teal-700/30",
+        isPositive: true,
+        displayValue: formatNumber(low),
+        displayChange: `${lowPercent}%`,
+      },
+      {
+        id: "medium",
+        title: "متوسطة الخطورة",
+        value: medium,
+        subtitle: `${mediumPercent}% من الإجمالي`,
+        changePercent: mediumPercent,
+        icon: "scans" as const,
+        gradient: "from-amber-600/40 to-yellow-700/30",
+        isPositive: false,
+        displayValue: formatNumber(medium),
+        displayChange: `${mediumPercent}%`,
+      },
+      {
+        id: "high",
+        title: "عالية الخطورة",
+        value: high,
+        subtitle: `${highPercent}% من الإجمالي`,
+        changePercent: highPercent,
+        icon: "wanted" as const,
+        gradient: "from-rose-600/40 to-orange-700/30",
+        isPositive: false,
+        displayValue: formatNumber(high),
+        displayChange: `${highPercent}%`,
+      },
+      {
+        id: "total",
+        title: "إجمالي المركبات بالقائمة السوداء",
+        value: total,
+        subtitle: "جميع المركبات المدرجة",
+        changePercent: 100,
+        icon: "blacklist" as const,
+        gradient: "from-blue-600/40 to-indigo-700/30",
+        isPositive: true,
+        displayValue: formatNumber(total),
+        displayChange: total === 0 ? "0%" : "100%",
+      },
+    ];
+  }, [allEntries]);
+
+  const hasActiveFilters =
+    filters.search.trim().length > 0 ||
+    filters.severity !== "الكل" ||
+    filters.type !== "الكل" ||
+    filters.color !== "الكل";
 
   const setSearch = (search: string) => {
     setFilters((prev) => ({ ...prev, search }));
@@ -160,13 +292,18 @@ export function useBlacklistViewModel() {
     handleFullscreen,
     formattedStats,
     filters,
+    severityOptions,
+    typeOptions,
+    colorOptions,
     setSearch,
     setSeverityFilter,
     setTypeFilter,
     setColorFilter,
     resetFilters,
-    vehicles: paginatedVehicles,
+    vehicles: paginatedEntries,
     totalCount,
+    totalEntriesCount: allEntries.length,
+    hasActiveFilters,
     currentPage: safePage,
     totalPages,
     pageNumbers,
@@ -175,10 +312,39 @@ export function useBlacklistViewModel() {
     rangeStart,
     rangeEnd,
     goToPage,
+    isLoading: blacklistQuery.isLoading,
+    isError: blacklistQuery.isError,
+    refetch: blacklistQuery.refetch,
     handleAdd: () => {},
     handleExport: () => {},
-    handleEdit: (_id: string) => {},
-    handleDelete: (_id: string) => {},
+    handleEdit: (id: string) => {
+      const entry = allEntries.find((e) => e.id === id) ?? null;
+      setEditingEntry(entry);
+    },
+    handleDelete: (id: string) => {
+      const entry = allEntries.find((e) => e.id === id) ?? null;
+      setDeletingEntry(entry);
+    },
     handleMore: (_id: string) => {},
+    editingEntry,
+    isSavingEdit: updateMutation.isPending,
+    handleCloseEditModal: () => {
+      setEditingEntry(null);
+      updateMutation.reset();
+    },
+    handleSaveEdit: (payload: UpdateBlacklistRequest) => {
+      if (!editingEntry) return;
+      updateMutation.mutate({ id: editingEntry.id, payload });
+    },
+    deletingEntry,
+    isDeleting: deleteMutation.isPending,
+    handleCloseDeleteModal: () => {
+      setDeletingEntry(null);
+      deleteMutation.reset();
+    },
+    handleConfirmDelete: () => {
+      if (!deletingEntry) return;
+      deleteMutation.mutate(deletingEntry.id);
+    },
   };
 }

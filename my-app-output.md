@@ -3,8 +3,8 @@
 ## 📊 Project Information
 
 - **Project Name**: `my-app`
-- **Generated On**: 2026-08-15 11:18:28 (Europe/Istanbul / GMT+03:00)
-- **Total Files Processed**: 135
+- **Generated On**: 2026-08-17 11:58:52 (Europe/Istanbul / GMT+03:00)
+- **Total Files Processed**: 170
 - **Export Tool**: Easy Whole Project to Single Text File for LLMs v1.1.0
 - **Tool Author**: Jota / José Guilherme Pandolfi
 
@@ -24,60 +24,76 @@
 │   ├── 📄 favicon.svg (9.3 KB)
 │   └── 📄 icons.svg (4.91 KB)
 ├── 📁 src/
+│   ├── 📁 api/
+│   │   └── 📄 axios.ts (527 B)
 │   ├── 📁 assets/
 │   │   ├── 📄 hero.png (12.75 KB)
 │   │   ├── 📄 react.svg (4.03 KB)
 │   │   └── 📄 vite.svg (8.5 KB)
 │   ├── 📁 features/
 │   │   ├── 📁 analysis/
+│   │   │   ├── 📁 api/
+│   │   │   │   ├── 📄 detectionDetails.types.ts (582 B)
+│   │   │   │   ├── 📄 detections.endpoints.ts (226 B)
+│   │   │   │   └── 📄 detections.types.ts (240 B)
 │   │   │   ├── 📁 components/
-│   │   │   │   ├── 📄 AnalysisAlertsTable.tsx (5.47 KB)
+│   │   │   │   ├── 📄 AnalysisAlertsTable.tsx (6.16 KB)
 │   │   │   │   ├── 📄 AnalysisFilterBar.tsx (2.27 KB)
 │   │   │   │   ├── 📄 AnalysisResultsHeader.tsx (979 B)
 │   │   │   │   ├── 📄 AnalysisStatsGrid.tsx (939 B)
 │   │   │   │   ├── 📄 ConfidenceBar.tsx (768 B)
 │   │   │   │   ├── 📄 index.ts (705 B)
-│   │   │   │   ├── 📄 SeverityBadge.tsx (778 B)
+│   │   │   │   ├── 📄 SeverityBadge.tsx (872 B)
 │   │   │   │   ├── 📄 VehicleComparisonTable.tsx (2.85 KB)
-│   │   │   │   ├── 📄 VehicleDetailsHeader.tsx (2.18 KB)
+│   │   │   │   ├── 📄 VehicleDetailsHeader.tsx (2.07 KB)
 │   │   │   │   ├── 📄 VehicleDetailsSummaryCards.tsx (760 B)
-│   │   │   │   ├── 📄 VehicleInfoCard.tsx (2.41 KB)
-│   │   │   │   ├── 📄 VideoPlayerModal.tsx (2.31 KB)
+│   │   │   │   ├── 📄 VehicleInfoCard.tsx (2.32 KB)
+│   │   │   │   ├── 📄 VideoPlayerModal.tsx (3.42 KB)
 │   │   │   │   └── 📄 VideoSummaryCard.tsx (2.58 KB)
+│   │   │   ├── 📁 constants/
+│   │   │   │   └── 📄 analysis.constants.ts (626 B)
 │   │   │   ├── 📁 data/
-│   │   │   │   ├── 📄 mockAnalysisData.ts (4.38 KB)
+│   │   │   │   ├── 📄 mockAnalysisData.ts (760 B)
 │   │   │   │   └── 📄 mockVehicleDetailsData.ts (3.71 KB)
 │   │   │   ├── 📁 hooks/
-│   │   │   │   ├── 📄 useAnalysisResultsViewModel.ts (4.28 KB)
-│   │   │   │   └── 📄 useVehicleDetailsViewModel.ts (2.36 KB)
+│   │   │   │   ├── 📄 useAnalysisResultsViewModel.ts (8.22 KB)
+│   │   │   │   └── 📄 useVehicleDetailsViewModel.ts (3.16 KB)
 │   │   │   ├── 📁 models/
-│   │   │   │   ├── 📄 analysis.types.ts (951 B)
+│   │   │   │   ├── 📄 analysis.types.ts (1.1 KB)
 │   │   │   │   └── 📄 vehicleDetails.types.ts (709 B)
 │   │   │   ├── 📁 pages/
-│   │   │   │   ├── 📄 AnalysisResultsPage.tsx (2.31 KB)
-│   │   │   │   └── 📄 VehicleDetailsPage.tsx (1.15 KB)
+│   │   │   │   ├── 📄 AnalysisResultsPage.tsx (3.72 KB)
+│   │   │   │   └── 📄 VehicleDetailsPage.tsx (1.66 KB)
 │   │   │   ├── 📁 routes/
-│   │   │   │   └── 📄 analysisRoutes.ts (314 B)
+│   │   │   │   └── 📄 analysisRoutes.ts (485 B)
 │   │   │   ├── 📁 services/
-│   │   │   │   └── 📄 AnalysisService.ts (762 B)
-│   │   │   └── 📄 index.ts (501 B)
+│   │   │   │   └── 📄 AnalysisService.ts (1.44 KB)
+│   │   │   ├── 📁 utils/
+│   │   │   │   ├── 📄 buildAnalysisStats.ts (2.21 KB)
+│   │   │   │   ├── 📄 confidence.utils.ts (155 B)
+│   │   │   │   ├── 📄 mapDetectionApiToUi.ts (855 B)
+│   │   │   │   ├── 📄 mapDetectionDetailsToVehicleDetails.ts (2 KB)
+│   │   │   │   ├── 📄 mapVideoToAnalysisSummary.ts (798 B)
+│   │   │   │   ├── 📄 severity.utils.ts (784 B)
+│   │   │   │   └── 📄 violationType.utils.ts (659 B)
+│   │   │   └── 📄 index.ts (534 B)
 │   │   ├── 📁 auth/
 │   │   │   ├── 📁 components/
 │   │   │   │   ├── 📁 feature/
 │   │   │   │   │   ├── 📄 index.ts (42 B)
 │   │   │   │   │   └── 📄 LoginForm.tsx (1.95 KB)
 │   │   │   │   ├── 📁 shared/
-│   │   │   │   │   ├── 📄 AuthBrandPanel.tsx (5.62 KB)
+│   │   │   │   │   ├── 📄 AuthBrandPanel.tsx (5.25 KB)
 │   │   │   │   │   ├── 📄 AuthSplitLayout.tsx (832 B)
 │   │   │   │   │   ├── 📄 index.ts (156 B)
 │   │   │   │   │   └── 📄 PasswordInput.tsx (1.93 KB)
 │   │   │   │   └── 📁 ui/
-│   │   │   │       ├── 📄 Button.tsx (1.17 KB)
+│   │   │   │       ├── 📄 Button.tsx (1.22 KB)
 │   │   │   │       ├── 📄 Checkbox.tsx (780 B)
 │   │   │   │       ├── 📄 index.ts (110 B)
 │   │   │   │       └── 📄 Input.tsx (1.27 KB)
 │   │   │   ├── 📁 hooks/
-│   │   │   │   └── 📄 useLoginViewModel.ts (683 B)
+│   │   │   │   └── 📄 useLoginViewModel.ts (638 B)
 │   │   │   ├── 📁 models/
 │   │   │   │   └── 📄 auth.types.ts (474 B)
 │   │   │   ├── 📁 pages/
@@ -85,48 +101,55 @@
 │   │   │   ├── 📁 routes/
 │   │   │   │   └── 📄 authRoutes.ts (135 B)
 │   │   │   ├── 📁 services/
-│   │   │   │   └── 📄 AuthService.ts (672 B)
+│   │   │   │   └── 📄 AuthService.ts (481 B)
 │   │   │   ├── 📁 store/
 │   │   │   │   └── 📄 authStore.ts (623 B)
 │   │   │   ├── 📁 validators/
 │   │   │   │   └── 📄 loginSchema.ts (604 B)
 │   │   │   └── 📄 index.ts (329 B)
 │   │   ├── 📁 blacklist/
+│   │   │   ├── 📁 api/
+│   │   │   │   ├── 📄 blacklist.endpoints.ts (152 B)
+│   │   │   │   └── 📄 blacklist.types.ts (1023 B)
 │   │   │   ├── 📁 components/
-│   │   │   │   ├── 📄 BlacklistFilters.tsx (4.27 KB)
-│   │   │   │   ├── 📄 BlacklistHeader.tsx (938 B)
-│   │   │   │   ├── 📄 BlacklistStats.tsx (922 B)
-│   │   │   │   ├── 📄 BlacklistTable.tsx (5.53 KB)
-│   │   │   │   └── 📄 index.ts (213 B)
+│   │   │   │   ├── 📄 BlacklistFilters.tsx (3.42 KB)
+│   │   │   │   ├── 📄 BlacklistHeader.tsx (969 B)
+│   │   │   │   ├── 📄 BlacklistStats.tsx (957 B)
+│   │   │   │   ├── 📄 BlacklistTable.tsx (5.78 KB)
+│   │   │   │   ├── 📄 DeleteConfirmModal.tsx (2.75 KB)
+│   │   │   │   ├── 📄 EditBlacklistModal.tsx (4.54 KB)
+│   │   │   │   └── 📄 index.ts (335 B)
 │   │   │   ├── 📁 data/
-│   │   │   │   └── 📄 mockBlacklistData.ts (5.33 KB)
 │   │   │   ├── 📁 hooks/
-│   │   │   │   └── 📄 useBlacklistViewModel.ts (4.94 KB)
+│   │   │   │   └── 📄 useBlacklistViewModel.ts (10.2 KB)
 │   │   │   ├── 📁 models/
-│   │   │   │   └── 📄 blacklist.types.ts (907 B)
+│   │   │   │   └── 📄 blacklist.types.ts (1.3 KB)
 │   │   │   ├── 📁 pages/
-│   │   │   │   └── 📄 BlacklistPage.tsx (2.05 KB)
+│   │   │   │   └── 📄 BlacklistPage.tsx (3.53 KB)
 │   │   │   ├── 📁 routes/
-│   │   │   │   └── 📄 blacklistRoutes.ts (155 B)
+│   │   │   │   └── 📄 blacklistRoutes.ts (161 B)
 │   │   │   ├── 📁 services/
-│   │   │   │   └── 📄 BlacklistService.ts (1.21 KB)
-│   │   │   └── 📄 index.ts (250 B)
+│   │   │   │   └── 📄 BlacklistService.ts (1.32 KB)
+│   │   │   ├── 📁 utils/
+│   │   │   │   ├── 📄 mapBlacklistApiToUi.ts (942 B)
+│   │   │   │   └── 📄 priority.utils.ts (1.62 KB)
+│   │   │   └── 📄 index.ts (517 B)
 │   │   ├── 📁 dashboard/
 │   │   │   ├── 📁 components/
 │   │   │   │   ├── 📁 feature/
-│   │   │   │   │   ├── 📄 AlertsSection.tsx (961 B)
+│   │   │   │   │   ├── 📄 AlertsSection.tsx (996 B)
 │   │   │   │   │   ├── 📄 AnalyticsSection.tsx (1.09 KB)
 │   │   │   │   │   ├── 📄 index.ts (212 B)
 │   │   │   │   │   ├── 📄 ScansChartSection.tsx (409 B)
 │   │   │   │   │   └── 📄 StatsSection.tsx (1.09 KB)
 │   │   │   │   ├── 📁 shared/
 │   │   │   │   │   ├── 📄 DashboardLayout.tsx (1.32 KB)
-│   │   │   │   │   ├── 📄 icons.tsx (8.18 KB)
+│   │   │   │   │   ├── 📄 icons.tsx (7.47 KB)
 │   │   │   │   │   ├── 📄 index.ts (166 B)
 │   │   │   │   │   ├── 📄 Sidebar.tsx (3.22 KB)
-│   │   │   │   │   └── 📄 Topbar.tsx (2.88 KB)
+│   │   │   │   │   └── 📄 Topbar.tsx (2.87 KB)
 │   │   │   │   └── 📁 ui/
-│   │   │   │       ├── 📄 AlertItem.tsx (1.08 KB)
+│   │   │   │       ├── 📄 AlertItem.tsx (1.31 KB)
 │   │   │   │       ├── 📄 BarChart.tsx (1.47 KB)
 │   │   │   │       ├── 📄 CardContainer.tsx (796 B)
 │   │   │   │       ├── 📄 index.ts (306 B)
@@ -135,7 +158,7 @@
 │   │   │   │       ├── 📄 ProgressCircle.tsx (1.81 KB)
 │   │   │   │       └── 📄 StatCard.tsx (1.64 KB)
 │   │   │   ├── 📁 data/
-│   │   │   │   └── 📄 mockDashboardData.ts (4.79 KB)
+│   │   │   │   └── 📄 mockDashboardData.ts (4.67 KB)
 │   │   │   ├── 📁 hooks/
 │   │   │   │   └── 📄 useDashboardViewModel.ts (1.77 KB)
 │   │   │   ├── 📁 models/
@@ -145,67 +168,90 @@
 │   │   │   ├── 📁 routes/
 │   │   │   │   └── 📄 dashboardRoutes.ts (161 B)
 │   │   │   ├── 📁 services/
-│   │   │   │   └── 📄 DashboardService.ts (632 B)
+│   │   │   │   └── 📄 DashboardService.ts (438 B)
 │   │   │   ├── 📁 store/
 │   │   │   │   └── 📄 dashboardStore.ts (679 B)
 │   │   │   └── 📄 index.ts (550 B)
 │   │   ├── 📁 vehicles/
+│   │   │   ├── 📁 api/
+│   │   │   │   ├── 📄 vehicles.endpoints.ts (147 B)
+│   │   │   │   └── 📄 vehicles.types.ts (530 B)
 │   │   │   ├── 📁 components/
-│   │   │   │   ├── 📄 index.ts (270 B)
-│   │   │   │   ├── 📄 VehiclesFilterBar.tsx (3.05 KB)
+│   │   │   │   ├── 📄 AddToBlacklistModal.tsx (4.56 KB)
+│   │   │   │   ├── 📄 DeleteVehicleModal.tsx (2.74 KB)
+│   │   │   │   ├── 📄 index.ts (622 B)
+│   │   │   │   ├── 📄 VehicleFormModal.tsx (6.23 KB)
+│   │   │   │   ├── 📄 VehiclesEmptyState.tsx (347 B)
+│   │   │   │   ├── 📄 VehiclesErrorState.tsx (722 B)
+│   │   │   │   ├── 📄 VehiclesFilterBar.tsx (2.83 KB)
 │   │   │   │   ├── 📄 VehiclesHeader.tsx (914 B)
-│   │   │   │   ├── 📄 VehiclesPagination.tsx (4.42 KB)
+│   │   │   │   ├── 📄 VehiclesPagination.tsx (4.27 KB)
 │   │   │   │   ├── 📄 VehiclesStats.tsx (917 B)
-│   │   │   │   └── 📄 VehiclesTable.tsx (7.15 KB)
+│   │   │   │   ├── 📄 VehiclesTable.tsx (8.18 KB)
+│   │   │   │   └── 📄 VehiclesTableSkeleton.tsx (595 B)
 │   │   │   ├── 📁 data/
-│   │   │   │   └── 📄 mockVehiclesData.ts (4.58 KB)
 │   │   │   ├── 📁 hooks/
-│   │   │   │   └── 📄 useVehiclesViewModel.ts (5.01 KB)
+│   │   │   │   └── 📄 useVehiclesViewModel.ts (10.38 KB)
 │   │   │   ├── 📁 models/
-│   │   │   │   └── 📄 vehicle.types.ts (942 B)
+│   │   │   │   └── 📄 vehicle.types.ts (885 B)
 │   │   │   ├── 📁 pages/
-│   │   │   │   └── 📄 VehiclesPage.tsx (2.29 KB)
+│   │   │   │   └── 📄 VehiclesPage.tsx (4.49 KB)
 │   │   │   ├── 📁 routes/
 │   │   │   │   └── 📄 vehiclesRoutes.ts (156 B)
 │   │   │   ├── 📁 services/
-│   │   │   │   └── 📄 VehiclesService.ts (624 B)
+│   │   │   │   └── 📄 VehiclesService.ts (1.03 KB)
 │   │   │   ├── 📁 store/
-│   │   │   │   └── 📄 vehiclesStore.ts (1.07 KB)
-│   │   │   └── 📄 index.ts (376 B)
+│   │   │   │   └── 📄 vehiclesStore.ts (967 B)
+│   │   │   ├── 📁 utils/
+│   │   │   │   ├── 📄 color.utils.ts (470 B)
+│   │   │   │   ├── 📄 country.utils.ts (955 B)
+│   │   │   │   └── 📄 mapVehicleApiToUi.ts (686 B)
+│   │   │   └── 📄 index.ts (586 B)
 │   │   └── 📁 video/
+│   │       ├── 📁 api/
+│   │       │   ├── 📄 videos.endpoints.ts (169 B)
+│   │       │   └── 📄 videos.types.ts (703 B)
 │   │       ├── 📁 components/
 │   │       │   ├── 📄 index.ts (468 B)
-│   │       │   ├── 📄 RecentVideosTable.tsx (5.27 KB)
-│   │       │   ├── 📄 SelectedVideoCard.tsx (3.52 KB)
-│   │       │   ├── 📄 VideosFilterBar.tsx (2.25 KB)
+│   │       │   ├── 📄 RecentVideosTable.tsx (3.17 KB)
+│   │       │   ├── 📄 SelectedVideoCard.tsx (3.58 KB)
+│   │       │   ├── 📄 VideosFilterBar.tsx (2.2 KB)
 │   │       │   ├── 📄 VideosHeader.tsx (978 B)
 │   │       │   ├── 📄 VideosStats.tsx (934 B)
-│   │       │   ├── 📄 VideosTable.tsx (5.09 KB)
+│   │       │   ├── 📄 VideosTable.tsx (3.01 KB)
 │   │       │   ├── 📄 VideoStatusBadge.tsx (859 B)
 │   │       │   ├── 📄 VideoUploadHeader.tsx (975 B)
 │   │       │   └── 📄 VideoUploadZone.tsx (4.29 KB)
+│   │       ├── 📁 constants/
+│   │       │   └── 📄 videos.constants.ts (671 B)
 │   │       ├── 📁 data/
-│   │       │   └── 📄 mockVideoData.ts (3.66 KB)
+│   │       │   └── 📄 mockVideoData.ts (1.08 KB)
 │   │       ├── 📁 hooks/
-│   │       │   ├── 📄 useProcessedVideosViewModel.ts (4.88 KB)
-│   │       │   └── 📄 useVideoUploadViewModel.ts (6.21 KB)
+│   │       │   ├── 📄 useProcessedVideosViewModel.ts (5.21 KB)
+│   │       │   └── 📄 useVideoUploadViewModel.ts (7.68 KB)
 │   │       ├── 📁 models/
-│   │       │   └── 📄 video.types.ts (549 B)
+│   │       │   └── 📄 video.types.ts (744 B)
 │   │       ├── 📁 pages/
-│   │       │   ├── 📄 ProcessedVideosPage.tsx (1.69 KB)
-│   │       │   └── 📄 VideoUploadPage.tsx (2.07 KB)
+│   │       │   ├── 📄 ProcessedVideosPage.tsx (2.32 KB)
+│   │       │   └── 📄 VideoUploadPage.tsx (2.95 KB)
 │   │       ├── 📁 routes/
 │   │       │   └── 📄 videoRoutes.ts (160 B)
 │   │       ├── 📁 services/
-│   │       │   └── 📄 VideoService.ts (903 B)
+│   │       │   └── 📄 VideoService.ts (1.36 KB)
+│   │       ├── 📁 utils/
+│   │       │   ├── 📄 buildOriginalPath.ts (499 B)
+│   │       │   ├── 📄 formatDuration.ts (578 B)
+│   │       │   ├── 📄 mapVideoApiToUi.ts (725 B)
+│   │       │   └── 📄 readVideoDuration.ts (871 B)
 │   │       ├── 📁 validators/
 │   │       │   ├── 📄 videoUpload.constants.ts (238 B)
 │   │       │   └── 📄 videoUploadSchema.ts (1.1 KB)
-│   │       └── 📄 index.ts (457 B)
+│   │       └── 📄 index.ts (522 B)
 │   ├── 📄 App.css (2.82 KB)
-│   ├── 📄 App.tsx (1.83 KB)
+│   ├── 📄 App.tsx (1.96 KB)
 │   ├── 📄 index.css (167 B)
-│   └── 📄 main.tsx (230 B)
+│   ├── 📄 main.tsx (230 B)
+│   └── 📄 vite-env.d.ts (166 B)
 ├── 📄 eslint.config.js (771 B)
 ├── 📄 index.html (679 B)
 ├── 📄 package-lock.json (121.98 KB)
@@ -223,6 +269,10 @@
 
 **Project Files:**
 
+- [📄 src/api/axios.ts](#📄-src-api-axios-ts)
+- [📄 src/features/analysis/api/detectionDetails.types.ts](#📄-src-features-analysis-api-detectiondetails-types-ts)
+- [📄 src/features/analysis/api/detections.endpoints.ts](#📄-src-features-analysis-api-detections-endpoints-ts)
+- [📄 src/features/analysis/api/detections.types.ts](#📄-src-features-analysis-api-detections-types-ts)
 - [📄 src/features/analysis/components/AnalysisAlertsTable.tsx](#📄-src-features-analysis-components-analysisalertstable-tsx)
 - [📄 src/features/analysis/components/AnalysisFilterBar.tsx](#📄-src-features-analysis-components-analysisfilterbar-tsx)
 - [📄 src/features/analysis/components/AnalysisResultsHeader.tsx](#📄-src-features-analysis-components-analysisresultsheader-tsx)
@@ -236,6 +286,7 @@
 - [📄 src/features/analysis/components/VehicleInfoCard.tsx](#📄-src-features-analysis-components-vehicleinfocard-tsx)
 - [📄 src/features/analysis/components/VideoPlayerModal.tsx](#📄-src-features-analysis-components-videoplayermodal-tsx)
 - [📄 src/features/analysis/components/VideoSummaryCard.tsx](#📄-src-features-analysis-components-videosummarycard-tsx)
+- [📄 src/features/analysis/constants/analysis.constants.ts](#📄-src-features-analysis-constants-analysis-constants-ts)
 - [📄 src/features/analysis/data/mockAnalysisData.ts](#📄-src-features-analysis-data-mockanalysisdata-ts)
 - [📄 src/features/analysis/data/mockVehicleDetailsData.ts](#📄-src-features-analysis-data-mockvehicledetailsdata-ts)
 - [📄 src/features/analysis/hooks/useAnalysisResultsViewModel.ts](#📄-src-features-analysis-hooks-useanalysisresultsviewmodel-ts)
@@ -246,6 +297,13 @@
 - [📄 src/features/analysis/pages/VehicleDetailsPage.tsx](#📄-src-features-analysis-pages-vehicledetailspage-tsx)
 - [📄 src/features/analysis/routes/analysisRoutes.ts](#📄-src-features-analysis-routes-analysisroutes-ts)
 - [📄 src/features/analysis/services/AnalysisService.ts](#📄-src-features-analysis-services-analysisservice-ts)
+- [📄 src/features/analysis/utils/buildAnalysisStats.ts](#📄-src-features-analysis-utils-buildanalysisstats-ts)
+- [📄 src/features/analysis/utils/confidence.utils.ts](#📄-src-features-analysis-utils-confidence-utils-ts)
+- [📄 src/features/analysis/utils/mapDetectionApiToUi.ts](#📄-src-features-analysis-utils-mapdetectionapitoui-ts)
+- [📄 src/features/analysis/utils/mapDetectionDetailsToVehicleDetails.ts](#📄-src-features-analysis-utils-mapdetectiondetailstovehicledetails-ts)
+- [📄 src/features/analysis/utils/mapVideoToAnalysisSummary.ts](#📄-src-features-analysis-utils-mapvideotoanalysissummary-ts)
+- [📄 src/features/analysis/utils/severity.utils.ts](#📄-src-features-analysis-utils-severity-utils-ts)
+- [📄 src/features/analysis/utils/violationType.utils.ts](#📄-src-features-analysis-utils-violationtype-utils-ts)
 - [📄 src/features/analysis/index.ts](#📄-src-features-analysis-index-ts)
 - [📄 src/features/auth/components/feature/index.ts](#📄-src-features-auth-components-feature-index-ts)
 - [📄 src/features/auth/components/feature/LoginForm.tsx](#📄-src-features-auth-components-feature-loginform-tsx)
@@ -265,17 +323,22 @@
 - [📄 src/features/auth/store/authStore.ts](#📄-src-features-auth-store-authstore-ts)
 - [📄 src/features/auth/validators/loginSchema.ts](#📄-src-features-auth-validators-loginschema-ts)
 - [📄 src/features/auth/index.ts](#📄-src-features-auth-index-ts)
+- [📄 src/features/blacklist/api/blacklist.endpoints.ts](#📄-src-features-blacklist-api-blacklist-endpoints-ts)
+- [📄 src/features/blacklist/api/blacklist.types.ts](#📄-src-features-blacklist-api-blacklist-types-ts)
 - [📄 src/features/blacklist/components/BlacklistFilters.tsx](#📄-src-features-blacklist-components-blacklistfilters-tsx)
 - [📄 src/features/blacklist/components/BlacklistHeader.tsx](#📄-src-features-blacklist-components-blacklistheader-tsx)
 - [📄 src/features/blacklist/components/BlacklistStats.tsx](#📄-src-features-blacklist-components-blackliststats-tsx)
 - [📄 src/features/blacklist/components/BlacklistTable.tsx](#📄-src-features-blacklist-components-blacklisttable-tsx)
+- [📄 src/features/blacklist/components/DeleteConfirmModal.tsx](#📄-src-features-blacklist-components-deleteconfirmmodal-tsx)
+- [📄 src/features/blacklist/components/EditBlacklistModal.tsx](#📄-src-features-blacklist-components-editblacklistmodal-tsx)
 - [📄 src/features/blacklist/components/index.ts](#📄-src-features-blacklist-components-index-ts)
-- [📄 src/features/blacklist/data/mockBlacklistData.ts](#📄-src-features-blacklist-data-mockblacklistdata-ts)
 - [📄 src/features/blacklist/hooks/useBlacklistViewModel.ts](#📄-src-features-blacklist-hooks-useblacklistviewmodel-ts)
 - [📄 src/features/blacklist/models/blacklist.types.ts](#📄-src-features-blacklist-models-blacklist-types-ts)
 - [📄 src/features/blacklist/pages/BlacklistPage.tsx](#📄-src-features-blacklist-pages-blacklistpage-tsx)
 - [📄 src/features/blacklist/routes/blacklistRoutes.ts](#📄-src-features-blacklist-routes-blacklistroutes-ts)
 - [📄 src/features/blacklist/services/BlacklistService.ts](#📄-src-features-blacklist-services-blacklistservice-ts)
+- [📄 src/features/blacklist/utils/mapBlacklistApiToUi.ts](#📄-src-features-blacklist-utils-mapblacklistapitoui-ts)
+- [📄 src/features/blacklist/utils/priority.utils.ts](#📄-src-features-blacklist-utils-priority-utils-ts)
 - [📄 src/features/blacklist/index.ts](#📄-src-features-blacklist-index-ts)
 - [📄 src/features/dashboard/components/feature/AlertsSection.tsx](#📄-src-features-dashboard-components-feature-alertssection-tsx)
 - [📄 src/features/dashboard/components/feature/AnalyticsSection.tsx](#📄-src-features-dashboard-components-feature-analyticssection-tsx)
@@ -303,20 +366,32 @@
 - [📄 src/features/dashboard/services/DashboardService.ts](#📄-src-features-dashboard-services-dashboardservice-ts)
 - [📄 src/features/dashboard/store/dashboardStore.ts](#📄-src-features-dashboard-store-dashboardstore-ts)
 - [📄 src/features/dashboard/index.ts](#📄-src-features-dashboard-index-ts)
+- [📄 src/features/vehicles/api/vehicles.endpoints.ts](#📄-src-features-vehicles-api-vehicles-endpoints-ts)
+- [📄 src/features/vehicles/api/vehicles.types.ts](#📄-src-features-vehicles-api-vehicles-types-ts)
+- [📄 src/features/vehicles/components/AddToBlacklistModal.tsx](#📄-src-features-vehicles-components-addtoblacklistmodal-tsx)
+- [📄 src/features/vehicles/components/DeleteVehicleModal.tsx](#📄-src-features-vehicles-components-deletevehiclemodal-tsx)
 - [📄 src/features/vehicles/components/index.ts](#📄-src-features-vehicles-components-index-ts)
+- [📄 src/features/vehicles/components/VehicleFormModal.tsx](#📄-src-features-vehicles-components-vehicleformmodal-tsx)
+- [📄 src/features/vehicles/components/VehiclesEmptyState.tsx](#📄-src-features-vehicles-components-vehiclesemptystate-tsx)
+- [📄 src/features/vehicles/components/VehiclesErrorState.tsx](#📄-src-features-vehicles-components-vehicleserrorstate-tsx)
 - [📄 src/features/vehicles/components/VehiclesFilterBar.tsx](#📄-src-features-vehicles-components-vehiclesfilterbar-tsx)
 - [📄 src/features/vehicles/components/VehiclesHeader.tsx](#📄-src-features-vehicles-components-vehiclesheader-tsx)
 - [📄 src/features/vehicles/components/VehiclesPagination.tsx](#📄-src-features-vehicles-components-vehiclespagination-tsx)
 - [📄 src/features/vehicles/components/VehiclesStats.tsx](#📄-src-features-vehicles-components-vehiclesstats-tsx)
 - [📄 src/features/vehicles/components/VehiclesTable.tsx](#📄-src-features-vehicles-components-vehiclestable-tsx)
-- [📄 src/features/vehicles/data/mockVehiclesData.ts](#📄-src-features-vehicles-data-mockvehiclesdata-ts)
+- [📄 src/features/vehicles/components/VehiclesTableSkeleton.tsx](#📄-src-features-vehicles-components-vehiclestableskeleton-tsx)
 - [📄 src/features/vehicles/hooks/useVehiclesViewModel.ts](#📄-src-features-vehicles-hooks-usevehiclesviewmodel-ts)
 - [📄 src/features/vehicles/models/vehicle.types.ts](#📄-src-features-vehicles-models-vehicle-types-ts)
 - [📄 src/features/vehicles/pages/VehiclesPage.tsx](#📄-src-features-vehicles-pages-vehiclespage-tsx)
 - [📄 src/features/vehicles/routes/vehiclesRoutes.ts](#📄-src-features-vehicles-routes-vehiclesroutes-ts)
 - [📄 src/features/vehicles/services/VehiclesService.ts](#📄-src-features-vehicles-services-vehiclesservice-ts)
 - [📄 src/features/vehicles/store/vehiclesStore.ts](#📄-src-features-vehicles-store-vehiclesstore-ts)
+- [📄 src/features/vehicles/utils/color.utils.ts](#📄-src-features-vehicles-utils-color-utils-ts)
+- [📄 src/features/vehicles/utils/country.utils.ts](#📄-src-features-vehicles-utils-country-utils-ts)
+- [📄 src/features/vehicles/utils/mapVehicleApiToUi.ts](#📄-src-features-vehicles-utils-mapvehicleapitoui-ts)
 - [📄 src/features/vehicles/index.ts](#📄-src-features-vehicles-index-ts)
+- [📄 src/features/video/api/videos.endpoints.ts](#📄-src-features-video-api-videos-endpoints-ts)
+- [📄 src/features/video/api/videos.types.ts](#📄-src-features-video-api-videos-types-ts)
 - [📄 src/features/video/components/index.ts](#📄-src-features-video-components-index-ts)
 - [📄 src/features/video/components/RecentVideosTable.tsx](#📄-src-features-video-components-recentvideostable-tsx)
 - [📄 src/features/video/components/SelectedVideoCard.tsx](#📄-src-features-video-components-selectedvideocard-tsx)
@@ -327,6 +402,7 @@
 - [📄 src/features/video/components/VideoStatusBadge.tsx](#📄-src-features-video-components-videostatusbadge-tsx)
 - [📄 src/features/video/components/VideoUploadHeader.tsx](#📄-src-features-video-components-videouploadheader-tsx)
 - [📄 src/features/video/components/VideoUploadZone.tsx](#📄-src-features-video-components-videouploadzone-tsx)
+- [📄 src/features/video/constants/videos.constants.ts](#📄-src-features-video-constants-videos-constants-ts)
 - [📄 src/features/video/data/mockVideoData.ts](#📄-src-features-video-data-mockvideodata-ts)
 - [📄 src/features/video/hooks/useProcessedVideosViewModel.ts](#📄-src-features-video-hooks-useprocessedvideosviewmodel-ts)
 - [📄 src/features/video/hooks/useVideoUploadViewModel.ts](#📄-src-features-video-hooks-usevideouploadviewmodel-ts)
@@ -335,6 +411,10 @@
 - [📄 src/features/video/pages/VideoUploadPage.tsx](#📄-src-features-video-pages-videouploadpage-tsx)
 - [📄 src/features/video/routes/videoRoutes.ts](#📄-src-features-video-routes-videoroutes-ts)
 - [📄 src/features/video/services/VideoService.ts](#📄-src-features-video-services-videoservice-ts)
+- [📄 src/features/video/utils/buildOriginalPath.ts](#📄-src-features-video-utils-buildoriginalpath-ts)
+- [📄 src/features/video/utils/formatDuration.ts](#📄-src-features-video-utils-formatduration-ts)
+- [📄 src/features/video/utils/mapVideoApiToUi.ts](#📄-src-features-video-utils-mapvideoapitoui-ts)
+- [📄 src/features/video/utils/readVideoDuration.ts](#📄-src-features-video-utils-readvideoduration-ts)
 - [📄 src/features/video/validators/videoUpload.constants.ts](#📄-src-features-video-validators-videoupload-constants-ts)
 - [📄 src/features/video/validators/videoUploadSchema.ts](#📄-src-features-video-validators-videouploadschema-ts)
 - [📄 src/features/video/index.ts](#📄-src-features-video-index-ts)
@@ -342,6 +422,7 @@
 - [📄 src/App.tsx](#📄-src-app-tsx)
 - [📄 src/index.css](#📄-src-index-css)
 - [📄 src/main.tsx](#📄-src-main-tsx)
+- [📄 src/vite-env.d.ts](#📄-src-vite-env-d-ts)
 - [📄 eslint.config.js](#📄-eslint-config-js)
 - [📄 index.html](#📄-index-html)
 - [📄 package-lock.json](#📄-package-lock-json)
@@ -360,18 +441,18 @@
 
 | Metric | Count |
 |--------|-------|
-| Total Files | 135 |
-| Total Directories | 62 |
-| Text Files | 130 |
+| Total Files | 170 |
+| Total Directories | 73 |
+| Text Files | 165 |
 | Binary Files | 5 |
-| Total Size | 385.48 KB |
+| Total Size | 436.23 KB |
 
 ### 📄 File Types Distribution
 
 | Extension | Count |
 |-----------|-------|
-| `.tsx` | 62 |
-| `.ts` | 57 |
+| `.ts` | 84 |
+| `.tsx` | 70 |
 | `.json` | 5 |
 | `.svg` | 4 |
 | `.css` | 2 |
@@ -389,6 +470,53 @@ The following files were not included in the text content:
 - `public/favicon.svg`
 - `public/icons.svg`
 
+### <a id="📄-src-api-axios-ts"></a>📄 `src/api/axios.ts`
+
+**File Info:**
+- **Size**: 527 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/api/axios.ts`
+- **Relative Path**: `src/api`
+- **Created**: 2026-08-15 21:27:09 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-16 18:03:12 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `17bba1ed9ac391ed81955c210168868d`
+- **SHA256**: `b4ba70ce3edc57654ecf3b41d8f21211f969c6c3fbebd9b6059d711ac50d5432`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import axios from "axios";
+
+const baseURL = import.meta.env.VITE_API_URL;
+
+if (!baseURL) {
+  throw new Error("VITE_API_URL is not defined in environment configuration");
+}
+
+
+export const apiClient = axios.create({
+  baseURL,
+  headers: {
+    Accept: "application/json",
+    "Content-Type": "application/json",
+  },
+});
+
+apiClient.interceptors.request.use((config) => {
+  return config;
+});
+
+apiClient.interceptors.response.use(
+  (response) => response,
+  (error: unknown) => Promise.reject(error),
+);
+
+```
+
+---
+
 ## 🚫 Binary/Excluded Files
 
 The following files were not included in the text content:
@@ -397,24 +525,131 @@ The following files were not included in the text content:
 - `src/assets/react.svg`
 - `src/assets/vite.svg`
 
+### <a id="📄-src-features-analysis-api-detectiondetails-types-ts"></a>📄 `src/features/analysis/api/detectionDetails.types.ts`
+
+**File Info:**
+- **Size**: 582 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/analysis/api/detectionDetails.types.ts`
+- **Relative Path**: `src/features/analysis/api`
+- **Created**: 2026-08-16 20:19:24 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-16 20:35:05 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `0bc81fc3bc0412492557d5879285f2e9`
+- **SHA256**: `80e5d16c06e318e93fd74ea337cff0a29b23b8019e336c92c364ff8e3e126262`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+export interface DetectionComparisonField {
+  ai: string;
+  confidence: number;
+  actual: string;
+  mismatch: boolean;
+}
+
+export interface DetectionDetails {
+  id: number;
+  vehicle_image_url: string;
+  comparison: {
+    plate: DetectionComparisonField;
+    model: DetectionComparisonField;
+    type: DetectionComparisonField;
+    color: DetectionComparisonField;
+  };
+  risk_score: number;
+  severity: string | null;
+  violation_type: string | null;
+  message: string | null;
+}
+
+export interface DetectionDetailsResponse {
+  detection: DetectionDetails;
+}
+
+```
+
+---
+
+### <a id="📄-src-features-analysis-api-detections-endpoints-ts"></a>📄 `src/features/analysis/api/detections.endpoints.ts`
+
+**File Info:**
+- **Size**: 226 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/analysis/api/detections.endpoints.ts`
+- **Relative Path**: `src/features/analysis/api`
+- **Created**: 2026-08-16 19:08:31 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-16 20:35:05 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `e367aac5714800d23d46a20b7e7f517e`
+- **SHA256**: `b1d207d83f646b05b9f46f1e13f609db3415ed3face797cb182c96e43eb2f4ff`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+export const DetectionsApiEndpoints = {
+  byVideo: (videoId: number | string) =>
+    `/api/admin/videos/${videoId}/detections`,
+  byId: (detectionId: number | string) =>
+    `/api/admin/detections/${detectionId}`,
+} as const;
+
+```
+
+---
+
+### <a id="📄-src-features-analysis-api-detections-types-ts"></a>📄 `src/features/analysis/api/detections.types.ts`
+
+**File Info:**
+- **Size**: 240 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/analysis/api/detections.types.ts`
+- **Relative Path**: `src/features/analysis/api`
+- **Created**: 2026-08-16 19:08:31 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-16 19:08:31 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `65b2df2e4fc9b000d7745fd0e361e7df`
+- **SHA256**: `d305e85003cfddd166676e9feb52bf729d3d1ac4cb126aed8e418f19392871ee`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+export interface DetectionApiItem {
+  id: number;
+  plate_number: string;
+  violation_type: string | null;
+  severity: string | null;
+  message: string | null;
+}
+
+export interface DetectionsApiResponse {
+  detections: DetectionApiItem[];
+}
+
+```
+
+---
+
 ### <a id="📄-src-features-analysis-components-analysisalertstable-tsx"></a>📄 `src/features/analysis/components/AnalysisAlertsTable.tsx`
 
 **File Info:**
-- **Size**: 5.47 KB
+- **Size**: 6.16 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/analysis/components/AnalysisAlertsTable.tsx`
 - **Relative Path**: `src/features/analysis/components`
 - **Created**: 2026-08-13 17:22:57 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 23:36:29 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `616ef3dace484655ae14aaa152407499`
-- **SHA256**: `05e69c8243a78300b3a0de7743de451d29c8a5b4e2280277d4c5981d0cd1c9fc`
+- **Modified**: 2026-08-17 06:36:39 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `242547dbd35fe9bc05a511353130d561`
+- **SHA256**: `e002f034edb90c5007f513c6b41ed57b8815bc4282ebd12a9f301a1426920335`
 - **Encoding**: UTF-8
 
 **File code content:**
 
 ```typescript
-import type { ReactNode } from "react";
 import type { AnalysisAlert } from "../models/analysis.types";
 import { SeverityBadge } from "./SeverityBadge";
 
@@ -431,9 +666,9 @@ export function AnalysisAlertsTable({
   alerts,
   pageStartIndex,
   onRowClick,
-  onView,
-  onPlay,
-  onMore,
+  // onView,
+  // onPlay,
+  // onMore,
 }: AnalysisAlertsTableProps) {
   return (
     <div className="overflow-hidden rounded-xl border border-white/10">
@@ -446,7 +681,7 @@ export function AnalysisAlertsTable({
               <th className="px-4 py-3.5 text-start font-medium">نوع التنبيه</th>
               <th className="px-4 py-3.5 text-start font-medium">درجة الخطورة</th>
               <th className="px-4 py-3.5 text-start font-medium">الرسالة</th>
-              <th className="px-4 py-3.5 text-start font-medium">الإجراءات</th>
+              {/* <th className="px-4 py-3.5 text-start font-medium">الإجراءات</th> */}
             </tr>
           </thead>
           <tbody>
@@ -460,65 +695,72 @@ export function AnalysisAlertsTable({
                 </td>
               </tr>
             ) : (
-              alerts.map((alert, index) => (
-                <tr
-                  key={alert.id}
-                  role="button"
-                  tabIndex={0}
-                  onClick={() => onRowClick(alert.id)}
-                  onKeyDown={(event) => {
-                    if (event.key === "Enter" || event.key === " ") {
-                      event.preventDefault();
-                      onRowClick(alert.id);
+              alerts.map((alert, index) => {
+                const isClickable = Boolean(alert.violationType);
+                return (
+                  <tr
+                    key={alert.id}
+                    role={isClickable ? "button" : undefined}
+                    tabIndex={isClickable ? 0 : undefined}
+                    onClick={isClickable ? () => onRowClick(alert.id) : undefined}
+                    onKeyDown={
+                      isClickable
+                        ? (event: React.KeyboardEvent<HTMLTableRowElement>) => {
+                            if (event.key === "Enter" || event.key === " ") {
+                              event.preventDefault();
+                              onRowClick(alert.id);
+                            }
+                          }
+                        : undefined
                     }
-                  }}
-                  className="cursor-pointer border-b border-white/5 transition hover:bg-white/[0.04]"
-                >
-                  <td className="px-4 py-3.5 text-white/45">
-                    {pageStartIndex + index}
-                  </td>
-                  <td className="px-4 py-3.5">
-                    <span className="inline-flex rounded-lg bg-gradient-to-l from-blue-600/30 to-violet-600/20 px-2.5 py-1 font-semibold tracking-wide text-blue-200 ring-1 ring-blue-500/30">
-                      {alert.plateNumber}
-                    </span>
-                  </td>
-                  <td className="px-4 py-3.5 text-white/75">
-                    {alert.alertType}
-                  </td>
-                  <td className="px-4 py-3.5">
-                    <SeverityBadge severity={alert.severity} />
-                  </td>
-                  <td className="max-w-xs px-4 py-3.5 text-white/60">
-                    <span className="line-clamp-2">{alert.message}</span>
-                  </td>
-                  <td className="px-4 py-3.5">
-                    <div
-                      className="flex items-center gap-1.5"
-                      onClick={(event) => event.stopPropagation()}
-                      onKeyDown={(event) => event.stopPropagation()}
-                    >
-                      <ActionButton
-                        label="عرض"
-                        onClick={() => onView(alert.id)}
+                    className={`${isClickable ? "cursor-pointer hover:bg-white/[0.04]" : "cursor-default"} border-b border-white/5 transition`}
+                  >
+                    <td className="px-4 py-3.5 text-white/45">
+                      {pageStartIndex + index}
+                    </td>
+                    <td className="px-4 py-3.5">
+                      <span className="inline-flex rounded-lg bg-gradient-to-l from-blue-600/30 to-violet-600/20 px-2.5 py-1 font-semibold tracking-wide text-blue-200 ring-1 ring-blue-500/30">
+                        {alert.plateNumber}
+                      </span>
+                    </td>
+                    <td className="px-4 py-3.5 text-white/75">
+                      {alert.alertType}
+                    </td>
+                    <td className="px-4 py-3.5">
+                      <SeverityBadge severity={alert.severity} />
+                    </td>
+                    <td className="max-w-xs px-4 py-3.5 text-white/60">
+                      <span className="line-clamp-2">{alert.message}</span>
+                    </td>
+                    {/* <td className="px-4 py-3.5">
+                      <div
+                        className="flex items-center gap-1.5"
+                        onClick={(event) => event.stopPropagation()}
+                        onKeyDown={(event) => event.stopPropagation()}
                       >
-                        <EyeIcon />
-                      </ActionButton>
-                      <ActionButton
-                        label="تشغيل المقطع"
-                        onClick={() => onPlay(alert.id)}
-                      >
-                        <PlayIcon />
-                      </ActionButton>
-                      <ActionButton
-                        label="المزيد"
-                        onClick={() => onMore(alert.id)}
-                      >
-                        <MoreIcon />
-                      </ActionButton>
-                    </div>
-                  </td>
-                </tr>
-              ))
+                        <ActionButton
+                          label="عرض"
+                          onClick={() => onView(alert.id)}
+                        >
+                          <EyeIcon />
+                        </ActionButton>
+                        <ActionButton
+                          label="تشغيل المقطع"
+                          onClick={() => onPlay(alert.id)}
+                        >
+                          <PlayIcon />
+                        </ActionButton>
+                        <ActionButton
+                          label="المزيد"
+                          onClick={() => onMore(alert.id)}
+                        >
+                          <MoreIcon />
+                        </ActionButton>
+                      </div>
+                    </td> */}
+                  </tr>
+                );
+              })
             )}
           </tbody>
         </table>
@@ -527,70 +769,70 @@ export function AnalysisAlertsTable({
   );
 }
 
-function ActionButton({
-  children,
-  label,
-  onClick,
-}: {
-  children: ReactNode;
-  label: string;
-  onClick: () => void;
-}) {
-  return (
-    <button
-      type="button"
-      aria-label={label}
-      onClick={onClick}
-      className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-white/55 transition hover:bg-white/10 hover:text-white"
-    >
-      {children}
-    </button>
-  );
-}
+// function ActionButton({
+//   children,
+//   label,
+//   onClick,
+// }: {
+//   children: ReactNode;
+//   label: string;
+//   onClick: () => void;
+// }) {
+//   return (
+//     <button
+//       type="button"
+//       aria-label={label}
+//       onClick={onClick}
+//       className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-white/55 transition hover:bg-white/10 hover:text-white"
+//     >
+//       {children}
+//     </button>
+//   );
+// }
 
-function EyeIcon() {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      className="h-3.5 w-3.5"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.8"
-      aria-hidden
-    >
-      <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z" />
-      <circle cx="12" cy="12" r="3" />
-    </svg>
-  );
-}
+// function EyeIcon() {
+//   return (
+//     <svg
+//       viewBox="0 0 24 24"
+//       className="h-3.5 w-3.5"
+//       fill="none"
+//       stroke="currentColor"
+//       strokeWidth="1.8"
+//       aria-hidden
+//     >
+//       <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z" />
+//       <circle cx="12" cy="12" r="3" />
+//     </svg>
+//   );
+// }
 
-function PlayIcon() {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      className="h-3.5 w-3.5"
-      fill="currentColor"
-      aria-hidden
-    >
-      <path d="M8 5v14l11-7L8 5Z" />
-    </svg>
-  );
-}
+// function PlayIcon() {
+//   return (
+//     <svg
+//       viewBox="0 0 24 24"
+//       className="h-3.5 w-3.5"
+//       fill="currentColor"
+//       aria-hidden
+//     >
+//       <path d="M8 5v14l11-7L8 5Z" />
+//     </svg>
+//   );
+// }
 
-function MoreIcon() {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      className="h-3.5 w-3.5"
-      fill="currentColor"
-      aria-hidden
-    >
-      <circle cx="12" cy="5" r="1.6" />
-      <circle cx="12" cy="12" r="1.6" />
-      <circle cx="12" cy="19" r="1.6" />
-    </svg>
-  );
-}
+// function MoreIcon() {
+//   return (
+//     <svg
+//       viewBox="0 0 24 24"
+//       className="h-3.5 w-3.5"
+//       fill="currentColor"
+//       aria-hidden
+//     >
+//       <circle cx="12" cy="5" r="1.6" />
+//       <circle cx="12" cy="12" r="1.6" />
+//       <circle cx="12" cy="19" r="1.6" />
+//     </svg>
+//   );
+// }
 
 ```
 
@@ -605,9 +847,9 @@ function MoreIcon() {
 - **Location**: `src/features/analysis/components/AnalysisFilterBar.tsx`
 - **Relative Path**: `src/features/analysis/components`
 - **Created**: 2026-08-13 17:22:43 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 17:22:43 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `446cc38927310ae12ff073f4b006e3ba`
-- **SHA256**: `0967cd0c6872a31e0bc065d8bc4c171e89805e7c5703fc65fdbcd8e06fa35980`
+- **Modified**: 2026-08-16 19:08:54 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `f6a9d6de513e1fe94061db9c8af01729`
+- **SHA256**: `498b983db6699305487e6f001083add3b20c0414811c5d1a62dd5453c7ad81c7`
 - **Encoding**: UTF-8
 
 **File code content:**
@@ -617,7 +859,7 @@ import { Input } from "../../auth";
 import {
   alertTypeOptions,
   severityOptions,
-} from "../data/mockAnalysisData";
+} from "../constants/analysis.constants";
 import type { AnalysisFilters } from "../models/analysis.types";
 
 interface AnalysisFilterBarProps {
@@ -896,15 +1138,15 @@ export { VideoPlayerModal } from "./VideoPlayerModal";
 ### <a id="📄-src-features-analysis-components-severitybadge-tsx"></a>📄 `src/features/analysis/components/SeverityBadge.tsx`
 
 **File Info:**
-- **Size**: 778 B
+- **Size**: 872 B
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/analysis/components/SeverityBadge.tsx`
 - **Relative Path**: `src/features/analysis/components`
 - **Created**: 2026-08-13 17:22:56 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 17:22:56 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `51dc4505c9a5cf67b7b094841ff6bdb4`
-- **SHA256**: `ef48fb25513b30d2ede6b1920d4c572ad4cddef1a7fd7ef92d731e6fa9e7090e`
+- **Modified**: 2026-08-17 09:29:43 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `babc03c5b316d9cc4417730b532d049d`
+- **SHA256**: `a191dbff02eac682f0bde2110bc16bf5d8737e4932fcb07e3e773756ca50d386`
 - **Encoding**: UTF-8
 
 **File code content:**
@@ -916,7 +1158,7 @@ const severityConfig: Record<
   AlertSeverity,
   { className: string }
 > = {
-  عالية: {
+ عالية : {
     className: "bg-rose-500/15 text-rose-400 ring-1 ring-rose-500/30",
   },
   متوسطة: {
@@ -929,10 +1171,14 @@ const severityConfig: Record<
 };
 
 interface SeverityBadgeProps {
-  severity: AlertSeverity;
+  severity: AlertSeverity | null;
 }
 
 export function SeverityBadge({ severity }: SeverityBadgeProps) {
+  if (!severity) {
+    return <span className="text-sm text-white/40">—</span>;
+  }
+
   const config = severityConfig[severity];
 
   return (
@@ -1064,15 +1310,15 @@ function MismatchBadge({ mismatch }: { mismatch: boolean }) {
 ### <a id="📄-src-features-analysis-components-vehicledetailsheader-tsx"></a>📄 `src/features/analysis/components/VehicleDetailsHeader.tsx`
 
 **File Info:**
-- **Size**: 2.18 KB
+- **Size**: 2.07 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/analysis/components/VehicleDetailsHeader.tsx`
 - **Relative Path**: `src/features/analysis/components`
 - **Created**: 2026-08-14 14:51:10 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-15 00:17:46 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `c5f785dc56664c9fb96e5a98cfa17697`
-- **SHA256**: `23173f2cffbae353945b89933d0ad5f475571fab932ace1770aca5287a334ee3`
+- **Modified**: 2026-08-15 19:35:52 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `4257a753b7fe241f88523fe77a6b0f88`
+- **SHA256**: `b522dbab9a9009798ab62f0c008031e2d0b361bc5c2203b40490dbec2e958c03`
 - **Encoding**: UTF-8
 
 **File code content:**
@@ -1089,7 +1335,6 @@ interface VehicleDetailsHeaderProps {
 export function VehicleDetailsHeader({ onBack }: VehicleDetailsHeaderProps) {
   return (
     <div className="flex flex-col gap-4">
-      {/* مسار التنقل (Breadcrumbs) */}
       <nav className="flex flex-wrap items-center gap-2 text-xs text-white/40">
         <Link to={AnalysisRoutes.results} className="transition hover:text-white/70">
           نتائج التحليل
@@ -1102,7 +1347,6 @@ export function VehicleDetailsHeader({ onBack }: VehicleDetailsHeaderProps) {
         <span className="font-medium text-white/70">تفاصيل المركبة</span>
       </nav>
 
-      {/* العنوان الرئيسي وزر الرجوع */}
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div className="min-w-0 flex-1 space-y-1">
           <h1 className="text-2xl font-bold tracking-tight text-white">تفاصيل المركبة</h1>
@@ -1193,15 +1437,15 @@ export function VehicleDetailsSummaryCards({
 ### <a id="📄-src-features-analysis-components-vehicleinfocard-tsx"></a>📄 `src/features/analysis/components/VehicleInfoCard.tsx`
 
 **File Info:**
-- **Size**: 2.41 KB
+- **Size**: 2.32 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/analysis/components/VehicleInfoCard.tsx`
 - **Relative Path**: `src/features/analysis/components`
 - **Created**: 2026-08-14 14:51:11 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-15 00:38:47 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `963d2a66fc5d50a45ad92819e3f10682`
-- **SHA256**: `3ce7599a98dce58e5cccf699e4628792492170f2bc2da029da81bd0c0ff0a04c`
+- **Modified**: 2026-08-15 19:35:21 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `d909cedf1af8489291c05b5e1d784a90`
+- **SHA256**: `7af6075a8b59bb8341309a2f81af58831378c5d4459ee2891162496840994ede`
 - **Encoding**: UTF-8
 
 **File code content:**
@@ -1218,14 +1462,12 @@ export function VehicleInfoCard({ vehicle }: VehicleInfoCardProps) {
   return (
     <div className="rounded-xl border border-white/10 bg-white/5 p-4 sm:p-5">
       <div className="flex flex-col gap-5 lg:flex-row lg:items-stretch">
-        {/* الصورة */}
         <img
           src={vehicle.imageUrl}
           alt={vehicle.plateNumber}
           className="h-48 w-full rounded-xl object-cover ring-1 ring-white/10 lg:h-auto lg:w-64 lg:shrink-0"
         />
 
-        {/* كل المعلومات بجانب الصورة */}
         <div className="flex min-w-0 flex-1 flex-col justify-center gap-4">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <div className="min-w-0">
@@ -1275,15 +1517,15 @@ export function VehicleInfoCard({ vehicle }: VehicleInfoCardProps) {
 ### <a id="📄-src-features-analysis-components-videoplayermodal-tsx"></a>📄 `src/features/analysis/components/VideoPlayerModal.tsx`
 
 **File Info:**
-- **Size**: 2.31 KB
+- **Size**: 3.42 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/analysis/components/VideoPlayerModal.tsx`
 - **Relative Path**: `src/features/analysis/components`
 - **Created**: 2026-08-15 11:11:41 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-15 11:11:49 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `d8eed2dd59e7ef008f9e150a2bbd5850`
-- **SHA256**: `dda7964e45e1ece8d4ae88f5ded079fd4d4766f515655db532f49f998f9f3bdb`
+- **Modified**: 2026-08-16 20:52:34 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `f6c25dab5db4b5d046442e655a2593f3`
+- **SHA256**: `f487fb65551c1223395ef174a14bc3a9f1ef58e41d9cd1d300535756a6adf091`
 - **Encoding**: UTF-8
 
 **File code content:**
@@ -1294,10 +1536,21 @@ import type { AnalysisVideoSummary } from "../models/analysis.types";
 
 interface VideoPlayerModalProps {
   video: AnalysisVideoSummary;
+  videoUrl: string | null;
+  isLoading: boolean;
+  isError: boolean;
+  onRetry: () => void;
   onClose: () => void;
 }
 
-export function VideoPlayerModal({ video, onClose }: VideoPlayerModalProps) {
+export function VideoPlayerModal({
+  video,
+  videoUrl,
+  isLoading,
+  isError,
+  onRetry,
+  onClose,
+}: VideoPlayerModalProps) {
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") onClose();
@@ -1335,16 +1588,34 @@ export function VideoPlayerModal({ video, onClose }: VideoPlayerModalProps) {
           </button>
         </div>
 
-        <div className="overflow-hidden rounded-xl bg-black ring-1 ring-white/10">
-          <video
-            src={video.videoUrl}
-            poster={video.thumbnailUrl}
-            controls
-            autoPlay
-            className="aspect-video w-full"
-          >
-            متصفحك لا يدعم عرض الفيديو.
-          </video>
+        <div className="flex aspect-video w-full items-center justify-center overflow-hidden rounded-xl bg-black ring-1 ring-white/10">
+          {isLoading ? (
+            <div className="flex flex-col items-center gap-3 text-white/50">
+              <span className="h-8 w-8 animate-spin rounded-full border-2 border-white/20 border-t-blue-500" />
+              <p className="text-sm">جاري تحميل الفيديو...</p>
+            </div>
+          ) : isError ? (
+            <div className="flex flex-col items-center gap-3 px-4 text-center text-white/60">
+              <p className="text-sm">تعذر تحميل الفيديو المعالج</p>
+              <button
+                type="button"
+                onClick={onRetry}
+                className="rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-xs font-medium text-white/80 transition hover:bg-white/10"
+              >
+                إعادة المحاولة
+              </button>
+            </div>
+          ) : (
+            <video
+              src={videoUrl ?? undefined}
+              poster={video.thumbnailUrl}
+              controls
+              autoPlay
+              className="h-full w-full"
+            >
+              متصفحك لا يدعم عرض الفيديو.
+            </video>
+          )}
         </div>
       </div>
     </div>
@@ -1474,19 +1745,65 @@ function PlayIcon({ className = "h-5 w-5" }: { className?: string }) {
 
 ---
 
+### <a id="📄-src-features-analysis-constants-analysis-constants-ts"></a>📄 `src/features/analysis/constants/analysis.constants.ts`
+
+**File Info:**
+- **Size**: 626 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/analysis/constants/analysis.constants.ts`
+- **Relative Path**: `src/features/analysis/constants`
+- **Created**: 2026-08-16 19:08:40 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-16 20:35:05 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `9367d70f6a9fe68adb1d7f0465a911c6`
+- **SHA256**: `3a64fef589ab7db3aff2f2ed28dbe2b891772c4a46dd7863a9f6a5f6a2f8cc23`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```typescript
+import { NO_ALERT_LABEL } from "../utils/violationType.utils";
+
+export const ANALYSIS_PAGE_SIZE = 8;
+
+export const analysisQueryKeys = {
+  all: ["analysis"] as const,
+  detections: (videoId: number) =>
+    [...analysisQueryKeys.all, "detections", videoId] as const,
+  details: (detectionId: string | number) =>
+    [...analysisQueryKeys.all, "detection-details", detectionId] as const,
+};
+
+export const alertTypeOptions = [
+  "الكل",
+  "اختلاف بيانات المركبة",
+  NO_ALERT_LABEL,
+] as const;
+
+export const severityOptions = [
+  "الكل",
+  "عالية",
+  "متوسطة",
+  "منخفضة",
+] as const;
+
+```
+
+---
+
 ### <a id="📄-src-features-analysis-data-mockanalysisdata-ts"></a>📄 `src/features/analysis/data/mockAnalysisData.ts`
 
 **File Info:**
-- **Size**: 4.38 KB
+- **Size**: 760 B
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/analysis/data/mockAnalysisData.ts`
 - **Relative Path**: `src/features/analysis/data`
 - **Created**: 2026-08-13 17:22:09 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 17:22:09 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `01c4b92fc70b3b7978bc71645fb331bc`
-- **SHA256**: `f4a580ed19ef07e31c41b78d30b58a520faa73995a5b9e9ea1fadd1efdc472ad`
-- **Encoding**: UTF-8
+- **Modified**: 2026-08-16 19:08:52 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `5d3e5fcb90988fe72a9909a92f58f5c5`
+- **SHA256**: `2ebfca9e15a0b13dd3e9f33515dc26cd51ccd2e36dedb6c2e988439ff9895182`
+- **Encoding**: ASCII
 
 **File code content:**
 
@@ -1497,170 +1814,26 @@ import type {
   AnalysisVideoSummary,
 } from "../models/analysis.types";
 
-export const ANALYSIS_PAGE_SIZE = 8;
-
-export const alertTypeOptions = [
-  "الكل",
-  "مطلوب",
-  "سرعة زائدة",
-  "لوحة مزورة",
-  "سلوك مشبوه",
-  "قائمة سوداء",
-] as const;
-
-export const severityOptions = [
-  "الكل",
-  "عالية",
-  "متوسطة",
-  "منخفضة",
-] as const;
-
+/**
+ * Legacy mock seed kept only for VehicleDetails (still mock-driven).
+ * Analysis Results page uses live API data.
+ */
 export const mockAnalysisVideo: AnalysisVideoSummary = {
   id: "av1",
   fileName: "traffic_video_2026_08_10.mp4",
   thumbnailUrl:
-    "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=320&h=180&fit=crop",
+    "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=400&h=250&fit=crop",
+  videoUrl:
+    "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
   processedAt: "2026-08-10 14:35",
   duration: "03:15",
   formattedSize: "178 MB",
   status: "completed",
 };
 
-export const mockAnalysisStats: AnalysisStat[] = [
-  {
-    id: "total",
-    title: "إجمالي السيارات المكتشفة",
-    value: 248,
-    percent: 100,
-    subtitle: "خلال مدة الفيديو",
-    icon: "vehicles",
-    gradient: "from-blue-600/40 to-indigo-700/30",
-    isPositive: true,
-  },
-  {
-    id: "alerts",
-    title: "سيارات لديها تنبيهات",
-    value: 36,
-    percent: 14.5,
-    subtitle: "من إجمالي المكتشف",
-    icon: "alerts",
-    gradient: "from-violet-600/40 to-purple-700/30",
-    isPositive: false,
-  },
-  {
-    id: "high",
-    title: "سيارات عالية الخطورة",
-    value: 12,
-    percent: 4.8,
-    subtitle: "تتطلب تدخل فوري",
-    icon: "wanted",
-    gradient: "from-rose-600/40 to-orange-700/30",
-    isPositive: false,
-  },
-  {
-    id: "medium",
-    title: "سيارات متوسطة الخطورة",
-    value: 15,
-    percent: 6.0,
-    subtitle: "تحتاج متابعة",
-    icon: "scans",
-    gradient: "from-amber-600/40 to-yellow-700/30",
-    isPositive: false,
-  },
-  {
-    id: "low",
-    title: "سيارات منخفضة الخطورة",
-    value: 9,
-    percent: 3.6,
-    subtitle: "مراقبة روتينية",
-    icon: "units",
-    gradient: "from-emerald-600/40 to-teal-700/30",
-    isPositive: true,
-  },
-];
+export const mockAnalysisStats: AnalysisStat[] = [];
 
-export const mockAnalysisAlerts: AnalysisAlert[] = [
-  {
-    id: "a1",
-    plateNumber: "أ ب ج 1234",
-    alertType: "مطلوب",
-    severity: "عالية",
-    message: "مطابقة مع قائمة المطلوبين — يرجى الإبلاغ فوراً",
-    timestamp: "00:12",
-  },
-  {
-    id: "a2",
-    plateNumber: "د هـ و 5678",
-    alertType: "سرعة زائدة",
-    severity: "متوسطة",
-    message: "تجاوز السرعة المحددة بمقدار 35 كم/س",
-    timestamp: "00:28",
-  },
-  {
-    id: "a3",
-    plateNumber: "ر س ت 9012",
-    alertType: "قائمة سوداء",
-    severity: "عالية",
-    message: "المركبة مدرجة في القائمة السوداء للنظام",
-    timestamp: "00:41",
-  },
-  {
-    id: "a4",
-    plateNumber: "ث خ ذ 3456",
-    alertType: "لوحة مزورة",
-    severity: "عالية",
-    message: "احتمال تزوير اللوحة — عدم تطابق السمات البصرية",
-    timestamp: "01:05",
-  },
-  {
-    id: "a5",
-    plateNumber: "ض ظ غ 7890",
-    alertType: "سلوك مشبوه",
-    severity: "منخفضة",
-    message: "توقف متكرر غير اعتيادي في المنطقة المراقبة",
-    timestamp: "01:22",
-  },
-  {
-    id: "a6",
-    plateNumber: "ف ق ك 2468",
-    alertType: "سرعة زائدة",
-    severity: "منخفضة",
-    message: "تجاوز طفيف للسرعة بمقدار 12 كم/س",
-    timestamp: "01:48",
-  },
-  {
-    id: "a7",
-    plateNumber: "ل م ن 1357",
-    alertType: "مطلوب",
-    severity: "عالية",
-    message: "تطابق جزئي مع بلاغ سرقة مركبة",
-    timestamp: "02:10",
-  },
-  {
-    id: "a8",
-    plateNumber: "هـ و ي 8642",
-    alertType: "سلوك مشبوه",
-    severity: "متوسطة",
-    message: "تغيير مسار مفاجئ عدة مرات خلال فترة قصيرة",
-    timestamp: "02:33",
-  },
-  {
-    id: "a9",
-    plateNumber: "أ ص د 4321",
-    alertType: "قائمة سوداء",
-    severity: "متوسطة",
-    message: "مرتبطة ببلاغ سابق قيد المراجعة",
-    timestamp: "02:51",
-  },
-  {
-    id: "a10",
-    plateNumber: "ج ح خ 7788",
-    alertType: "سرعة زائدة",
-    severity: "عالية",
-    message: "تجاوز السرعة بمقدار 55 كم/س في منطقة سكنية",
-    timestamp: "03:02",
-  },
-];
+export const mockAnalysisAlerts: AnalysisAlert[] = [];
 
 ```
 
@@ -1813,41 +1986,61 @@ export const defaultVehicleDetails = mockVehicleDetailsMap.a4;
 ### <a id="📄-src-features-analysis-hooks-useanalysisresultsviewmodel-ts"></a>📄 `src/features/analysis/hooks/useAnalysisResultsViewModel.ts`
 
 **File Info:**
-- **Size**: 4.28 KB
+- **Size**: 8.22 KB
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/analysis/hooks/useAnalysisResultsViewModel.ts`
 - **Relative Path**: `src/features/analysis/hooks`
 - **Created**: 2026-08-13 17:22:18 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-15 11:18:25 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `a558547b5d1e4df59e0ccf5909c6dd87`
-- **SHA256**: `ca1bc0f918a1561507d4c5b3a4d95da1a649533462ecaddcc599739bc0fe4f5b`
+- **Modified**: 2026-08-16 20:58:04 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `0844a3f2cb2cad6d16cf198a8e5cfc36`
+- **SHA256**: `3e2666f16d01d0d5e3086b8c0b5236146f0f5c96a72f1d4a07b7ee095ef772d9`
 - **Encoding**: ASCII
 
 **File code content:**
 
 ```typescript
 import { useEffect, useMemo, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useQuery } from "@tanstack/react-query";
+import { useNavigate, useParams } from "react-router-dom";
 import {
   mockDashboardData,
   useDashboardStore,
 } from "../../dashboard";
+import { videosQueryKeys } from "../../video/constants/videos.constants";
+import { videoService } from "../../video/services/VideoService";
 import {
   ANALYSIS_PAGE_SIZE,
-  mockAnalysisAlerts,
-  mockAnalysisStats,
-  mockAnalysisVideo,
-} from "../data/mockAnalysisData";
+  analysisQueryKeys,
+} from "../constants/analysis.constants";
 import type { AnalysisFilters } from "../models/analysis.types";
-import { buildVehicleDetailsPath } from "../routes/analysisRoutes";
+import {
+  buildAnalysisResultsPath,
+  buildVehicleDetailsPath,
+} from "../routes/analysisRoutes";
+import { analysisService } from "../services/AnalysisService";
+import { buildAnalysisStats } from "../utils/buildAnalysisStats";
+import {
+  findLatestCompletedVideo,
+  mapVideoFileToAnalysisSummary,
+} from "../utils/mapVideoToAnalysisSummary";
 
 function formatNumber(value: number): string {
   return new Intl.NumberFormat("ar-EG").format(value);
 }
 
+function parseVideoId(raw: string | undefined): number | null {
+  if (!raw) return null;
+  const id = Number(raw);
+  if (!Number.isFinite(id) || id <= 0) return null;
+  return id;
+}
+
 export function useAnalysisResultsViewModel() {
   const navigate = useNavigate();
+  const { videoId: videoIdParam } = useParams<{ videoId?: string }>();
+  const parsedVideoId = parseVideoId(videoIdParam);
+
   const activeMenuId = useDashboardStore((s) => s.activeMenuId);
   const isSidebarOpen = useDashboardStore((s) => s.isSidebarOpen);
   const toggleSidebar = useDashboardStore((s) => s.toggleSidebar);
@@ -1866,10 +2059,64 @@ export function useAnalysisResultsViewModel() {
     setActiveMenuId("analysis");
   }, [setActiveMenuId]);
 
+  const videosQuery = useQuery({
+    queryKey: videosQueryKeys.list(),
+    queryFn: () => videoService.getVideos(),
+  });
+
+  useEffect(() => {
+    if (parsedVideoId != null) return;
+    if (videosQuery.isLoading || videosQuery.isError) return;
+    if (!videosQuery.data) return;
+
+    const latest = findLatestCompletedVideo(videosQuery.data);
+    if (latest) {
+      navigate(buildAnalysisResultsPath(latest.id), { replace: true });
+    }
+  }, [
+    parsedVideoId,
+    videosQuery.data,
+    videosQuery.isLoading,
+    videosQuery.isError,
+    navigate,
+  ]);
+
+  const detectionsQuery = useQuery({
+    queryKey: analysisQueryKeys.detections(parsedVideoId ?? 0),
+    queryFn: () => analysisService.getVideoDetections(parsedVideoId as number),
+    enabled: parsedVideoId != null,
+  });
+
+  const processedVideoQuery = useQuery({
+    queryKey: videosQueryKeys.processed(parsedVideoId ?? 0),
+    queryFn: () => videoService.getProcessedVideoUrl(parsedVideoId as number),
+    enabled: isPlayerOpen && parsedVideoId != null,
+  });
+
+  const selectedVideoFile = useMemo(() => {
+    if (parsedVideoId == null || !videosQuery.data) return null;
+    return (
+      videosQuery.data.find((video) => video.id === String(parsedVideoId)) ??
+      null
+    );
+  }, [parsedVideoId, videosQuery.data]);
+
+  const video = useMemo(() => {
+    if (selectedVideoFile) {
+      return mapVideoFileToAnalysisSummary(selectedVideoFile);
+    }
+    return null;
+  }, [selectedVideoFile]);
+
+  const alerts = useMemo(
+    () => detectionsQuery.data ?? [],
+    [detectionsQuery.data],
+  );
+
   const filteredAlerts = useMemo(() => {
     const query = filters.search.trim().toLowerCase();
 
-    return mockAnalysisAlerts.filter((alert) => {
+    return alerts.filter((alert) => {
       const matchesSearch =
         query.length === 0 ||
         alert.plateNumber.toLowerCase().includes(query) ||
@@ -1883,7 +2130,7 @@ export function useAnalysisResultsViewModel() {
 
       return matchesSearch && matchesType && matchesSeverity;
     });
-  }, [filters]);
+  }, [alerts, filters]);
 
   const totalPages = Math.max(
     1,
@@ -1901,15 +2148,48 @@ export function useAnalysisResultsViewModel() {
     [totalPages],
   );
 
-  const formattedStats = useMemo(
-    () =>
-      mockAnalysisStats.map((stat) => ({
-        ...stat,
-        displayValue: formatNumber(stat.value),
-        displayChange: `${stat.percent}%`,
-      })),
-    [],
-  );
+  const formattedStats = useMemo(() => {
+    const stats = buildAnalysisStats(alerts);
+    return stats.map((stat) => ({
+      ...stat,
+      displayValue: formatNumber(stat.value),
+      displayChange: `${stat.percent}%`,
+    }));
+  }, [alerts]);
+
+  const hasActiveFilters =
+    filters.search.trim().length > 0 ||
+    filters.alertType !== "الكل" ||
+    filters.severity !== "الكل";
+
+  const isResolvingVideoId =
+    parsedVideoId == null &&
+    (videosQuery.isLoading ||
+      (Boolean(videosQuery.data) &&
+        Boolean(findLatestCompletedVideo(videosQuery.data ?? []))));
+
+  const isLoading =
+    isResolvingVideoId ||
+    (parsedVideoId != null &&
+      (videosQuery.isLoading || detectionsQuery.isLoading));
+
+  const isError =
+    (parsedVideoId != null &&
+      (videosQuery.isError || detectionsQuery.isError)) ||
+    (parsedVideoId == null && videosQuery.isError);
+
+  const hasNoCompletedVideo =
+    parsedVideoId == null &&
+    !videosQuery.isLoading &&
+    !videosQuery.isError &&
+    videosQuery.isSuccess &&
+    !findLatestCompletedVideo(videosQuery.data ?? []);
+
+  const isEmptyDetections =
+    parsedVideoId != null &&
+    !detectionsQuery.isLoading &&
+    !detectionsQuery.isError &&
+    alerts.length === 0;
 
   const setSearch = (search: string) => {
     setFilters((prev) => ({ ...prev, search }));
@@ -1948,15 +2228,26 @@ export function useAnalysisResultsViewModel() {
   };
 
   const handleRowClick = (id: string) => {
+    const alert = alerts.find((a) => a.id === id);
+    if (!alert || !alert.violationType) return;
     navigate(buildVehicleDetailsPath(id));
   };
 
   const handleViewAlert = (id: string) => {
+    const alert = alerts.find((a) => a.id === id);
+    if (!alert || !alert.violationType) return;
     navigate(buildVehicleDetailsPath(id));
   };
 
   const handlePlayAlert = (_id: string) => {};
   const handleMoreAlert = (_id: string) => {};
+
+  const refetch = () => {
+    void videosQuery.refetch();
+    if (parsedVideoId != null) {
+      void detectionsQuery.refetch();
+    }
+  };
 
   return {
     user: mockDashboardData.user,
@@ -1967,7 +2258,7 @@ export function useAnalysisResultsViewModel() {
     setSidebarOpen,
     setActiveMenuId,
     handleFullscreen,
-    video: mockAnalysisVideo,
+    video,
     formattedStats,
     filters,
     setSearch,
@@ -1975,13 +2266,24 @@ export function useAnalysisResultsViewModel() {
     setSeverityFilter,
     alerts: paginatedAlerts,
     totalCount: filteredAlerts.length,
+    totalAlertsCount: alerts.length,
+    hasActiveFilters,
     currentPage: safePage,
     totalPages,
     pageNumbers,
     goToPage,
+    isLoading,
+    isError,
+    isEmptyDetections,
+    hasNoCompletedVideo,
+    refetch,
     handleViewProcessedVideo,
     handleCloseVideoPlayer,
     isPlayerOpen,
+    processedVideoUrl: processedVideoQuery.data ?? null,
+    isProcessedVideoLoading: processedVideoQuery.isLoading,
+    isProcessedVideoError: processedVideoQuery.isError,
+    retryProcessedVideo: () => void processedVideoQuery.refetch(),
     handleRowClick,
     handleViewAlert,
     handlePlayAlert,
@@ -1995,15 +2297,15 @@ export function useAnalysisResultsViewModel() {
 ### <a id="📄-src-features-analysis-hooks-usevehicledetailsviewmodel-ts"></a>📄 `src/features/analysis/hooks/useVehicleDetailsViewModel.ts`
 
 **File Info:**
-- **Size**: 2.36 KB
+- **Size**: 3.16 KB
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/analysis/hooks/useVehicleDetailsViewModel.ts`
 - **Relative Path**: `src/features/analysis/hooks`
 - **Created**: 2026-08-14 14:51:02 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 23:36:29 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `22f0bf1f42300eede77015579fecd07c`
-- **SHA256**: `c1cb4b75c45e77dd5896172be695c33c05caccdf284be68689e7128f8651e146`
+- **Modified**: 2026-08-16 20:35:05 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `5154803707fc82e03810fb7a26112ec3`
+- **SHA256**: `1f1474b6decd7b97636df6e3f1f7c9faa50d35ae16cb9019caca1a5933c6b88a`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -2011,19 +2313,22 @@ export function useAnalysisResultsViewModel() {
 ```typescript
 import { useEffect, useMemo } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import {
-  mockDashboardData,
-  useDashboardStore,
-} from "../../dashboard";
-import {
-  defaultVehicleDetails,
-  mockVehicleDetailsMap,
-} from "../data/mockVehicleDetailsData";
+import { useQuery } from "@tanstack/react-query";
+import { mockDashboardData, useDashboardStore } from "../../dashboard";
 import { AnalysisRoutes } from "../routes/analysisRoutes";
 import type {
   FormattedComparisonRow,
   VehicleDetailsSummaryCard,
 } from "../models/vehicleDetails.types";
+import { analysisQueryKeys } from "../constants/analysis.constants";
+import { analysisService } from "../services/AnalysisService";
+
+function parseId(raw: string | undefined): number | null {
+  if (!raw) return null;
+  const id = Number(raw);
+  if (!Number.isFinite(id) || id <= 0) return null;
+  return id;
+}
 
 export function useVehicleDetailsViewModel() {
   const { id = "" } = useParams<{ id: string }>();
@@ -2038,30 +2343,43 @@ export function useVehicleDetailsViewModel() {
     setActiveMenuId("analysis");
   }, [setActiveMenuId]);
 
-  const vehicle = useMemo(
-    () => mockVehicleDetailsMap[id] ?? defaultVehicleDetails,
-    [id],
-  );
+  const parsedId = parseId(id);
 
-  const comparisonRows: FormattedComparisonRow[] = useMemo(
-    () =>
-      vehicle.comparisonRows.map((row) => ({
-        ...row,
-        confidenceLabel: `${row.confidence}%`,
-        mismatchLabel: row.mismatch ? "TRUE" : "FALSE",
-      })),
-    [vehicle.comparisonRows],
-  );
+  useEffect(() => {
+    if (parsedId == null) {
+      // invalid id — navigate back to results
+      navigate(AnalysisRoutes.results, { replace: true });
+    }
+  }, [parsedId, navigate]);
 
-  const summaryCards: VehicleDetailsSummaryCard[] = useMemo(
-    () => [
+  const detailsQuery = useQuery({
+    queryKey: analysisQueryKeys.details(id),
+    queryFn: () => analysisService.getVehicleDetails(parsedId as number),
+    enabled: parsedId != null,
+  });
+
+  const vehicle = detailsQuery.data ?? null;
+
+  const comparisonRows: FormattedComparisonRow[] = useMemo(() => {
+    if (!vehicle) return [];
+
+    return vehicle.comparisonRows.map((row) => ({
+      ...row,
+      confidenceLabel: `${row.confidence}%`,
+      mismatchLabel: row.mismatch ? "TRUE" : "FALSE",
+    }));
+  }, [vehicle]);
+
+  const summaryCards: VehicleDetailsSummaryCard[] = useMemo(() => {
+    if (!vehicle) return [];
+
+    return [
       { id: "message", title: "رسالة التنبيه", value: vehicle.alertMessage },
       { id: "type", title: "نوع التنبيه", value: String(vehicle.alertType) },
       { id: "severity", title: "درجة الخطورة", value: vehicle.severity },
       { id: "score", title: "Score", value: `${vehicle.score} / 100` },
-    ],
-    [vehicle],
-  );
+    ];
+  }, [vehicle]);
 
   const handleBack = () => {
     navigate(AnalysisRoutes.results);
@@ -2089,6 +2407,10 @@ export function useVehicleDetailsViewModel() {
     comparisonRows,
     summaryCards,
     handleBack,
+    isLoading: detailsQuery.isLoading,
+    isError: detailsQuery.isError,
+    error: detailsQuery.error,
+    refetch: detailsQuery.refetch,
   };
 }
 
@@ -2099,15 +2421,15 @@ export function useVehicleDetailsViewModel() {
 ### <a id="📄-src-features-analysis-models-analysis-types-ts"></a>📄 `src/features/analysis/models/analysis.types.ts`
 
 **File Info:**
-- **Size**: 951 B
+- **Size**: 1.1 KB
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/analysis/models/analysis.types.ts`
 - **Relative Path**: `src/features/analysis/models`
 - **Created**: 2026-08-13 17:21:54 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-15 10:57:11 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `ff7b80344b34f940345bba97de674c4e`
-- **SHA256**: `6aa73ac286192d03545ee3073311379a61baee61266eea63137461f7a1818b3b`
+- **Modified**: 2026-08-17 09:28:55 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `6e336961577534968da5d61d8684ccb8`
+- **SHA256**: `9b3905edd673342e6a8a4b92e3512ef3b018ab9975313d15d677b4674d2d69e6`
 - **Encoding**: UTF-8
 
 **File code content:**
@@ -2120,13 +2442,15 @@ export type AlertType =
   | "سرعة زائدة"
   | "لوحة مزورة"
   | "سلوك مشبوه"
-  | "قائمة سوداء";
+  | "قائمة سوداء"
+  | "اختلاف بيانات المركبة"
+  | "لا يوجد تنبيه"
+  | string;
 
 export interface AnalysisVideoSummary {
   id: string;
   fileName: string;
   thumbnailUrl: string;
-  videoUrl: string;
   processedAt: string;
   duration: string;
   formattedSize: string;
@@ -2147,10 +2471,12 @@ export interface AnalysisStat {
 export interface AnalysisAlert {
   id: string;
   plateNumber: string;
-  alertType: AlertType;
-  severity: AlertSeverity;
+  alertType: string;
+  severity: AlertSeverity | null;
   message: string;
   timestamp: string;
+  // original API violation_type to control navigation and UI state
+  violationType?: string | null;
 }
 
 export interface AnalysisFilters {
@@ -2220,24 +2546,29 @@ export interface VehicleDetailsSummaryCard {
 ### <a id="📄-src-features-analysis-pages-analysisresultspage-tsx"></a>📄 `src/features/analysis/pages/AnalysisResultsPage.tsx`
 
 **File Info:**
-- **Size**: 2.31 KB
+- **Size**: 3.72 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/analysis/pages/AnalysisResultsPage.tsx`
 - **Relative Path**: `src/features/analysis/pages`
 - **Created**: 2026-08-13 17:23:02 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-15 11:18:27 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `8e7f83482b753e57694d31c34694d123`
-- **SHA256**: `c813f5a7f63419e426240115096daf47c13b56052eefaea9dccfa5af1ee09532`
-- **Encoding**: ASCII
+- **Modified**: 2026-08-16 20:58:07 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `bce136bc3d129a92619758fabd1484f6`
+- **SHA256**: `d5190a9a7ac9f83a029db91e6c15f6c20b06211f0645c8552bd75ed7c078a9c8`
+- **Encoding**: UTF-8
 
 **File code content:**
 
 ```typescript
 import { DashboardLayout, CardContainer } from "../../dashboard";
-import { VehiclesPagination } from "../../vehicles";
+import {
+  VehiclesEmptyState,
+  VehiclesErrorState,
+  VehiclesPagination,
+  VehiclesTableSkeleton,
+} from "../../vehicles";
 import { useAnalysisResultsViewModel } from "../hooks/useAnalysisResultsViewModel";
-import { ANALYSIS_PAGE_SIZE } from "../data/mockAnalysisData";
+import { ANALYSIS_PAGE_SIZE } from "../constants/analysis.constants";
 import {
   AnalysisAlertsTable,
   AnalysisFilterBar,
@@ -2251,6 +2582,10 @@ export function AnalysisResultsPage() {
   const vm = useAnalysisResultsViewModel();
   const pageStartIndex = (vm.currentPage - 1) * ANALYSIS_PAGE_SIZE + 1;
 
+  const emptyAlertsMessage = vm.hasActiveFilters
+    ? "لا توجد تنبيهات مطابقة للبحث"
+    : "لا توجد تنبيهات أو مخالفات مكتشفة لهذا الفيديو";
+
   return (
     <DashboardLayout
       user={vm.user}
@@ -2262,53 +2597,77 @@ export function AnalysisResultsPage() {
       onSelectMenu={vm.setActiveMenuId}
       onFullscreen={vm.handleFullscreen}
     >
-      {vm.isPlayerOpen && (
+      {vm.isPlayerOpen && vm.video && (
         <VideoPlayerModal
           video={vm.video}
+          videoUrl={vm.processedVideoUrl}
+          isLoading={vm.isProcessedVideoLoading}
+          isError={vm.isProcessedVideoError}
+          onRetry={vm.retryProcessedVideo}
           onClose={vm.handleCloseVideoPlayer}
         />
       )}
-
       <div className="mx-auto flex max-w-[1600px] flex-col gap-4 sm:gap-5">
         <AnalysisResultsHeader />
 
-        <CardContainer>
-          <VideoSummaryCard
-            video={vm.video}
-            onViewProcessed={vm.handleViewProcessedVideo}
+        {vm.isLoading ? (
+          <VehiclesTableSkeleton message="جاري تحميل نتائج التحليل..." />
+        ) : vm.isError ? (
+          <VehiclesErrorState
+            message="تعذر تحميل نتائج تحليل الفيديو"
+            onRetry={() => void vm.refetch()}
           />
-        </CardContainer>
+        ) : vm.hasNoCompletedVideo ? (
+          <VehiclesEmptyState message="لا توجد فيديوهات مكتملة لعرض نتائجها" />
+        ) : (
+          <>
+            {vm.video && (
+              <CardContainer>
+                <VideoSummaryCard
+                  video={vm.video}
+                  onViewProcessed={vm.handleViewProcessedVideo}
+                />
+              </CardContainer>
+            )}
 
-        <AnalysisStatsGrid stats={vm.formattedStats} />
+            <AnalysisStatsGrid stats={vm.formattedStats} />
 
-        <CardContainer
-          title="تنبيهات المركبات"
-          className="flex flex-col gap-4"
-        >
-          <AnalysisFilterBar
-            filters={vm.filters}
-            onSearchChange={vm.setSearch}
-            onAlertTypeChange={vm.setAlertTypeFilter}
-            onSeverityChange={vm.setSeverityFilter}
-          />
+            <CardContainer
+              title="تنبيهات المركبات"
+              className="flex flex-col gap-4"
+            >
+              <AnalysisFilterBar
+                filters={vm.filters}
+                onSearchChange={vm.setSearch}
+                onAlertTypeChange={vm.setAlertTypeFilter}
+                onSeverityChange={vm.setSeverityFilter}
+              />
 
-          <AnalysisAlertsTable
-            alerts={vm.alerts}
-            pageStartIndex={pageStartIndex}
-            onRowClick={vm.handleRowClick}
-            onView={vm.handleViewAlert}
-            onPlay={vm.handlePlayAlert}
-            onMore={vm.handleMoreAlert}
-          />
+              {vm.isEmptyDetections || vm.totalCount === 0 ? (
+                <VehiclesEmptyState message={emptyAlertsMessage} />
+              ) : (
+                <>
+                  <AnalysisAlertsTable
+                    alerts={vm.alerts}
+                    pageStartIndex={pageStartIndex}
+                    onRowClick={vm.handleRowClick}
+                    onView={vm.handleViewAlert}
+                    onPlay={vm.handlePlayAlert}
+                    onMore={vm.handleMoreAlert}
+                  />
 
-          <VehiclesPagination
-            currentPage={vm.currentPage}
-            totalPages={vm.totalPages}
-            pageNumbers={vm.pageNumbers}
-            totalCount={vm.totalCount}
-            onPageChange={vm.goToPage}
-          />
-        </CardContainer>
+                  <VehiclesPagination
+                    currentPage={vm.currentPage}
+                    totalPages={vm.totalPages}
+                    pageNumbers={vm.pageNumbers}
+                    totalCount={vm.totalCount}
+                    onPageChange={vm.goToPage}
+                  />
+                </>
+              )}
+            </CardContainer>
+          </>
+        )}
       </div>
     </DashboardLayout>
   );
@@ -2321,16 +2680,16 @@ export function AnalysisResultsPage() {
 ### <a id="📄-src-features-analysis-pages-vehicledetailspage-tsx"></a>📄 `src/features/analysis/pages/VehicleDetailsPage.tsx`
 
 **File Info:**
-- **Size**: 1.15 KB
+- **Size**: 1.66 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/analysis/pages/VehicleDetailsPage.tsx`
 - **Relative Path**: `src/features/analysis/pages`
 - **Created**: 2026-08-14 14:51:18 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-15 00:34:13 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `75b9d20195e6d80239dc450e7bcb5691`
-- **SHA256**: `9494b6fa856e04a629e44410598efeb1f4eca4f190b108285cfed426aca97621`
-- **Encoding**: UTF-8
+- **Modified**: 2026-08-16 20:35:05 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `115557e6616e4de919c4eb5d374a6a53`
+- **SHA256**: `bd1bcaad4e6a76830fb16147b0a480e3f7c23c9883eace52189a420c152554fa`
+- **Encoding**: ASCII
 
 **File code content:**
 
@@ -2343,6 +2702,8 @@ import {
   VehicleDetailsSummaryCards,
   VehicleInfoCard,
 } from "../components";
+import { VehiclesTableSkeleton } from "../../vehicles";
+import { VehiclesErrorState } from "../../vehicles";
 
 export function VehicleDetailsPage() {
   const vm = useVehicleDetailsViewModel();
@@ -2361,13 +2722,24 @@ export function VehicleDetailsPage() {
       <div className="mx-auto flex max-w-[1600px] flex-col gap-4 sm:gap-5">
         <VehicleDetailsHeader onBack={vm.handleBack} />
 
-        <VehicleInfoCard vehicle={vm.vehicle} />
+        {vm.isLoading ? (
+          <VehiclesTableSkeleton message="جاري تحميل تفاصيل المركبة..." />
+        ) : vm.isError ? (
+          <VehiclesErrorState
+            message="تعذر تحميل تفاصيل المركبة"
+            onRetry={() => void vm.refetch()}
+          />
+        ) : vm.vehicle ? (
+          <>
+            <VehicleInfoCard vehicle={vm.vehicle} />
 
-        <CardContainer title="مقارنة البيانات">
-          <VehicleComparisonTable rows={vm.comparisonRows} />
-        </CardContainer>
+            <CardContainer title="مقارنة البيانات">
+              <VehicleComparisonTable rows={vm.comparisonRows} />
+            </CardContainer>
 
-        <VehicleDetailsSummaryCards cards={vm.summaryCards} />
+            <VehicleDetailsSummaryCards cards={vm.summaryCards} />
+          </>
+        ) : null}
       </div>
     </DashboardLayout>
   );
@@ -2379,15 +2751,15 @@ export function VehicleDetailsPage() {
 ### <a id="📄-src-features-analysis-routes-analysisroutes-ts"></a>📄 `src/features/analysis/routes/analysisRoutes.ts`
 
 **File Info:**
-- **Size**: 314 B
+- **Size**: 485 B
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/analysis/routes/analysisRoutes.ts`
 - **Relative Path**: `src/features/analysis/routes`
 - **Created**: 2026-08-13 17:22:07 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 23:36:29 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `41e537ea225bead89b908f4a0e0caf5d`
-- **SHA256**: `56d2448ee511aecd9d76a2b282a9915ccbe6e51e0ad838cdd0f74c1f8ae624c5`
+- **Modified**: 2026-08-16 19:08:48 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `6e8b75128fcf1bf839f5a8bcc547c79e`
+- **SHA256**: `92b4d06f59a18dc9316d7c8c04c3ef850ad352bf783c37c02068a7aba29ab501`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -2395,11 +2767,16 @@ export function VehicleDetailsPage() {
 ```typescript
 export const AnalysisRoutes = {
   results: "/analysis/results",
+  resultsWithVideo: "/analysis/results/:videoId",
   details: "/analysis/vehicle-details/:id",
 } as const;
 
 export type AnalysisRoute =
   (typeof AnalysisRoutes)[keyof typeof AnalysisRoutes];
+
+export function buildAnalysisResultsPath(videoId: string | number): string {
+  return `/analysis/results/${videoId}`;
+}
 
 export function buildVehicleDetailsPath(id: string): string {
   return `/analysis/vehicle-details/${id}`;
@@ -2412,42 +2789,54 @@ export function buildVehicleDetailsPath(id: string): string {
 ### <a id="📄-src-features-analysis-services-analysisservice-ts"></a>📄 `src/features/analysis/services/AnalysisService.ts`
 
 **File Info:**
-- **Size**: 762 B
+- **Size**: 1.44 KB
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/analysis/services/AnalysisService.ts`
 - **Relative Path**: `src/features/analysis/services`
 - **Created**: 2026-08-13 17:22:18 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 23:36:29 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `3c2ae7138d55f5a03f255e185bbf3c6d`
-- **SHA256**: `1da4b8a6d5e6ded1f133acebcb31bbe39a8f371e92df56dcc9118caee8191022`
-- **Encoding**: UTF-8
+- **Modified**: 2026-08-16 20:35:05 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `483ad196b14c3d1a70c30e33a87388bd`
+- **SHA256**: `b369e2974a7076991f721292294e1374f08c646443224852756c349ebb08d273`
+- **Encoding**: ASCII
 
 **File code content:**
 
 ```typescript
-import type {
-  AnalysisAlert,
-  AnalysisVideoSummary,
-} from "../models/analysis.types";
+import { apiClient } from "../../../api/axios";
+import { DetectionsApiEndpoints } from "../api/detections.endpoints";
+import type { DetectionsApiResponse } from "../api/detections.types";
+import type { AnalysisAlert, AnalysisVideoSummary } from "../models/analysis.types";
 import type { VehicleDetails } from "../models/vehicleDetails.types";
+import { mapDetectionApiToUi } from "../utils/mapDetectionApiToUi";
+import type { DetectionDetailsResponse } from "../api/detectionDetails.types";
+import { mapDetectionDetailsResponseToVehicleDetails } from "../utils/mapDetectionDetailsToVehicleDetails";
 
-/**
- * AnalysisService — prepared for future API integration.
- * Methods are placeholders and throw until implemented.
- */
 class AnalysisService {
+  async getVideoDetections(videoId: number): Promise<AnalysisAlert[]> {
+    const response = await apiClient.get<DetectionsApiResponse>(
+      DetectionsApiEndpoints.byVideo(videoId),
+    );
+
+    return response.data.detections.map(mapDetectionApiToUi);
+  }
+
+  /** @deprecated Prefer getVideoDetections + videoService.getVideos */
   async getResults(): Promise<{
     video: AnalysisVideoSummary;
     alerts: AnalysisAlert[];
   }> {
-    // TODO: integrate with API
-    throw new Error("AnalysisService.getResults is not implemented yet");
+    throw new Error(
+      "AnalysisService.getResults is deprecated — use getVideoDetections",
+    );
   }
 
-  async getVehicleDetails(_id: string): Promise<VehicleDetails> {
-    // TODO: integrate with API
-    throw new Error("AnalysisService.getVehicleDetails is not implemented yet");
+  async getVehicleDetails(id: number): Promise<VehicleDetails> {
+    const response = await apiClient.get<DetectionDetailsResponse>(
+      DetectionsApiEndpoints.byId(id),
+    );
+
+    return mapDetectionDetailsResponseToVehicleDetails(response.data);
   }
 }
 
@@ -2457,18 +2846,406 @@ export const analysisService = new AnalysisService();
 
 ---
 
+### <a id="📄-src-features-analysis-utils-buildanalysisstats-ts"></a>📄 `src/features/analysis/utils/buildAnalysisStats.ts`
+
+**File Info:**
+- **Size**: 2.21 KB
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/analysis/utils/buildAnalysisStats.ts`
+- **Relative Path**: `src/features/analysis/utils`
+- **Created**: 2026-08-16 19:08:40 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-16 19:08:40 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `04817bce4cfccb3dc67dbf3e4d831d38`
+- **SHA256**: `942914cd24f5e9c989f1c5696eee521c6447a7f651a3cf7a650b6837ba65dff6`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```typescript
+import type { AnalysisAlert, AnalysisStat } from "../models/analysis.types";
+
+function percentOf(part: number, total: number): number {
+  if (total <= 0) return 0;
+  return Math.round((part / total) * 1000) / 10;
+}
+
+/**
+ * Derive analysis statistics cards from detections (UI alerts).
+ */
+export function buildAnalysisStats(alerts: AnalysisAlert[]): AnalysisStat[] {
+  const total = alerts.length;
+  const withAlerts = alerts.filter(
+    (alert) => alert.alertType !== "لا يوجد تنبيه",
+  ).length;
+  const high = alerts.filter((alert) => alert.severity === "عالية").length;
+  const medium = alerts.filter((alert) => alert.severity === "متوسطة").length;
+  const low = alerts.filter((alert) => alert.severity === "منخفضة").length;
+
+  return [
+    {
+      id: "total",
+      title: "إجمالي السيارات المكتشفة",
+      value: total,
+      percent: total > 0 ? 100 : 0,
+      subtitle: "خلال مدة الفيديو",
+      icon: "vehicles",
+      gradient: "from-blue-600/40 to-indigo-700/30",
+      isPositive: true,
+    },
+    {
+      id: "alerts",
+      title: "سيارات لديها تنبيهات",
+      value: withAlerts,
+      percent: percentOf(withAlerts, total),
+      subtitle: "من إجمالي المكتشف",
+      icon: "alerts",
+      gradient: "from-violet-600/40 to-purple-700/30",
+      isPositive: false,
+    },
+    {
+      id: "high",
+      title: "سيارات عالية الخطورة",
+      value: high,
+      percent: percentOf(high, total),
+      subtitle: "تتطلب تدخل فوري",
+      icon: "wanted",
+      gradient: "from-rose-600/40 to-orange-700/30",
+      isPositive: false,
+    },
+    {
+      id: "medium",
+      title: "سيارات متوسطة الخطورة",
+      value: medium,
+      percent: percentOf(medium, total),
+      subtitle: "تحتاج متابعة",
+      icon: "scans",
+      gradient: "from-amber-600/40 to-yellow-700/30",
+      isPositive: false,
+    },
+    {
+      id: "low",
+      title: "سيارات منخفضة الخطورة",
+      value: low,
+      percent: percentOf(low, total),
+      subtitle: "مراقبة روتينية",
+      icon: "units",
+      gradient: "from-emerald-600/40 to-teal-700/30",
+      isPositive: true,
+    },
+  ];
+}
+
+```
+
+---
+
+### <a id="📄-src-features-analysis-utils-confidence-utils-ts"></a>📄 `src/features/analysis/utils/confidence.utils.ts`
+
+**File Info:**
+- **Size**: 155 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/analysis/utils/confidence.utils.ts`
+- **Relative Path**: `src/features/analysis/utils`
+- **Created**: 2026-08-16 20:19:52 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-16 20:35:05 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `114eebee05c3bd31b3f39ae228d63471`
+- **SHA256**: `2ec1ec1420c13013fd4eb757868ab5973d69732fe8fbd70bc2b15951b89cdecc`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+export function formatConfidencePercent(value: number): string {
+  if (!Number.isFinite(value)) return "0%";
+  return `${Math.round(value * 100)}%`;
+}
+
+```
+
+---
+
+### <a id="📄-src-features-analysis-utils-mapdetectionapitoui-ts"></a>📄 `src/features/analysis/utils/mapDetectionApiToUi.ts`
+
+**File Info:**
+- **Size**: 855 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/analysis/utils/mapDetectionApiToUi.ts`
+- **Relative Path**: `src/features/analysis/utils`
+- **Created**: 2026-08-16 19:08:35 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-16 20:35:05 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `cbd5bd5a066996ebf9ad91e74790ec84`
+- **SHA256**: `fd6654291b7a0b7e44a46a6adb380294d222949bed1fa0073d1c4e9799a0adad`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```typescript
+import type { DetectionApiItem } from "../api/detections.types";
+import type { AnalysisAlert } from "../models/analysis.types";
+import { mapDetectionSeverity } from "./severity.utils";
+import { mapViolationTypeToLabel } from "./violationType.utils";
+
+const EMPTY_FALLBACK = "—";
+
+export function mapDetectionApiToUi(item: DetectionApiItem): AnalysisAlert {
+  const message =
+    item.message != null && item.message.trim().length > 0
+      ? item.message.trim()
+      : EMPTY_FALLBACK;
+
+  return {
+    id: String(item.id),
+    plateNumber: item.plate_number?.trim() || EMPTY_FALLBACK,
+    alertType: mapViolationTypeToLabel(item.violation_type),
+    severity: mapDetectionSeverity(item.severity),
+    message,
+    timestamp: EMPTY_FALLBACK,
+    // keep original violation_type for navigation/logic
+    violationType: item.violation_type ?? null,
+  };
+}
+
+```
+
+---
+
+### <a id="📄-src-features-analysis-utils-mapdetectiondetailstovehicledetails-ts"></a>📄 `src/features/analysis/utils/mapDetectionDetailsToVehicleDetails.ts`
+
+**File Info:**
+- **Size**: 2 KB
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/analysis/utils/mapDetectionDetailsToVehicleDetails.ts`
+- **Relative Path**: `src/features/analysis/utils`
+- **Created**: 2026-08-16 20:20:12 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-16 20:35:05 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `8344abddfed10c666587a25063211494`
+- **SHA256**: `ec8ece2b28a58ecfbb8c0ad6e04be532d31f69e4b9f23ca4a5eeb90323e8ebe0`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```typescript
+import type { DetectionDetailsResponse } from "../api/detectionDetails.types";
+import type { VehicleDetails, ComparisonRow } from "../models/vehicleDetails.types";
+import { mapDetectionSeverity } from "./severity.utils";
+import { mapViolationTypeToLabel } from "./violationType.utils";
+import { formatConfidencePercent } from "./confidence.utils";
+
+export function mapDetectionDetailsResponseToVehicleDetails(
+  resp: DetectionDetailsResponse,
+): VehicleDetails {
+  const d = resp.detection;
+
+  const comparisonRows: ComparisonRow[] = [
+    {
+      property: "plate",
+      propertyLabel: "رقم اللوحة",
+      aiValue: d.comparison.plate.ai,
+      actualValue: d.comparison.plate.actual,
+      confidence: Math.round(d.comparison.plate.confidence * 100),
+      mismatch: d.comparison.plate.mismatch,
+    },
+    {
+      property: "model",
+      propertyLabel: "الموديل",
+      aiValue: d.comparison.model.ai,
+      actualValue: d.comparison.model.actual,
+      confidence: Math.round(d.comparison.model.confidence * 100),
+      mismatch: d.comparison.model.mismatch,
+    },
+    {
+      property: "type",
+      propertyLabel: "النوع",
+      aiValue: d.comparison.type.ai,
+      actualValue: d.comparison.type.actual,
+      confidence: Math.round(d.comparison.type.confidence * 100),
+      mismatch: d.comparison.type.mismatch,
+    },
+    {
+      property: "color",
+      propertyLabel: "اللون",
+      aiValue: d.comparison.color.ai,
+      actualValue: d.comparison.color.actual,
+      confidence: Math.round(d.comparison.color.confidence * 100),
+      mismatch: d.comparison.color.mismatch,
+    },
+  ];
+
+  const vehicle: VehicleDetails = {
+    id: String(d.id),
+    plateNumber: d.comparison.plate.ai,
+    imageUrl: d.vehicle_image_url,
+    severity: mapDetectionSeverity(d.severity),
+    score: Math.round(d.risk_score),
+    alertType: mapViolationTypeToLabel(d.violation_type),
+    alertMessage: d.message ?? "—",
+    comparisonRows,
+  };
+
+  return vehicle;
+}
+
+```
+
+---
+
+### <a id="📄-src-features-analysis-utils-mapvideotoanalysissummary-ts"></a>📄 `src/features/analysis/utils/mapVideoToAnalysisSummary.ts`
+
+**File Info:**
+- **Size**: 798 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/analysis/utils/mapVideoToAnalysisSummary.ts`
+- **Relative Path**: `src/features/analysis/utils`
+- **Created**: 2026-08-16 19:08:39 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-16 20:52:12 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `b24d41cf0d6cc5692a567af365b168eb`
+- **SHA256**: `3cd5674df60d6547708e035956b311d7b049dc6ff1cda4677bbf519f9cb5577e`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import { DEFAULT_VIDEO_THUMBNAIL } from "../../video/utils/mapVideoApiToUi";
+import type { VideoFile } from "../../video/models/video.types";
+import type { AnalysisVideoSummary } from "../models/analysis.types";
+
+export function mapVideoFileToAnalysisSummary(
+  video: VideoFile,
+): AnalysisVideoSummary {
+  return {
+    id: video.id,
+    fileName: video.name,
+    thumbnailUrl: video.thumbnailUrl ?? DEFAULT_VIDEO_THUMBNAIL,
+    processedAt: video.uploadedAt,
+    duration: video.duration,
+    formattedSize: video.formattedSize,
+    status: video.status,
+  };
+}
+
+/** Prefer newest completed video (list order from API is newest-first). */
+export function findLatestCompletedVideo(
+  videos: VideoFile[],
+): VideoFile | undefined {
+  return videos.find((video) => video.status === "completed");
+}
+
+```
+
+---
+
+### <a id="📄-src-features-analysis-utils-severity-utils-ts"></a>📄 `src/features/analysis/utils/severity.utils.ts`
+
+**File Info:**
+- **Size**: 784 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/analysis/utils/severity.utils.ts`
+- **Relative Path**: `src/features/analysis/utils`
+- **Created**: 2026-08-16 19:08:32 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-16 19:08:32 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `7e9779664732e451e9d4f9daa4c644a6`
+- **SHA256**: `a792c2a4217c94997a51ae52a88e0483f44df5e58fc66b7f5a4748efaeda08d1`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```typescript
+import type { AlertSeverity } from "../models/analysis.types";
+
+/**
+ * Maps API severity (Arabic or English) to UI AlertSeverity.
+ * Returns null when severity is missing/unknown.
+ */
+export function mapDetectionSeverity(
+  raw: string | null | undefined,
+): AlertSeverity | null {
+  if (raw == null) return null;
+
+  const value = raw.trim();
+  if (!value) return null;
+
+  const normalized = value.toLowerCase();
+
+  const map: Record<string, AlertSeverity> = {
+    high: "عالية",
+    medium: "متوسطة",
+    low: "منخفضة",
+    عالي: "عالية",
+    عالية: "عالية",
+    متوسط: "متوسطة",
+    متوسطة: "متوسطة",
+    منخفض: "منخفضة",
+    منخفضة: "منخفضة",
+  };
+
+  return map[normalized] ?? map[value] ?? null;
+}
+
+```
+
+---
+
+### <a id="📄-src-features-analysis-utils-violationtype-utils-ts"></a>📄 `src/features/analysis/utils/violationType.utils.ts`
+
+**File Info:**
+- **Size**: 659 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/analysis/utils/violationType.utils.ts`
+- **Relative Path**: `src/features/analysis/utils`
+- **Created**: 2026-08-16 19:08:33 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-16 19:08:33 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `cc9dc8e8ee36f1b00b039511d1b74f43`
+- **SHA256**: `775e70bc205c5a21cb39a53a7a28b37b24d972d6fa856e3b662d1977fa1b4648`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```typescript
+/** Known API violation_type → Arabic UI label */
+const VIOLATION_TYPE_LABELS: Record<string, string> = {
+  vehicle_mismatch: "اختلاف بيانات المركبة",
+};
+
+export const NO_ALERT_LABEL = "لا يوجد تنبيه";
+
+/**
+ * Maps API violation_type to a user-facing Arabic label.
+ * Null/empty → "لا يوجد تنبيه".
+ */
+export function mapViolationTypeToLabel(
+  violationType: string | null | undefined,
+): string {
+  if (violationType == null) return NO_ALERT_LABEL;
+
+  const key = violationType.trim();
+  if (!key) return NO_ALERT_LABEL;
+
+  return VIOLATION_TYPE_LABELS[key] ?? VIOLATION_TYPE_LABELS[key.toLowerCase()] ?? key;
+}
+
+```
+
+---
+
 ### <a id="📄-src-features-analysis-index-ts"></a>📄 `src/features/analysis/index.ts`
 
 **File Info:**
-- **Size**: 501 B
+- **Size**: 534 B
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/analysis/index.ts`
 - **Relative Path**: `src/features/analysis`
 - **Created**: 2026-08-13 17:23:02 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 23:54:59 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `c2664bdee0bba9d3c369d23402b706a4`
-- **SHA256**: `934b81e2e61fdc66ebbe62ea02040567b9bf1999c1f5b69cf32c8d1780906b26`
+- **Modified**: 2026-08-16 19:09:21 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `f1fed6aa0bf31b1403863970eb51c882`
+- **SHA256**: `92428b47eb2550893ae3491dee03321f5363da3d612af9d97ef8be21b2704baa`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -2476,7 +3253,11 @@ export const analysisService = new AnalysisService();
 ```typescript
 export { AnalysisResultsPage } from "./pages/AnalysisResultsPage";
 export { VehicleDetailsPage } from "./pages/VehicleDetailsPage";
-export { AnalysisRoutes, buildVehicleDetailsPath } from "./routes/analysisRoutes";
+export {
+  AnalysisRoutes,
+  buildAnalysisResultsPath,
+  buildVehicleDetailsPath,
+} from "./routes/analysisRoutes";
 export { analysisService } from "./services/AnalysisService";
 export { useAnalysisResultsViewModel } from "./hooks/useAnalysisResultsViewModel";
 export { useVehicleDetailsViewModel } from "./hooks/useVehicleDetailsViewModel";
@@ -2595,15 +3376,15 @@ export function LoginForm({ form, onSubmit, isSubmitting }: LoginFormProps) {
 ### <a id="📄-src-features-auth-components-shared-authbrandpanel-tsx"></a>📄 `src/features/auth/components/shared/AuthBrandPanel.tsx`
 
 **File Info:**
-- **Size**: 5.62 KB
+- **Size**: 5.25 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/auth/components/shared/AuthBrandPanel.tsx`
 - **Relative Path**: `src/features/auth/components/shared`
 - **Created**: 2026-07-18 19:10:06 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-15 00:58:07 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `01a3040acc9b62eabcca871f1e3d1dc1`
-- **SHA256**: `144d3a778d6bd5338d5184633ad1ec886aa6e0ee13d579e557b959478b319fd2`
+- **Modified**: 2026-08-15 19:37:49 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `b4f089679e5aa8c2bf460811a6e37d7c`
+- **SHA256**: `fab0f327309c0b2207cc725ffd5bce27ddc1eae7f5a9e14e91662fb8391262eb`
 - **Encoding**: UTF-8
 
 **File code content:**
@@ -2616,7 +3397,6 @@ interface AuthBrandPanelProps {
 export function AuthBrandPanel({ activeDot = 0 }: AuthBrandPanelProps) {
   return (
     <div className="relative flex min-h-[280px] w-full flex-col justify-between overflow-hidden bg-gradient-to-br from-blue-950 via-[#0B1220] to-violet-950 px-8 py-10 text-white md:min-h-screen md:w-1/2 md:px-12 md:py-14 lg:px-16">
-      {/* Decorative blobs */}
       <div className="pointer-events-none absolute -top-24 -right-24 h-72 w-72 rounded-full bg-blue-500/10 blur-2xl" />
       <div className="pointer-events-none absolute top-1/3 -left-16 h-64 w-64 rounded-full bg-violet-500/20 blur-3xl" />
       <div className="pointer-events-none absolute bottom-20 right-1/4 h-40 w-40 rounded-full bg-blue-400/15 blur-2xl" />
@@ -2637,7 +3417,6 @@ export function AuthBrandPanel({ activeDot = 0 }: AuthBrandPanelProps) {
           لرجال المرور وجهات الأمن.
         </p>
 
-        {/* Camera + vehicle data readout illustration */}
         <div className="relative mt-8 hidden h-72 w-full max-w-lg md:block lg:h-96 lg:max-w-xl">
           <svg
             viewBox="0 0 680 380"
@@ -2657,7 +3436,6 @@ export function AuthBrandPanel({ activeDot = 0 }: AuthBrandPanelProps) {
             <line x1="110" y1="65" x2="280" y2="210" stroke="#a78bfa" strokeWidth="1" strokeDasharray="4 4" opacity="0.6" />
             <line x1="110" y1="90" x2="280" y2="250" stroke="#a78bfa" strokeWidth="1" strokeDasharray="4 4" opacity="0.6" />
 
-            {/* Car */}
             <g transform="translate(220,255)">
               <rect x="0" y="-20" width="110" height="38" rx="10" fill="#f5f4ff" />
               <rect x="8" y="-32" width="42" height="22" rx="8" fill="#f5f4ff" />
@@ -2669,7 +3447,6 @@ export function AuthBrandPanel({ activeDot = 0 }: AuthBrandPanelProps) {
               </text>
             </g>
 
-            {/* Detection corner brackets on plate */}
             <g stroke="#a78bfa" strokeWidth="2" fill="none" strokeLinecap="round">
               <path d="M205 235 L205 218 L222 218" />
               <path d="M335 235 L335 218 L318 218" />
@@ -2677,10 +3454,8 @@ export function AuthBrandPanel({ activeDot = 0 }: AuthBrandPanelProps) {
               <path d="M335 273 L335 290 L318 290" />
             </g>
 
-            {/* Connector to data panel */}
             <line x1="335" y1="255" x2="400" y2="255" stroke="#a78bfa" strokeWidth="1" strokeDasharray="4 4" opacity="0.6" />
 
-            {/* Data readout panel — إحداثيات نسبية داخل مجموعة واحدة لضمان بقاء النص داخل الصندوق */}
             <g transform="translate(410,150)">
               <rect width="230" height="175" rx="12" fill="#3b2f7a" stroke="#6d5fd8" strokeWidth="0.5" />
               <line x1="18" y1="42" x2="212" y2="42" stroke="#6d5fd8" strokeWidth="0.5" opacity="0.5" />
@@ -2901,16 +3676,16 @@ export function PasswordInput({
 ### <a id="📄-src-features-auth-components-ui-button-tsx"></a>📄 `src/features/auth/components/ui/Button.tsx`
 
 **File Info:**
-- **Size**: 1.17 KB
+- **Size**: 1.22 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/auth/components/ui/Button.tsx`
 - **Relative Path**: `src/features/auth/components/ui`
 - **Created**: 2026-07-18 19:09:54 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-15 00:53:19 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `32ee67761ed4ae6554fad75564cefdf5`
-- **SHA256**: `08fb4b1aa0f185ad3506188995de9a8f120d88e6ffe91721ae20cd000544a43e`
-- **Encoding**: ASCII
+- **Modified**: 2026-08-16 18:10:04 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `d773d35cb22cd447b94391da1298582c`
+- **SHA256**: `f77df22bdcf61162ba1662c8a0cc39909cfd14c71e26e4d16b8f500409e9c773`
+- **Encoding**: UTF-8
 
 **File code content:**
 
@@ -2921,12 +3696,14 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
   variant?: "primary" | "secondary";
   isLoading?: boolean;
+  loadingLabel?: string;
 }
 
 export function Button({
   children,
   variant = "primary",
   isLoading = false,
+  loadingLabel = "جارٍ التحقق...",
   className = "",
   disabled,
   ...props
@@ -2947,7 +3724,7 @@ export function Button({
       disabled={disabled || isLoading}
       {...props}
     >
-      {isLoading ? "جارٍ التحقق..." : children}
+      {isLoading ? loadingLabel : children}
     </button>
   );
 }
@@ -3096,15 +3873,15 @@ export function Input({
 ### <a id="📄-src-features-auth-hooks-useloginviewmodel-ts"></a>📄 `src/features/auth/hooks/useLoginViewModel.ts`
 
 **File Info:**
-- **Size**: 683 B
+- **Size**: 638 B
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/auth/hooks/useLoginViewModel.ts`
 - **Relative Path**: `src/features/auth/hooks`
 - **Created**: 2026-07-18 19:10:21 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:14:41 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `f7c40b1d4e5390180973f6d0f621b862`
-- **SHA256**: `03cfc2718bb69d44409ae67d93a070bad93ad65875691539fb3735e402a91502`
+- **Modified**: 2026-08-16 21:50:31 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `36354a4e82b8b4b8dce9e503f7086c25`
+- **SHA256**: `195751cc2972d851e559ecea69d3007d0721ff6388b8b5874d78ae65b9a5a4f1`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -3129,7 +3906,6 @@ export function useLoginViewModel() {
 
   const onSubmit = form.handleSubmit(async (data: LoginFormValues) => {
     console.log("Login attempt:", data);
-    // TODO: await AuthService.login(data);
   });
 
   return {
@@ -3261,16 +4037,16 @@ export type AuthRoute = (typeof AuthRoutes)[keyof typeof AuthRoutes];
 ### <a id="📄-src-features-auth-services-authservice-ts"></a>📄 `src/features/auth/services/AuthService.ts`
 
 **File Info:**
-- **Size**: 672 B
+- **Size**: 481 B
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/auth/services/AuthService.ts`
 - **Relative Path**: `src/features/auth/services`
 - **Created**: 2026-07-18 19:09:45 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:14:41 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `dec41b5a60c904b4e61439c506848a3f`
-- **SHA256**: `95d78ffa85723feb39a9fe5f02601d2a71cb657da14f33ce1ff09a27080fcf4a`
-- **Encoding**: UTF-8
+- **Modified**: 2026-08-16 20:58:14 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `7c82371b705cbaaa260c7a2159ddda67`
+- **SHA256**: `86103441c1842534cd65b3ffe4634b17e353c8a9e3e33524c322ceaab1e62368`
+- **Encoding**: ASCII
 
 **File code content:**
 
@@ -3281,18 +4057,12 @@ import type {
   RegisterCredentials,
 } from "../models/auth.types";
 
-/**
- * AuthService — prepared for future API integration.
- * Methods are placeholders and throw until implemented.
- */
 class AuthService {
   async login(_credentials: LoginCredentials): Promise<AuthResponse> {
-    // TODO: integrate with API
     throw new Error("AuthService.login is not implemented yet");
   }
 
   async register(_credentials: RegisterCredentials): Promise<AuthResponse> {
-    // TODO: integrate with API
     throw new Error("AuthService.register is not implemented yet");
   }
 }
@@ -3418,49 +4188,138 @@ export { Input, Button, Checkbox } from "./components/ui";
 
 ---
 
+### <a id="📄-src-features-blacklist-api-blacklist-endpoints-ts"></a>📄 `src/features/blacklist/api/blacklist.endpoints.ts`
+
+**File Info:**
+- **Size**: 152 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/blacklist/api/blacklist.endpoints.ts`
+- **Relative Path**: `src/features/blacklist/api`
+- **Created**: 2026-08-15 21:38:08 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-17 07:00:27 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `176cd05b8d7009514e186b1d3429ee12`
+- **SHA256**: `a3647acd30841fc9f7dfbd204709e162986ede227b095ce8b69abcbe683d150b`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+
+export const BlacklistApiEndpoints = {
+  list: "/api/admin/blacklist",
+  detail: (id: number | string) => `/api/admin/blacklist/${id}`,
+} as const;
+```
+
+---
+
+### <a id="📄-src-features-blacklist-api-blacklist-types-ts"></a>📄 `src/features/blacklist/api/blacklist.types.ts`
+
+**File Info:**
+- **Size**: 1023 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/blacklist/api/blacklist.types.ts`
+- **Relative Path**: `src/features/blacklist/api`
+- **Created**: 2026-08-15 21:38:08 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-17 10:34:45 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `2a134771db75e6a36d8faf6a9f86e50e`
+- **SHA256**: `7152d2bb4b1a1f43214fc359caf36fc19192af7a66ac438330fdd8bebcbdd057`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import type {
+  BlacklistPriority,
+  BlacklistPriorityApiValue,
+  BlacklistStatus,
+} from "../models/blacklist.types";
+
+export interface BlacklistApiItem {
+  id: number;
+  plate_number: string;
+  owner_name: string;
+  vehicle_type: string;
+  vehicle_color: string;
+  priority: BlacklistPriorityApiValue;
+  status: BlacklistStatus;
+  wanted: boolean;
+  created_at: string;
+}
+
+export interface BlacklistApiResponse {
+  data: BlacklistApiItem[];
+}
+
+export interface UpdateBlacklistRequest {
+  status: BlacklistStatus;
+  priority: BlacklistPriority;
+  wanted: boolean;
+}
+
+export interface CreateBlacklistRequest {
+  vehicle_id: number;
+  status: BlacklistStatus;
+  priority: BlacklistPriority;
+  wanted: boolean;
+}
+
+export interface UpdateBlacklistApiPayload extends Omit<UpdateBlacklistRequest, "priority"> {
+  priority: BlacklistPriorityApiValue;
+}
+
+export interface CreateBlacklistApiPayload extends Omit<CreateBlacklistRequest, "priority"> {
+  priority: BlacklistPriorityApiValue;
+}
+```
+
+---
+
 ### <a id="📄-src-features-blacklist-components-blacklistfilters-tsx"></a>📄 `src/features/blacklist/components/BlacklistFilters.tsx`
 
 **File Info:**
-- **Size**: 4.27 KB
+- **Size**: 3.42 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/blacklist/components/BlacklistFilters.tsx`
 - **Relative Path**: `src/features/blacklist/components`
 - **Created**: 2026-08-14 23:55:48 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-15 00:04:07 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `943412bccb8b6543bf859693c8fa8183`
-- **SHA256**: `274cb7d389b483eeadd02885a0c8bfdc81b2f3b5a6035b1ee53861e16ab2a022`
-- **Encoding**: UTF-8
+- **Modified**: 2026-08-17 07:18:36 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `542f16b9e7fc916fbcaf24d67c7527e4`
+- **SHA256**: `d59c66d4f562c149aa0a51193d814c37bbfa0259975c4616ccc3bfcafb26ae8a`
+- **Encoding**: ASCII
 
 **File code content:**
 
 ```typescript
-import { Button, Input } from "../../auth";
-import {
-  blacklistColorOptions,
-  blacklistSeverityOptions,
-  blacklistTypeOptions,
-} from "../data/mockBlacklistData";
+import { Input } from "../../auth";
 import type { BlacklistFilters } from "../models/blacklist.types";
 
 interface BlacklistFiltersProps {
   filters: BlacklistFilters;
+  severityOptions: string[];
+  typeOptions: string[];
+  colorOptions: string[];
   onSearchChange: (value: string) => void;
   onSeverityChange: (value: string) => void;
   onTypeChange: (value: string) => void;
   onColorChange: (value: string) => void;
-  onReset: () => void; // يمكنك إبقاؤها في الـ Interface حتى لا تتأثر المكونات الأب (Parent Components)
-  onExport: () => void; // نفس الأمر هنا
+  onReset: () => void;
+  onExport: () => void;
   onAddClick: () => void;
 }
 
 export function BlacklistFiltersBar({
   filters,
+  severityOptions,
+  typeOptions,
+  colorOptions,
   onSearchChange,
   onSeverityChange,
   onTypeChange,
   onColorChange,
-  onAddClick,
 }: BlacklistFiltersProps) {
   return (
     <div className="flex flex-col gap-3">
@@ -3481,36 +4340,25 @@ export function BlacklistFiltersBar({
           <FilterSelect
             label="كل درجات الخطورة"
             value={filters.severity}
-            options={[...blacklistSeverityOptions]}
+            options={severityOptions}
             onChange={onSeverityChange}
           />
 
           <FilterSelect
             label="كل الأنواع"
             value={filters.type}
-            options={[...blacklistTypeOptions]}
+            options={typeOptions}
             onChange={onTypeChange}
           />
 
           <FilterSelect
             label="كل الألوان"
             value={filters.color}
-            options={[...blacklistColorOptions]}
+            options={colorOptions}
             onChange={onColorChange}
           />
         </div>
 
-        {/* الحفاظ على حاوية الأزرار لضمان بقاء زر الإضافة في مكانه الصحيح عبر استخدام justify-end */}
-        <div className="flex flex-wrap items-center justify-end gap-2">
-          <Button
-            type="button"
-            onClick={onAddClick}
-            className="w-auto shrink-0 whitespace-nowrap px-5 shadow-[0_0_24px_rgba(99,102,241,0.35)]"
-          >
-            <PlusIcon />
-            إضافة إلى القائمة السوداء
-          </Button>
-        </div>
       </div>
     </div>
   );
@@ -3568,20 +4416,6 @@ function SearchIcon() {
   );
 }
 
-function PlusIcon() {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      className="h-4 w-4"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      aria-hidden
-    >
-      <path d="M12 5v14M5 12h14" />
-    </svg>
-  );
-}
 ```
 
 ---
@@ -3589,15 +4423,15 @@ function PlusIcon() {
 ### <a id="📄-src-features-blacklist-components-blacklistheader-tsx"></a>📄 `src/features/blacklist/components/BlacklistHeader.tsx`
 
 **File Info:**
-- **Size**: 938 B
+- **Size**: 969 B
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/blacklist/components/BlacklistHeader.tsx`
 - **Relative Path**: `src/features/blacklist/components`
 - **Created**: 2026-08-14 23:55:31 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 23:55:31 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `789fcf5e866658100c2510056e6c7e52`
-- **SHA256**: `9ea842393fdfaa41e3d14d7ba904db44a2db4bb7fd95b9e5f6f17f3fb9591fe4`
+- **Modified**: 2026-08-15 21:25:05 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `6ee6e0ead60c03b0b8ca153ae6bbccd1`
+- **SHA256**: `4f30e751277fef2aa1a5945ff8b11b8bc48135bbbdd285337d65bd701c2bd7e4`
 - **Encoding**: UTF-8
 
 **File code content:**
@@ -3642,15 +4476,15 @@ export function BlacklistHeader({
 ### <a id="📄-src-features-blacklist-components-blackliststats-tsx"></a>📄 `src/features/blacklist/components/BlacklistStats.tsx`
 
 **File Info:**
-- **Size**: 922 B
+- **Size**: 957 B
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/blacklist/components/BlacklistStats.tsx`
 - **Relative Path**: `src/features/blacklist/components`
 - **Created**: 2026-08-14 23:55:38 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 23:55:38 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `c4189d68753c32d8480d1b0178b9a523`
-- **SHA256**: `f7cf6864a78dbbb7b72787b9222d2e234f3665cb7a2c17077ced985bf10c4631`
+- **Modified**: 2026-08-15 21:25:05 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `2a6dd450984133bab8974d629999efc2`
+- **SHA256**: `6922e72195ad2060b879726990e3128e51cbca744659cbae4a4a9f69454c93de`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -3699,15 +4533,15 @@ export function BlacklistStats({ stats }: BlacklistStatsProps) {
 ### <a id="📄-src-features-blacklist-components-blacklisttable-tsx"></a>📄 `src/features/blacklist/components/BlacklistTable.tsx`
 
 **File Info:**
-- **Size**: 5.53 KB
+- **Size**: 5.78 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/blacklist/components/BlacklistTable.tsx`
 - **Relative Path**: `src/features/blacklist/components`
 - **Created**: 2026-08-14 23:55:49 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 23:55:58 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `cae068ef1e0268716020466bfc77f459`
-- **SHA256**: `4686bb5e50187d7ca035a83f4da6908ed0f75e3c467d19992e7efadbea6f161e`
+- **Modified**: 2026-08-17 06:32:33 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `c2f05703648d5a3683370e3574491254`
+- **SHA256**: `8d52a38d6e1dfb941523f05810e82244e3f61c609de1b58844ab34605ba4347f`
 - **Encoding**: UTF-8
 
 **File code content:**
@@ -3785,7 +4619,7 @@ function BlacklistTableRow({
   vehicle,
   onEdit,
   onDelete,
-  onMore,
+  // onMore,
 }: BlacklistTableRowProps) {
   return (
     <tr className="border-b border-white/5 transition hover:bg-white/[0.04]">
@@ -3826,9 +4660,9 @@ function BlacklistTableRow({
           <ActionButton label="تعديل" onClick={() => onEdit(vehicle.id)}>
             <EditIcon />
           </ActionButton>
-          <ActionButton label="المزيد" muted onClick={() => onMore(vehicle.id)}>
+          {/* <ActionButton label="المزيد" muted onClick={() => onMore(vehicle.id)}>
             <MoreIcon />
-          </ActionButton>
+          </ActionButton> */}
         </div>
       </td>
     </tr>
@@ -3897,21 +4731,293 @@ function EditIcon() {
   );
 }
 
-function MoreIcon() {
+// function MoreIcon() {
+//   return (
+//     <svg
+//       viewBox="0 0 24 24"
+//       className="h-3.5 w-3.5"
+//       fill="currentColor"
+//       aria-hidden
+//     >
+//       <circle cx="12" cy="5" r="1.6" />
+//       <circle cx="12" cy="12" r="1.6" />
+//       <circle cx="12" cy="19" r="1.6" />
+//     </svg>
+//   );
+// }
+
+```
+
+---
+
+### <a id="📄-src-features-blacklist-components-deleteconfirmmodal-tsx"></a>📄 `src/features/blacklist/components/DeleteConfirmModal.tsx`
+
+**File Info:**
+- **Size**: 2.75 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/features/blacklist/components/DeleteConfirmModal.tsx`
+- **Relative Path**: `src/features/blacklist/components`
+- **Created**: 2026-08-17 07:03:15 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-17 07:03:25 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `862b54cc34a2598ffe5a2ef259fa0f89`
+- **SHA256**: `eac60b6b2185be849373b9d0973442b6027b461d95e8c052074ac6d46bdf8988`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```typescript
+import type { BlacklistedVehicle } from "../models/blacklist.types";
+
+interface DeleteConfirmModalProps {
+  vehicle: BlacklistedVehicle;
+  isDeleting: boolean;
+  onConfirm: () => void;
+  onClose: () => void;
+}
+
+export function DeleteConfirmModal({
+  vehicle,
+  isDeleting,
+  onConfirm,
+  onClose,
+}: DeleteConfirmModalProps) {
   return (
-    <svg
-      viewBox="0 0 24 24"
-      className="h-3.5 w-3.5"
-      fill="currentColor"
-      aria-hidden
-    >
-      <circle cx="12" cy="5" r="1.6" />
-      <circle cx="12" cy="12" r="1.6" />
-      <circle cx="12" cy="19" r="1.6" />
-    </svg>
+    <div className="fixed inset-0 z-[60] flex items-center justify-center p-4">
+      <button
+        type="button"
+        aria-label="إغلاق"
+        onClick={onClose}
+        className="fixed inset-0 bg-black/70 backdrop-blur-sm"
+      />
+
+      <div className="relative z-10 flex w-full max-w-sm flex-col gap-5 rounded-2xl border border-white/10 bg-[#0f172a] p-5 shadow-[0_0_60px_rgba(244,63,94,0.15)] sm:p-6">
+        <div className="flex items-center gap-3">
+          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-rose-500/15 text-rose-400 ring-1 ring-rose-500/30">
+            <WarningIcon />
+          </div>
+          <div>
+            <h2 className="text-base font-bold text-white">تأكيد الحذف</h2>
+            <p className="mt-0.5 text-sm text-white/50">
+              لا يمكن التراجع عن هذا الإجراء
+            </p>
+          </div>
+        </div>
+
+        <p className="text-sm leading-relaxed text-white/70">
+          هل أنت متأكد من حذف المركبة{" "}
+          <span className="font-semibold text-white">
+            {vehicle.plateNumber}
+          </span>{" "}
+          من القائمة السوداء؟
+        </p>
+
+        <div className="flex items-center justify-end gap-2">
+          <button
+            type="button"
+            onClick={onClose}
+            className="rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 text-sm font-medium text-white/70 transition hover:bg-white/10"
+          >
+            إلغاء
+          </button>
+          <button
+            type="button"
+            onClick={onConfirm}
+            disabled={isDeleting}
+            className="flex items-center justify-center gap-2 rounded-xl bg-rose-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-rose-500 disabled:cursor-not-allowed disabled:opacity-60"
+          >
+            {isDeleting ? "جارٍ الحذف..." : "حذف نهائيًا"}
+          </button>
+        </div>
+      </div>
+    </div>
   );
 }
 
+function WarningIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className="h-5 w-5"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      aria-hidden
+    >
+      <path d="M12 9v4M12 17h.01" />
+      <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z" />
+    </svg>
+  );
+}
+```
+
+---
+
+### <a id="📄-src-features-blacklist-components-editblacklistmodal-tsx"></a>📄 `src/features/blacklist/components/EditBlacklistModal.tsx`
+
+**File Info:**
+- **Size**: 4.54 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/features/blacklist/components/EditBlacklistModal.tsx`
+- **Relative Path**: `src/features/blacklist/components`
+- **Created**: 2026-08-17 07:01:59 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-17 09:39:29 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `cbcbe5743ba85f117071016e34f2a038`
+- **SHA256**: `40cb9afb824c4cb483572cbfde5d4cc4e1fe32856f23760b86c58836a8e8167b`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import { useState } from "react";
+import { Button } from "../../auth";
+import type { UpdateBlacklistRequest } from "../api/blacklist.types";
+import type {
+  BlacklistedVehicle,
+  BlacklistPriority,
+  BlacklistStatus,
+} from "../models/blacklist.types";
+import {
+  mapPriorityToSeverityLabel,
+  mapStatusToArabicLabel,
+} from "../utils/priority.utils";
+
+interface EditBlacklistModalProps {
+  vehicle: BlacklistedVehicle;
+  isSaving: boolean;
+  onSave: (payload: UpdateBlacklistRequest) => void;
+  onClose: () => void;
+}
+
+const STATUS_OPTIONS: BlacklistStatus[] = ["active", "blocked", "pending", "review"];
+const PRIORITY_OPTIONS: BlacklistPriority[] = ["low", "medium", "high"];
+
+export function EditBlacklistModal({
+  vehicle,
+  isSaving,
+  onSave,
+  onClose,
+}: EditBlacklistModalProps) {
+  const [status, setStatus] = useState<BlacklistStatus>(vehicle.status);
+  const [priority, setPriority] = useState<BlacklistPriority>(
+    vehicle.priority,
+  );
+  const [wanted, setWanted] = useState(vehicle.wanted);
+
+  const handleSubmit = () => {
+    onSave({ status, priority, wanted });
+  };
+
+  return (
+    <div className="fixed inset-0 z-[60] flex items-center justify-center p-4">
+      <button
+        type="button"
+        aria-label="إغلاق"
+        onClick={onClose}
+        className="fixed inset-0 bg-black/70 backdrop-blur-sm"
+      />
+
+      <div className="relative z-10 flex w-full max-w-md flex-col gap-5 rounded-2xl border border-white/10 bg-[#0f172a] p-5 shadow-[0_0_60px_rgba(59,130,246,0.15)] sm:p-6">
+        <div>
+          <h2 className="text-lg font-bold text-white">
+            تعديل بيانات المركبة
+          </h2>
+          <p className="mt-1 text-sm text-white/45">{vehicle.plateNumber}</p>
+        </div>
+
+        <div className="flex flex-col gap-4">
+          <SelectField
+            label="الحالة"
+            value={status}
+            onChange={(v) => setStatus(v as BlacklistStatus)}
+            options={STATUS_OPTIONS.map((s) => ({
+              value: s,
+              label: mapStatusToArabicLabel(s),
+            }))}
+          />
+
+          <SelectField
+            label="درجة الأولوية"
+            value={priority}
+            onChange={(v) => setPriority(v as BlacklistPriority)}
+            options={PRIORITY_OPTIONS.map((p) => ({
+              value: p,
+              label: mapPriorityToSeverityLabel(p),
+            }))}
+          />
+
+          <SelectField
+            label="مطلوب أمنيًا"
+            value={wanted ? "true" : "false"}
+            onChange={(v) => setWanted(v === "true")}
+            options={[
+              { value: "true", label: "نعم" },
+              { value: "false", label: "لا" },
+            ]}
+          />
+        </div>
+
+        <div className="flex items-center justify-end gap-2">
+          <button
+            type="button"
+            onClick={onClose}
+            className="rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 text-sm font-medium text-white/70 transition hover:bg-white/10"
+          >
+            إلغاء
+          </button>
+          <Button
+            type="button"
+            onClick={handleSubmit}
+            isLoading={isSaving}
+            loadingLabel="جارٍ الحفظ..."
+            className="w-auto px-5"
+          >
+            حفظ التعديلات
+          </Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function SelectField({
+  label,
+  value,
+  options,
+  onChange,
+}: {
+  label: string;
+  value: string;
+  options: { value: string; label: string }[];
+  onChange: (value: string) => void;
+}) {
+  return (
+    <div className="flex flex-col gap-1.5">
+      <label className="text-sm font-medium text-white/70">{label}</label>
+      <div className="relative">
+        <select
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
+          className="w-full appearance-none rounded-xl border border-white/10 bg-white/5 px-4 py-3 pe-9 text-sm text-white outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
+        >
+          {options.map((option) => (
+            <option
+              key={option.value}
+              value={option.value}
+              className="bg-[#0f172a] text-white"
+            >
+              {option.label}
+            </option>
+          ))}
+        </select>
+        <span className="pointer-events-none absolute inset-y-0 end-3 flex items-center text-white/40">
+          ▾
+        </span>
+      </div>
+    </div>
+  );
+}
 ```
 
 ---
@@ -3919,15 +5025,15 @@ function MoreIcon() {
 ### <a id="📄-src-features-blacklist-components-index-ts"></a>📄 `src/features/blacklist/components/index.ts`
 
 **File Info:**
-- **Size**: 213 B
+- **Size**: 335 B
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/blacklist/components/index.ts`
 - **Relative Path**: `src/features/blacklist/components`
 - **Created**: 2026-08-14 23:56:01 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 23:56:01 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `0c44bec903b3820d46608e2cb66f02f4`
-- **SHA256**: `d942562bc7a6a07a0dd85c2ac944546f4da594f82535217ebd6e9c9990677843`
+- **Modified**: 2026-08-17 07:03:52 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `e46a5e09bba3bbfaad647d42bbcccd66`
+- **SHA256**: `980fdb922521c4f2244b3c87aa2d36d574c996e9bc850571455145265e73b28d`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -3937,260 +5043,8 @@ export { BlacklistHeader } from "./BlacklistHeader";
 export { BlacklistStats } from "./BlacklistStats";
 export { BlacklistFiltersBar } from "./BlacklistFilters";
 export { BlacklistTable } from "./BlacklistTable";
-
-```
-
----
-
-### <a id="📄-src-features-blacklist-data-mockblacklistdata-ts"></a>📄 `src/features/blacklist/data/mockBlacklistData.ts`
-
-**File Info:**
-- **Size**: 5.33 KB
-- **Extension**: `.ts`
-- **Language**: `typescript`
-- **Location**: `src/features/blacklist/data/mockBlacklistData.ts`
-- **Relative Path**: `src/features/blacklist/data`
-- **Created**: 2026-08-14 23:55:11 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 23:55:11 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `257293201d681ca89023e6cff052012d`
-- **SHA256**: `b05536278be8654575c54dee1324109cd6bc2b7dc76ea9773488bed3f7ecabe7`
-- **Encoding**: UTF-8
-
-**File code content:**
-
-```typescript
-import type {
-  BlacklistStat,
-  BlacklistedVehicle,
-} from "../models/blacklist.types";
-
-export const BLACKLIST_DEFAULT_PAGE_SIZE = 7;
-
-export const blacklistPageSizeOptions = [7, 10, 25] as const;
-
-export const blacklistSeverityOptions = [
-  "الكل",
-  "منخفضة",
-  "متوسطة",
-  "عالية",
-] as const;
-
-export const blacklistTypeOptions = [
-  "الكل",
-  "سيدان",
-  "دفع رباعي",
-  "هاتشباك",
-  "بيك أب",
-  "شاحنة",
-] as const;
-
-export const blacklistColorOptions = [
-  "الكل",
-  "أبيض",
-  "أسود",
-  "أحمر",
-  "أزرق",
-  "رمادي",
-  "فضي",
-] as const;
-
-/** Fixed reference stats from design (not derived from mock list length). */
-export const mockBlacklistStats: BlacklistStat[] = [
-  {
-    id: "low",
-    title: "منخفضة الخطورة",
-    value: 36,
-    subtitle: "23.1% من الإجمالي",
-    changePercent: 23.1,
-    icon: "units",
-    gradient: "from-emerald-600/40 to-teal-700/30",
-    isPositive: true,
-  },
-  {
-    id: "medium",
-    title: "متوسطة الخطورة",
-    value: 58,
-    subtitle: "37.2% من الإجمالي",
-    changePercent: 37.2,
-    icon: "scans",
-    gradient: "from-amber-600/40 to-yellow-700/30",
-    isPositive: false,
-  },
-  {
-    id: "high",
-    title: "عالية الخطورة",
-    value: 62,
-    subtitle: "39.7% من الإجمالي",
-    changePercent: 39.7,
-    icon: "wanted",
-    gradient: "from-rose-600/40 to-orange-700/30",
-    isPositive: false,
-  },
-  {
-    id: "total",
-    title: "إجمالي المركبات بالقائمة السوداء",
-    value: 156,
-    subtitle: "جميع المركبات المدرجة",
-    changePercent: 100,
-    icon: "blacklist",
-    gradient: "from-blue-600/40 to-indigo-700/30",
-    isPositive: true,
-  },
-];
-
-export const mockBlacklistedVehicles: BlacklistedVehicle[] = [
-  {
-    id: "b1",
-    plateNumber: "أ ب 1234",
-    ownerName: "أحمد محمد علي",
-    reason: "سرقة مركبة",
-    severity: "عالية",
-    color: "أبيض",
-    colorCode: "#E2E8F0",
-    type: "سيدان",
-  },
-  {
-    id: "b2",
-    plateNumber: "ف 5678 م",
-    ownerName: "محمد خالد الدوسري",
-    reason: "مطلوب في قضية",
-    severity: "عالية",
-    color: "أسود",
-    colorCode: "#1E293B",
-    type: "دفع رباعي",
-  },
-  {
-    id: "b3",
-    plateNumber: "ن 9101 ك",
-    ownerName: "سارة إبراهيم الحربي",
-    reason: "تهريب مخدرات",
-    severity: "عالية",
-    color: "أحمر",
-    colorCode: "#F43F5E",
-    type: "سيدان",
-  },
-  {
-    id: "b4",
-    plateNumber: "ج 2468 ط",
-    ownerName: "ناصر عبدالعزيز",
-    reason: "إطلاق نار",
-    severity: "متوسطة",
-    color: "رمادي",
-    colorCode: "#64748B",
-    type: "بيك أب",
-  },
-  {
-    id: "b5",
-    plateNumber: "ف 9753 م",
-    ownerName: "عبدالله سليمان",
-    reason: "مطلوب للتحقيق",
-    severity: "متوسطة",
-    color: "أزرق",
-    colorCode: "#3B82F6",
-    type: "هاتشباك",
-  },
-  {
-    id: "b6",
-    plateNumber: "ش 8642 هـ",
-    ownerName: "يوسف ماجد",
-    reason: "حيازة أسلحة",
-    severity: "عالية",
-    color: "فضي",
-    colorCode: "#94A3B8",
-    type: "دفع رباعي",
-  },
-  {
-    id: "b7",
-    plateNumber: "م 7531 ت",
-    ownerName: "فاطمة خالد",
-    reason: "التورط في حادث",
-    severity: "منخفضة",
-    color: "أبيض",
-    colorCode: "#E2E8F0",
-    type: "سيدان",
-  },
-  {
-    id: "b8",
-    plateNumber: "ر 3344 س",
-    ownerName: "خالد العتيبي",
-    reason: "مطلوب في قضية",
-    severity: "متوسطة",
-    color: "أسود",
-    colorCode: "#1E293B",
-    type: "شاحنة",
-  },
-  {
-    id: "b9",
-    plateNumber: "د 1122 هـ",
-    ownerName: "نورة القحطاني",
-    reason: "سرقة مركبة",
-    severity: "عالية",
-    color: "رمادي",
-    colorCode: "#64748B",
-    type: "سيدان",
-  },
-  {
-    id: "b10",
-    plateNumber: "ك 8899 ل",
-    ownerName: "سلمان الحربي",
-    reason: "مطلوب للتحقيق",
-    severity: "منخفضة",
-    color: "أزرق",
-    colorCode: "#3B82F6",
-    type: "بيك أب",
-  },
-  {
-    id: "b11",
-    plateNumber: "ط 4455 و",
-    ownerName: "ريم الشمري",
-    reason: "التورط في حادث",
-    severity: "منخفضة",
-    color: "فضي",
-    colorCode: "#94A3B8",
-    type: "هاتشباك",
-  },
-  {
-    id: "b12",
-    plateNumber: "هـ 6677 ي",
-    ownerName: "ماجد الكتبي",
-    reason: "تهريب مخدرات",
-    severity: "عالية",
-    color: "أحمر",
-    colorCode: "#F43F5E",
-    type: "دفع رباعي",
-  },
-  {
-    id: "b13",
-    plateNumber: "ع 2211 ب",
-    ownerName: "هند المنصوري",
-    reason: "حيازة أسلحة",
-    severity: "متوسطة",
-    color: "أبيض",
-    colorCode: "#E2E8F0",
-    type: "سيدان",
-  },
-  {
-    id: "b14",
-    plateNumber: "غ 9988 ن",
-    ownerName: "فهد الصباح",
-    reason: "إطلاق نار",
-    severity: "عالية",
-    color: "أسود",
-    colorCode: "#1E293B",
-    type: "شاحنة",
-  },
-  {
-    id: "b15",
-    plateNumber: "ص 5566 ق",
-    ownerName: "علي البلوشي",
-    reason: "مطلوب في قضية",
-    severity: "متوسطة",
-    color: "رمادي",
-    colorCode: "#64748B",
-    type: "بيك أب",
-  },
-];
-
+export { EditBlacklistModal } from "./EditBlacklistModal";
+export { DeleteConfirmModal } from "./DeleteConfirmModal";
 ```
 
 ---
@@ -4198,34 +5052,42 @@ export const mockBlacklistedVehicles: BlacklistedVehicle[] = [
 ### <a id="📄-src-features-blacklist-hooks-useblacklistviewmodel-ts"></a>📄 `src/features/blacklist/hooks/useBlacklistViewModel.ts`
 
 **File Info:**
-- **Size**: 4.94 KB
+- **Size**: 10.2 KB
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/blacklist/hooks/useBlacklistViewModel.ts`
 - **Relative Path**: `src/features/blacklist/hooks`
 - **Created**: 2026-08-14 23:55:29 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 23:55:29 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `e2def8eb42bf8edab509430370ad744e`
-- **SHA256**: `462de0a8b1f6e1652cba553303c96f55feaee89f551e2dc9f1ce37950acf61f6`
+- **Modified**: 2026-08-17 09:30:42 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `76090ebe8906a6dce077cf93493956b5`
+- **SHA256**: `332cc1b1c8acdc39c3a3b7f2357198a2bc18d80a41f6df6492ddc5807ef3660d`
 - **Encoding**: UTF-8
 
 **File code content:**
 
 ```typescript
 import { useEffect, useMemo, useState } from "react";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import {
   mockDashboardData,
   useDashboardStore,
 } from "../../dashboard";
+import type { UpdateBlacklistRequest } from "../api/blacklist.types";
 import {
   BLACKLIST_DEFAULT_PAGE_SIZE,
-  mockBlacklistStats,
-  mockBlacklistedVehicles,
-} from "../data/mockBlacklistData";
-import type { BlacklistFilters } from "../models/blacklist.types";
+  blacklistQueryKeys,
+  type BlacklistedVehicle,
+  type BlacklistFilters,
+} from "../models/blacklist.types";
+import { blacklistService } from "../services/BlacklistService";
 
 function formatNumber(value: number): string {
   return new Intl.NumberFormat("ar-EG").format(value);
+}
+
+function toPercent(count: number, total: number): number {
+  if (total === 0) return 0;
+  return Math.round((count / total) * 1000) / 10;
 }
 
 const initialFilters: BlacklistFilters = {
@@ -4244,41 +5106,108 @@ export function useBlacklistViewModel() {
   const [filters, setFilters] = useState<BlacklistFilters>(initialFilters);
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState(BLACKLIST_DEFAULT_PAGE_SIZE);
+  const [editingEntry, setEditingEntry] = useState<BlacklistedVehicle | null>(
+    null,
+  );
+  const [deletingEntry, setDeletingEntry] =
+    useState<BlacklistedVehicle | null>(null);
+
+  const queryClient = useQueryClient();
 
   useEffect(() => {
     setActiveMenuId("blacklist");
   }, [setActiveMenuId]);
 
-  const filteredVehicles = useMemo(() => {
+  const blacklistQuery = useQuery({
+    queryKey: blacklistQueryKeys.list(),
+    queryFn: () => blacklistService.getBlacklist(),
+  });
+
+  const allEntries = useMemo(
+    () => blacklistQuery.data ?? [],
+    [blacklistQuery.data],
+  );
+
+  const updateMutation = useMutation({
+    mutationFn: ({
+      id,
+      payload,
+    }: {
+      id: string;
+      payload: UpdateBlacklistRequest;
+    }) => blacklistService.updateBlacklistEntry(id, payload),
+    onSuccess: async () => {
+      await queryClient.invalidateQueries({
+        queryKey: blacklistQueryKeys.all,
+      });
+      setEditingEntry(null);
+    },
+  });
+
+  const deleteMutation = useMutation({
+    mutationFn: (id: string) => blacklistService.deleteBlacklistEntry(id),
+    onSuccess: async () => {
+      await queryClient.invalidateQueries({
+        queryKey: blacklistQueryKeys.all,
+      });
+      setDeletingEntry(null);
+    },
+  });
+
+  const severityOptions = useMemo(() => {
+    const unique = Array.from(
+      new Set(allEntries.map((entry) => entry.severity)),
+    ).sort((a, b) => a.localeCompare(b, "ar"));
+    return ["الكل", ...unique];
+  }, [allEntries]);
+
+  const typeOptions = useMemo(() => {
+    const unique = Array.from(
+      new Set(allEntries.map((entry) => entry.type).filter(Boolean)),
+    ).sort((a, b) => a.localeCompare(b, "ar"));
+    return ["الكل", ...unique];
+  }, [allEntries]);
+
+  const colorOptions = useMemo(() => {
+    const unique = Array.from(
+      new Set(allEntries.map((entry) => entry.color).filter(Boolean)),
+    ).sort((a, b) => a.localeCompare(b, "ar"));
+    return ["الكل", ...unique];
+  }, [allEntries]);
+
+  const filteredEntries = useMemo(() => {
     const query = filters.search.trim().toLowerCase();
 
-    return mockBlacklistedVehicles.filter((vehicle) => {
+    return allEntries.filter((entry) => {
       const matchesSearch =
         query.length === 0 ||
-        vehicle.plateNumber.toLowerCase().includes(query) ||
-        vehicle.ownerName.toLowerCase().includes(query);
+        entry.plateNumber.toLowerCase().includes(query) ||
+        entry.ownerName.toLowerCase().includes(query) ||
+        entry.type.toLowerCase().includes(query) ||
+        entry.color.toLowerCase().includes(query) ||
+        entry.reason.toLowerCase().includes(query);
 
       const matchesSeverity =
-        filters.severity === "الكل" || vehicle.severity === filters.severity;
+        filters.severity === "الكل" || entry.severity === filters.severity;
 
       const matchesType =
-        filters.type === "الكل" || vehicle.type === filters.type;
+        filters.type === "الكل" || entry.type === filters.type;
 
       const matchesColor =
-        filters.color === "الكل" || vehicle.color === filters.color;
+        filters.color === "الكل" || entry.color === filters.color;
 
       return matchesSearch && matchesSeverity && matchesType && matchesColor;
     });
-  }, [filters]);
+  }, [allEntries, filters]);
 
-  const totalCount = filteredVehicles.length;
+  const totalCount = filteredEntries.length;
   const totalPages = Math.max(1, Math.ceil(totalCount / pageSize));
   const safePage = Math.min(currentPage, totalPages);
 
-  const paginatedVehicles = useMemo(() => {
+  const paginatedEntries = useMemo(() => {
     const start = (safePage - 1) * pageSize;
-    return filteredVehicles.slice(start, start + pageSize);
-  }, [filteredVehicles, safePage, pageSize]);
+    return filteredEntries.slice(start, start + pageSize);
+  }, [filteredEntries, safePage, pageSize]);
 
   const rangeStart = totalCount === 0 ? 0 : (safePage - 1) * pageSize + 1;
   const rangeEnd = Math.min(safePage * pageSize, totalCount);
@@ -4309,16 +5238,73 @@ export function useBlacklistViewModel() {
     return pages;
   }, [totalPages, safePage]);
 
-  const formattedStats = useMemo(
-    () =>
-      mockBlacklistStats.map((stat) => ({
-        ...stat,
-        displayValue: formatNumber(stat.value),
-        displayChange:
-          stat.id === "total" ? "100%" : `${stat.changePercent}%`,
-      })),
-    [],
-  );
+  const formattedStats = useMemo(() => {
+    const total = allEntries.length;
+    const low = allEntries.filter((e) => e.priority === "low").length;
+    const medium = allEntries.filter((e) => e.priority === "medium").length;
+    const high = allEntries.filter((e) => e.priority === "high").length;
+
+    const lowPercent = toPercent(low, total);
+    const mediumPercent = toPercent(medium, total);
+    const highPercent = toPercent(high, total);
+
+    return [
+      {
+        id: "low",
+        title: "منخفضة الخطورة",
+        value: low,
+        subtitle: `${lowPercent}% من الإجمالي`,
+        changePercent: lowPercent,
+        icon: "units" as const,
+        gradient: "from-emerald-600/40 to-teal-700/30",
+        isPositive: true,
+        displayValue: formatNumber(low),
+        displayChange: `${lowPercent}%`,
+      },
+      {
+        id: "medium",
+        title: "متوسطة الخطورة",
+        value: medium,
+        subtitle: `${mediumPercent}% من الإجمالي`,
+        changePercent: mediumPercent,
+        icon: "scans" as const,
+        gradient: "from-amber-600/40 to-yellow-700/30",
+        isPositive: false,
+        displayValue: formatNumber(medium),
+        displayChange: `${mediumPercent}%`,
+      },
+      {
+        id: "high",
+        title: "عالية الخطورة",
+        value: high,
+        subtitle: `${highPercent}% من الإجمالي`,
+        changePercent: highPercent,
+        icon: "wanted" as const,
+        gradient: "from-rose-600/40 to-orange-700/30",
+        isPositive: false,
+        displayValue: formatNumber(high),
+        displayChange: `${highPercent}%`,
+      },
+      {
+        id: "total",
+        title: "إجمالي المركبات بالقائمة السوداء",
+        value: total,
+        subtitle: "جميع المركبات المدرجة",
+        changePercent: 100,
+        icon: "blacklist" as const,
+        gradient: "from-blue-600/40 to-indigo-700/30",
+        isPositive: true,
+        displayValue: formatNumber(total),
+        displayChange: total === 0 ? "0%" : "100%",
+      },
+    ];
+  }, [allEntries]);
+
+  const hasActiveFilters =
+    filters.search.trim().length > 0 ||
+    filters.severity !== "الكل" ||
+    filters.type !== "الكل" ||
+    filters.color !== "الكل";
 
   const setSearch = (search: string) => {
     setFilters((prev) => ({ ...prev, search }));
@@ -4374,13 +5360,18 @@ export function useBlacklistViewModel() {
     handleFullscreen,
     formattedStats,
     filters,
+    severityOptions,
+    typeOptions,
+    colorOptions,
     setSearch,
     setSeverityFilter,
     setTypeFilter,
     setColorFilter,
     resetFilters,
-    vehicles: paginatedVehicles,
+    vehicles: paginatedEntries,
     totalCount,
+    totalEntriesCount: allEntries.length,
+    hasActiveFilters,
     currentPage: safePage,
     totalPages,
     pageNumbers,
@@ -4389,14 +5380,42 @@ export function useBlacklistViewModel() {
     rangeStart,
     rangeEnd,
     goToPage,
+    isLoading: blacklistQuery.isLoading,
+    isError: blacklistQuery.isError,
+    refetch: blacklistQuery.refetch,
     handleAdd: () => {},
     handleExport: () => {},
-    handleEdit: (_id: string) => {},
-    handleDelete: (_id: string) => {},
+    handleEdit: (id: string) => {
+      const entry = allEntries.find((e) => e.id === id) ?? null;
+      setEditingEntry(entry);
+    },
+    handleDelete: (id: string) => {
+      const entry = allEntries.find((e) => e.id === id) ?? null;
+      setDeletingEntry(entry);
+    },
     handleMore: (_id: string) => {},
+    editingEntry,
+    isSavingEdit: updateMutation.isPending,
+    handleCloseEditModal: () => {
+      setEditingEntry(null);
+      updateMutation.reset();
+    },
+    handleSaveEdit: (payload: UpdateBlacklistRequest) => {
+      if (!editingEntry) return;
+      updateMutation.mutate({ id: editingEntry.id, payload });
+    },
+    deletingEntry,
+    isDeleting: deleteMutation.isPending,
+    handleCloseDeleteModal: () => {
+      setDeletingEntry(null);
+      deleteMutation.reset();
+    },
+    handleConfirmDelete: () => {
+      if (!deletingEntry) return;
+      deleteMutation.mutate(deletingEntry.id);
+    },
   };
 }
-
 ```
 
 ---
@@ -4404,46 +5423,42 @@ export function useBlacklistViewModel() {
 ### <a id="📄-src-features-blacklist-models-blacklist-types-ts"></a>📄 `src/features/blacklist/models/blacklist.types.ts`
 
 **File Info:**
-- **Size**: 907 B
+- **Size**: 1.3 KB
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/blacklist/models/blacklist.types.ts`
 - **Relative Path**: `src/features/blacklist/models`
 - **Created**: 2026-08-14 23:54:59 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 23:54:59 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `e1caa17f083d21eccfd0db967d2176f8`
-- **SHA256**: `e68724d330dced383d12e1dfc73254dd3e760bc0d5d0d6aff85143406b154734`
+- **Modified**: 2026-08-17 09:47:17 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `322d182e807a1064fb5edfd0d4c50ce5`
+- **SHA256**: `3a444506ccb9ba7976817502c3dd951845c074d07aec533f85909abf5755855f`
 - **Encoding**: UTF-8
 
 **File code content:**
 
 ```typescript
-export type BlacklistSeverity = "عالية" | "متوسطة" | "منخفضة";
+export type BlacklistPriority = "high" | "medium" | "low";
+export type BlacklistPriorityApiValue = "عالي" | "متوسط" | "منخفض";
 
-export type BlacklistVehicleType =
-  | "سيدان"
-  | "دفع رباعي"
-  | "هاتشباك"
-  | "بيك أب"
-  | "شاحنة";
+export type BlacklistStatus = "active" | "blocked"| "pending"|"review";
 
-export type BlacklistVehicleColor =
-  | "أبيض"
-  | "أسود"
-  | "أحمر"
-  | "أزرق"
-  | "رمادي"
-  | "فضي";
+export type BlacklistSeverityLabel = "عالية" | "متوسطة" | "منخفضة";
 
+/** Presentation model used by Blacklist UI components. */
 export interface BlacklistedVehicle {
   id: string;
   plateNumber: string;
   ownerName: string;
+  /** Display label for the existing "سبب الطلب" column (derived from wanted/status). */
   reason: string;
-  severity: BlacklistSeverity;
-  color: BlacklistVehicleColor;
+  severity: BlacklistSeverityLabel;
+  priority: BlacklistPriority;
+  status: BlacklistStatus;
+  wanted: boolean;
+  color: string;
   colorCode: string;
-  type: BlacklistVehicleType;
+  type: string;
+  createdAt: string;
 }
 
 export interface BlacklistFilters {
@@ -4464,6 +5479,15 @@ export interface BlacklistStat {
   isPositive: boolean;
 }
 
+export const BLACKLIST_DEFAULT_PAGE_SIZE = 7;
+
+export const blacklistPageSizeOptions = [7, 10, 25] as const;
+
+export const blacklistQueryKeys = {
+  all: ["blacklist"] as const,
+  list: () => [...blacklistQueryKeys.all, "list"] as const,
+};
+
 ```
 
 ---
@@ -4471,33 +5495,44 @@ export interface BlacklistStat {
 ### <a id="📄-src-features-blacklist-pages-blacklistpage-tsx"></a>📄 `src/features/blacklist/pages/BlacklistPage.tsx`
 
 **File Info:**
-- **Size**: 2.05 KB
+- **Size**: 3.53 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/blacklist/pages/BlacklistPage.tsx`
 - **Relative Path**: `src/features/blacklist/pages`
 - **Created**: 2026-08-14 23:56:02 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 23:56:02 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `cb201c54069c1728ebb710a60259737e`
-- **SHA256**: `f32eb1f2766f8b2560d1c5058d432f309fed4b154ec3134a2d1f7a318f32839f`
-- **Encoding**: ASCII
+- **Modified**: 2026-08-17 07:11:11 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `67fdc62d72d79fa163419a18095fe699`
+- **SHA256**: `2a88e0c88ed9492709d44bbfe1c75aeb0085e7ce0f29d2c6e019484a1260a633`
+- **Encoding**: UTF-8
 
 **File code content:**
 
 ```typescript
 import { DashboardLayout, CardContainer } from "../../dashboard";
-import { VehiclesPagination } from "../../vehicles";
+import {
+  VehiclesEmptyState,
+  VehiclesErrorState,
+  VehiclesPagination,
+  VehiclesTableSkeleton,
+} from "../../vehicles";
 import { useBlacklistViewModel } from "../hooks/useBlacklistViewModel";
-import { blacklistPageSizeOptions } from "../data/mockBlacklistData";
+import { blacklistPageSizeOptions } from "../models/blacklist.types";
 import {
   BlacklistFiltersBar,
   BlacklistHeader,
   BlacklistStats,
   BlacklistTable,
+  DeleteConfirmModal,
+  EditBlacklistModal,
 } from "../components";
 
 export function BlacklistPage() {
   const vm = useBlacklistViewModel();
+
+  const emptyMessage = vm.hasActiveFilters
+    ? "لا توجد نتائج مطابقة للبحث أو الفلاتر"
+    : "لا توجد مركبات في القائمة السوداء";
 
   return (
     <DashboardLayout
@@ -4510,6 +5545,24 @@ export function BlacklistPage() {
       onSelectMenu={vm.setActiveMenuId}
       onFullscreen={vm.handleFullscreen}
     >
+      {vm.editingEntry && (
+        <EditBlacklistModal
+          vehicle={vm.editingEntry}
+          isSaving={vm.isSavingEdit}
+          onSave={vm.handleSaveEdit}
+          onClose={vm.handleCloseEditModal}
+        />
+      )}
+
+      {vm.deletingEntry && (
+        <DeleteConfirmModal
+          vehicle={vm.deletingEntry}
+          isDeleting={vm.isDeleting}
+          onConfirm={vm.handleConfirmDelete}
+          onClose={vm.handleCloseDeleteModal}
+        />
+      )}
+
       <div className="mx-auto flex max-w-[1600px] flex-col gap-4 sm:gap-5">
         <BlacklistHeader />
 
@@ -4518,6 +5571,9 @@ export function BlacklistPage() {
         <CardContainer className="flex flex-col gap-4 p-4 sm:p-5">
           <BlacklistFiltersBar
             filters={vm.filters}
+            severityOptions={vm.severityOptions}
+            typeOptions={vm.typeOptions}
+            colorOptions={vm.colorOptions}
             onSearchChange={vm.setSearch}
             onSeverityChange={vm.setSeverityFilter}
             onTypeChange={vm.setTypeFilter}
@@ -4527,31 +5583,43 @@ export function BlacklistPage() {
             onAddClick={vm.handleAdd}
           />
 
-          <BlacklistTable
-            vehicles={vm.vehicles}
-            onEdit={vm.handleEdit}
-            onDelete={vm.handleDelete}
-            onMore={vm.handleMore}
-          />
+          {vm.isLoading ? (
+            <VehiclesTableSkeleton message="جاري تحميل القائمة السوداء..." />
+          ) : vm.isError ? (
+            <VehiclesErrorState
+              message="تعذر تحميل بيانات القائمة السوداء"
+              onRetry={() => void vm.refetch()}
+            />
+          ) : vm.totalEntriesCount === 0 || vm.totalCount === 0 ? (
+            <VehiclesEmptyState message={emptyMessage} />
+          ) : (
+            <>
+              <BlacklistTable
+                vehicles={vm.vehicles}
+                onEdit={vm.handleEdit}
+                onDelete={vm.handleDelete}
+                onMore={vm.handleMore}
+              />
 
-          <VehiclesPagination
-            currentPage={vm.currentPage}
-            totalPages={vm.totalPages}
-            pageNumbers={vm.pageNumbers}
-            totalCount={vm.totalCount}
-            onPageChange={vm.goToPage}
-            pageSize={vm.pageSize}
-            pageSizeOptions={blacklistPageSizeOptions}
-            onPageSizeChange={vm.changePageSize}
-            rangeStart={vm.rangeStart}
-            rangeEnd={vm.rangeEnd}
-          />
+              <VehiclesPagination
+                currentPage={vm.currentPage}
+                totalPages={vm.totalPages}
+                pageNumbers={vm.pageNumbers}
+                totalCount={vm.totalCount}
+                onPageChange={vm.goToPage}
+                pageSize={vm.pageSize}
+                pageSizeOptions={blacklistPageSizeOptions}
+                onPageSizeChange={vm.changePageSize}
+                rangeStart={vm.rangeStart}
+                rangeEnd={vm.rangeEnd}
+              />
+            </>
+          )}
         </CardContainer>
       </div>
     </DashboardLayout>
   );
 }
-
 ```
 
 ---
@@ -4559,15 +5627,15 @@ export function BlacklistPage() {
 ### <a id="📄-src-features-blacklist-routes-blacklistroutes-ts"></a>📄 `src/features/blacklist/routes/blacklistRoutes.ts`
 
 **File Info:**
-- **Size**: 155 B
+- **Size**: 161 B
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/blacklist/routes/blacklistRoutes.ts`
 - **Relative Path**: `src/features/blacklist/routes`
 - **Created**: 2026-08-14 23:55:00 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 23:55:00 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `031a7c3711796a897c2dace3b1c5971b`
-- **SHA256**: `3a1e577cfaafb2706cde7860004611e6fbb8ccd7727b6fa9fe5f2a7059da63cd`
+- **Modified**: 2026-08-15 21:25:05 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `df9467297ca0bed5ee8ef1b1c93680a3`
+- **SHA256**: `3c0867f53780fa70587732c601ff71adf45aa660944a775b147793479b377ccc`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -4587,56 +5655,59 @@ export type BlacklistRoute =
 ### <a id="📄-src-features-blacklist-services-blacklistservice-ts"></a>📄 `src/features/blacklist/services/BlacklistService.ts`
 
 **File Info:**
-- **Size**: 1.21 KB
+- **Size**: 1.32 KB
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/blacklist/services/BlacklistService.ts`
 - **Relative Path**: `src/features/blacklist/services`
 - **Created**: 2026-08-14 23:55:11 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 23:55:11 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `548ba3731f8b85ff5df3749823bf40eb`
-- **SHA256**: `72d0a885950acc6e0748543a49bd6f6cef483c31b6e8b6dc983a28c4ba0aea45`
-- **Encoding**: UTF-8
+- **Modified**: 2026-08-17 09:57:42 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `0de227649393905c093d2ff71a266c0f`
+- **SHA256**: `0baad6d2b854433d8b5ad776edf1981c09bfe35d44b3e3dd3d1572ff00f10835`
+- **Encoding**: ASCII
 
 **File code content:**
 
 ```typescript
+import { apiClient } from "../../../api/axios";
+import { BlacklistApiEndpoints } from "../api/blacklist.endpoints";
 import type { BlacklistedVehicle } from "../models/blacklist.types";
+import { mapBlacklistApiToUi } from "../utils/mapBlacklistApiToUi";
+import type {
+  BlacklistApiResponse,
+  CreateBlacklistRequest,
+  UpdateBlacklistRequest,
+} from "../api/blacklist.types";
+import { mapPriorityToApiValue } from "../utils/priority.utils";
 
-/**
- * BlacklistService — prepared for future API integration.
- * Methods are placeholders and throw until implemented.
- */
 class BlacklistService {
-  async getVehicles(): Promise<BlacklistedVehicle[]> {
-    // TODO: integrate with API
-    throw new Error("BlacklistService.getVehicles is not implemented yet");
+  async getBlacklist(): Promise<BlacklistedVehicle[]> {
+    const response = await apiClient.get<BlacklistApiResponse>(
+      BlacklistApiEndpoints.list,
+    );
+
+    return response.data.data.map(mapBlacklistApiToUi);
   }
 
-  async getVehicle(_id: string): Promise<BlacklistedVehicle> {
-    // TODO: integrate with API
-    throw new Error("BlacklistService.getVehicle is not implemented yet");
+  
+  async deleteBlacklistEntry(id: string): Promise<void> {
+    await apiClient.delete(BlacklistApiEndpoints.detail(id));
   }
 
-  async createVehicle(
-    _data: Omit<BlacklistedVehicle, "id">,
-  ): Promise<BlacklistedVehicle> {
-    // TODO: integrate with API
-    throw new Error("BlacklistService.createVehicle is not implemented yet");
-  }
 
-  async updateVehicle(
-    _id: string,
-    _data: Partial<BlacklistedVehicle>,
-  ): Promise<BlacklistedVehicle> {
-    // TODO: integrate with API
-    throw new Error("BlacklistService.updateVehicle is not implemented yet");
-  }
+async updateBlacklistEntry(id: string, payload: UpdateBlacklistRequest): Promise<void> {
+  await apiClient.put(BlacklistApiEndpoints.detail(id), {
+    ...payload,
+    priority: mapPriorityToApiValue(payload.priority),
+  });
+}
 
-  async deleteVehicle(_id: string): Promise<void> {
-    // TODO: integrate with API
-    throw new Error("BlacklistService.deleteVehicle is not implemented yet");
-  }
+async addToBlacklist(payload: CreateBlacklistRequest): Promise<void> {
+  await apiClient.post(BlacklistApiEndpoints.list, {
+    ...payload,
+    priority: mapPriorityToApiValue(payload.priority),
+  });
+}
 }
 
 export const blacklistService = new BlacklistService();
@@ -4645,18 +5716,151 @@ export const blacklistService = new BlacklistService();
 
 ---
 
+### <a id="📄-src-features-blacklist-utils-mapblacklistapitoui-ts"></a>📄 `src/features/blacklist/utils/mapBlacklistApiToUi.ts`
+
+**File Info:**
+- **Size**: 942 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/blacklist/utils/mapBlacklistApiToUi.ts`
+- **Relative Path**: `src/features/blacklist/utils`
+- **Created**: 2026-08-15 21:38:08 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-17 10:37:52 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `f552558baa10eb1f97598d72874d80a2`
+- **SHA256**: `1849b2a1a6e9b7e0a1e00bc7c34ea3896f8754df0e2cd26d5701661b64351150`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import type { BlacklistApiItem } from "../api/blacklist.types";
+import type { BlacklistedVehicle } from "../models/blacklist.types";
+import { resolveVehicleColorHex } from "../../vehicles/utils/color.utils";
+import {
+  mapApiValueToPriority,
+  mapPriorityToSeverityLabel,
+  mapWantedStatusToReason,
+} from "./priority.utils";
+
+export function mapBlacklistApiToUi(
+  item: BlacklistApiItem,
+): BlacklistedVehicle {
+  const priority = mapApiValueToPriority(item.priority);
+
+  return {
+    id: String(item.id),
+    plateNumber: item.plate_number,
+    ownerName: item.owner_name,
+    reason: mapWantedStatusToReason(item.wanted, item.status),
+    severity: mapPriorityToSeverityLabel(priority),
+    priority,
+    status: item.status,
+    wanted: item.wanted,
+    color: item.vehicle_color,
+    colorCode: resolveVehicleColorHex(item.vehicle_color),
+    type: item.vehicle_type,
+    createdAt: item.created_at,
+  };
+}
+
+```
+
+---
+
+### <a id="📄-src-features-blacklist-utils-priority-utils-ts"></a>📄 `src/features/blacklist/utils/priority.utils.ts`
+
+**File Info:**
+- **Size**: 1.62 KB
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/blacklist/utils/priority.utils.ts`
+- **Relative Path**: `src/features/blacklist/utils`
+- **Created**: 2026-08-15 21:38:08 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-17 10:36:33 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `981bcbed65b8ac5360233a8922e87a9a`
+- **SHA256**: `a98a0b941c7dfc715a2c1279ae36144d9999259a28849c7ed21e80105a2c1e39`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```typescript
+import type {
+  BlacklistPriority,
+  BlacklistPriorityApiValue,
+  BlacklistSeverityLabel,
+  BlacklistStatus,
+} from "../models/blacklist.types";
+
+const PRIORITY_LABEL_MAP: Record<BlacklistPriority, BlacklistSeverityLabel> = {
+  high: "عالية",
+  medium: "متوسطة",
+  low: "منخفضة",
+};
+
+const STATUS_LABEL_MAP: Record<BlacklistStatus, string> = {
+  active: "نشط",
+  review: "قيد المراجعة",
+  blocked: "محظور",
+  pending: "قيد الانتظار",
+};
+export function mapPriorityToSeverityLabel(
+  priority: BlacklistPriority,
+): BlacklistSeverityLabel {
+  return PRIORITY_LABEL_MAP[priority] ?? "متوسطة";
+}
+
+export function mapStatusToArabicLabel(status: BlacklistStatus): string {
+  return STATUS_LABEL_MAP[status] ?? status;
+}
+
+export function mapWantedStatusToReason(
+  wanted: boolean,
+  status: BlacklistStatus,
+): string {
+  if (wanted) {
+    return "مطلوب";
+  }
+  return mapStatusToArabicLabel(status);
+}
+const PRIORITY_API_VALUE_MAP: Record<BlacklistPriority, BlacklistPriorityApiValue> = {
+  high: "عالي",
+  medium: "متوسط",
+  low: "منخفض",
+};
+
+export function mapPriorityToApiValue(
+  priority: BlacklistPriority,
+): BlacklistPriorityApiValue {
+  return PRIORITY_API_VALUE_MAP[priority] ?? "متوسط";
+}
+
+const PRIORITY_FROM_API_VALUE_MAP: Record<BlacklistPriorityApiValue, BlacklistPriority> = {
+  "عالي": "high",
+  "متوسط": "medium",
+  "منخفض": "low",
+};
+
+export function mapApiValueToPriority(
+  value: BlacklistPriorityApiValue,
+): BlacklistPriority {
+  return PRIORITY_FROM_API_VALUE_MAP[value] ?? "medium";
+}
+```
+
+---
+
 ### <a id="📄-src-features-blacklist-index-ts"></a>📄 `src/features/blacklist/index.ts`
 
 **File Info:**
-- **Size**: 250 B
+- **Size**: 517 B
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/blacklist/index.ts`
 - **Relative Path**: `src/features/blacklist`
 - **Created**: 2026-08-14 23:56:03 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 23:56:03 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `9e8444d84929628c67d0cfc9ca4a8173`
-- **SHA256**: `0a9811a66469c8d326d06a5822b320f011e377d488d51a0c0b5fabce5d8b5357`
+- **Modified**: 2026-08-17 07:42:33 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `585aac18bb6916a0a470f146dcfc8e31`
+- **SHA256**: `91c62c49938d96faceca4063e5bda251ba41da298dd1cf3e45d70ff6f686afe5`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -4666,7 +5870,15 @@ export { BlacklistPage } from "./pages/BlacklistPage";
 export { BlacklistRoutes } from "./routes/blacklistRoutes";
 export { blacklistService } from "./services/BlacklistService";
 export { useBlacklistViewModel } from "./hooks/useBlacklistViewModel";
-
+export type {
+  BlacklistPriority,
+  BlacklistStatus,
+} from "./models/blacklist.types";
+export type { CreateBlacklistRequest } from "./api/blacklist.types";
+export {
+  mapPriorityToSeverityLabel,
+  mapStatusToArabicLabel,
+} from "./utils/priority.utils";
 ```
 
 ---
@@ -4674,15 +5886,15 @@ export { useBlacklistViewModel } from "./hooks/useBlacklistViewModel";
 ### <a id="📄-src-features-dashboard-components-feature-alertssection-tsx"></a>📄 `src/features/dashboard/components/feature/AlertsSection.tsx`
 
 **File Info:**
-- **Size**: 961 B
+- **Size**: 996 B
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/dashboard/components/feature/AlertsSection.tsx`
 - **Relative Path**: `src/features/dashboard/components/feature`
 - **Created**: 2026-07-26 21:26:20 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:14:41 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `67785ce8bcb305539c44fa45958ae016`
-- **SHA256**: `9870dd3813f38f557ba7d96c004de00c2febbe8649c0068d9bfb909dc2f76e2b`
+- **Modified**: 2026-08-17 11:56:26 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `9a2e940067462bf4d32032917fd652dc`
+- **SHA256**: `2e510a1b22cc33a26a256c1463b355c5edf84233227587a770d513597f432d16`
 - **Encoding**: UTF-8
 
 **File code content:**
@@ -4709,7 +5921,7 @@ export function AlertsSection({ alerts }: AlertsSectionProps) {
       }
       className="h-full"
     >
-      <div className="flex flex-col gap-2.5">
+      <div className="flex max-h-[420px] flex-col gap-2.5 overflow-y-auto pr-1">
         {alerts.map((alert) => (
           <AlertItem
             key={alert.id}
@@ -4993,15 +6205,15 @@ export function DashboardLayout({
 ### <a id="📄-src-features-dashboard-components-shared-icons-tsx"></a>📄 `src/features/dashboard/components/shared/icons.tsx`
 
 **File Info:**
-- **Size**: 8.18 KB
+- **Size**: 7.47 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/dashboard/components/shared/icons.tsx`
 - **Relative Path**: `src/features/dashboard/components/shared`
 - **Created**: 2026-07-26 21:25:53 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 19:03:47 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `3cfb6be356223d4f3491298b6e10ed35`
-- **SHA256**: `6fedf9511df826d9a173995489904120e12fb2e1d1ef126467700c2fa0d53097`
+- **Modified**: 2026-08-15 19:41:50 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `88281387c3d37689f69f117eadd97722`
+- **SHA256**: `0175f8e6dbf85ef3a64a129ea1bf18a8354fab093fbf6311dc34b56b6594287a`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -5126,10 +6338,6 @@ export function MenuIcon({ className = "h-5 w-5" }: IconProps) {
   );
 }
 
-/**
- * نتائج التحليل — رسم بياني + عدسة تفحص، للتمييز عن "التقارير" (مستند)
- * وعن "تحليل الفيديو" (كاميرا).
- */
 export function AnalysisIcon({ className = "h-5 w-5" }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className={className} aria-hidden>
@@ -5140,10 +6348,6 @@ export function AnalysisIcon({ className = "h-5 w-5" }: IconProps) {
   );
 }
 
-/**
- * الفيديوهات المعالجة — إطار فيديو + شارة صح، للتمييز عن "تحليل الفيديو"
- * (كاميرا) ويدل أن المعالجة اكتملت.
- */
 export function ProcessedVideosIcon({ className = "h-5 w-5" }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className={className} aria-hidden>
@@ -5155,9 +6359,7 @@ export function ProcessedVideosIcon({ className = "h-5 w-5" }: IconProps) {
   );
 }
 
-/**
- * تسجيل الخروج — باب + سهم خارج، أيقونة الخروج التقليدية.
- */
+
 export function LogoutIcon({ className = "h-5 w-5" }: IconProps) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className={className} aria-hidden>
@@ -5168,10 +6370,7 @@ export function LogoutIcon({ className = "h-5 w-5" }: IconProps) {
   );
 }
 
-/**
- * شعار النظام — درع أمني وبداخله سيارة، يرمز لدور الشرطة/الأمن
- * بمراقبة المركبات. اختير من بين عدة تصاميم مقترحة.
- */
+
 export function LogoIcon({ className = "h-8 w-8" }: IconProps) {
   return (
     <svg viewBox="0 0 40 40" className={className} aria-hidden>
@@ -5374,15 +6573,15 @@ export function Sidebar({
 ### <a id="📄-src-features-dashboard-components-shared-topbar-tsx"></a>📄 `src/features/dashboard/components/shared/Topbar.tsx`
 
 **File Info:**
-- **Size**: 2.88 KB
+- **Size**: 2.87 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/dashboard/components/shared/Topbar.tsx`
 - **Relative Path**: `src/features/dashboard/components/shared`
 - **Created**: 2026-07-26 21:26:02 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:14:41 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `d6250e53fbe57aca29deefe567917777`
-- **SHA256**: `47e66eb59d0c49ff039bd19647e876ac1a0f85a42972521ecd7c306c1b226973`
+- **Modified**: 2026-08-17 06:42:20 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `003700cd700f8af997b887ee97712aa0`
+- **SHA256**: `fa9b3ad7eb45a6eb7580cbd1b4ccbf9991e575be6c563dfe0beb86da8354d1ea`
 - **Encoding**: UTF-8
 
 **File code content:**
@@ -5390,7 +6589,7 @@ export function Sidebar({
 ```typescript
 import type { ReactNode } from "react";
 import type { TopbarUser } from "../../models/dashboard.types";
-import { BellIcon, FullscreenIcon, MenuIcon, SettingsIcon } from "./icons";
+import { BellIcon, FullscreenIcon, MenuIcon,  } from "./icons";
 
 interface TopbarProps {
   user: TopbarUser;
@@ -5425,9 +6624,9 @@ export function Topbar({ user, onMenuClick, onFullscreen }: TopbarProps) {
           <BellIcon className="h-[18px] w-[18px]" />
           <span className="absolute top-1.5 end-1.5 h-2 w-2 rounded-full bg-rose-500 ring-2 ring-[#0B1220]" />
         </IconButton>
-        <IconButton label="الإعدادات">
+        {/* <IconButton label="الإعدادات">
           <SettingsIcon className="h-[18px] w-[18px]" />
-        </IconButton>
+        </IconButton> */}
         <IconButton label="ملء الشاشة" onClick={onFullscreen}>
           <FullscreenIcon className="h-[18px] w-[18px]" />
         </IconButton>
@@ -5478,15 +6677,15 @@ function IconButton({
 ### <a id="📄-src-features-dashboard-components-ui-alertitem-tsx"></a>📄 `src/features/dashboard/components/ui/AlertItem.tsx`
 
 **File Info:**
-- **Size**: 1.08 KB
+- **Size**: 1.31 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/dashboard/components/ui/AlertItem.tsx`
 - **Relative Path**: `src/features/dashboard/components/ui`
 - **Created**: 2026-07-26 21:25:28 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:14:41 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `0b5511f28c49ddb88564862387f57ff6`
-- **SHA256**: `1d1170d88544bf6e6e3853d44a118af51cd6d7af7f5a40abe829d417646b9076`
+- **Modified**: 2026-08-17 11:55:17 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `17c44379b825ce8e1eb42e1258eb0d50`
+- **SHA256**: `0e42c591aa37478391127c842667948b9a6dad17517779c81cafebecae9fd7e6`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -5512,6 +6711,12 @@ export function AlertItem({
       <img
         src={imageUrl}
         alt={carType}
+        loading="lazy"
+        onError={(e) => {
+          e.currentTarget.onerror = null;
+          e.currentTarget.src =
+            "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=200&h=140&fit=crop";
+        }}
         className="h-14 w-20 shrink-0 rounded-lg object-cover ring-1 ring-white/10"
       />
       <div className="min-w-0 flex-1">
@@ -6090,15 +7295,15 @@ export function StatCard({
 ### <a id="📄-src-features-dashboard-data-mockdashboarddata-ts"></a>📄 `src/features/dashboard/data/mockDashboardData.ts`
 
 **File Info:**
-- **Size**: 4.79 KB
+- **Size**: 4.67 KB
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/dashboard/data/mockDashboardData.ts`
 - **Relative Path**: `src/features/dashboard/data`
 - **Created**: 2026-07-26 21:25:01 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 23:56:06 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `16714f329c24816693868a3de0b32353`
-- **SHA256**: `873bbf88b6a5ecb794f4f1552acaed17b0f67eb1ba2d42c277a829bf9901269a`
+- **Modified**: 2026-08-17 11:58:52 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `432cd67e7cc668133cd67877a5721ba5`
+- **SHA256**: `56c2d1451d0ce5ebe8122498533e30b7baf2244303baf0d1153411b1e2d8ec02`
 - **Encoding**: UTF-8
 
 **File code content:**
@@ -6113,7 +7318,7 @@ import { BlacklistRoutes } from "../../blacklist/routes/blacklistRoutes";
 
 export const mockDashboardData: DashboardData = {
   user: {
-    name: "أحمد المنصوري",
+    name: "Alaa Alameen",
     role: "مشرف النظام",
     avatarUrl: "https://api.dicebear.com/9.x/avataaars/svg?seed=Ahmed",
   },
@@ -6163,42 +7368,42 @@ export const mockDashboardData: DashboardData = {
     },
   ],
   stats: [
-    {
-      id: "units",
-      title: "وحدات الشرطة النشطة",
-      value: 48,
-      subtitle: "وحدة ميدانية",
-      changePercent: 12.5,
-      icon: "units",
-      gradient: "from-blue-600/40 to-indigo-700/30",
-    },
-    {
-      id: "scans",
-      title: "اللوحات المفحوصة اليوم",
-      value: 12840,
-      subtitle: "فحص تلقائي",
-      changePercent: 8.2,
-      icon: "scans",
-      gradient: "from-violet-600/40 to-purple-700/30",
-    },
-    {
-      id: "alerts",
-      title: "التنبيهات",
-      value: 36,
-      subtitle: "تحتاج مراجعة",
-      changePercent: -4.1,
-      icon: "alerts",
-      gradient: "from-rose-600/40 to-orange-700/30",
-    },
-    {
-      id: "wanted",
-      title: "مركبات مطلوبة",
-      value: 17,
-      subtitle: "في نطاق المراقبة",
-      changePercent: 2.8,
-      icon: "wanted",
-      gradient: "from-cyan-600/40 to-blue-700/30",
-    },
+    // {
+    //   id: "units",
+    //   title: "وحدات الشرطة النشطة",
+    //   value: 48,
+    //   subtitle: "وحدة ميدانية",
+    //   changePercent: 12.5,
+    //   icon: "units",
+    //   gradient: "from-blue-600/40 to-indigo-700/30",
+    // },
+    // {
+    //   id: "scans",
+    //   title: "اللوحات المفحوصة اليوم",
+    //   value: 12840,
+    //   subtitle: "فحص تلقائي",
+    //   changePercent: 8.2,
+    //   icon: "scans",
+    //   gradient: "from-violet-600/40 to-purple-700/30",
+    // },
+    // {
+    //   id: "alerts",
+    //   title: "التنبيهات",
+    //   value: 36,
+    //   subtitle: "تحتاج مراجعة",
+    //   changePercent: -4.1,
+    //   icon: "alerts",
+    //   gradient: "from-rose-600/40 to-orange-700/30",
+    // },
+    // {
+    //   id: "wanted",
+    //   title: "مركبات مطلوبة",
+    //   value: 17,
+    //   subtitle: "في نطاق المراقبة",
+    //   changePercent: 2.8,
+    //   icon: "wanted",
+    //   gradient: "from-cyan-600/40 to-blue-700/30",
+    // },
   ],
   weeklyScans: [
     { label: "السبت", value: 8200 },
@@ -6228,43 +7433,43 @@ export const mockDashboardData: DashboardData = {
     percent: 87,
   },
   alerts: [
-    {
-      id: "a1",
-      plateNumber: "أ ب ج 1234",
-      carType: "تويوتا كامري",
-      status: "مطلوب",
-      imageUrl:
-        "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=120&h=80&fit=crop",
-      time: "منذ 3 دقائق",
-    },
-    {
-      id: "a2",
-      plateNumber: "د هـ و 5678",
-      carType: "نيسان التيما",
-      status: "مطلوب",
-      imageUrl:
-        "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=120&h=80&fit=crop",
-      time: "منذ 12 دقيقة",
-    },
-    {
-      id: "a3",
-      plateNumber: "ر س ت 9012",
-      carType: "هيونداي سوناتا",
-      status: "مطلوب",
-      imageUrl:
-        "https://images.unsplash.com/photo-1583121274602-3e282f38bc0f?w=120&h=80&fit=crop",
-      time: "منذ 28 دقيقة",
-    },
-    {
-      id: "a4",
-      plateNumber: "ث خ ذ 3456",
-      carType: "كيا أوبتيما",
-      status: "مطلوب",
-      imageUrl:
-        "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=120&h=80&fit=crop",
-      time: "منذ ساعة",
-    },
-  ],
+  {
+    id: "a1",
+    plateNumber: "أ ب ج 1234",
+    carType: "تويوتا كامري",
+    status: "مطلوب",
+    imageUrl:
+      "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=200&h=140&fit=crop",
+    time: "منذ 3 دقائق",
+  },
+  {
+    id: "a2",
+    plateNumber: "د هـ و 5678",
+    carType: "نيسان التيما",
+    status: "مطلوب",
+    imageUrl:
+      "https://images.unsplash.com/photo-1614602077554-61c72b1e4189?w=200&h=140&fit=crop",
+    time: "منذ 12 دقيقة",
+  },
+  {
+    id: "a3",
+    plateNumber: "ر س ت 9012",
+    carType: "هيونداي سوناتا",
+    status: "مطلوب",
+    imageUrl:
+      "https://images.unsplash.com/photo-1549943436-983dffe333a1?w=200&h=140&fit=crop",
+    time: "منذ 28 دقيقة",
+  },
+  {
+    id: "a4",
+    plateNumber: "ث خ ذ 3456",
+    carType: "كيا أوبتيما",
+    status: "مطلوب",
+    imageUrl:
+      "https://images.unsplash.com/photo-1749058983232-59b967855b18?w=200&h=140&fit=crop",
+    time: "منذ ساعة",
+  },
+],
 };
 ```
 
@@ -6557,16 +7762,16 @@ export type DashboardRoute =
 ### <a id="📄-src-features-dashboard-services-dashboardservice-ts"></a>📄 `src/features/dashboard/services/DashboardService.ts`
 
 **File Info:**
-- **Size**: 632 B
+- **Size**: 438 B
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/dashboard/services/DashboardService.ts`
 - **Relative Path**: `src/features/dashboard/services`
 - **Created**: 2026-07-26 21:24:57 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:14:41 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `802255e64f996ae17f07415ceedc8084`
-- **SHA256**: `ad300922d4e5ee52b7a7f506495eb0b994786528c6aae145e8ce4182af92ffad`
-- **Encoding**: UTF-8
+- **Modified**: 2026-08-15 19:43:08 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `a7a609784ff87fed093079d9b0102dee`
+- **SHA256**: `32801a2b77d711e8af1fe39da863dd437500895197782fe537e51339c62c8efe`
+- **Encoding**: ASCII
 
 **File code content:**
 
@@ -6576,18 +7781,13 @@ import type {
   DashboardStat,
 } from "../models/dashboard.types";
 
-/**
- * DashboardService — prepared for future API integration.
- * Methods are placeholders and throw until implemented.
- */
+
 class DashboardService {
   async getStats(): Promise<DashboardStat[]> {
-    // TODO: integrate with API
     throw new Error("DashboardService.getStats is not implemented yet");
   }
 
   async getAlerts(): Promise<AlertItemData[]> {
-    // TODO: integrate with API
     throw new Error("DashboardService.getAlerts is not implemented yet");
   }
 }
@@ -6675,18 +7875,362 @@ export { mockDashboardData } from "./data/mockDashboardData";
 
 ---
 
+### <a id="📄-src-features-vehicles-api-vehicles-endpoints-ts"></a>📄 `src/features/vehicles/api/vehicles.endpoints.ts`
+
+**File Info:**
+- **Size**: 147 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/vehicles/api/vehicles.endpoints.ts`
+- **Relative Path**: `src/features/vehicles/api`
+- **Created**: 2026-08-15 21:27:10 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-17 07:42:48 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `0b7861d874511b57e59be3bd352062cc`
+- **SHA256**: `113595729f8da9ec90d8442eaaf1abdf29fafc89302b98e92ea81a3d7da0e440`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+export const VehiclesApiEndpoints = {
+  list: "/api/admin/vehicles",
+  detail: (id: number | string) => `/api/admin/vehicles/${id}`,
+} as const;
+```
+
+---
+
+### <a id="📄-src-features-vehicles-api-vehicles-types-ts"></a>📄 `src/features/vehicles/api/vehicles.types.ts`
+
+**File Info:**
+- **Size**: 530 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/vehicles/api/vehicles.types.ts`
+- **Relative Path**: `src/features/vehicles/api`
+- **Created**: 2026-08-15 21:27:12 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-17 07:43:05 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `8a8bb3a02b8aa42d0dd091cb787a0b78`
+- **SHA256**: `1bc72b4ed49d575b5a3b7c57e1dac814504e7481c400fbe552b81a231308296f`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+export interface VehicleApiItem {
+  id: number;
+  plate_number: string;
+  country_code: string;
+  type: string;
+  model: string;
+  color: string;
+  owner_name: string;
+  is_blacklisted: boolean;
+  created_at: string;
+}
+
+export interface VehiclesApiResponse {
+  data: VehicleApiItem[];
+}
+export interface CreateVehicleRequest {
+  plate_number: string;
+  country_code: string;
+  type: string;
+  model: string;
+  color: string;
+  owner_name: string;
+}
+
+export type UpdateVehicleRequest = CreateVehicleRequest;
+```
+
+---
+
+### <a id="📄-src-features-vehicles-components-addtoblacklistmodal-tsx"></a>📄 `src/features/vehicles/components/AddToBlacklistModal.tsx`
+
+**File Info:**
+- **Size**: 4.56 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/features/vehicles/components/AddToBlacklistModal.tsx`
+- **Relative Path**: `src/features/vehicles/components`
+- **Created**: 2026-08-17 07:50:13 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-17 09:31:16 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `fad1639d369f1269806b07050680a42e`
+- **SHA256**: `863d726c18d0b9caed367664fd089069f24256faacebbd8ebb68a29432d47294`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import { useState } from "react";
+import { Button } from "../../auth";
+import {
+  mapPriorityToSeverityLabel,
+  mapStatusToArabicLabel,
+  type BlacklistPriority,
+  type BlacklistStatus,
+} from "../../blacklist";
+import type { Vehicle } from "../models/vehicle.types";
+
+export interface AddToBlacklistPayload {
+  status: BlacklistStatus;
+  priority: BlacklistPriority;
+  wanted: boolean;
+}
+
+interface AddToBlacklistModalProps {
+  vehicle: Vehicle;
+  isSaving: boolean;
+  onSave: (payload: AddToBlacklistPayload) => void;
+  onClose: () => void;
+}
+
+const STATUS_OPTIONS: BlacklistStatus[] = ["active", "blocked", "pending", "review"];
+const PRIORITY_OPTIONS: BlacklistPriority[] = ["low", "medium", "high"];
+
+export function AddToBlacklistModal({
+  vehicle,
+  isSaving,
+  onSave,
+  onClose,
+}: AddToBlacklistModalProps) {
+  const [status, setStatus] = useState<BlacklistStatus>("active");
+  const [priority, setPriority] = useState<BlacklistPriority>("medium");
+  const [wanted, setWanted] = useState(false);
+
+  const handleSubmit = () => {
+    onSave({ status, priority, wanted });
+  };
+
+  return (
+    <div className="fixed inset-0 z-[60] flex items-center justify-center p-4">
+      <button
+        type="button"
+        aria-label="إغلاق"
+        onClick={onClose}
+        className="fixed inset-0 bg-black/70 backdrop-blur-sm"
+      />
+
+      <div className="relative z-10 flex w-full max-w-md flex-col gap-5 rounded-2xl border border-white/10 bg-[#0f172a] p-5 shadow-[0_0_60px_rgba(244,63,94,0.15)] sm:p-6">
+        <div>
+          <h2 className="text-lg font-bold text-white">
+            إضافة إلى القائمة السوداء
+          </h2>
+          <p className="mt-1 text-sm text-white/45">{vehicle.plateNumber}</p>
+        </div>
+
+        <div className="flex flex-col gap-4">
+          <SelectField
+            label="الحالة"
+            value={status}
+            onChange={(v) => setStatus(v as BlacklistStatus)}
+            options={STATUS_OPTIONS.map((s) => ({
+              value: s,
+              label: mapStatusToArabicLabel(s),
+            }))}
+          />
+
+          <SelectField
+            label="درجة الأولوية"
+            value={priority}
+            onChange={(v) => setPriority(v as BlacklistPriority)}
+            options={PRIORITY_OPTIONS.map((p) => ({
+              value: p,
+              label: mapPriorityToSeverityLabel(p),
+            }))}
+          />
+
+          <SelectField
+            label="مطلوب أمنيًا"
+            value={wanted ? "true" : "false"}
+            onChange={(v) => setWanted(v === "true")}
+            options={[
+              { value: "true", label: "نعم" },
+              { value: "false", label: "لا" },
+            ]}
+          />
+        </div>
+
+        <div className="flex items-center justify-end gap-2">
+          <button
+            type="button"
+            onClick={onClose}
+            className="rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 text-sm font-medium text-white/70 transition hover:bg-white/10"
+          >
+            إلغاء
+          </button>
+          <Button
+            type="button"
+            onClick={handleSubmit}
+            isLoading={isSaving}
+            loadingLabel="جارٍ الإضافة..."
+            className="w-auto px-5"
+          >
+            إضافة للقائمة السوداء
+          </Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function SelectField({
+  label,
+  value,
+  options,
+  onChange,
+}: {
+  label: string;
+  value: string;
+  options: { value: string; label: string }[];
+  onChange: (value: string) => void;
+}) {
+  return (
+    <div className="flex flex-col gap-1.5">
+      <label className="text-sm font-medium text-white/70">{label}</label>
+      <div className="relative">
+        <select
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
+          className="w-full appearance-none rounded-xl border border-white/10 bg-white/5 px-4 py-3 pe-9 text-sm text-white outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
+        >
+          {options.map((option) => (
+            <option
+              key={option.value}
+              value={option.value}
+              className="bg-[#0f172a] text-white"
+            >
+              {option.label}
+            </option>
+          ))}
+        </select>
+        <span className="pointer-events-none absolute inset-y-0 end-3 flex items-center text-white/40">
+          ▾
+        </span>
+      </div>
+    </div>
+  );
+}
+```
+
+---
+
+### <a id="📄-src-features-vehicles-components-deletevehiclemodal-tsx"></a>📄 `src/features/vehicles/components/DeleteVehicleModal.tsx`
+
+**File Info:**
+- **Size**: 2.74 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/features/vehicles/components/DeleteVehicleModal.tsx`
+- **Relative Path**: `src/features/vehicles/components`
+- **Created**: 2026-08-17 07:49:42 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-17 07:49:52 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `23fd892409b77c59d4e14af316025b8e`
+- **SHA256**: `28457c32e091aafc135ae51e820cf465c85f35b4d89b88774e392b970b54044f`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```typescript
+import type { Vehicle } from "../models/vehicle.types";
+
+interface DeleteVehicleModalProps {
+  vehicle: Vehicle;
+  isDeleting: boolean;
+  onConfirm: () => void;
+  onClose: () => void;
+}
+
+export function DeleteVehicleModal({
+  vehicle,
+  isDeleting,
+  onConfirm,
+  onClose,
+}: DeleteVehicleModalProps) {
+  return (
+    <div className="fixed inset-0 z-[60] flex items-center justify-center p-4">
+      <button
+        type="button"
+        aria-label="إغلاق"
+        onClick={onClose}
+        className="fixed inset-0 bg-black/70 backdrop-blur-sm"
+      />
+
+      <div className="relative z-10 flex w-full max-w-sm flex-col gap-5 rounded-2xl border border-white/10 bg-[#0f172a] p-5 shadow-[0_0_60px_rgba(244,63,94,0.15)] sm:p-6">
+        <div className="flex items-center gap-3">
+          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-rose-500/15 text-rose-400 ring-1 ring-rose-500/30">
+            <WarningIcon />
+          </div>
+          <div>
+            <h2 className="text-base font-bold text-white">تأكيد الحذف</h2>
+            <p className="mt-0.5 text-sm text-white/50">
+              لا يمكن التراجع عن هذا الإجراء
+            </p>
+          </div>
+        </div>
+
+        <p className="text-sm leading-relaxed text-white/70">
+          هل أنت متأكد من حذف المركبة{" "}
+          <span className="font-semibold text-white">
+            {vehicle.plateNumber}
+          </span>{" "}
+          نهائيًا من قاعدة البيانات؟
+        </p>
+
+        <div className="flex items-center justify-end gap-2">
+          <button
+            type="button"
+            onClick={onClose}
+            className="rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 text-sm font-medium text-white/70 transition hover:bg-white/10"
+          >
+            إلغاء
+          </button>
+          <button
+            type="button"
+            onClick={onConfirm}
+            disabled={isDeleting}
+            className="flex items-center justify-center gap-2 rounded-xl bg-rose-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-rose-500 disabled:cursor-not-allowed disabled:opacity-60"
+          >
+            {isDeleting ? "جارٍ الحذف..." : "حذف نهائيًا"}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function WarningIcon() {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className="h-5 w-5"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      aria-hidden
+    >
+      <path d="M12 9v4M12 17h.01" />
+      <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z" />
+    </svg>
+  );
+}
+```
+
+---
+
 ### <a id="📄-src-features-vehicles-components-index-ts"></a>📄 `src/features/vehicles/components/index.ts`
 
 **File Info:**
-- **Size**: 270 B
+- **Size**: 622 B
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/vehicles/components/index.ts`
 - **Relative Path**: `src/features/vehicles/components`
 - **Created**: 2026-08-01 19:58:43 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:14:41 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `94862ea5f3c55324606ae9c776afde26`
-- **SHA256**: `df2bc202184c1d2cd43010815227e8a8bf9ff57abad52fbc7115a82ec38fd813`
+- **Modified**: 2026-08-17 08:16:15 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `8f07e7cd29a7cbbef06894eac27b2d59`
+- **SHA256**: `a640f2a67213273d5a61b270801e6dc7464eade3cfe967ff437ba6b4c8243ffc`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -6697,6 +8241,305 @@ export { VehiclesStats } from "./VehiclesStats";
 export { VehiclesFilterBar } from "./VehiclesFilterBar";
 export { VehiclesTable } from "./VehiclesTable";
 export { VehiclesPagination } from "./VehiclesPagination";
+export { VehiclesTableSkeleton } from "./VehiclesTableSkeleton";
+export { VehiclesErrorState } from "./VehiclesErrorState";
+export { VehiclesEmptyState } from "./VehiclesEmptyState";
+export { VehicleFormModal } from "./VehicleFormModal";
+export { DeleteVehicleModal } from "./DeleteVehicleModal";
+export { AddToBlacklistModal } from "./AddToBlacklistModal";
+```
+
+---
+
+### <a id="📄-src-features-vehicles-components-vehicleformmodal-tsx"></a>📄 `src/features/vehicles/components/VehicleFormModal.tsx`
+
+**File Info:**
+- **Size**: 6.23 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/features/vehicles/components/VehicleFormModal.tsx`
+- **Relative Path**: `src/features/vehicles/components`
+- **Created**: 2026-08-17 07:48:30 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-17 08:15:53 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `6f5183e04a3138649c6137b39c32f460`
+- **SHA256**: `54ae47b98c7734e8ef3cfdf8528a2796d8df77d5f6d6f25f17a0fb050b72eaa3`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import { useState, type ReactNode } from "react";
+import { Button, Input } from "../../auth";
+import type { CreateVehicleRequest } from "../api/vehicles.types";
+import type { Vehicle } from "../models/vehicle.types";
+import { VEHICLE_TYPE_OPTIONS } from "../../video/models/video.types";
+import { VEHICLE_COLOR_OPTIONS } from "../utils/color.utils";
+import { VEHICLE_COUNTRY_OPTIONS } from "../utils/country.utils";
+
+interface VehicleFormModalProps {
+  mode: "create" | "edit";
+  vehicle?: Vehicle;
+  isSaving: boolean;
+  onSave: (payload: CreateVehicleRequest) => void;
+  onClose: () => void;
+}
+
+export function VehicleFormModal({
+  mode,
+  vehicle,
+  isSaving,
+  onSave,
+  onClose,
+}: VehicleFormModalProps) {
+  const [plateNumber, setPlateNumber] = useState(vehicle?.plateNumber ?? "");
+  const [ownerName, setOwnerName] = useState(vehicle?.ownerName ?? "");
+  const [model, setModel] = useState(vehicle?.model ?? "");
+  const [countryCode, setCountryCode] = useState(
+    vehicle?.country.code ?? VEHICLE_COUNTRY_OPTIONS[0].code,
+  );
+  const [type, setType] = useState(vehicle?.type ?? VEHICLE_TYPE_OPTIONS[0]);
+  const [color, setColor] = useState(
+    vehicle?.color ?? VEHICLE_COLOR_OPTIONS[0],
+  );
+
+  const isFormValid =
+    plateNumber.trim().length > 0 &&
+    ownerName.trim().length > 0 &&
+    model.trim().length > 0;
+
+  const handleSubmit = () => {
+    if (!isFormValid) return;
+    onSave({
+      plate_number: plateNumber.trim(),
+      owner_name: ownerName.trim(),
+      model: model.trim(),
+      country_code: countryCode,
+      type,
+      color,
+    });
+  };
+
+  return (
+    <div className="fixed inset-0 z-[60] flex items-center justify-center p-4">
+      <button
+        type="button"
+        aria-label="إغلاق"
+        onClick={onClose}
+        className="fixed inset-0 bg-black/70 backdrop-blur-sm"
+      />
+
+      <div className="relative z-10 flex w-full max-w-lg flex-col gap-5 rounded-2xl border border-white/10 bg-[#0f172a] p-5 shadow-[0_0_60px_rgba(59,130,246,0.15)] sm:p-6">
+        <h2 className="text-lg font-bold text-white">
+          {mode === "create" ? "إضافة مركبة جديدة" : "تعديل بيانات المركبة"}
+        </h2>
+
+        <div className="grid gap-4 sm:grid-cols-2">
+          <Field label="رقم اللوحة">
+            <Input
+              value={plateNumber}
+              onChange={(e) => setPlateNumber(e.target.value)}
+              placeholder="مثال: ABC 1234"
+              className="border-white/10 bg-white/5 text-white placeholder:text-white/35 focus:border-blue-500 focus:ring-blue-500/20"
+            />
+          </Field>
+
+          <Field label="اسم المالك">
+            <Input
+              value={ownerName}
+              onChange={(e) => setOwnerName(e.target.value)}
+              placeholder="اسم مالك المركبة"
+              className="border-white/10 bg-white/5 text-white placeholder:text-white/35 focus:border-blue-500 focus:ring-blue-500/20"
+            />
+          </Field>
+
+          <Field label="الموديل">
+            <Input
+              value={model}
+              onChange={(e) => setModel(e.target.value)}
+              placeholder="مثال: كامري 2023"
+              className="border-white/10 bg-white/5 text-white placeholder:text-white/35 focus:border-blue-500 focus:ring-blue-500/20"
+            />
+          </Field>
+
+          <Field label="الدولة">
+            <SelectField
+              value={countryCode}
+              onChange={setCountryCode}
+              options={VEHICLE_COUNTRY_OPTIONS.map((c) => ({
+                value: c.code,
+                label: `${c.flag} ${c.name}`,
+              }))}
+            />
+          </Field>
+
+          <Field label="النوع">
+            <SelectField
+              value={type}
+              onChange={setType}
+              options={VEHICLE_TYPE_OPTIONS.map((t) => ({
+                value: t,
+                label: t,
+              }))}
+            />
+          </Field>
+
+          <Field label="اللون">
+            <SelectField
+              value={color}
+              onChange={setColor}
+              options={VEHICLE_COLOR_OPTIONS.map((c) => ({
+                value: c,
+                label: c,
+              }))}
+            />
+          </Field>
+        </div>
+
+        <div className="flex items-center justify-end gap-2">
+          <button
+            type="button"
+            onClick={onClose}
+            className="rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 text-sm font-medium text-white/70 transition hover:bg-white/10"
+          >
+            إلغاء
+          </button>
+          <Button
+            type="button"
+            onClick={handleSubmit}
+            isLoading={isSaving}
+            loadingLabel="جارٍ الحفظ..."
+            disabled={!isFormValid}
+            className="w-auto px-5"
+          >
+            {mode === "create" ? "إضافة المركبة" : "حفظ التعديلات"}
+          </Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Field({ label, children }: { label: string; children: ReactNode }) {
+  return (
+    <div className="flex flex-col gap-1.5">
+      <label className="text-sm font-medium text-white/70">{label}</label>
+      {children}
+    </div>
+  );
+}
+
+function SelectField({
+  value,
+  options,
+  onChange,
+}: {
+  value: string;
+  options: { value: string; label: string }[];
+  onChange: (value: string) => void;
+}) {
+  return (
+    <div className="relative">
+      <select
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        className="w-full appearance-none rounded-xl border border-white/10 bg-white/5 px-4 py-3 pe-9 text-sm text-white outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
+      >
+        {options.map((option) => (
+          <option
+            key={option.value}
+            value={option.value}
+            className="bg-[#0f172a] text-white"
+          >
+            {option.label}
+          </option>
+        ))}
+      </select>
+      <span className="pointer-events-none absolute inset-y-0 end-3 flex items-center text-white/40">
+        ▾
+      </span>
+    </div>
+  );
+}
+```
+
+---
+
+### <a id="📄-src-features-vehicles-components-vehiclesemptystate-tsx"></a>📄 `src/features/vehicles/components/VehiclesEmptyState.tsx`
+
+**File Info:**
+- **Size**: 347 B
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/features/vehicles/components/VehiclesEmptyState.tsx`
+- **Relative Path**: `src/features/vehicles/components`
+- **Created**: 2026-08-15 21:27:47 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-16 18:03:12 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `4ba3c9f3473f65aad4607453104ca61a`
+- **SHA256**: `f61ac024feb2edb9fac67add34cfd3837281decd2fd9aa7e2bcfe0a8a46bd1c1`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+interface VehiclesEmptyStateProps {
+  message: string;
+}
+
+export function VehiclesEmptyState({ message }: VehiclesEmptyStateProps) {
+  return (
+    <div className="overflow-hidden rounded-xl border border-white/10">
+      <div className="px-4 py-12 text-center text-sm text-white/40">
+        {message}
+      </div>
+    </div>
+  );
+}
+
+```
+
+---
+
+### <a id="📄-src-features-vehicles-components-vehicleserrorstate-tsx"></a>📄 `src/features/vehicles/components/VehiclesErrorState.tsx`
+
+**File Info:**
+- **Size**: 722 B
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/features/vehicles/components/VehiclesErrorState.tsx`
+- **Relative Path**: `src/features/vehicles/components`
+- **Created**: 2026-08-15 21:27:43 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-16 18:03:12 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `0c0aa30e7b089415c3565131f23d067c`
+- **SHA256**: `ba8dfd0ae2f3c124219f33d74e55e73f50e765ceb66c61905b657227df5d218a`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```typescript
+import { Button } from "../../auth";
+
+interface VehiclesErrorStateProps {
+  message?: string;
+  onRetry: () => void;
+}
+
+export function VehiclesErrorState({
+  message = "تعذر تحميل بيانات المركبات",
+  onRetry,
+}: VehiclesErrorStateProps) {
+  return (
+    <div className="flex flex-col items-center justify-center gap-4 rounded-xl border border-rose-500/20 bg-rose-500/5 px-4 py-12 text-center">
+      <p className="text-sm font-medium text-rose-300">{message}</p>
+      <Button
+        type="button"
+        onClick={onRetry}
+        className="w-auto px-5 shadow-[0_0_20px_rgba(99,102,241,0.3)]"
+      >
+        إعادة المحاولة
+      </Button>
+    </div>
+  );
+}
 
 ```
 
@@ -6705,29 +8548,27 @@ export { VehiclesPagination } from "./VehiclesPagination";
 ### <a id="📄-src-features-vehicles-components-vehiclesfilterbar-tsx"></a>📄 `src/features/vehicles/components/VehiclesFilterBar.tsx`
 
 **File Info:**
-- **Size**: 3.05 KB
+- **Size**: 2.83 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/vehicles/components/VehiclesFilterBar.tsx`
 - **Relative Path**: `src/features/vehicles/components`
 - **Created**: 2026-08-01 19:58:35 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-15 00:06:01 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `67ffe04a2d053c8769c4f495d65aa572`
-- **SHA256**: `09f7e9a38aae3f8f8809145ba07c01bc4094cace8dbae95afac316c56c543d9b`
+- **Modified**: 2026-08-16 18:03:12 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `7d4cdef5e8bbd60ad1d034110307ea6d`
+- **SHA256**: `1883a6000ac0de86bf485bac7c44ec0401f72a569028259c0ea3d85f9f0c4ba4`
 - **Encoding**: UTF-8
 
 **File code content:**
 
 ```typescript
 import { Button, Input } from "../../auth";
-import {
-  vehicleColorOptions,
-  vehicleTypeOptions,
-} from "../data/mockVehiclesData";
 import type { VehiclesFilters } from "../models/vehicle.types";
 
 interface VehiclesFilterBarProps {
   filters: VehiclesFilters;
+  typeOptions: string[];
+  colorOptions: string[];
   onSearchChange: (value: string) => void;
   onTypeChange: (value: string) => void;
   onColorChange: (value: string) => void;
@@ -6736,6 +8577,8 @@ interface VehiclesFilterBarProps {
 
 export function VehiclesFilterBar({
   filters,
+  typeOptions,
+  colorOptions,
   onSearchChange,
   onTypeChange,
   onColorChange,
@@ -6744,7 +8587,6 @@ export function VehiclesFilterBar({
   return (
     <div className="flex flex-col gap-3">
       <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
-        {/* مجموعة البحث والفلاتر */}
         <div className="flex flex-1 flex-col gap-3 sm:flex-row sm:items-center">
           <div className="relative min-w-0 flex-1 sm:max-w-md">
             <Input
@@ -6758,19 +8600,18 @@ export function VehiclesFilterBar({
           <FilterSelect
             label="النوع"
             value={filters.type}
-            options={[...vehicleTypeOptions]}
+            options={typeOptions}
             onChange={onTypeChange}
           />
 
           <FilterSelect
             label="اللون"
             value={filters.color}
-            options={[...vehicleColorOptions]}
+            options={colorOptions}
             onChange={onColorChange}
           />
         </div>
 
-        {/* حاوية زر الإضافة لضمان ظهوره بشكل متناسق */}
         <div className="flex items-center justify-end">
           <Button
             type="button"
@@ -6805,7 +8646,11 @@ function FilterSelect({
         className="w-full appearance-none rounded-xl border border-white/10 bg-white/5 px-4 py-3 pe-9 text-sm text-white outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
       >
         {options.map((option) => (
-          <option key={option} value={option} className="bg-[#0f172a] text-white">
+          <option
+            key={option}
+            value={option}
+            className="bg-[#0f172a] text-white"
+          >
             {option === "الكل" ? label : option}
           </option>
         ))}
@@ -6816,6 +8661,7 @@ function FilterSelect({
     </div>
   );
 }
+
 ```
 
 ---
@@ -6876,15 +8722,15 @@ export function VehiclesHeader({
 ### <a id="📄-src-features-vehicles-components-vehiclespagination-tsx"></a>📄 `src/features/vehicles/components/VehiclesPagination.tsx`
 
 **File Info:**
-- **Size**: 4.42 KB
+- **Size**: 4.27 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/vehicles/components/VehiclesPagination.tsx`
 - **Relative Path**: `src/features/vehicles/components`
 - **Created**: 2026-08-01 19:58:39 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-14 23:55:56 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `ad1bb142eeeb9a3628cf357bfd71ee85`
-- **SHA256**: `ec224675800d00ec8ff6abd777a6fad57212e185bd6adc369158bab2829da1be`
+- **Modified**: 2026-08-15 21:25:05 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `d677be0b1479d969f0bf1ae5d1f4c3b5`
+- **SHA256**: `3072e67b10b5133f280f2383c43f399b2511ee3a6012a7ef3881d332ec18bba0`
 - **Encoding**: UTF-8
 
 **File code content:**
@@ -7103,15 +8949,15 @@ export function VehiclesStats({ stats }: VehiclesStatsProps) {
 ### <a id="📄-src-features-vehicles-components-vehiclestable-tsx"></a>📄 `src/features/vehicles/components/VehiclesTable.tsx`
 
 **File Info:**
-- **Size**: 7.15 KB
+- **Size**: 8.18 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/vehicles/components/VehiclesTable.tsx`
 - **Relative Path**: `src/features/vehicles/components`
 - **Created**: 2026-08-01 19:58:39 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:14:41 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `b8d450566a5fcca6bf128571170098e8`
-- **SHA256**: `a392057525553a588a0ae2c96c7b6f41c72c5bef7166d646f12d6e142a145d3b`
+- **Modified**: 2026-08-17 07:55:55 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `933020c34621f60e5c1ccbd940951aa0`
+- **SHA256**: `8358018ac3a66fc162bedade0d32120ff7220f00209eef2aa3598ab3f0a6a791`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -7130,6 +8976,7 @@ interface VehiclesTableProps {
   onToggleOne: (id: string) => void;
   onEdit: (id: string) => void;
   onDelete: (id: string) => void;
+  onAddToBlacklist: (id: string) => void;
 }
 
 export function VehiclesTable({
@@ -7140,6 +8987,7 @@ export function VehiclesTable({
   onToggleOne,
   onEdit,
   onDelete,
+  onAddToBlacklist,
 }: VehiclesTableProps) {
   return (
     <div className="overflow-hidden rounded-xl border border-white/10">
@@ -7223,7 +9071,7 @@ export function VehiclesTable({
                       </span>
                     </td>
                     <td className="px-4 py-3.5 text-white/70">
-                      {vehicle.modelYear}
+                      {vehicle.model}
                     </td>
                     <td className="px-4 py-3.5 text-white/80">
                       {vehicle.ownerName}
@@ -7243,9 +9091,21 @@ export function VehiclesTable({
                         >
                           <DeleteIcon />
                         </ActionButton>
-                        <ActionButton label="المزيد">
+                        {/* <ActionButton label="المزيد">
                           <MoreIcon />
-                        </ActionButton>
+                        </ActionButton> */}
+                        <ActionButton
+                            label={
+                              vehicle.isBlacklisted
+                                ? "مضافة أصلًا للقائمة السوداء"
+                                : "إضافة للقائمة السوداء"
+                            }
+                            onClick={() => onAddToBlacklist(vehicle.id)}
+                            disabled={vehicle.isBlacklisted}
+                            warn
+                          >
+                            <BlacklistFlagIcon />
+                          </ActionButton>
                       </div>
                     </td>
                   </tr>
@@ -7264,21 +9124,29 @@ function ActionButton({
   label,
   onClick,
   danger = false,
+  warn = false,
+  disabled = false,
 }: {
   children: ReactNode;
   label: string;
   onClick?: () => void;
   danger?: boolean;
+  warn?: boolean;
+  disabled?: boolean;
 }) {
   return (
     <button
       type="button"
       aria-label={label}
+      title={label}
       onClick={onClick}
-      className={`flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 bg-white/5 transition hover:bg-white/10 ${
+      disabled={disabled}
+      className={`flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 bg-white/5 transition hover:bg-white/10 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-white/5 ${
         danger
           ? "text-rose-400 hover:text-rose-300"
-          : "text-white/55 hover:text-white"
+          : warn
+            ? "text-amber-400 hover:text-amber-300"
+            : "text-white/55 hover:text-white"
       }`}
     >
       {children}
@@ -7316,221 +9184,79 @@ function DeleteIcon() {
     </svg>
   );
 }
-
-function MoreIcon() {
+function BlacklistFlagIcon() {
   return (
     <svg
       viewBox="0 0 24 24"
       className="h-3.5 w-3.5"
-      fill="currentColor"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
       aria-hidden
     >
-      <circle cx="12" cy="5" r="1.6" />
-      <circle cx="12" cy="12" r="1.6" />
-      <circle cx="12" cy="19" r="1.6" />
+      <path d="M5 3v18" />
+      <path d="M5 4h12l-2.5 4L17 12H5" />
     </svg>
   );
 }
+
+// function MoreIcon() {
+//   return (
+//     <svg
+//       viewBox="0 0 24 24"
+//       className="h-3.5 w-3.5"
+//       fill="currentColor"
+//       aria-hidden
+//     >
+//       <circle cx="12" cy="5" r="1.6" />
+//       <circle cx="12" cy="12" r="1.6" />
+//       <circle cx="12" cy="19" r="1.6" />
+//     </svg>
+//   );
+// }
 
 ```
 
 ---
 
-### <a id="📄-src-features-vehicles-data-mockvehiclesdata-ts"></a>📄 `src/features/vehicles/data/mockVehiclesData.ts`
+### <a id="📄-src-features-vehicles-components-vehiclestableskeleton-tsx"></a>📄 `src/features/vehicles/components/VehiclesTableSkeleton.tsx`
 
 **File Info:**
-- **Size**: 4.58 KB
-- **Extension**: `.ts`
+- **Size**: 595 B
+- **Extension**: `.tsx`
 - **Language**: `typescript`
-- **Location**: `src/features/vehicles/data/mockVehiclesData.ts`
-- **Relative Path**: `src/features/vehicles/data`
-- **Created**: 2026-08-01 19:57:42 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:14:41 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `73fbd40740b167cf2e2a3ea46276ce91`
-- **SHA256**: `b877d24d22ccc9ff668ef763782b746d385e9d8a0bef66a7170f9ae3097b05c7`
+- **Location**: `src/features/vehicles/components/VehiclesTableSkeleton.tsx`
+- **Relative Path**: `src/features/vehicles/components`
+- **Created**: 2026-08-15 21:27:42 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-16 18:03:12 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `e8d859a7c4b624e5742d1ecf31fca56c`
+- **SHA256**: `64f9006ec39af8846d6f5027c891696faeea65288055f490c945e3259a182717`
 - **Encoding**: UTF-8
 
 **File code content:**
 
 ```typescript
-import type { Vehicle, VehicleStat } from "../models/vehicle.types";
+interface VehiclesTableProps {
+  message?: string;
+}
 
-export const vehicleTypeOptions = [
-  "الكل",
-  "سيدان",
-  "دفع رباعي",
-  "شاحنة",
-  "رياضية",
-  "فان",
-] as const;
-
-export const vehicleColorOptions = [
-  "الكل",
-  "أبيض",
-  "أسود",
-  "فضي",
-  "أزرق",
-  "أحمر",
-  "رمادي",
-] as const;
-
-export const mockVehicles: Vehicle[] = [
-  {
-    id: "v1",
-    plateNumber: "أ ب ج 1234",
-    country: { code: "KSA", name: "السعودية", flag: "🇸🇦" },
-    color: "أبيض",
-    colorHex: "#E2E8F0",
-    type: "سيدان",
-    modelYear: 2022,
-    ownerName: "محمد العتيبي",
-    isBlacklisted: false,
-  },
-  {
-    id: "v2",
-    plateNumber: "د هـ و 5678",
-    country: { code: "UAE", name: "الإمارات", flag: "🇦🇪" },
-    color: "أسود",
-    colorHex: "#1E293B",
-    type: "دفع رباعي",
-    modelYear: 2021,
-    ownerName: "سارة المنصوري",
-    isBlacklisted: true,
-  },
-  {
-    id: "v3",
-    plateNumber: "ر س ت 9012",
-    country: { code: "KSA", name: "السعودية", flag: "🇸🇦" },
-    color: "فضي",
-    colorHex: "#94A3B8",
-    type: "سيدان",
-    modelYear: 2020,
-    ownerName: "خالد الشمري",
-    isBlacklisted: false,
-  },
-  {
-    id: "v4",
-    plateNumber: "ث خ ذ 3456",
-    country: { code: "QAT", name: "قطر", flag: "🇶🇦" },
-    color: "أزرق",
-    colorHex: "#3B82F6",
-    type: "رياضية",
-    modelYear: 2023,
-    ownerName: "نورة الهاجري",
-    isBlacklisted: true,
-  },
-  {
-    id: "v5",
-    plateNumber: "ض ظ غ 7890",
-    country: { code: "KWT", name: "الكويت", flag: "🇰🇼" },
-    color: "أحمر",
-    colorHex: "#F43F5E",
-    type: "شاحنة",
-    modelYear: 2019,
-    ownerName: "فهد الصباح",
-    isBlacklisted: false,
-  },
-  {
-    id: "v6",
-    plateNumber: "ف ق ك 2468",
-    country: { code: "BHR", name: "البحرين", flag: "🇧🇭" },
-    color: "رمادي",
-    colorHex: "#64748B",
-    type: "فان",
-    modelYear: 2018,
-    ownerName: "علي ال خليفة",
-    isBlacklisted: false,
-  },
-  {
-    id: "v7",
-    plateNumber: "ل م ن 1357",
-    country: { code: "OMN", name: "عُمان", flag: "🇴🇲" },
-    color: "أبيض",
-    colorHex: "#E2E8F0",
-    type: "دفع رباعي",
-    modelYear: 2024,
-    ownerName: "يوسف البلوشي",
-    isBlacklisted: true,
-  },
-  {
-    id: "v8",
-    plateNumber: "هـ و ي 8642",
-    country: { code: "KSA", name: "السعودية", flag: "🇸🇦" },
-    color: "أسود",
-    colorHex: "#1E293B",
-    type: "سيدان",
-    modelYear: 2021,
-    ownerName: "ريم الحربي",
-    isBlacklisted: false,
-  },
-  {
-    id: "v9",
-    plateNumber: "أ ص د 4321",
-    country: { code: "UAE", name: "الإمارات", flag: "🇦🇪" },
-    color: "فضي",
-    colorHex: "#94A3B8",
-    type: "رياضية",
-    modelYear: 2022,
-    ownerName: "ماجد الكتبي",
-    isBlacklisted: false,
-  },
-  {
-    id: "v10",
-    plateNumber: "ج ح خ 7788",
-    country: { code: "KSA", name: "السعودية", flag: "🇸🇦" },
-    color: "أزرق",
-    colorHex: "#3B82F6",
-    type: "دفع رباعي",
-    modelYear: 2020,
-    ownerName: "هند القحطاني",
-    isBlacklisted: true,
-  },
-  {
-    id: "v11",
-    plateNumber: "ط ظ ع 9900",
-    country: { code: "JOR", name: "الأردن", flag: "🇯🇴" },
-    color: "رمادي",
-    colorHex: "#64748B",
-    type: "سيدان",
-    modelYear: 2017,
-    ownerName: "عمر النسور",
-    isBlacklisted: false,
-  },
-  {
-    id: "v12",
-    plateNumber: "غ ف ق 1122",
-    country: { code: "EGY", name: "مصر", flag: "🇪🇬" },
-    color: "أحمر",
-    colorHex: "#F43F5E",
-    type: "شاحنة",
-    modelYear: 2016,
-    ownerName: "أحمد حسن",
-    isBlacklisted: false,
-  },
-];
-
-export const mockVehicleStats: VehicleStat[] = [
-  {
-    id: "total",
-    title: "إجمالي المركبات",
-    value: mockVehicles.length,
-    subtitle: "في قاعدة البيانات",
-    changePercent: 6.4,
-    icon: "vehicles",
-    gradient: "from-blue-600/40 to-indigo-700/30",
-  },
-  {
-    id: "blacklist",
-    title: "المركبات في القائمة السوداء",
-    value: mockVehicles.filter((v) => v.isBlacklisted).length,
-    subtitle: "تحتاج متابعة",
-    changePercent: 2.1,
-    icon: "blacklist",
-    gradient: "from-rose-600/40 to-orange-700/30",
-  },
-];
-
-export const VEHICLES_PAGE_SIZE = 8;
+export function VehiclesTableSkeleton({
+  message = "جاري تحميل المركبات...",
+}: VehiclesTableProps) {
+  return (
+    <div className="overflow-hidden rounded-xl border border-white/10">
+      <div className="space-y-3 p-4">
+        <p className="text-sm text-white/45">{message}</p>
+        {Array.from({ length: 6 }).map((_, index) => (
+          <div
+            key={index}
+            className="h-12 animate-pulse rounded-lg bg-white/[0.06]"
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
 
 ```
 
@@ -7539,32 +9265,39 @@ export const VEHICLES_PAGE_SIZE = 8;
 ### <a id="📄-src-features-vehicles-hooks-usevehiclesviewmodel-ts"></a>📄 `src/features/vehicles/hooks/useVehiclesViewModel.ts`
 
 **File Info:**
-- **Size**: 5.01 KB
+- **Size**: 10.38 KB
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/vehicles/hooks/useVehiclesViewModel.ts`
 - **Relative Path**: `src/features/vehicles/hooks`
 - **Created**: 2026-08-01 19:57:58 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:14:41 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `31122499d4fd84526a5697ac5bde2d0d`
-- **SHA256**: `44d910f5eb4f5ab00d24979f66235af55d0213730a59b9468ac04dc5c192163f`
+- **Modified**: 2026-08-17 08:05:36 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `5a837785fb97a301f49cf801cc900364`
+- **SHA256**: `2ecd76128963292221e577efcdac8257bc72c4e077c23e7c19bc9470a7958a1c`
 - **Encoding**: ASCII
 
 **File code content:**
 
 ```typescript
 import { useEffect, useMemo, useState } from "react";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { blacklistService, type CreateBlacklistRequest } from "../../blacklist";
 import {
   mockDashboardData,
   useDashboardStore,
 } from "../../dashboard";
+import type {
+  CreateVehicleRequest,
+  UpdateVehicleRequest,
+} from "../api/vehicles.types";
 import {
-  mockVehicles,
-  mockVehicleStats,
   VEHICLES_PAGE_SIZE,
-} from "../data/mockVehiclesData";
+  vehiclesQueryKeys,
+  type Vehicle,
+  type VehiclesFilters,
+} from "../models/vehicle.types";
+import { vehiclesService } from "../services/VehiclesService";
 import { useVehiclesStore } from "../store/vehiclesStore";
-import type { VehiclesFilters } from "../models/vehicle.types";
 
 function formatNumber(value: number): string {
   return new Intl.NumberFormat("ar-EG").format(value);
@@ -7577,7 +9310,6 @@ export function useVehiclesViewModel() {
   const setActiveMenuId = useDashboardStore((s) => s.setActiveMenuId);
 
   const selectedVehicles = useVehiclesStore((s) => s.selectedVehicles);
-  const setVehicles = useVehiclesStore((s) => s.setVehicles);
   const toggleVehicleSelection = useVehiclesStore(
     (s) => s.toggleVehicleSelection,
   );
@@ -7590,20 +9322,102 @@ export function useVehiclesViewModel() {
     color: "الكل",
   });
   const [currentPage, setCurrentPage] = useState(1);
+  const [isAddModalOpen, setIsAddModalOpen] = useState(false);
+  const [editingVehicle, setEditingVehicle] = useState<Vehicle | null>(null);
+  const [deletingVehicle, setDeletingVehicle] = useState<Vehicle | null>(null);
+  const [blacklistingVehicle, setBlacklistingVehicle] =
+    useState<Vehicle | null>(null);
+
+  const queryClient = useQueryClient();
 
   useEffect(() => {
-    setVehicles(mockVehicles);
     setActiveMenuId("vehicles");
-  }, [setVehicles, setActiveMenuId]);
+  }, [setActiveMenuId]);
+
+  const vehiclesQuery = useQuery({
+    queryKey: vehiclesQueryKeys.list(),
+    queryFn: () => vehiclesService.getVehicles(),
+  });
+
+  const allVehicles = useMemo(
+    () => vehiclesQuery.data ?? [],
+    [vehiclesQuery.data],
+  );
+
+  const createVehicleMutation = useMutation({
+    mutationFn: (payload: CreateVehicleRequest) =>
+      vehiclesService.createVehicle(payload),
+    onSuccess: async () => {
+      await queryClient.invalidateQueries({
+        queryKey: vehiclesQueryKeys.all,
+      });
+      setIsAddModalOpen(false);
+    },
+  });
+
+  const updateVehicleMutation = useMutation({
+    mutationFn: ({
+      id,
+      payload,
+    }: {
+      id: string;
+      payload: UpdateVehicleRequest;
+    }) => vehiclesService.updateVehicle(id, payload),
+    onSuccess: async () => {
+      await queryClient.invalidateQueries({
+        queryKey: vehiclesQueryKeys.all,
+      });
+      setEditingVehicle(null);
+    },
+  });
+
+  const deleteVehicleMutation = useMutation({
+    mutationFn: (id: string) => vehiclesService.deleteVehicle(id),
+    onSuccess: async () => {
+      await queryClient.invalidateQueries({
+        queryKey: vehiclesQueryKeys.all,
+      });
+      setDeletingVehicle(null);
+    },
+  });
+
+  const addToBlacklistMutation = useMutation({
+    mutationFn: (payload: CreateBlacklistRequest) =>
+      blacklistService.addToBlacklist(payload),
+    onSuccess: async () => {
+      await queryClient.invalidateQueries({
+        queryKey: vehiclesQueryKeys.all,
+      });
+      setBlacklistingVehicle(null);
+    },
+  });
+
+  const typeOptions = useMemo(() => {
+    const unique = Array.from(
+      new Set(allVehicles.map((vehicle) => vehicle.type).filter(Boolean)),
+    ).sort((a, b) => a.localeCompare(b, "ar"));
+    return ["الكل", ...unique];
+  }, [allVehicles]);
+
+  const colorOptions = useMemo(() => {
+    const unique = Array.from(
+      new Set(allVehicles.map((vehicle) => vehicle.color).filter(Boolean)),
+    ).sort((a, b) => a.localeCompare(b, "ar"));
+    return ["الكل", ...unique];
+  }, [allVehicles]);
 
   const filteredVehicles = useMemo(() => {
     const query = filters.search.trim().toLowerCase();
 
-    return mockVehicles.filter((vehicle) => {
+    return allVehicles.filter((vehicle) => {
       const matchesSearch =
         query.length === 0 ||
         vehicle.plateNumber.toLowerCase().includes(query) ||
-        vehicle.ownerName.toLowerCase().includes(query);
+        vehicle.ownerName.toLowerCase().includes(query) ||
+        vehicle.model.toLowerCase().includes(query) ||
+        vehicle.country.code.toLowerCase().includes(query) ||
+        vehicle.type.toLowerCase().includes(query) ||
+        vehicle.color.toLowerCase().includes(query);
 
       const matchesType =
         filters.type === "الكل" || vehicle.type === filters.type;
@@ -7613,13 +9427,12 @@ export function useVehiclesViewModel() {
 
       return matchesSearch && matchesType && matchesColor;
     });
-  }, [filters]);
+  }, [allVehicles, filters]);
 
   const totalPages = Math.max(
     1,
     Math.ceil(filteredVehicles.length / VEHICLES_PAGE_SIZE),
   );
-
   const safePage = Math.min(currentPage, totalPages);
 
   const paginatedVehicles = useMemo(() => {
@@ -7627,24 +9440,53 @@ export function useVehiclesViewModel() {
     return filteredVehicles.slice(start, start + VEHICLES_PAGE_SIZE);
   }, [filteredVehicles, safePage]);
 
-  const pageNumbers = useMemo(() => {
-    return Array.from({ length: totalPages }, (_, i) => i + 1);
-  }, [totalPages]);
-
-  const formattedStats = useMemo(
-    () =>
-      mockVehicleStats.map((stat) => ({
-        ...stat,
-        displayValue: formatNumber(stat.value),
-        isPositive: stat.changePercent >= 0,
-        displayChange: `${stat.changePercent >= 0 ? "+" : ""}${stat.changePercent}%`,
-      })),
-    [],
+  const pageNumbers = useMemo(
+    () => Array.from({ length: totalPages }, (_, i) => i + 1),
+    [totalPages],
   );
+
+  const formattedStats = useMemo(() => {
+    const total = allVehicles.length;
+    const blacklisted = allVehicles.filter((v) => v.isBlacklisted).length;
+    const blacklistPercent =
+      total === 0 ? 0 : Math.round((blacklisted / total) * 1000) / 10;
+
+    return [
+      {
+        id: "total",
+        title: "إجمالي المركبات",
+        value: total,
+        subtitle: "في قاعدة البيانات",
+        changePercent: 0,
+        icon: "vehicles" as const,
+        gradient: "from-blue-600/40 to-indigo-700/30",
+        displayValue: formatNumber(total),
+        isPositive: true,
+        displayChange: `${formatNumber(total)}`,
+      },
+      {
+        id: "blacklist",
+        title: "المركبات في القائمة السوداء",
+        value: blacklisted,
+        subtitle: "تحتاج متابعة",
+        changePercent: blacklistPercent,
+        icon: "blacklist" as const,
+        gradient: "from-rose-600/40 to-orange-700/30",
+        displayValue: formatNumber(blacklisted),
+        isPositive: false,
+        displayChange: `${blacklistPercent}%`,
+      },
+    ];
+  }, [allVehicles]);
 
   const pageIds = paginatedVehicles.map((v) => v.id);
   const allPageSelected =
     pageIds.length > 0 && pageIds.every((id) => selectedVehicles.includes(id));
+
+  const hasActiveFilters =
+    filters.search.trim().length > 0 ||
+    filters.type !== "الكل" ||
+    filters.color !== "الكل";
 
   const setSearch = (search: string) => {
     setFilters((prev) => ({ ...prev, search }));
@@ -7675,9 +9517,7 @@ export function useVehiclesViewModel() {
         selectedVehicles.filter((id) => !pageIds.includes(id)),
       );
     } else {
-      selectAllVehicles([
-        ...new Set([...selectedVehicles, ...pageIds]),
-      ]);
+      selectAllVehicles([...new Set([...selectedVehicles, ...pageIds])]);
     }
   };
 
@@ -7687,18 +9527,6 @@ export function useVehiclesViewModel() {
     } else {
       void document.exitFullscreen();
     }
-  };
-
-  const handleAddVehicle = () => {
-    // Ready for future create flow / VehiclesService.createVehicle
-  };
-
-  const handleEditVehicle = (_id: string) => {
-    // Ready for future edit flow
-  };
-
-  const handleDeleteVehicle = (_id: string) => {
-    // Ready for future delete flow
   };
 
   return {
@@ -7712,11 +9540,15 @@ export function useVehiclesViewModel() {
     handleFullscreen,
     formattedStats,
     filters,
+    typeOptions,
+    colorOptions,
     setSearch,
     setTypeFilter,
     setColorFilter,
     vehicles: paginatedVehicles,
     totalCount: filteredVehicles.length,
+    totalVehiclesCount: allVehicles.length,
+    hasActiveFilters,
     selectedVehicles,
     toggleVehicleSelection,
     allPageSelected,
@@ -7725,12 +9557,75 @@ export function useVehiclesViewModel() {
     totalPages,
     pageNumbers,
     goToPage,
-    handleAddVehicle,
-    handleEditVehicle,
-    handleDeleteVehicle,
+    isLoading: vehiclesQuery.isLoading,
+    isError: vehiclesQuery.isError,
+    isFetching: vehiclesQuery.isFetching,
+    refetch: vehiclesQuery.refetch,
+
+    handleAddVehicle: () => setIsAddModalOpen(true),
+    isAddModalOpen,
+    isSavingVehicle: createVehicleMutation.isPending,
+    handleCloseAddModal: () => {
+      setIsAddModalOpen(false);
+      createVehicleMutation.reset();
+    },
+    handleCreateVehicle: (payload: CreateVehicleRequest) => {
+      createVehicleMutation.mutate(payload);
+    },
+
+    handleEditVehicle: (id: string) => {
+      const vehicle = allVehicles.find((v) => v.id === id) ?? null;
+      setEditingVehicle(vehicle);
+    },
+    editingVehicle,
+    isSavingEdit: updateVehicleMutation.isPending,
+    handleCloseEditModal: () => {
+      setEditingVehicle(null);
+      updateVehicleMutation.reset();
+    },
+    handleUpdateVehicle: (payload: UpdateVehicleRequest) => {
+      if (!editingVehicle) return;
+      updateVehicleMutation.mutate({ id: editingVehicle.id, payload });
+    },
+
+    handleDeleteVehicle: (id: string) => {
+      const vehicle = allVehicles.find((v) => v.id === id) ?? null;
+      setDeletingVehicle(vehicle);
+    },
+    deletingVehicle,
+    isDeletingVehicle: deleteVehicleMutation.isPending,
+    handleCloseDeleteModal: () => {
+      setDeletingVehicle(null);
+      deleteVehicleMutation.reset();
+    },
+    handleConfirmDeleteVehicle: () => {
+      if (!deletingVehicle) return;
+      deleteVehicleMutation.mutate(deletingVehicle.id);
+    },
+
+    handleAddToBlacklist: (id: string) => {
+      const vehicle = allVehicles.find((v) => v.id === id) ?? null;
+      setBlacklistingVehicle(vehicle);
+    },
+    blacklistingVehicle,
+    isAddingToBlacklist: addToBlacklistMutation.isPending,
+    handleCloseBlacklistModal: () => {
+      setBlacklistingVehicle(null);
+      addToBlacklistMutation.reset();
+    },
+    handleConfirmAddToBlacklist: (payload: {
+      status: CreateBlacklistRequest["status"];
+      priority: CreateBlacklistRequest["priority"];
+      wanted: boolean;
+    }) => {
+      if (!blacklistingVehicle) return;
+      addToBlacklistMutation.mutate({
+        vehicle_id: Number(blacklistingVehicle.id),
+        ...payload,
+      });
+    },
   };
 }
-
 ```
 
 ---
@@ -7738,46 +9633,38 @@ export function useVehiclesViewModel() {
 ### <a id="📄-src-features-vehicles-models-vehicle-types-ts"></a>📄 `src/features/vehicles/models/vehicle.types.ts`
 
 **File Info:**
-- **Size**: 942 B
+- **Size**: 885 B
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/vehicles/models/vehicle.types.ts`
 - **Relative Path**: `src/features/vehicles/models`
 - **Created**: 2026-08-01 19:57:25 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:14:41 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `3ed8f3511648225ffebc8edf041cec6b`
-- **SHA256**: `5cb0f1632057ddd60c746d222ce05901af485b5159c3df196b228ff4dcde99f5`
-- **Encoding**: UTF-8
+- **Modified**: 2026-08-16 18:03:12 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `381ee18bf8aadc7cd73f1804e9dcf052`
+- **SHA256**: `790b4082c8356e2a62ff99b7c24918464d009c1d92a5c276a5f549e2a9121109`
+- **Encoding**: ASCII
 
 **File code content:**
 
 ```typescript
-export type VehicleType = "سيدان" | "دفع رباعي" | "شاحنة" | "رياضية" | "فان";
-
-export type VehicleColor =
-  | "أبيض"
-  | "أسود"
-  | "فضي"
-  | "أزرق"
-  | "أحمر"
-  | "رمادي";
-
 export interface VehicleCountry {
   code: string;
   name: string;
   flag: string;
 }
 
+/** Presentation model used by Vehicles UI components. */
 export interface Vehicle {
   id: string;
   plateNumber: string;
   country: VehicleCountry;
-  color: VehicleColor;
+  color: string;
   colorHex: string;
-  type: VehicleType;
-  modelYear: number;
+  type: string;
+  model: string;
   ownerName: string;
   isBlacklisted: boolean;
+  createdAt: string;
 }
 
 export interface VehicleStat {
@@ -7796,10 +9683,16 @@ export interface VehiclesFilters {
   color: string;
 }
 
-export interface VehiclesState {
-  vehicles: Vehicle[];
+export interface VehiclesSelectionState {
   selectedVehicles: string[];
 }
+
+export const VEHICLES_PAGE_SIZE = 8;
+
+export const vehiclesQueryKeys = {
+  all: ["vehicles"] as const,
+  list: () => [...vehiclesQueryKeys.all, "list"] as const,
+};
 
 ```
 
@@ -7808,15 +9701,15 @@ export interface VehiclesState {
 ### <a id="📄-src-features-vehicles-pages-vehiclespage-tsx"></a>📄 `src/features/vehicles/pages/VehiclesPage.tsx`
 
 **File Info:**
-- **Size**: 2.29 KB
+- **Size**: 4.49 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/vehicles/pages/VehiclesPage.tsx`
 - **Relative Path**: `src/features/vehicles/pages`
 - **Created**: 2026-08-01 19:58:44 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:14:41 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `a6041a362ec4d5c8a4350797d97228d1`
-- **SHA256**: `73aaf985af7e4bdb2090cff1c65c74eec755d5316e0aeae660fb78bb90ab372c`
+- **Modified**: 2026-08-17 08:05:34 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `53e3092c43d440c24c43f0a6ff0b1844`
+- **SHA256**: `a877cf6d148413ed1e759bd0d5160fd3a60f92752cf16a66564667eb4e8dbe0d`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -7828,11 +9721,17 @@ import {
 } from "../../dashboard";
 import { useVehiclesViewModel } from "../hooks/useVehiclesViewModel";
 import {
+  AddToBlacklistModal,
+  DeleteVehicleModal,
+  VehicleFormModal,
+  VehiclesEmptyState,
+  VehiclesErrorState,
   VehiclesFilterBar,
   VehiclesHeader,
   VehiclesPagination,
   VehiclesStats,
   VehiclesTable,
+  VehiclesTableSkeleton,
 } from "../components";
 
 export function VehiclesPage() {
@@ -7847,11 +9746,15 @@ export function VehiclesPage() {
     handleFullscreen,
     formattedStats,
     filters,
+    typeOptions,
+    colorOptions,
     setSearch,
     setTypeFilter,
     setColorFilter,
     vehicles,
     totalCount,
+    totalVehiclesCount,
+    hasActiveFilters,
     selectedVehicles,
     toggleVehicleSelection,
     allPageSelected,
@@ -7860,10 +9763,34 @@ export function VehiclesPage() {
     totalPages,
     pageNumbers,
     goToPage,
+    isLoading,
+    isError,
+    refetch,
     handleAddVehicle,
+    isAddModalOpen,
+    isSavingVehicle,
+    handleCloseAddModal,
+    handleCreateVehicle,
     handleEditVehicle,
+    editingVehicle,
+    isSavingEdit,
+    handleCloseEditModal,
+    handleUpdateVehicle,
     handleDeleteVehicle,
+    deletingVehicle,
+    isDeletingVehicle,
+    handleCloseDeleteModal,
+    handleConfirmDeleteVehicle,
+    handleAddToBlacklist,
+    blacklistingVehicle,
+    isAddingToBlacklist,
+    handleCloseBlacklistModal,
+    handleConfirmAddToBlacklist,
   } = useVehiclesViewModel();
+
+  const emptyMessage = hasActiveFilters
+    ? "لا توجد مركبات مطابقة للبحث"
+    : "لا توجد مركبات في قاعدة البيانات";
 
   return (
     <DashboardLayout
@@ -7876,6 +9803,43 @@ export function VehiclesPage() {
       onSelectMenu={setActiveMenuId}
       onFullscreen={handleFullscreen}
     >
+      {isAddModalOpen && (
+        <VehicleFormModal
+          mode="create"
+          isSaving={isSavingVehicle}
+          onSave={handleCreateVehicle}
+          onClose={handleCloseAddModal}
+        />
+      )}
+
+      {editingVehicle && (
+        <VehicleFormModal
+          mode="edit"
+          vehicle={editingVehicle}
+          isSaving={isSavingEdit}
+          onSave={handleUpdateVehicle}
+          onClose={handleCloseEditModal}
+        />
+      )}
+
+      {deletingVehicle && (
+        <DeleteVehicleModal
+          vehicle={deletingVehicle}
+          isDeleting={isDeletingVehicle}
+          onConfirm={handleConfirmDeleteVehicle}
+          onClose={handleCloseDeleteModal}
+        />
+      )}
+
+      {blacklistingVehicle && (
+        <AddToBlacklistModal
+          vehicle={blacklistingVehicle}
+          isSaving={isAddingToBlacklist}
+          onSave={handleConfirmAddToBlacklist}
+          onClose={handleCloseBlacklistModal}
+        />
+      )}
+
       <div className="mx-auto flex max-w-[1600px] flex-col gap-4 sm:gap-5">
         <VehiclesHeader />
 
@@ -7884,35 +9848,47 @@ export function VehiclesPage() {
         <CardContainer className="flex flex-col gap-4 p-4 sm:p-5">
           <VehiclesFilterBar
             filters={filters}
+            typeOptions={typeOptions}
+            colorOptions={colorOptions}
             onSearchChange={setSearch}
             onTypeChange={setTypeFilter}
             onColorChange={setColorFilter}
             onAddClick={handleAddVehicle}
           />
 
-          <VehiclesTable
-            vehicles={vehicles}
-            selectedVehicles={selectedVehicles}
-            allPageSelected={allPageSelected}
-            onToggleAll={toggleSelectAllOnPage}
-            onToggleOne={toggleVehicleSelection}
-            onEdit={handleEditVehicle}
-            onDelete={handleDeleteVehicle}
-          />
+          {isLoading ? (
+            <VehiclesTableSkeleton />
+          ) : isError ? (
+            <VehiclesErrorState onRetry={() => void refetch()} />
+          ) : totalVehiclesCount === 0 || totalCount === 0 ? (
+            <VehiclesEmptyState message={emptyMessage} />
+          ) : (
+            <>
+              <VehiclesTable
+                vehicles={vehicles}
+                selectedVehicles={selectedVehicles}
+                allPageSelected={allPageSelected}
+                onToggleAll={toggleSelectAllOnPage}
+                onToggleOne={toggleVehicleSelection}
+                onEdit={handleEditVehicle}
+                onDelete={handleDeleteVehicle}
+                onAddToBlacklist={handleAddToBlacklist}
+              />
 
-          <VehiclesPagination
-            currentPage={currentPage}
-            totalPages={totalPages}
-            pageNumbers={pageNumbers}
-            totalCount={totalCount}
-            onPageChange={goToPage}
-          />
+              <VehiclesPagination
+                currentPage={currentPage}
+                totalPages={totalPages}
+                pageNumbers={pageNumbers}
+                totalCount={totalCount}
+                onPageChange={goToPage}
+              />
+            </>
+          )}
         </CardContainer>
       </div>
     </DashboardLayout>
   );
 }
-
 ```
 
 ---
@@ -7948,40 +9924,56 @@ export type VehiclesRoute =
 ### <a id="📄-src-features-vehicles-services-vehiclesservice-ts"></a>📄 `src/features/vehicles/services/VehiclesService.ts`
 
 **File Info:**
-- **Size**: 624 B
+- **Size**: 1.03 KB
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/vehicles/services/VehiclesService.ts`
 - **Relative Path**: `src/features/vehicles/services`
 - **Created**: 2026-08-01 19:57:42 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:14:41 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `5d7989d64733ab0edf9fa51920b03541`
-- **SHA256**: `bf0fa74854d9cd33058f20bd5b0d037619754aaaa69341d2d9b15876c482a342`
-- **Encoding**: UTF-8
+- **Modified**: 2026-08-17 07:47:52 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `e3e2a5ff2541352c5391885a433f99af`
+- **SHA256**: `ecb4bae6399538222644e2ca89a697fb34adeaba2f4164cc118fe541bd6070cb`
+- **Encoding**: ASCII
 
 **File code content:**
 
 ```typescript
+import { apiClient } from "../../../api/axios";
+import { VehiclesApiEndpoints } from "../api/vehicles.endpoints";
+import type {
+  CreateVehicleRequest,
+  UpdateVehicleRequest,
+  VehiclesApiResponse,
+} from "../api/vehicles.types";
 import type { Vehicle } from "../models/vehicle.types";
+import { mapVehicleApiToUi } from "../utils/mapVehicleApiToUi";
 
-/**
- * VehiclesService — prepared for future API integration.
- * Methods are placeholders and throw until implemented.
- */
 class VehiclesService {
   async getVehicles(): Promise<Vehicle[]> {
-    // TODO: integrate with API
-    throw new Error("VehiclesService.getVehicles is not implemented yet");
+    const response = await apiClient.get<VehiclesApiResponse>(
+      VehiclesApiEndpoints.list,
+    );
+
+    return response.data.data.map(mapVehicleApiToUi);
   }
 
-  async createVehicle(_payload: Omit<Vehicle, "id">): Promise<Vehicle> {
-    // TODO: integrate with API
-    throw new Error("VehiclesService.createVehicle is not implemented yet");
+  async createVehicle(payload: CreateVehicleRequest): Promise<void> {
+    await apiClient.post(VehiclesApiEndpoints.list, payload);
+  }
+
+  async updateVehicle(
+    id: string,
+    payload: UpdateVehicleRequest,
+  ): Promise<void> {
+    await apiClient.put(VehiclesApiEndpoints.detail(id), payload);
+  }
+
+  async deleteVehicle(id: string): Promise<void> {
+    await apiClient.delete(VehiclesApiEndpoints.detail(id));
   }
 }
 
 export const vehiclesService = new VehiclesService();
-
 ```
 
 ---
@@ -7989,40 +9981,36 @@ export const vehiclesService = new VehiclesService();
 ### <a id="📄-src-features-vehicles-store-vehiclesstore-ts"></a>📄 `src/features/vehicles/store/vehiclesStore.ts`
 
 **File Info:**
-- **Size**: 1.07 KB
+- **Size**: 967 B
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/vehicles/store/vehiclesStore.ts`
 - **Relative Path**: `src/features/vehicles/store`
 - **Created**: 2026-08-01 19:57:28 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:14:41 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `cf93f58d9b36e3297aa906a6b3a10e6a`
-- **SHA256**: `ae17fb685065d5df3ab3ea3fc7bef95af432ac93dfd68d8347764aead94394e1`
+- **Modified**: 2026-08-16 18:03:12 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `1b85fe1379c6cd7859cd7e94f15675f6`
+- **SHA256**: `2314de1e97409f21dd446f87fd760af60e92bcc91eb394e8248d411e99daac77`
 - **Encoding**: ASCII
 
 **File code content:**
 
 ```typescript
 import { create } from "zustand";
-import type { Vehicle, VehiclesState } from "../models/vehicle.types";
+import type { VehiclesSelectionState } from "../models/vehicle.types";
 
-interface VehiclesStore extends VehiclesState {
-  setVehicles: (vehicles: Vehicle[]) => void;
+interface VehiclesStore extends VehiclesSelectionState {
   setSelectedVehicles: (ids: string[]) => void;
   toggleVehicleSelection: (id: string) => void;
   selectAllVehicles: (ids: string[]) => void;
   clearSelection: () => void;
 }
 
-const initialState: VehiclesState = {
-  vehicles: [],
+const initialState: VehiclesSelectionState = {
   selectedVehicles: [],
 };
 
 export const useVehiclesStore = create<VehiclesStore>((set, get) => ({
   ...initialState,
-
-  setVehicles: (vehicles) => set({ vehicles }),
 
   setSelectedVehicles: (ids) => set({ selectedVehicles: ids }),
 
@@ -8045,18 +10033,148 @@ export const useVehiclesStore = create<VehiclesStore>((set, get) => ({
 
 ---
 
+### <a id="📄-src-features-vehicles-utils-color-utils-ts"></a>📄 `src/features/vehicles/utils/color.utils.ts`
+
+**File Info:**
+- **Size**: 470 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/vehicles/utils/color.utils.ts`
+- **Relative Path**: `src/features/vehicles/utils`
+- **Created**: 2026-08-15 21:27:17 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-17 07:44:18 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `77fae5536689bd321403952545ce17ab`
+- **SHA256**: `334f359a52cca55b5bd82dc3f24d9bd450793ead8bce09722a45cbee0b17bb07`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```typescript
+const COLOR_HEX_MAP: Record<string, string> = {
+  أبيض: "#E2E8F0",
+  أسود: "#1E293B",
+  فضي: "#94A3B8",
+  أزرق: "#3B82F6",
+  أحمر: "#F43F5E",
+  رمادي: "#64748B",
+  أخضر: "#10B981",
+  أصفر: "#F59E0B",
+  بني: "#92400E",
+  ذهبي: "#D97706",
+};
+
+export function resolveVehicleColorHex(color: string): string {
+  return COLOR_HEX_MAP[color] ?? "#64748B";
+}
+export const VEHICLE_COLOR_OPTIONS = Object.keys(COLOR_HEX_MAP);
+```
+
+---
+
+### <a id="📄-src-features-vehicles-utils-country-utils-ts"></a>📄 `src/features/vehicles/utils/country.utils.ts`
+
+**File Info:**
+- **Size**: 955 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/vehicles/utils/country.utils.ts`
+- **Relative Path**: `src/features/vehicles/utils`
+- **Created**: 2026-08-15 21:27:16 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-17 07:44:16 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `354de24849bfa94538cd5512d7934dcd`
+- **SHA256**: `b703283aeadf3e590f5c8e58a1a912a9c9f17ce38919fc08a0eca2aa75b5007f`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```typescript
+import type { VehicleCountry } from "../models/vehicle.types";
+
+const COUNTRY_MAP: Record<string, Omit<VehicleCountry, "code">> = {
+  KSA: { name: "السعودية", flag: "🇸🇦" },
+  UAE: { name: "الإمارات", flag: "🇦🇪" },
+  QAT: { name: "قطر", flag: "🇶🇦" },
+  KWT: { name: "الكويت", flag: "🇰🇼" },
+  BHR: { name: "البحرين", flag: "🇧🇭" },
+  OMN: { name: "عُمان", flag: "🇴🇲" },
+  JOR: { name: "الأردن", flag: "🇯🇴" },
+  EGY: { name: "مصر", flag: "🇪🇬" },
+};
+
+export function resolveVehicleCountry(countryCode: string): VehicleCountry {
+  const code = countryCode.toUpperCase();
+  const known = COUNTRY_MAP[code];
+
+  if (known) {
+    return { code, ...known };
+  }
+
+  return {
+    code,
+    name: code,
+    flag: "🏳️",
+  };
+}
+export const VEHICLE_COUNTRY_OPTIONS = Object.entries(COUNTRY_MAP).map(
+  ([code, info]) => ({ code, ...info }),
+);
+```
+
+---
+
+### <a id="📄-src-features-vehicles-utils-mapvehicleapitoui-ts"></a>📄 `src/features/vehicles/utils/mapVehicleApiToUi.ts`
+
+**File Info:**
+- **Size**: 686 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/vehicles/utils/mapVehicleApiToUi.ts`
+- **Relative Path**: `src/features/vehicles/utils`
+- **Created**: 2026-08-15 21:27:18 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-16 18:03:12 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `e3d1a20664917f4eea9c7f44aa26e3a8`
+- **SHA256**: `3f883326fd213e9c74894ddcd306bd83ce80475d383f2c20b01f129501ad6dc3`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import type { VehicleApiItem } from "../api/vehicles.types";
+import type { Vehicle } from "../models/vehicle.types";
+import { resolveVehicleColorHex } from "../utils/color.utils";
+import { resolveVehicleCountry } from "../utils/country.utils";
+
+export function mapVehicleApiToUi(item: VehicleApiItem): Vehicle {
+  return {
+    id: String(item.id),
+    plateNumber: item.plate_number,
+    country: resolveVehicleCountry(item.country_code),
+    color: item.color,
+    colorHex: resolveVehicleColorHex(item.color),
+    type: item.type,
+    model: item.model,
+    ownerName: item.owner_name,
+    isBlacklisted: item.is_blacklisted,
+    createdAt: item.created_at,
+  };
+}
+
+```
+
+---
+
 ### <a id="📄-src-features-vehicles-index-ts"></a>📄 `src/features/vehicles/index.ts`
 
 **File Info:**
-- **Size**: 376 B
+- **Size**: 586 B
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/vehicles/index.ts`
 - **Relative Path**: `src/features/vehicles`
 - **Created**: 2026-08-01 19:58:44 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 17:21:53 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `952f010b31b0a4e98775069a47b09f8a`
-- **SHA256**: `7493407235dd3b38ca8d9a1bf45d081cddc7d792ce4b9a5cf438fdec3fd966c8`
+- **Modified**: 2026-08-16 18:03:12 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `9f5b00d6fa8bd0dd78dfcfd338c4d97f`
+- **SHA256**: `524d86c7d968cb5af16a3d6007d480e1c5b853e7546796f6403e33c1d97123bf`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -8068,7 +10186,90 @@ export { useVehiclesStore } from "./store/vehiclesStore";
 export { vehiclesService } from "./services/VehiclesService";
 export { useVehiclesViewModel } from "./hooks/useVehiclesViewModel";
 export { VehiclesPagination } from "./components/VehiclesPagination";
+export { VehiclesTableSkeleton } from "./components/VehiclesTableSkeleton";
+export { VehiclesErrorState } from "./components/VehiclesErrorState";
+export { VehiclesEmptyState } from "./components/VehiclesEmptyState";
 
+```
+
+---
+
+### <a id="📄-src-features-video-api-videos-endpoints-ts"></a>📄 `src/features/video/api/videos.endpoints.ts`
+
+**File Info:**
+- **Size**: 169 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/video/api/videos.endpoints.ts`
+- **Relative Path**: `src/features/video/api`
+- **Created**: 2026-08-15 21:45:06 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-16 20:50:05 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `b9ced48fa86685f46c67c7acc637eac3`
+- **SHA256**: `632dd564d7a29ef704205f1445b8113dc79c3abf946d9c114031d3a4c226f597`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+export const VideosApiEndpoints = {
+  list: "/api/admin/videos",
+  processed: (videoId: number | string) =>
+    `/api/admin/videos/processed/${videoId}`,
+} as const;
+```
+
+---
+
+### <a id="📄-src-features-video-api-videos-types-ts"></a>📄 `src/features/video/api/videos.types.ts`
+
+**File Info:**
+- **Size**: 703 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/video/api/videos.types.ts`
+- **Relative Path**: `src/features/video/api`
+- **Created**: 2026-08-15 21:45:06 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-16 20:50:03 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `7bc6551122143c1e3da5dbbb9464d783`
+- **SHA256**: `4d0c1363ef40654b7bcabba80f9b2060658b38145391c34393edc3fed8b04316`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```typescript
+export type VideoStatus = "completed" | "processing" | "failed";
+
+export interface VideoApiItem {
+  id: number;
+  name: string;
+  uploaded_at: string;
+  duration: string;
+  status: VideoStatus;
+}
+
+export interface VideosApiResponse {
+  videos: VideoApiItem[];
+}
+
+export interface CreateVideoRequest {
+  original_path: string;
+  name: string;
+  duration: number;
+  size: number;
+}
+
+/** Backend create response — fields may vary; id is the stable identifier. */
+export interface CreateVideoResponse {
+  id: number;
+  name?: string;
+  uploaded_at?: string;
+  duration?: string | number;
+  status?: VideoStatus;
+}
+
+export interface ProcessedVideoResponse {
+  url: string;
+}
 ```
 
 ---
@@ -8106,21 +10307,20 @@ export { VideosTable } from "./VideosTable";
 ### <a id="📄-src-features-video-components-recentvideostable-tsx"></a>📄 `src/features/video/components/RecentVideosTable.tsx`
 
 **File Info:**
-- **Size**: 5.27 KB
+- **Size**: 3.17 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/video/components/RecentVideosTable.tsx`
 - **Relative Path**: `src/features/video/components`
 - **Created**: 2026-08-13 14:39:40 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:39:57 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `24f0c5e009e9f4071ddd535a2ed587da`
-- **SHA256**: `6d56147c13d69c6fd3e0273179d820645d290822fbc68166a8e0977c48d26513`
+- **Modified**: 2026-08-17 06:11:29 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `a440ff49dd587fa244b8d1a263e8a6e1`
+- **SHA256**: `84940ba29457c5ef05a286908394ceb1d87f1f90b35795f22bae162eb16d85b3`
 - **Encoding**: UTF-8
 
 **File code content:**
 
 ```typescript
-import type { ReactNode } from "react";
 import { Link } from "react-router-dom";
 import type { VideoFile } from "../models/video.types";
 import { VideoRoutes } from "../routes/videoRoutes";
@@ -8128,22 +10328,18 @@ import { VideoStatusBadge } from "./VideoStatusBadge";
 
 interface RecentVideosTableProps {
   videos: VideoFile[];
-  onPreview: (id: string) => void;
-  onPlay: (id: string) => void;
-  onMore: (id: string) => void;
+  onRowClick: (id: string) => void;
 }
 
 export function RecentVideosTable({
   videos,
-  onPreview,
-  onPlay,
-  onMore,
+  onRowClick,
 }: RecentVideosTableProps) {
   return (
     <div className="flex flex-col gap-4">
       <div className="overflow-hidden rounded-xl border border-white/10">
         <div className="overflow-x-auto">
-          <table className="w-full min-w-[800px] border-collapse text-sm">
+          <table className="w-full min-w-[700px] border-collapse text-sm">
             <thead>
               <tr className="border-b border-white/10 bg-white/[0.03] text-white/50">
                 <th className="px-4 py-3.5 text-start font-medium">
@@ -8155,16 +10351,14 @@ export function RecentVideosTable({
                 <th className="px-4 py-3.5 text-start font-medium">المدة</th>
                 <th className="px-4 py-3.5 text-start font-medium">الحجم</th>
                 <th className="px-4 py-3.5 text-start font-medium">الحالة</th>
-                <th className="px-4 py-3.5 text-start font-medium">
-                  الإجراءات
-                </th>
               </tr>
             </thead>
             <tbody>
               {videos.map((video) => (
                 <tr
                   key={video.id}
-                  className="border-b border-white/5 transition hover:bg-white/[0.04]"
+                  onClick={() => onRowClick(video.id)}
+                  className="cursor-pointer border-b border-white/5 transition hover:bg-white/[0.04]"
                 >
                   <td className="px-4 py-3.5">
                     <div className="flex items-center gap-3">
@@ -8190,28 +10384,6 @@ export function RecentVideosTable({
                   <td className="px-4 py-3.5">
                     <VideoStatusBadge status={video.status} />
                   </td>
-                  <td className="px-4 py-3.5">
-                    <div className="flex items-center gap-1.5">
-                      <ActionButton
-                        label="معاينة"
-                        onClick={() => onPreview(video.id)}
-                      >
-                        <EyeIcon />
-                      </ActionButton>
-                      <ActionButton
-                        label="تشغيل"
-                        onClick={() => onPlay(video.id)}
-                      >
-                        <PlayIcon />
-                      </ActionButton>
-                      <ActionButton
-                        label="المزيد"
-                        onClick={() => onMore(video.id)}
-                      >
-                        <MoreIcon />
-                      </ActionButton>
-                    </div>
-                  </td>
                 </tr>
               ))}
             </tbody>
@@ -8230,62 +10402,20 @@ export function RecentVideosTable({
   );
 }
 
-function ActionButton({
-  children,
-  label,
-  onClick,
-}: {
-  children: ReactNode;
-  label: string;
-  onClick: () => void;
-}) {
-  return (
-    <button
-      type="button"
-      aria-label={label}
-      onClick={onClick}
-      className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-white/55 transition hover:bg-white/10 hover:text-white"
-    >
-      {children}
-    </button>
-  );
-}
-
-function EyeIcon() {
-  return (
-    <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden>
-      <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z" />
-      <circle cx="12" cy="12" r="3" />
-    </svg>
-  );
-}
-
-function PlayIcon() {
-  return (
-    <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="currentColor" aria-hidden>
-      <path d="M8 5v14l11-7L8 5Z" />
-    </svg>
-  );
-}
-
-function MoreIcon() {
-  return (
-    <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="currentColor" aria-hidden>
-      <circle cx="12" cy="5" r="1.6" />
-      <circle cx="12" cy="12" r="1.6" />
-      <circle cx="12" cy="19" r="1.6" />
-    </svg>
-  );
-}
-
 function ArrowIcon() {
   return (
-    <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
+    <svg
+      viewBox="0 0 24 24"
+      className="h-4 w-4"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      aria-hidden
+    >
       <path d="M19 12H5M12 5l-7 7 7 7" />
     </svg>
   );
 }
-
 ```
 
 ---
@@ -8293,15 +10423,15 @@ function ArrowIcon() {
 ### <a id="📄-src-features-video-components-selectedvideocard-tsx"></a>📄 `src/features/video/components/SelectedVideoCard.tsx`
 
 **File Info:**
-- **Size**: 3.52 KB
+- **Size**: 3.58 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/video/components/SelectedVideoCard.tsx`
 - **Relative Path**: `src/features/video/components`
 - **Created**: 2026-08-13 14:39:33 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:39:56 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `16a65028fbcfeb47542fa61fc32db5fe`
-- **SHA256**: `a7af0d9b976ee9cd2f6b6fc685bf0d5bdc289837a9dfccd432dffe8a800f35e4`
+- **Modified**: 2026-08-16 18:10:23 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `2016409741010d73fc45c84f1a573bae`
+- **SHA256**: `30c6e8f1ad822bc5ae34837719137e4e022326c9d83606ec23ec9b9dfaf363d7`
 - **Encoding**: UTF-8
 
 **File code content:**
@@ -8365,6 +10495,7 @@ export function SelectedVideoCard({
         onClick={onStartProcessing}
         disabled={!canStartProcessing}
         isLoading={isProcessing}
+        loadingLabel="جاري بدء المعالجة..."
         className="w-full sm:w-auto sm:self-start sm:px-8"
       >
         <PlayIcon />
@@ -8437,22 +10568,22 @@ function PlayIcon() {
 ### <a id="📄-src-features-video-components-videosfilterbar-tsx"></a>📄 `src/features/video/components/VideosFilterBar.tsx`
 
 **File Info:**
-- **Size**: 2.25 KB
+- **Size**: 2.2 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/video/components/VideosFilterBar.tsx`
 - **Relative Path**: `src/features/video/components`
 - **Created**: 2026-08-15 10:27:51 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-15 10:27:57 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `c2e05d910e01873bafaf167927718c14`
-- **SHA256**: `97f2acc294989a0c447d4493b2f2494575c0f3540974e645a1cecaf0e01ac684`
+- **Modified**: 2026-08-16 18:03:12 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `91496c4e620d0b552fc297d55014bd68`
+- **SHA256**: `d6d6944150f2a84242a4a49a417ba66f72e9930b4b0b1ebeba896ffb9f2017cb`
 - **Encoding**: UTF-8
 
 **File code content:**
 
 ```typescript
 import { Button, Input } from "../../auth";
-import { videoStatusOptions } from "../data/mockVideoData";
+import { videoStatusOptions } from "../constants/videos.constants";
 
 interface VideosFilterBarProps {
   search: string;
@@ -8631,41 +10762,33 @@ export function VideosStats({ stats }: VideosStatsProps) {
 ### <a id="📄-src-features-video-components-videostable-tsx"></a>📄 `src/features/video/components/VideosTable.tsx`
 
 **File Info:**
-- **Size**: 5.09 KB
+- **Size**: 3.01 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/video/components/VideosTable.tsx`
 - **Relative Path**: `src/features/video/components`
 - **Created**: 2026-08-15 10:28:11 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-15 10:28:19 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `916147aee5b794da777d5d817d383da9`
-- **SHA256**: `badfcea65659b4904d5248b5c9ff94b5397eb3e7a0dc010f589575cd9853fe8e`
+- **Modified**: 2026-08-16 21:29:10 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `cbe10f408a3eb903bff0b95d32f75a39`
+- **SHA256**: `3269ea251acc8ce3ec54931c0cb78b0ebfb19d54067b5828bcc3730328787d38`
 - **Encoding**: UTF-8
 
 **File code content:**
 
 ```typescript
-import type { ReactNode } from "react";
 import type { VideoFile } from "../models/video.types";
 import { VideoStatusBadge } from "./VideoStatusBadge";
 
 interface VideosTableProps {
   videos: VideoFile[];
-  onPreview: (id: string) => void;
-  onPlay: (id: string) => void;
-  onMore: (id: string) => void;
+  onRowClick: (id: string) => void;
 }
 
-export function VideosTable({
-  videos,
-  onPreview,
-  onPlay,
-  onMore,
-}: VideosTableProps) {
+export function VideosTable({ videos, onRowClick }: VideosTableProps) {
   return (
     <div className="overflow-hidden rounded-xl border border-white/10">
       <div className="overflow-x-auto">
-        <table className="w-full min-w-[800px] border-collapse text-sm">
+        <table className="w-full min-w-[700px] border-collapse text-sm">
           <thead>
             <tr className="border-b border-white/10 bg-white/[0.03] text-white/50">
               <th className="px-4 py-3.5 text-start font-medium">
@@ -8677,16 +10800,13 @@ export function VideosTable({
               <th className="px-4 py-3.5 text-start font-medium">المدة</th>
               <th className="px-4 py-3.5 text-start font-medium">الحجم</th>
               <th className="px-4 py-3.5 text-start font-medium">الحالة</th>
-              <th className="px-4 py-3.5 text-start font-medium">
-                الإجراءات
-              </th>
             </tr>
           </thead>
           <tbody>
             {videos.length === 0 ? (
               <tr>
                 <td
-                  colSpan={6}
+                  colSpan={5}
                   className="px-4 py-12 text-center text-white/40"
                 >
                   لا توجد فيديوهات مطابقة للبحث
@@ -8696,15 +10816,20 @@ export function VideosTable({
               videos.map((video) => (
                 <tr
                   key={video.id}
-                  className="border-b border-white/5 transition hover:bg-white/[0.04]"
+                  onClick={() => onRowClick(video.id)}
+                  className="cursor-pointer border-b border-white/5 transition hover:bg-white/[0.04]"
                 >
                   <td className="px-4 py-3.5">
                     <div className="flex items-center gap-3">
-                      <img
-                        src={video.thumbnailUrl}
-                        alt=""
-                        className="h-10 w-14 shrink-0 rounded-md object-cover ring-1 ring-white/10"
-                      />
+                      {video.thumbnailUrl ? (
+                        <img
+                          src={video.thumbnailUrl}
+                          alt=""
+                          className="h-10 w-14 shrink-0 rounded-md object-cover ring-1 ring-white/10"
+                        />
+                      ) : (
+                        <div className="h-10 w-14 shrink-0 rounded-md bg-white/10 ring-1 ring-white/10" />
+                      )}
                       <span className="font-medium text-white/90">
                         {video.name}
                       </span>
@@ -8722,28 +10847,6 @@ export function VideosTable({
                   <td className="px-4 py-3.5">
                     <VideoStatusBadge status={video.status} />
                   </td>
-                  <td className="px-4 py-3.5">
-                    <div className="flex items-center gap-1.5">
-                      <ActionButton
-                        label="معاينة"
-                        onClick={() => onPreview(video.id)}
-                      >
-                        <EyeIcon />
-                      </ActionButton>
-                      <ActionButton
-                        label="تشغيل"
-                        onClick={() => onPlay(video.id)}
-                      >
-                        <PlayIcon />
-                      </ActionButton>
-                      <ActionButton
-                        label="المزيد"
-                        onClick={() => onMore(video.id)}
-                      >
-                        <MoreIcon />
-                      </ActionButton>
-                    </div>
-                  </td>
                 </tr>
               ))
             )}
@@ -8751,54 +10854,6 @@ export function VideosTable({
         </table>
       </div>
     </div>
-  );
-}
-
-function ActionButton({
-  children,
-  label,
-  onClick,
-}: {
-  children: ReactNode;
-  label: string;
-  onClick: () => void;
-}) {
-  return (
-    <button
-      type="button"
-      aria-label={label}
-      onClick={onClick}
-      className="flex h-8 w-8 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-white/55 transition hover:bg-white/10 hover:text-white"
-    >
-      {children}
-    </button>
-  );
-}
-
-function EyeIcon() {
-  return (
-    <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden>
-      <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z" />
-      <circle cx="12" cy="12" r="3" />
-    </svg>
-  );
-}
-
-function PlayIcon() {
-  return (
-    <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="currentColor" aria-hidden>
-      <path d="M8 5v14l11-7L8 5Z" />
-    </svg>
-  );
-}
-
-function MoreIcon() {
-  return (
-    <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="currentColor" aria-hidden>
-      <circle cx="12" cy="5" r="1.6" />
-      <circle cx="12" cy="12" r="1.6" />
-      <circle cx="12" cy="19" r="1.6" />
-    </svg>
   );
 }
 ```
@@ -9085,28 +11140,75 @@ function FolderIcon({ className }: { className?: string }) {
 
 ---
 
+### <a id="📄-src-features-video-constants-videos-constants-ts"></a>📄 `src/features/video/constants/videos.constants.ts`
+
+**File Info:**
+- **Size**: 671 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/video/constants/videos.constants.ts`
+- **Relative Path**: `src/features/video/constants`
+- **Created**: 2026-08-15 21:45:10 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-16 20:50:51 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `d408f7ca65b624cae79dc33fdb6d25df`
+- **SHA256**: `07eb67f9930ff58ebdd2c53a4dd6ce1fe29960f7db990bfa81ffcbf4828dfce1`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```typescript
+import type { VideoStatus } from "../models/video.types";
+
+export const VIDEOS_PAGE_SIZE = 8;
+
+export const videoStatusOptions = [
+  "الكل",
+  "مكتمل",
+  "قيد المعالجة",
+  "فشل",
+] as const;
+
+export const statusLabelToKey: Record<string, VideoStatus> = {
+  مكتمل: "completed",
+  "قيد المعالجة": "processing",
+  فشل: "failed",
+};
+
+export const videosQueryKeys = {
+  all: ["videos"] as const,
+  list: () => [...videosQueryKeys.all, "list"] as const,
+  recent: () => [...videosQueryKeys.all, "recent"] as const,
+  processed: (videoId: number) =>
+    [...videosQueryKeys.all, "processed", videoId] as const,
+};
+```
+
+---
+
 ### <a id="📄-src-features-video-data-mockvideodata-ts"></a>📄 `src/features/video/data/mockVideoData.ts`
 
 **File Info:**
-- **Size**: 3.66 KB
+- **Size**: 1.08 KB
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/video/data/mockVideoData.ts`
 - **Relative Path**: `src/features/video/data`
 - **Created**: 2026-08-13 14:39:16 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-15 10:26:26 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `8e61d0682b6e3fa6b292fc4f103fe655`
-- **SHA256**: `7f9dd8e5888e12aec0078e71e9eba26e5b8335dd8a01299c5b74e1ff7bd7d361`
+- **Modified**: 2026-08-16 18:03:12 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `663bd2ad00d44c84567e9dcbb11e7df9`
+- **SHA256**: `e5cb90a0aacb945c4191f1a129d27d72e90bda4c61b6c107955f51379bc77212`
 - **Encoding**: ASCII
 
 **File code content:**
 
 ```typescript
 import type { VideoFile } from "../models/video.types";
+import { DEFAULT_VIDEO_THUMBNAIL } from "../utils/mapVideoApiToUi";
 
-export const DEFAULT_VIDEO_THUMBNAIL =
-  "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=160&h=100&fit=crop";
-
+/**
+ * Local UI-only seed for the upload page recent list.
+ * Processed Videos list uses GET /api/admin/videos.
+ */
 export const mockRecentVideos: VideoFile[] = [
   {
     id: "rv1",
@@ -9142,123 +11244,9 @@ export const mockRecentVideos: VideoFile[] = [
     status: "failed",
   },
 ];
-export const VIDEOS_PAGE_SIZE = 8;
 
-export const videoStatusOptions = [
-  "الكل",
-  "مكتمل",
-  "قيد المعالجة",
-  "فشل",
-] as const;
+export { DEFAULT_VIDEO_THUMBNAIL };
 
-export const statusLabelToKey: Record<string, VideoFile["status"]> = {
-  مكتمل: "completed",
-  "قيد المعالجة": "processing",
-  فشل: "failed",
-};
-
-export const mockAllVideos: VideoFile[] = [
-  ...mockRecentVideos,
-  {
-    id: "v4",
-    name: "traffic_video_2026_08_06.mp4",
-    size: 219021312,
-    formattedSize: "209 MB",
-    duration: "04:52",
-    format: "MP4",
-    thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
-    uploadedAt: "2026-08-06 16:10",
-    status: "completed",
-  },
-  {
-    id: "v5",
-    name: "traffic_video_2026_08_05.mp4",
-    size: 98566144,
-    formattedSize: "94 MB",
-    duration: "01:47",
-    format: "MP4",
-    thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
-    uploadedAt: "2026-08-05 08:33",
-    status: "processing",
-  },
-  {
-    id: "v6",
-    name: "traffic_video_2026_08_04.mp4",
-    size: 288358400,
-    formattedSize: "275 MB",
-    duration: "05:29",
-    format: "MP4",
-    thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
-    uploadedAt: "2026-08-04 19:02",
-    status: "completed",
-  },
-  {
-    id: "v7",
-    name: "traffic_video_2026_08_03.mp4",
-    size: 146800640,
-    formattedSize: "140 MB",
-    duration: "02:58",
-    format: "MP4",
-    thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
-    uploadedAt: "2026-08-03 12:47",
-    status: "completed",
-  },
-  {
-    id: "v8",
-    name: "traffic_video_2026_08_02.mp4",
-    size: 62914560,
-    formattedSize: "60 MB",
-    duration: "01:12",
-    format: "MP4",
-    thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
-    uploadedAt: "2026-08-02 07:15",
-    status: "failed",
-  },
-  {
-    id: "v9",
-    name: "traffic_video_2026_08_01.mp4",
-    size: 356515840,
-    formattedSize: "340 MB",
-    duration: "07:03",
-    format: "MP4",
-    thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
-    uploadedAt: "2026-08-01 21:40",
-    status: "completed",
-  },
-  {
-    id: "v10",
-    name: "traffic_video_2026_07_31.mp4",
-    size: 125829120,
-    formattedSize: "120 MB",
-    duration: "02:34",
-    format: "MP4",
-    thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
-    uploadedAt: "2026-07-31 15:58",
-    status: "processing",
-  },
-  {
-    id: "v11",
-    name: "traffic_video_2026_07_30.mp4",
-    size: 178257920,
-    formattedSize: "170 MB",
-    duration: "03:41",
-    format: "MP4",
-    thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
-    uploadedAt: "2026-07-30 10:21",
-    status: "completed",
-  },
-  {
-    id: "v12",
-    name: "traffic_video_2026_07_29.mp4",
-    size: 83886080,
-    formattedSize: "80 MB",
-    duration: "01:39",
-    format: "MP4",
-    thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
-    uploadedAt: "2026-07-29 09:04",
-    status: "completed",
-  },
-];
 ```
 
 ---
@@ -9266,30 +11254,32 @@ export const mockAllVideos: VideoFile[] = [
 ### <a id="📄-src-features-video-hooks-useprocessedvideosviewmodel-ts"></a>📄 `src/features/video/hooks/useProcessedVideosViewModel.ts`
 
 **File Info:**
-- **Size**: 4.88 KB
+- **Size**: 5.21 KB
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/video/hooks/useProcessedVideosViewModel.ts`
 - **Relative Path**: `src/features/video/hooks`
 - **Created**: 2026-08-15 10:29:07 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-15 10:35:40 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `4231cbd6536a00ad4fadbb5e33d1c9c6`
-- **SHA256**: `7379bd38f402ccc2514435193131ee8a60bf15cf710b49535ea47df8729a682d`
-- **Encoding**: UTF-8
+- **Modified**: 2026-08-16 21:45:23 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `960d9e63ccb405070218869adc36b3be`
+- **SHA256**: `be5d129535a53ecb671ae93c2470bc693711207521b9c02980d591b5ee1a5cca`
+- **Encoding**: ASCII
 
 **File code content:**
 
 ```typescript
 import { useEffect, useMemo, useState } from "react";
+import { useQuery } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
 import { mockDashboardData, useDashboardStore } from "../../dashboard";
 import {
-  mockAllVideos,
   statusLabelToKey,
   VIDEOS_PAGE_SIZE,
-} from "../data/mockVideoData";
+  videosQueryKeys,
+} from "../constants/videos.constants";
+import { buildAnalysisResultsPath } from "../../analysis";
 import { VideoRoutes } from "../routes/videoRoutes";
-import type { VideoFile } from "../models/video.types";
+import { videoService } from "../services/VideoService";
 
 function formatNumber(value: number): string {
   return new Intl.NumberFormat("ar-EG").format(value);
@@ -9302,7 +11292,6 @@ export function useProcessedVideosViewModel() {
   const setSidebarOpen = useDashboardStore((s) => s.setSidebarOpen);
   const setActiveMenuId = useDashboardStore((s) => s.setActiveMenuId);
 
-  const [videos] = useState<VideoFile[]>(mockAllVideos);
   const [search, setSearchState] = useState("");
   const [status, setStatusState] = useState("الكل");
   const [currentPage, setCurrentPage] = useState(1);
@@ -9310,6 +11299,16 @@ export function useProcessedVideosViewModel() {
   useEffect(() => {
     setActiveMenuId("processedVideos");
   }, [setActiveMenuId]);
+
+  const videosQuery = useQuery({
+    queryKey: videosQueryKeys.list(),
+    queryFn: () => videoService.getVideos(),
+  });
+
+  const videos = useMemo(
+    () => videosQuery.data ?? [],
+    [videosQuery.data],
+  );
 
   const filteredVideos = useMemo(() => {
     const query = search.trim().toLowerCase();
@@ -9391,6 +11390,8 @@ export function useProcessedVideosViewModel() {
     ];
   }, [videos]);
 
+  const hasActiveFilters = search.trim().length > 0 || status !== "الكل";
+
   const setSearch = (value: string) => {
     setSearchState(value);
     setCurrentPage(1);
@@ -9418,6 +11419,10 @@ export function useProcessedVideosViewModel() {
     navigate(VideoRoutes.upload);
   };
 
+  const handleRowClick = (id: string) => {
+    navigate(buildAnalysisResultsPath(id));
+  };
+
   return {
     user: mockDashboardData.user,
     menuItems: mockDashboardData.menuItems,
@@ -9434,14 +11439,17 @@ export function useProcessedVideosViewModel() {
     setStatus,
     videos: paginatedVideos,
     totalCount: filteredVideos.length,
+    totalVideosCount: videos.length,
+    hasActiveFilters,
     currentPage: safePage,
     totalPages,
     pageNumbers,
     goToPage,
+    isLoading: videosQuery.isLoading,
+    isError: videosQuery.isError,
+    refetch: videosQuery.refetch,
     handleUploadClick,
-    handlePreviewVideo: (_id: string) => {},
-    handlePlayVideo: (_id: string) => {},
-    handleMoreVideo: (_id: string) => {},
+    handleRowClick,
   };
 }
 ```
@@ -9451,15 +11459,15 @@ export function useProcessedVideosViewModel() {
 ### <a id="📄-src-features-video-hooks-usevideouploadviewmodel-ts"></a>📄 `src/features/video/hooks/useVideoUploadViewModel.ts`
 
 **File Info:**
-- **Size**: 6.21 KB
+- **Size**: 7.68 KB
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/video/hooks/useVideoUploadViewModel.ts`
 - **Relative Path**: `src/features/video/hooks`
 - **Created**: 2026-08-13 14:39:21 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:40:05 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `e2b2d555c2eac0239aac4815190795e4`
-- **SHA256**: `41497605a2d7ffef059f40f162ddefe4612d3cbc2b0edbebe3793beaa4c7116b`
+- **Modified**: 2026-08-17 06:11:27 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `bcdf9919e0a3e4a764e18c11fd21b7c4`
+- **SHA256**: `d736d72997189ec7d8323bf4cb42ff8c4a435ad824ec7a98dad653c6d80e6f09`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -9474,20 +11482,31 @@ import {
   type ChangeEvent,
   type DragEvent,
 } from "react";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { useNavigate } from "react-router-dom";
 import {
   mockDashboardData,
   useDashboardStore,
 } from "../../dashboard";
-import {
-  DEFAULT_VIDEO_THUMBNAIL,
-  mockRecentVideos,
-} from "../data/mockVideoData";
-import type { SelectedVideoDisplay, VideoFile } from "../models/video.types";
+import { buildAnalysisResultsPath } from "../../analysis/routes/analysisRoutes";
+import type { CreateVideoRequest } from "../api/videos.types";
+import { videosQueryKeys } from "../constants/videos.constants";
+import { DEFAULT_VIDEO_THUMBNAIL } from "../data/mockVideoData";
+import type { SelectedVideoDisplay } from "../models/video.types";
+import { videoService } from "../services/VideoService";
+import { buildOriginalPath } from "../utils/buildOriginalPath";
+import { formatDuration } from "../utils/formatDuration";
+import { readVideoDurationSeconds } from "../utils/readVideoDuration";
 import {
   VIDEO_FORMAT_LABELS,
   VIDEO_UPLOAD_CONFIG,
 } from "../validators/videoUpload.constants";
 import { validateVideoFile } from "../validators/videoUploadSchema";
+
+export type UploadFeedback = {
+  type: "success" | "error";
+  message: string;
+};
 
 function formatFileSize(bytes: number): string {
   if (bytes < 1024 ** 2) {
@@ -9496,81 +11515,107 @@ function formatFileSize(bytes: number): string {
   return `${Math.round(bytes / 1024 ** 2)} MB`;
 }
 
-function formatDuration(seconds: number): string {
-  if (!Number.isFinite(seconds) || seconds <= 0) {
-    return "--:--";
-  }
-  const mins = Math.floor(seconds / 60);
-  const secs = Math.floor(seconds % 60);
-  return `${String(mins).padStart(2, "0")}:${String(secs).padStart(2, "0")}`;
-}
-
 function getFileExtension(name: string): string {
   return name.split(".").pop()?.toUpperCase() ?? "—";
 }
 
-async function readVideoDuration(file: File): Promise<string> {
-  return new Promise((resolve) => {
-    const video = document.createElement("video");
-    video.preload = "metadata";
-
-    const objectUrl = URL.createObjectURL(file);
-
-    video.onloadedmetadata = () => {
-      URL.revokeObjectURL(objectUrl);
-      resolve(formatDuration(video.duration));
-    };
-
-    video.onerror = () => {
-      URL.revokeObjectURL(objectUrl);
-      resolve("04:32");
-    };
-
-    video.src = objectUrl;
-  });
-}
-
 export function useVideoUploadViewModel() {
+  const navigate = useNavigate();
   const isSidebarOpen = useDashboardStore((s) => s.isSidebarOpen);
   const toggleSidebar = useDashboardStore((s) => s.toggleSidebar);
   const setSidebarOpen = useDashboardStore((s) => s.setSidebarOpen);
   const setActiveMenuId = useDashboardStore((s) => s.setActiveMenuId);
 
+  const queryClient = useQueryClient();
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const [isDragging, setIsDragging] = useState(false);
   const [validationError, setValidationError] = useState<string | null>(null);
+  const [feedback, setFeedback] = useState<UploadFeedback | null>(null);
+  const [selectedFile, setSelectedFile] = useState<File | null>(null);
+  const [durationSeconds, setDurationSeconds] = useState<number | null>(null);
   const [selectedVideo, setSelectedVideo] =
     useState<SelectedVideoDisplay | null>(null);
-  const [isProcessing, setIsProcessing] = useState(false);
-  const [recentVideos, setRecentVideos] =
-    useState<VideoFile[]>(mockRecentVideos);
 
   useEffect(() => {
     setActiveMenuId("video");
   }, [setActiveMenuId]);
+
+  const recentVideosQuery = useQuery({
+    queryKey: videosQueryKeys.recent(),
+    queryFn: () => videoService.getRecentVideos(),
+  });
+
+  const recentVideos = useMemo(
+    () => recentVideosQuery.data ?? [],
+    [recentVideosQuery.data],
+  );
+
+  const resetFileInput = useCallback(() => {
+    if (fileInputRef.current) {
+      fileInputRef.current.value = "";
+    }
+  }, []);
+
+  const clearSelection = useCallback(() => {
+    setSelectedFile(null);
+    setDurationSeconds(null);
+    setSelectedVideo(null);
+    resetFileInput();
+  }, [resetFileInput]);
+
+  const createVideoMutation = useMutation({
+    mutationFn: (payload: CreateVideoRequest) =>
+      videoService.createVideo(payload),
+    onSuccess: async () => {
+      setFeedback({
+        type: "success",
+        message: "تم بدء معالجة الفيديو بنجاح",
+      });
+      clearSelection();
+      setValidationError(null);
+      await queryClient.invalidateQueries({ queryKey: videosQueryKeys.all });
+    },
+    onError: () => {
+      setFeedback({
+        type: "error",
+        message: "فشل بدء معالجة الفيديو، يرجى المحاولة مرة أخرى.",
+      });
+    },
+  });
 
   const processFile = useCallback(async (file: File) => {
     const validation = validateVideoFile(file);
 
     if (!validation.success) {
       setValidationError(validation.error ?? "ملف غير صالح");
-      setSelectedVideo(null);
+      setFeedback(null);
+      clearSelection();
       return;
     }
 
     setValidationError(null);
+    setFeedback(null);
 
-    const duration = await readVideoDuration(file);
+    try {
+      const duration = await readVideoDurationSeconds(file);
 
-    setSelectedVideo({
-      name: file.name,
-      format: getFileExtension(file.name),
-      formattedSize: formatFileSize(file.size),
-      duration,
-      thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
-    });
-  }, []);
+      setSelectedFile(file);
+      setDurationSeconds(duration);
+      setSelectedVideo({
+        name: file.name,
+        format: getFileExtension(file.name),
+        formattedSize: formatFileSize(file.size),
+        duration: formatDuration(duration),
+        thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
+      });
+    } catch {
+      clearSelection();
+      setValidationError(
+        "تعذر قراءة مدة الفيديو. يرجى اختيار ملف فيديو صالح.",
+      );
+    }
+  }, [clearSelection]);
 
   const handleFileChange = useCallback(
     (event: ChangeEvent<HTMLInputElement>) => {
@@ -9619,41 +11664,32 @@ export function useVideoUploadViewModel() {
   );
 
   const clearSelectedVideo = useCallback(() => {
-    setSelectedVideo(null);
+    clearSelection();
     setValidationError(null);
-  }, []);
+    setFeedback(null);
+    createVideoMutation.reset();
+  }, [clearSelection, createVideoMutation]);
 
   const startProcessing = useCallback(() => {
-    if (!selectedVideo || isProcessing) return;
+    if (
+      !selectedFile ||
+      durationSeconds === null ||
+      createVideoMutation.isPending
+    ) {
+      return;
+    }
 
-    setIsProcessing(true);
+    setFeedback(null);
 
-    window.setTimeout(() => {
-      const newEntry: VideoFile = {
-        id: `rv-${Date.now()}`,
-        name: selectedVideo.name,
-        size: 0,
-        formattedSize: selectedVideo.formattedSize,
-        duration: selectedVideo.duration,
-        format: selectedVideo.format,
-        thumbnailUrl: selectedVideo.thumbnailUrl,
-        uploadedAt: new Date()
-          .toLocaleString("ar-EG", {
-            year: "numeric",
-            month: "2-digit",
-            day: "2-digit",
-            hour: "2-digit",
-            minute: "2-digit",
-          })
-          .replace(",", ""),
-        status: "processing",
-      };
+    const payload: CreateVideoRequest = {
+      original_path: buildOriginalPath(selectedFile.name),
+      name: selectedFile.name,
+      duration: durationSeconds,
+      size: selectedFile.size,
+    };
 
-      setRecentVideos((prev) => [newEntry, ...prev]);
-      setSelectedVideo(null);
-      setIsProcessing(false);
-    }, 1200);
-  }, [selectedVideo, isProcessing]);
+    createVideoMutation.mutate(payload);
+  }, [selectedFile, durationSeconds, createVideoMutation]);
 
   const handleFullscreen = useCallback(() => {
     if (!document.fullscreenElement) {
@@ -9674,6 +11710,13 @@ export function useVideoUploadViewModel() {
     [],
   );
 
+  const isProcessing = createVideoMutation.isPending;
+  const canStartProcessing =
+    Boolean(selectedFile) &&
+    durationSeconds !== null &&
+    Boolean(selectedVideo) &&
+    !isProcessing;
+
   return {
     user: mockDashboardData.user,
     menuItems: mockDashboardData.menuItems,
@@ -9687,10 +11730,14 @@ export function useVideoUploadViewModel() {
     uploadConfig,
     isDragging,
     validationError,
+    feedback,
     selectedVideo,
     isProcessing,
     recentVideos,
-    canStartProcessing: Boolean(selectedVideo) && !isProcessing,
+    isRecentVideosLoading: recentVideosQuery.isLoading,
+    isRecentVideosError: recentVideosQuery.isError,
+    refetchRecentVideos: recentVideosQuery.refetch,
+    canStartProcessing,
     openFilePicker,
     handleFileChange,
     handleDragEnter,
@@ -9699,9 +11746,9 @@ export function useVideoUploadViewModel() {
     handleDrop,
     clearSelectedVideo,
     startProcessing,
-    handlePreviewVideo: (_id: string) => {},
-    handlePlayVideo: (_id: string) => {},
-    handleMoreVideo: (_id: string) => {},
+    handleRowClick: (id: string) => {
+    navigate(buildAnalysisResultsPath(id)); 
+    },
   };
 }
 
@@ -9712,16 +11759,16 @@ export function useVideoUploadViewModel() {
 ### <a id="📄-src-features-video-models-video-types-ts"></a>📄 `src/features/video/models/video.types.ts`
 
 **File Info:**
-- **Size**: 549 B
+- **Size**: 744 B
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/video/models/video.types.ts`
 - **Relative Path**: `src/features/video/models`
 - **Created**: 2026-08-13 14:39:16 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:39:16 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `60a30b0aa3a4217990cbea68d9948b7d`
-- **SHA256**: `ae54cb3aa2a9138d15a0375066304013c1f5ffebb22a768597dd0442a7abaffc`
-- **Encoding**: ASCII
+- **Modified**: 2026-08-17 07:46:54 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `a7e08026194f8dc6187d5cfb616cd1ae`
+- **SHA256**: `08ffb28f9ed39a81832881067413e87c7d1e8d274388b6e64e8a1345baf8b1a3`
+- **Encoding**: UTF-8
 
 **File code content:**
 
@@ -9753,7 +11800,16 @@ export interface VideoUploadConfig {
   maxSizeBytes: number;
   maxSizeLabel: string;
 }
-
+export const VEHICLE_TYPE_OPTIONS = [
+  "سيدان",
+  "دفع رباعي",
+  "كروس أوفر",
+  "هاتشباك",
+  "شاحنة",
+  "حافلة",
+  "دراجة نارية",
+  "أخرى",
+];
 ```
 
 ---
@@ -9761,22 +11817,27 @@ export interface VideoUploadConfig {
 ### <a id="📄-src-features-video-pages-processedvideospage-tsx"></a>📄 `src/features/video/pages/ProcessedVideosPage.tsx`
 
 **File Info:**
-- **Size**: 1.69 KB
+- **Size**: 2.32 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/video/pages/ProcessedVideosPage.tsx`
 - **Relative Path**: `src/features/video/pages`
 - **Created**: 2026-08-15 10:29:56 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-15 10:47:16 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `df6d945000a7b0d7ac13a4757ebe79ed`
-- **SHA256**: `e1f7311e6d716e79b9de55d8bd9ba90fa21499e5901270821bcf28f93e49b80b`
-- **Encoding**: ASCII
+- **Modified**: 2026-08-16 21:45:25 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `e54a6f0f89d07e5ed9cfe8a846d88bf7`
+- **SHA256**: `bd43ecd6f213164822c05e8b387181cf7ff02599ed6e8eb86acb94f3c69e2cb4`
+- **Encoding**: UTF-8
 
 **File code content:**
 
 ```typescript
 import { DashboardLayout, CardContainer } from "../../dashboard";
-import { VehiclesPagination } from "../../vehicles";
+import {
+  VehiclesEmptyState,
+  VehiclesErrorState,
+  VehiclesPagination,
+  VehiclesTableSkeleton,
+} from "../../vehicles";
 import { useProcessedVideosViewModel } from "../hooks/useProcessedVideosViewModel";
 import {
   VideosFilterBar,
@@ -9787,6 +11848,10 @@ import {
 
 export function ProcessedVideosPage() {
   const vm = useProcessedVideosViewModel();
+
+  const emptyMessage = vm.hasActiveFilters
+    ? "لا توجد فيديوهات مطابقة للبحث"
+    : "لا توجد فيديوهات معالجة";
 
   return (
     <DashboardLayout
@@ -9813,25 +11878,37 @@ export function ProcessedVideosPage() {
             onUploadClick={vm.handleUploadClick}
           />
 
-          <VideosTable
-            videos={vm.videos}
-            onPreview={vm.handlePreviewVideo}
-            onPlay={vm.handlePlayVideo}
-            onMore={vm.handleMoreVideo}
-          />
+          {vm.isLoading ? (
+            <VehiclesTableSkeleton message="جاري تحميل الفيديوهات..." />
+          ) : vm.isError ? (
+            <VehiclesErrorState
+              message="تعذر تحميل بيانات الفيديوهات"
+              onRetry={() => void vm.refetch()}
+            />
+          ) : vm.totalVideosCount === 0 || vm.totalCount === 0 ? (
+            <VehiclesEmptyState message={emptyMessage} />
+          ) : (
+            <>
+              <VideosTable
+                videos={vm.videos}
+                onRowClick={vm.handleRowClick}
+              />
 
-          <VehiclesPagination
-            currentPage={vm.currentPage}
-            totalPages={vm.totalPages}
-            pageNumbers={vm.pageNumbers}
-            totalCount={vm.totalCount}
-            onPageChange={vm.goToPage}
-          />
+              <VehiclesPagination
+                currentPage={vm.currentPage}
+                totalPages={vm.totalPages}
+                pageNumbers={vm.pageNumbers}
+                totalCount={vm.totalCount}
+                onPageChange={vm.goToPage}
+              />
+            </>
+          )}
         </CardContainer>
       </div>
     </DashboardLayout>
   );
 }
+
 ```
 
 ---
@@ -9839,21 +11916,26 @@ export function ProcessedVideosPage() {
 ### <a id="📄-src-features-video-pages-videouploadpage-tsx"></a>📄 `src/features/video/pages/VideoUploadPage.tsx`
 
 **File Info:**
-- **Size**: 2.07 KB
+- **Size**: 2.95 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/features/video/pages/VideoUploadPage.tsx`
 - **Relative Path**: `src/features/video/pages`
 - **Created**: 2026-08-13 14:39:44 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:39:44 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `be2ec238865df1b170a6b7e87c613463`
-- **SHA256**: `b85f7f89cd279b75d89447348762fb35a2e90aa4fee5c39b54c004c17c007d60`
+- **Modified**: 2026-08-17 06:13:49 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `abcc9c3b9e8886d3d397ad28b5752665`
+- **SHA256**: `c52a151291d93d9fec64d9d3e903f0bd59856d77e07c86f65f7cf3387b928fcb`
 - **Encoding**: ASCII
 
 **File code content:**
 
 ```typescript
 import { DashboardLayout, CardContainer } from "../../dashboard";
+import {
+  VehiclesEmptyState,
+  VehiclesErrorState,
+  VehiclesTableSkeleton,
+} from "../../vehicles";
 import { useVideoUploadViewModel } from "../hooks/useVideoUploadViewModel";
 import {
   RecentVideosTable,
@@ -9895,6 +11977,19 @@ export function VideoUploadPage() {
             onFileChange={vm.handleFileChange}
           />
 
+          {vm.feedback && (
+            <p
+              className={`mt-3 text-sm ${
+                vm.feedback.type === "success"
+                  ? "text-emerald-400"
+                  : "text-rose-400"
+              }`}
+              role="status"
+            >
+              {vm.feedback.message}
+            </p>
+          )}
+
           {vm.selectedVideo && (
             <SelectedVideoCard
               video={vm.selectedVideo}
@@ -9907,18 +12002,26 @@ export function VideoUploadPage() {
         </CardContainer>
 
         <CardContainer title="الفيديوهات المرفوعة مؤخراً">
-          <RecentVideosTable
+          {vm.isRecentVideosLoading ? (
+            <VehiclesTableSkeleton message="جاري تحميل الفيديوهات..." />
+          ) : vm.isRecentVideosError ? (
+            <VehiclesErrorState
+              message="تعذر تحميل الفيديوهات المرفوعة مؤخراً"
+              onRetry={() => void vm.refetchRecentVideos()}
+            />
+          ) : vm.recentVideos.length === 0 ? (
+            <VehiclesEmptyState message="لا توجد فيديوهات مرفوعة بعد" />
+          ) : (
+            <RecentVideosTable
             videos={vm.recentVideos}
-            onPreview={vm.handlePreviewVideo}
-            onPlay={vm.handlePlayVideo}
-            onMore={vm.handleMoreVideo}
+            onRowClick={vm.handleRowClick}
           />
+          )}
         </CardContainer>
       </div>
     </DashboardLayout>
   );
 }
-
 ```
 
 ---
@@ -9954,49 +12057,251 @@ export type VideoRoute = (typeof VideoRoutes)[keyof typeof VideoRoutes];
 ### <a id="📄-src-features-video-services-videoservice-ts"></a>📄 `src/features/video/services/VideoService.ts`
 
 **File Info:**
-- **Size**: 903 B
+- **Size**: 1.36 KB
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/video/services/VideoService.ts`
 - **Relative Path**: `src/features/video/services`
 - **Created**: 2026-08-13 14:39:16 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-13 14:39:16 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `191a916a7c3d58f784e5269b480b5911`
-- **SHA256**: `4851198fabd9878c291cf7dc3c292ae0132f7760bf7f8ccb53f43238f21a35a4`
+- **Modified**: 2026-08-16 20:50:30 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `5cdbe42b0ce4c2d8ba4f061fe48dbdb0`
+- **SHA256**: `8a76585b6da15b483c5082dcf28e03e279df8afcb7a73a75a82072a3e25a9dd4`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import { apiClient } from "../../../api/axios";
+import { VideosApiEndpoints } from "../api/videos.endpoints";
+import type {
+  CreateVideoRequest,
+  CreateVideoResponse,
+  ProcessedVideoResponse,
+  VideosApiResponse,
+} from "../api/videos.types";
+import type { VideoFile } from "../models/video.types";
+import { mapVideoApiToUi } from "../utils/mapVideoApiToUi";
+
+class VideoService {
+  async getVideos(): Promise<VideoFile[]> {
+    const response = await apiClient.get<VideosApiResponse>(
+      VideosApiEndpoints.list,
+    );
+
+    return response.data.videos.map(mapVideoApiToUi);
+  }
+
+  async getRecentVideos(): Promise<VideoFile[]> {
+    const videos = await this.getVideos();
+    return videos.slice(0, 3);
+  }
+
+  async getProcessedVideoUrl(videoId: number): Promise<string> {
+    const response = await apiClient.get<ProcessedVideoResponse>(
+      VideosApiEndpoints.processed(videoId),
+    );
+
+    return response.data.url;
+  }
+
+  async createVideo(data: CreateVideoRequest): Promise<CreateVideoResponse> {
+    const response = await apiClient.post<CreateVideoResponse>(
+      VideosApiEndpoints.list,
+      data,
+    );
+
+    return response.data;
+  }
+
+  async deleteVideo(_id: string): Promise<void> {
+    // TODO: integrate with delete API when available
+    throw new Error("VideoService.deleteVideo is not implemented yet");
+  }
+}
+
+export const videoService = new VideoService();
+```
+
+---
+
+### <a id="📄-src-features-video-utils-buildoriginalpath-ts"></a>📄 `src/features/video/utils/buildOriginalPath.ts`
+
+**File Info:**
+- **Size**: 499 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/video/utils/buildOriginalPath.ts`
+- **Relative Path**: `src/features/video/utils`
+- **Created**: 2026-08-16 18:09:58 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-16 18:09:58 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `90352257c0c1f339eca632cb52ed012a`
+- **SHA256**: `2aa50b745adfb11696f656d8e38fcbb3367c6d3d65ce26808b3f91fb9d6f3215`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+/**
+ * Builds a relative storage path for the backend.
+ * Never uses absolute filesystem / browser local paths.
+ *
+ * Convention (adjustable in one place):
+ *   originals/{filename_with_extension}
+ */
+export function buildOriginalPath(fileName: string): string {
+  const basename =
+    fileName.replace(/\\/g, "/").split("/").filter(Boolean).pop() ??
+    fileName.trim();
+
+  if (!basename) {
+    throw new Error("Invalid video file name for original_path");
+  }
+
+  return `originals/${basename}`;
+}
+
+```
+
+---
+
+### <a id="📄-src-features-video-utils-formatduration-ts"></a>📄 `src/features/video/utils/formatDuration.ts`
+
+**File Info:**
+- **Size**: 578 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/video/utils/formatDuration.ts`
+- **Relative Path**: `src/features/video/utils`
+- **Created**: 2026-08-15 21:45:10 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-16 18:03:12 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `7c211a7317f6f2f1ae6abb26f854057e`
+- **SHA256**: `0488652ad3a493025d06c201b45158df57b7b3a88318bb46cd5bfe6830cbf5af`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+/**
+ * Convert API duration seconds (e.g. "267.77") to mm:ss (e.g. "04:27").
+ */
+export function formatDuration(durationSeconds: string | number): string {
+  const raw =
+    typeof durationSeconds === "number"
+      ? durationSeconds
+      : Number.parseFloat(durationSeconds);
+
+  if (!Number.isFinite(raw) || raw < 0) {
+    return "--:--";
+  }
+
+  const totalSeconds = Math.round(raw);
+  const minutes = Math.floor(totalSeconds / 60);
+  const seconds = totalSeconds % 60;
+
+  return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+}
+
+```
+
+---
+
+### <a id="📄-src-features-video-utils-mapvideoapitoui-ts"></a>📄 `src/features/video/utils/mapVideoApiToUi.ts`
+
+**File Info:**
+- **Size**: 725 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/video/utils/mapVideoApiToUi.ts`
+- **Relative Path**: `src/features/video/utils`
+- **Created**: 2026-08-15 21:45:10 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-16 18:03:12 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `3de3241bccb11abc49095b7745dab427`
+- **SHA256**: `c61550aa86fbdbb7bd2950336906d5a4149d72ba42bca253fb3bf8b5c52220f4`
 - **Encoding**: UTF-8
 
 **File code content:**
 
 ```typescript
+import type { VideoApiItem } from "../api/videos.types";
 import type { VideoFile } from "../models/video.types";
+import { formatDuration } from "./formatDuration";
 
-/**
- * VideoService — prepared for future API integration.
- * Methods are placeholders and throw until implemented.
- */
-class VideoService {
-  async getRecentVideos(): Promise<VideoFile[]> {
-    // TODO: integrate with API
-    throw new Error("VideoService.getRecentVideos is not implemented yet");
-  }
+export const DEFAULT_VIDEO_THUMBNAIL =
+  "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=160&h=100&fit=crop";
 
-  async uploadVideo(_file: File): Promise<VideoFile> {
-    // TODO: integrate with API
-    throw new Error("VideoService.uploadVideo is not implemented yet");
-  }
+export function mapVideoApiToUi(item: VideoApiItem): VideoFile {
+  const extension = item.name.split(".").pop()?.toUpperCase() ?? "MP4";
 
-  async deleteVideo(_id: string): Promise<void> {
-    // TODO: integrate with API
-    throw new Error("VideoService.deleteVideo is not implemented yet");
-  }
-
-  async startProcessing(_id: string): Promise<void> {
-    // TODO: integrate with API
-    throw new Error("VideoService.startProcessing is not implemented yet");
-  }
+  return {
+    id: String(item.id),
+    name: item.name,
+    size: 0,
+    formattedSize: "—",
+    duration: formatDuration(item.duration),
+    format: extension,
+    thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
+    uploadedAt: item.uploaded_at,
+    status: item.status,
+  };
 }
 
-export const videoService = new VideoService();
+```
+
+---
+
+### <a id="📄-src-features-video-utils-readvideoduration-ts"></a>📄 `src/features/video/utils/readVideoDuration.ts`
+
+**File Info:**
+- **Size**: 871 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/features/video/utils/readVideoDuration.ts`
+- **Relative Path**: `src/features/video/utils`
+- **Created**: 2026-08-16 18:10:00 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-16 18:10:00 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `7d824b33429cd96d25d2f5a504aa107c`
+- **SHA256**: `2bd2d7b320858e1b590a0993a96b66b9e724806136aa626cf2b8b8593089438c`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+/**
+ * Extract video duration in seconds via HTMLVideoElement metadata.
+ */
+export function readVideoDurationSeconds(file: File): Promise<number> {
+  return new Promise((resolve, reject) => {
+    const video = document.createElement("video");
+    video.preload = "metadata";
+
+    const objectUrl = URL.createObjectURL(file);
+
+    const cleanup = () => {
+      URL.revokeObjectURL(objectUrl);
+      video.removeAttribute("src");
+      video.load();
+    };
+
+    video.onloadedmetadata = () => {
+      const duration = video.duration;
+      cleanup();
+
+      if (!Number.isFinite(duration) || duration <= 0) {
+        reject(new Error("Could not read video duration"));
+        return;
+      }
+
+      resolve(duration);
+    };
+
+    video.onerror = () => {
+      cleanup();
+      reject(new Error("Could not read video duration"));
+    };
+
+    video.src = objectUrl;
+  });
+}
 
 ```
 
@@ -10099,15 +12404,15 @@ export function validateVideoFile(file: File): {
 ### <a id="📄-src-features-video-index-ts"></a>📄 `src/features/video/index.ts`
 
 **File Info:**
-- **Size**: 457 B
+- **Size**: 522 B
 - **Extension**: `.ts`
 - **Language**: `typescript`
 - **Location**: `src/features/video/index.ts`
 - **Relative Path**: `src/features/video`
 - **Created**: 2026-08-13 14:39:44 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-15 10:31:22 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `0fa938641b44c2da8d4797b76f89cf13`
-- **SHA256**: `337a9c61fb01dd5f4f07607049b08aa8dda75673502c9ca856f745485b6ca0b7`
+- **Modified**: 2026-08-16 19:09:46 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `54f129be5f51e95ff4fbf543b8ebd096`
+- **SHA256**: `bb14f4652c2a7f29bc8b5484ad4157050b6f3f608e9fd115a48c52dda0d12fd7`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -10117,9 +12422,11 @@ export { VideoUploadPage } from "./pages/VideoUploadPage";
 export { ProcessedVideosPage } from "./pages/ProcessedVideosPage";
 export { VideoRoutes } from "./routes/videoRoutes";
 export { videoService } from "./services/VideoService";
+export { videosQueryKeys } from "./constants/videos.constants";
 export { useVideoUploadViewModel } from "./hooks/useVideoUploadViewModel";
 export { useProcessedVideosViewModel } from "./hooks/useProcessedVideosViewModel";
 export { VideoStatusBadge } from "./components/VideoStatusBadge";
+
 ```
 
 ---
@@ -10333,15 +12640,15 @@ export { VideoStatusBadge } from "./components/VideoStatusBadge";
 ### <a id="📄-src-app-tsx"></a>📄 `src/App.tsx`
 
 **File Info:**
-- **Size**: 1.83 KB
+- **Size**: 1.96 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/App.tsx`
 - **Relative Path**: `src`
 - **Created**: 2026-06-15 12:29:35 (Europe/Istanbul / GMT+03:00)
-- **Modified**: 2026-08-15 10:33:22 (Europe/Istanbul / GMT+03:00)
-- **MD5**: `2e493c2ef9aa2f577e7c1d0c5d9c52f8`
-- **SHA256**: `49873817e80655a11151dc41e6ad58d5c1ca59dbca56a135e5fce7c2ae170c5b`
+- **Modified**: 2026-08-16 19:09:21 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `ab1a90a32bb1d5e3218f47c7ddbaf34d`
+- **SHA256**: `9249e1317e94ad4a2c3bf483386802082df97695f3f73f67792de0dfbbe1712b`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -10383,6 +12690,10 @@ function App() {
           <Route path={BlacklistRoutes.list} element={<BlacklistPage />} />
           <Route path={VideoRoutes.upload} element={<VideoUploadPage />} />
           <Route path={VideoRoutes.list} element={<ProcessedVideosPage />} />
+          <Route
+            path={AnalysisRoutes.resultsWithVideo}
+            element={<AnalysisResultsPage />}
+          />
           <Route
             path={AnalysisRoutes.results}
             element={<AnalysisResultsPage />}
@@ -10468,6 +12779,37 @@ createRoot(document.getElementById('root')!).render(
     <App />
   </StrictMode>,
 )
+
+```
+
+---
+
+### <a id="📄-src-vite-env-d-ts"></a>📄 `src/vite-env.d.ts`
+
+**File Info:**
+- **Size**: 166 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/vite-env.d.ts`
+- **Relative Path**: `src`
+- **Created**: 2026-08-15 21:27:08 (Europe/Istanbul / GMT+03:00)
+- **Modified**: 2026-08-16 18:03:12 (Europe/Istanbul / GMT+03:00)
+- **MD5**: `a37febf950dd86b9c537654e955538bd`
+- **SHA256**: `462b9b449f37b7293dfe2697fdb456477849b02127a0e19a6a9ce67f410e65b2`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+/// <reference types="vite/client" />
+
+interface ImportMetaEnv {
+  readonly VITE_API_URL: string;
+}
+
+interface ImportMeta {
+  readonly env: ImportMetaEnv;
+}
 
 ```
 

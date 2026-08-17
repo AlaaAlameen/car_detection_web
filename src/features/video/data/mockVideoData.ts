@@ -1,8 +1,10 @@
 import type { VideoFile } from "../models/video.types";
+import { DEFAULT_VIDEO_THUMBNAIL } from "../utils/mapVideoApiToUi";
 
-export const DEFAULT_VIDEO_THUMBNAIL =
-  "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=160&h=100&fit=crop";
-
+/**
+ * Local UI-only seed for the upload page recent list.
+ * Processed Videos list uses GET /api/admin/videos.
+ */
 export const mockRecentVideos: VideoFile[] = [
   {
     id: "rv1",
@@ -38,120 +40,5 @@ export const mockRecentVideos: VideoFile[] = [
     status: "failed",
   },
 ];
-export const VIDEOS_PAGE_SIZE = 8;
 
-export const videoStatusOptions = [
-  "الكل",
-  "مكتمل",
-  "قيد المعالجة",
-  "فشل",
-] as const;
-
-export const statusLabelToKey: Record<string, VideoFile["status"]> = {
-  مكتمل: "completed",
-  "قيد المعالجة": "processing",
-  فشل: "failed",
-};
-
-export const mockAllVideos: VideoFile[] = [
-  ...mockRecentVideos,
-  {
-    id: "v4",
-    name: "traffic_video_2026_08_06.mp4",
-    size: 219021312,
-    formattedSize: "209 MB",
-    duration: "04:52",
-    format: "MP4",
-    thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
-    uploadedAt: "2026-08-06 16:10",
-    status: "completed",
-  },
-  {
-    id: "v5",
-    name: "traffic_video_2026_08_05.mp4",
-    size: 98566144,
-    formattedSize: "94 MB",
-    duration: "01:47",
-    format: "MP4",
-    thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
-    uploadedAt: "2026-08-05 08:33",
-    status: "processing",
-  },
-  {
-    id: "v6",
-    name: "traffic_video_2026_08_04.mp4",
-    size: 288358400,
-    formattedSize: "275 MB",
-    duration: "05:29",
-    format: "MP4",
-    thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
-    uploadedAt: "2026-08-04 19:02",
-    status: "completed",
-  },
-  {
-    id: "v7",
-    name: "traffic_video_2026_08_03.mp4",
-    size: 146800640,
-    formattedSize: "140 MB",
-    duration: "02:58",
-    format: "MP4",
-    thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
-    uploadedAt: "2026-08-03 12:47",
-    status: "completed",
-  },
-  {
-    id: "v8",
-    name: "traffic_video_2026_08_02.mp4",
-    size: 62914560,
-    formattedSize: "60 MB",
-    duration: "01:12",
-    format: "MP4",
-    thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
-    uploadedAt: "2026-08-02 07:15",
-    status: "failed",
-  },
-  {
-    id: "v9",
-    name: "traffic_video_2026_08_01.mp4",
-    size: 356515840,
-    formattedSize: "340 MB",
-    duration: "07:03",
-    format: "MP4",
-    thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
-    uploadedAt: "2026-08-01 21:40",
-    status: "completed",
-  },
-  {
-    id: "v10",
-    name: "traffic_video_2026_07_31.mp4",
-    size: 125829120,
-    formattedSize: "120 MB",
-    duration: "02:34",
-    format: "MP4",
-    thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
-    uploadedAt: "2026-07-31 15:58",
-    status: "processing",
-  },
-  {
-    id: "v11",
-    name: "traffic_video_2026_07_30.mp4",
-    size: 178257920,
-    formattedSize: "170 MB",
-    duration: "03:41",
-    format: "MP4",
-    thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
-    uploadedAt: "2026-07-30 10:21",
-    status: "completed",
-  },
-  {
-    id: "v12",
-    name: "traffic_video_2026_07_29.mp4",
-    size: 83886080,
-    formattedSize: "80 MB",
-    duration: "01:39",
-    format: "MP4",
-    thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
-    uploadedAt: "2026-07-29 09:04",
-    status: "completed",
-  },
-];
+export { DEFAULT_VIDEO_THUMBNAIL };

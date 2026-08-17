@@ -7,7 +7,7 @@ import { BlacklistRoutes } from "../../blacklist/routes/blacklistRoutes";
 
 export const mockDashboardData: DashboardData = {
   user: {
-    name: "أحمد المنصوري",
+    name: "Alaa Alameen",
     role: "مشرف النظام",
     avatarUrl: "https://api.dicebear.com/9.x/avataaars/svg?seed=Ahmed",
   },
@@ -57,42 +57,42 @@ export const mockDashboardData: DashboardData = {
     },
   ],
   stats: [
-    {
-      id: "units",
-      title: "وحدات الشرطة النشطة",
-      value: 48,
-      subtitle: "وحدة ميدانية",
-      changePercent: 12.5,
-      icon: "units",
-      gradient: "from-blue-600/40 to-indigo-700/30",
-    },
-    {
-      id: "scans",
-      title: "اللوحات المفحوصة اليوم",
-      value: 12840,
-      subtitle: "فحص تلقائي",
-      changePercent: 8.2,
-      icon: "scans",
-      gradient: "from-violet-600/40 to-purple-700/30",
-    },
-    {
-      id: "alerts",
-      title: "التنبيهات",
-      value: 36,
-      subtitle: "تحتاج مراجعة",
-      changePercent: -4.1,
-      icon: "alerts",
-      gradient: "from-rose-600/40 to-orange-700/30",
-    },
-    {
-      id: "wanted",
-      title: "مركبات مطلوبة",
-      value: 17,
-      subtitle: "في نطاق المراقبة",
-      changePercent: 2.8,
-      icon: "wanted",
-      gradient: "from-cyan-600/40 to-blue-700/30",
-    },
+    // {
+    //   id: "units",
+    //   title: "وحدات الشرطة النشطة",
+    //   value: 48,
+    //   subtitle: "وحدة ميدانية",
+    //   changePercent: 12.5,
+    //   icon: "units",
+    //   gradient: "from-blue-600/40 to-indigo-700/30",
+    // },
+    // {
+    //   id: "scans",
+    //   title: "اللوحات المفحوصة اليوم",
+    //   value: 12840,
+    //   subtitle: "فحص تلقائي",
+    //   changePercent: 8.2,
+    //   icon: "scans",
+    //   gradient: "from-violet-600/40 to-purple-700/30",
+    // },
+    // {
+    //   id: "alerts",
+    //   title: "التنبيهات",
+    //   value: 36,
+    //   subtitle: "تحتاج مراجعة",
+    //   changePercent: -4.1,
+    //   icon: "alerts",
+    //   gradient: "from-rose-600/40 to-orange-700/30",
+    // },
+    // {
+    //   id: "wanted",
+    //   title: "مركبات مطلوبة",
+    //   value: 17,
+    //   subtitle: "في نطاق المراقبة",
+    //   changePercent: 2.8,
+    //   icon: "wanted",
+    //   gradient: "from-cyan-600/40 to-blue-700/30",
+    // },
   ],
   weeklyScans: [
     { label: "السبت", value: 8200 },
@@ -122,41 +122,41 @@ export const mockDashboardData: DashboardData = {
     percent: 87,
   },
   alerts: [
-    {
-      id: "a1",
-      plateNumber: "أ ب ج 1234",
-      carType: "تويوتا كامري",
-      status: "مطلوب",
-      imageUrl:
-        "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=120&h=80&fit=crop",
-      time: "منذ 3 دقائق",
-    },
-    {
-      id: "a2",
-      plateNumber: "د هـ و 5678",
-      carType: "نيسان التيما",
-      status: "مطلوب",
-      imageUrl:
-        "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=120&h=80&fit=crop",
-      time: "منذ 12 دقيقة",
-    },
-    {
-      id: "a3",
-      plateNumber: "ر س ت 9012",
-      carType: "هيونداي سوناتا",
-      status: "مطلوب",
-      imageUrl:
-        "https://images.unsplash.com/photo-1583121274602-3e282f38bc0f?w=120&h=80&fit=crop",
-      time: "منذ 28 دقيقة",
-    },
-    {
-      id: "a4",
-      plateNumber: "ث خ ذ 3456",
-      carType: "كيا أوبتيما",
-      status: "مطلوب",
-      imageUrl:
-        "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=120&h=80&fit=crop",
-      time: "منذ ساعة",
-    },
-  ],
+  {
+    id: "a1",
+    plateNumber: "أ ب ج 1234",
+    carType: "تويوتا كامري",
+    status: "مطلوب",
+    imageUrl:
+      "https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?w=200&h=140&fit=crop",
+    time: "منذ 3 دقائق",
+  },
+  {
+    id: "a2",
+    plateNumber: "د هـ و 5678",
+    carType: "نيسان التيما",
+    status: "مطلوب",
+    imageUrl:
+      "https://images.unsplash.com/photo-1614602077554-61c72b1e4189?w=200&h=140&fit=crop",
+    time: "منذ 12 دقيقة",
+  },
+  {
+    id: "a3",
+    plateNumber: "ر س ت 9012",
+    carType: "هيونداي سوناتا",
+    status: "مطلوب",
+    imageUrl:
+      "https://images.unsplash.com/photo-1549943436-983dffe333a1?w=200&h=140&fit=crop",
+    time: "منذ 28 دقيقة",
+  },
+  {
+    id: "a4",
+    plateNumber: "ث خ ذ 3456",
+    carType: "كيا أوبتيما",
+    status: "مطلوب",
+    imageUrl:
+      "https://images.unsplash.com/photo-1749058983232-59b967855b18?w=200&h=140&fit=crop",
+    time: "منذ ساعة",
+  },
+],
 };

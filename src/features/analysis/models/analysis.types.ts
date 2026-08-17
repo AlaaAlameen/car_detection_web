@@ -5,13 +5,15 @@ export type AlertType =
   | "سرعة زائدة"
   | "لوحة مزورة"
   | "سلوك مشبوه"
-  | "قائمة سوداء";
+  | "قائمة سوداء"
+  | "اختلاف بيانات المركبة"
+  | "لا يوجد تنبيه"
+  | string;
 
 export interface AnalysisVideoSummary {
   id: string;
   fileName: string;
   thumbnailUrl: string;
-  videoUrl: string;
   processedAt: string;
   duration: string;
   formattedSize: string;
@@ -32,10 +34,12 @@ export interface AnalysisStat {
 export interface AnalysisAlert {
   id: string;
   plateNumber: string;
-  alertType: AlertType;
-  severity: AlertSeverity;
+  alertType: string;
+  severity: AlertSeverity | null;
   message: string;
   timestamp: string;
+  // original API violation_type to control navigation and UI state
+  violationType?: string | null;
 }
 
 export interface AnalysisFilters {

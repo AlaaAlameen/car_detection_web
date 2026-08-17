@@ -1,13 +1,15 @@
 import { useEffect, useMemo, useState } from "react";
+import { useQuery } from "@tanstack/react-query";
 import { useNavigate } from "react-router-dom";
 import { mockDashboardData, useDashboardStore } from "../../dashboard";
 import {
-  mockAllVideos,
   statusLabelToKey,
   VIDEOS_PAGE_SIZE,
-} from "../data/mockVideoData";
+  videosQueryKeys,
+} from "../constants/videos.constants";
+import { buildAnalysisResultsPath } from "../../analysis";
 import { VideoRoutes } from "../routes/videoRoutes";
-import type { VideoFile } from "../models/video.types";
+import { videoService } from "../services/VideoService";
 
 function formatNumber(value: number): string {
   return new Intl.NumberFormat("ar-EG").format(value);
@@ -20,7 +22,6 @@ export function useProcessedVideosViewModel() {
   const setSidebarOpen = useDashboardStore((s) => s.setSidebarOpen);
   const setActiveMenuId = useDashboardStore((s) => s.setActiveMenuId);
 
-  const [videos] = useState<VideoFile[]>(mockAllVideos);
   const [search, setSearchState] = useState("");
   const [status, setStatusState] = useState("الكل");
   const [currentPage, setCurrentPage] = useState(1);
@@ -28,6 +29,16 @@ export function useProcessedVideosViewModel() {
   useEffect(() => {
     setActiveMenuId("processedVideos");
   }, [setActiveMenuId]);
+
+  const videosQuery = useQuery({
+    queryKey: videosQueryKeys.list(),
+    queryFn: () => videoService.getVideos(),
+  });
+
+  const videos = useMemo(
+    () => videosQuery.data ?? [],
+    [videosQuery.data],
+  );
 
   const filteredVideos = useMemo(() => {
     const query = search.trim().toLowerCase();
@@ -109,6 +120,8 @@ export function useProcessedVideosViewModel() {
     ];
   }, [videos]);
 
+  const hasActiveFilters = search.trim().length > 0 || status !== "الكل";
+
   const setSearch = (value: string) => {
     setSearchState(value);
     setCurrentPage(1);
@@ -136,6 +149,10 @@ export function useProcessedVideosViewModel() {
     navigate(VideoRoutes.upload);
   };
 
+  const handleRowClick = (id: string) => {
+    navigate(buildAnalysisResultsPath(id));
+  };
+
   return {
     user: mockDashboardData.user,
     menuItems: mockDashboardData.menuItems,
@@ -152,13 +169,16 @@ export function useProcessedVideosViewModel() {
     setStatus,
     videos: paginatedVideos,
     totalCount: filteredVideos.length,
+    totalVideosCount: videos.length,
+    hasActiveFilters,
     currentPage: safePage,
     totalPages,
     pageNumbers,
     goToPage,
+    isLoading: videosQuery.isLoading,
+    isError: videosQuery.isError,
+    refetch: videosQuery.refetch,
     handleUploadClick,
-    handlePreviewVideo: (_id: string) => {},
-    handlePlayVideo: (_id: string) => {},
-    handleMoreVideo: (_id: string) => {},
+    handleRowClick,
   };
 }

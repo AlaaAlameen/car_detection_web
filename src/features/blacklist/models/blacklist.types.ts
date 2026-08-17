@@ -1,29 +1,25 @@
-export type BlacklistSeverity = "عالية" | "متوسطة" | "منخفضة";
+export type BlacklistPriority = "high" | "medium" | "low";
+export type BlacklistPriorityApiValue = "عالي" | "متوسط" | "منخفض";
 
-export type BlacklistVehicleType =
-  | "سيدان"
-  | "دفع رباعي"
-  | "هاتشباك"
-  | "بيك أب"
-  | "شاحنة";
+export type BlacklistStatus = "active" | "blocked"| "pending"|"review";
 
-export type BlacklistVehicleColor =
-  | "أبيض"
-  | "أسود"
-  | "أحمر"
-  | "أزرق"
-  | "رمادي"
-  | "فضي";
+export type BlacklistSeverityLabel = "عالية" | "متوسطة" | "منخفضة";
 
+/** Presentation model used by Blacklist UI components. */
 export interface BlacklistedVehicle {
   id: string;
   plateNumber: string;
   ownerName: string;
+  /** Display label for the existing "سبب الطلب" column (derived from wanted/status). */
   reason: string;
-  severity: BlacklistSeverity;
-  color: BlacklistVehicleColor;
+  severity: BlacklistSeverityLabel;
+  priority: BlacklistPriority;
+  status: BlacklistStatus;
+  wanted: boolean;
+  color: string;
   colorCode: string;
-  type: BlacklistVehicleType;
+  type: string;
+  createdAt: string;
 }
 
 export interface BlacklistFilters {
@@ -43,3 +39,12 @@ export interface BlacklistStat {
   gradient: string;
   isPositive: boolean;
 }
+
+export const BLACKLIST_DEFAULT_PAGE_SIZE = 7;
+
+export const blacklistPageSizeOptions = [7, 10, 25] as const;
+
+export const blacklistQueryKeys = {
+  all: ["blacklist"] as const,
+  list: () => [...blacklistQueryKeys.all, "list"] as const,
+};

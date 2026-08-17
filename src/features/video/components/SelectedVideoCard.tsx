@@ -56,6 +56,7 @@ export function SelectedVideoCard({
         onClick={onStartProcessing}
         disabled={!canStartProcessing}
         isLoading={isProcessing}
+        loadingLabel="جاري بدء المعالجة..."
         className="w-full sm:w-auto sm:self-start sm:px-8"
       >
         <PlayIcon />

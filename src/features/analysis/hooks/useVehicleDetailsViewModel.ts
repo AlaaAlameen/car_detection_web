@@ -1,18 +1,21 @@
 import { useEffect, useMemo } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import {
-  mockDashboardData,
-  useDashboardStore,
-} from "../../dashboard";
-import {
-  defaultVehicleDetails,
-  mockVehicleDetailsMap,
-} from "../data/mockVehicleDetailsData";
+import { useQuery } from "@tanstack/react-query";
+import { mockDashboardData, useDashboardStore } from "../../dashboard";
 import { AnalysisRoutes } from "../routes/analysisRoutes";
 import type {
   FormattedComparisonRow,
   VehicleDetailsSummaryCard,
 } from "../models/vehicleDetails.types";
+import { analysisQueryKeys } from "../constants/analysis.constants";
+import { analysisService } from "../services/AnalysisService";
+
+function parseId(raw: string | undefined): number | null {
+  if (!raw) return null;
+  const id = Number(raw);
+  if (!Number.isFinite(id) || id <= 0) return null;
+  return id;
+}
 
 export function useVehicleDetailsViewModel() {
   const { id = "" } = useParams<{ id: string }>();
@@ -27,30 +30,43 @@ export function useVehicleDetailsViewModel() {
     setActiveMenuId("analysis");
   }, [setActiveMenuId]);
 
-  const vehicle = useMemo(
-    () => mockVehicleDetailsMap[id] ?? defaultVehicleDetails,
-    [id],
-  );
+  const parsedId = parseId(id);
 
-  const comparisonRows: FormattedComparisonRow[] = useMemo(
-    () =>
-      vehicle.comparisonRows.map((row) => ({
-        ...row,
-        confidenceLabel: `${row.confidence}%`,
-        mismatchLabel: row.mismatch ? "TRUE" : "FALSE",
-      })),
-    [vehicle.comparisonRows],
-  );
+  useEffect(() => {
+    if (parsedId == null) {
+      // invalid id — navigate back to results
+      navigate(AnalysisRoutes.results, { replace: true });
+    }
+  }, [parsedId, navigate]);
 
-  const summaryCards: VehicleDetailsSummaryCard[] = useMemo(
-    () => [
+  const detailsQuery = useQuery({
+    queryKey: analysisQueryKeys.details(id),
+    queryFn: () => analysisService.getVehicleDetails(parsedId as number),
+    enabled: parsedId != null,
+  });
+
+  const vehicle = detailsQuery.data ?? null;
+
+  const comparisonRows: FormattedComparisonRow[] = useMemo(() => {
+    if (!vehicle) return [];
+
+    return vehicle.comparisonRows.map((row) => ({
+      ...row,
+      confidenceLabel: `${row.confidence}%`,
+      mismatchLabel: row.mismatch ? "TRUE" : "FALSE",
+    }));
+  }, [vehicle]);
+
+  const summaryCards: VehicleDetailsSummaryCard[] = useMemo(() => {
+    if (!vehicle) return [];
+
+    return [
       { id: "message", title: "رسالة التنبيه", value: vehicle.alertMessage },
       { id: "type", title: "نوع التنبيه", value: String(vehicle.alertType) },
       { id: "severity", title: "درجة الخطورة", value: vehicle.severity },
       { id: "score", title: "Score", value: `${vehicle.score} / 100` },
-    ],
-    [vehicle],
-  );
+    ];
+  }, [vehicle]);
 
   const handleBack = () => {
     navigate(AnalysisRoutes.results);
@@ -78,5 +94,9 @@ export function useVehicleDetailsViewModel() {
     comparisonRows,
     summaryCards,
     handleBack,
+    isLoading: detailsQuery.isLoading,
+    isError: detailsQuery.isError,
+    error: detailsQuery.error,
+    refetch: detailsQuery.refetch,
   };
 }

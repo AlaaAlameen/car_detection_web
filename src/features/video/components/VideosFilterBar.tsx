@@ -1,5 +1,5 @@
 import { Button, Input } from "../../auth";
-import { videoStatusOptions } from "../data/mockVideoData";
+import { videoStatusOptions } from "../constants/videos.constants";
 
 interface VideosFilterBarProps {
   search: string;

@@ -35,6 +35,10 @@ function App() {
           <Route path={VideoRoutes.upload} element={<VideoUploadPage />} />
           <Route path={VideoRoutes.list} element={<ProcessedVideosPage />} />
           <Route
+            path={AnalysisRoutes.resultsWithVideo}
+            element={<AnalysisResultsPage />}
+          />
+          <Route
             path={AnalysisRoutes.results}
             element={<AnalysisResultsPage />}
           />

@@ -1,39 +1,42 @@
+import { apiClient } from "../../../api/axios";
+import { BlacklistApiEndpoints } from "../api/blacklist.endpoints";
 import type { BlacklistedVehicle } from "../models/blacklist.types";
+import { mapBlacklistApiToUi } from "../utils/mapBlacklistApiToUi";
+import type {
+  BlacklistApiResponse,
+  CreateBlacklistRequest,
+  UpdateBlacklistRequest,
+} from "../api/blacklist.types";
+import { mapPriorityToApiValue } from "../utils/priority.utils";
 
-/**
- * BlacklistService — prepared for future API integration.
- * Methods are placeholders and throw until implemented.
- */
 class BlacklistService {
-  async getVehicles(): Promise<BlacklistedVehicle[]> {
-    // TODO: integrate with API
-    throw new Error("BlacklistService.getVehicles is not implemented yet");
+  async getBlacklist(): Promise<BlacklistedVehicle[]> {
+    const response = await apiClient.get<BlacklistApiResponse>(
+      BlacklistApiEndpoints.list,
+    );
+
+    return response.data.data.map(mapBlacklistApiToUi);
   }
 
-  async getVehicle(_id: string): Promise<BlacklistedVehicle> {
-    // TODO: integrate with API
-    throw new Error("BlacklistService.getVehicle is not implemented yet");
+  
+  async deleteBlacklistEntry(id: string): Promise<void> {
+    await apiClient.delete(BlacklistApiEndpoints.detail(id));
   }
 
-  async createVehicle(
-    _data: Omit<BlacklistedVehicle, "id">,
-  ): Promise<BlacklistedVehicle> {
-    // TODO: integrate with API
-    throw new Error("BlacklistService.createVehicle is not implemented yet");
-  }
 
-  async updateVehicle(
-    _id: string,
-    _data: Partial<BlacklistedVehicle>,
-  ): Promise<BlacklistedVehicle> {
-    // TODO: integrate with API
-    throw new Error("BlacklistService.updateVehicle is not implemented yet");
-  }
+async updateBlacklistEntry(id: string, payload: UpdateBlacklistRequest): Promise<void> {
+  await apiClient.put(BlacklistApiEndpoints.detail(id), {
+    ...payload,
+    priority: mapPriorityToApiValue(payload.priority),
+  });
+}
 
-  async deleteVehicle(_id: string): Promise<void> {
-    // TODO: integrate with API
-    throw new Error("BlacklistService.deleteVehicle is not implemented yet");
-  }
+async addToBlacklist(payload: CreateBlacklistRequest): Promise<void> {
+  await apiClient.post(BlacklistApiEndpoints.list, {
+    ...payload,
+    priority: mapPriorityToApiValue(payload.priority),
+  });
+}
 }
 
 export const blacklistService = new BlacklistService();

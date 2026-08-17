@@ -1,23 +1,19 @@
 import { create } from "zustand";
-import type { Vehicle, VehiclesState } from "../models/vehicle.types";
+import type { VehiclesSelectionState } from "../models/vehicle.types";
 
-interface VehiclesStore extends VehiclesState {
-  setVehicles: (vehicles: Vehicle[]) => void;
+interface VehiclesStore extends VehiclesSelectionState {
   setSelectedVehicles: (ids: string[]) => void;
   toggleVehicleSelection: (id: string) => void;
   selectAllVehicles: (ids: string[]) => void;
   clearSelection: () => void;
 }
 
-const initialState: VehiclesState = {
-  vehicles: [],
+const initialState: VehiclesSelectionState = {
   selectedVehicles: [],
 };
 
 export const useVehiclesStore = create<VehiclesStore>((set, get) => ({
   ...initialState,
-
-  setVehicles: (vehicles) => set({ vehicles }),
 
   setSelectedVehicles: (ids) => set({ selectedVehicles: ids }),
 

@@ -17,7 +17,6 @@ export function useLoginViewModel() {
 
   const onSubmit = form.handleSubmit(async (data: LoginFormValues) => {
     console.log("Login attempt:", data);
-    // TODO: await AuthService.login(data);
   });
 
   return {

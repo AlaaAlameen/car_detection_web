@@ -70,7 +70,7 @@ function BlacklistTableRow({
   vehicle,
   onEdit,
   onDelete,
-  onMore,
+  // onMore,
 }: BlacklistTableRowProps) {
   return (
     <tr className="border-b border-white/5 transition hover:bg-white/[0.04]">
@@ -111,9 +111,9 @@ function BlacklistTableRow({
           <ActionButton label="تعديل" onClick={() => onEdit(vehicle.id)}>
             <EditIcon />
           </ActionButton>
-          <ActionButton label="المزيد" muted onClick={() => onMore(vehicle.id)}>
+          {/* <ActionButton label="المزيد" muted onClick={() => onMore(vehicle.id)}>
             <MoreIcon />
-          </ActionButton>
+          </ActionButton> */}
         </div>
       </td>
     </tr>
@@ -182,17 +182,17 @@ function EditIcon() {
   );
 }
 
-function MoreIcon() {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      className="h-3.5 w-3.5"
-      fill="currentColor"
-      aria-hidden
-    >
-      <circle cx="12" cy="5" r="1.6" />
-      <circle cx="12" cy="12" r="1.6" />
-      <circle cx="12" cy="19" r="1.6" />
-    </svg>
-  );
-}
+// function MoreIcon() {
+//   return (
+//     <svg
+//       viewBox="0 0 24 24"
+//       className="h-3.5 w-3.5"
+//       fill="currentColor"
+//       aria-hidden
+//     >
+//       <circle cx="12" cy="5" r="1.6" />
+//       <circle cx="12" cy="12" r="1.6" />
+//       <circle cx="12" cy="19" r="1.6" />
+//     </svg>
+//   );
+// }

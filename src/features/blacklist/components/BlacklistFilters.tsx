@@ -1,29 +1,29 @@
-import { Button, Input } from "../../auth";
-import {
-  blacklistColorOptions,
-  blacklistSeverityOptions,
-  blacklistTypeOptions,
-} from "../data/mockBlacklistData";
+import { Input } from "../../auth";
 import type { BlacklistFilters } from "../models/blacklist.types";
 
 interface BlacklistFiltersProps {
   filters: BlacklistFilters;
+  severityOptions: string[];
+  typeOptions: string[];
+  colorOptions: string[];
   onSearchChange: (value: string) => void;
   onSeverityChange: (value: string) => void;
   onTypeChange: (value: string) => void;
   onColorChange: (value: string) => void;
-  onReset: () => void; // يمكنك إبقاؤها في الـ Interface حتى لا تتأثر المكونات الأب (Parent Components)
-  onExport: () => void; // نفس الأمر هنا
+  onReset: () => void;
+  onExport: () => void;
   onAddClick: () => void;
 }
 
 export function BlacklistFiltersBar({
   filters,
+  severityOptions,
+  typeOptions,
+  colorOptions,
   onSearchChange,
   onSeverityChange,
   onTypeChange,
   onColorChange,
-  onAddClick,
 }: BlacklistFiltersProps) {
   return (
     <div className="flex flex-col gap-3">
@@ -44,36 +44,25 @@ export function BlacklistFiltersBar({
           <FilterSelect
             label="كل درجات الخطورة"
             value={filters.severity}
-            options={[...blacklistSeverityOptions]}
+            options={severityOptions}
             onChange={onSeverityChange}
           />
 
           <FilterSelect
             label="كل الأنواع"
             value={filters.type}
-            options={[...blacklistTypeOptions]}
+            options={typeOptions}
             onChange={onTypeChange}
           />
 
           <FilterSelect
             label="كل الألوان"
             value={filters.color}
-            options={[...blacklistColorOptions]}
+            options={colorOptions}
             onChange={onColorChange}
           />
         </div>
 
-        {/* الحفاظ على حاوية الأزرار لضمان بقاء زر الإضافة في مكانه الصحيح عبر استخدام justify-end */}
-        <div className="flex flex-wrap items-center justify-end gap-2">
-          <Button
-            type="button"
-            onClick={onAddClick}
-            className="w-auto shrink-0 whitespace-nowrap px-5 shadow-[0_0_24px_rgba(99,102,241,0.35)]"
-          >
-            <PlusIcon />
-            إضافة إلى القائمة السوداء
-          </Button>
-        </div>
       </div>
     </div>
   );
@@ -127,21 +116,6 @@ function SearchIcon() {
     >
       <circle cx="11" cy="11" r="7" />
       <path d="m20 20-3.5-3.5" />
-    </svg>
-  );
-}
-
-function PlusIcon() {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      className="h-4 w-4"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      aria-hidden
-    >
-      <path d="M12 5v14M5 12h14" />
     </svg>
   );
 }

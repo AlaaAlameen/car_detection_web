@@ -7,20 +7,31 @@ import {
   type ChangeEvent,
   type DragEvent,
 } from "react";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { useNavigate } from "react-router-dom";
 import {
   mockDashboardData,
   useDashboardStore,
 } from "../../dashboard";
-import {
-  DEFAULT_VIDEO_THUMBNAIL,
-  mockRecentVideos,
-} from "../data/mockVideoData";
-import type { SelectedVideoDisplay, VideoFile } from "../models/video.types";
+import { buildAnalysisResultsPath } from "../../analysis/routes/analysisRoutes";
+import type { CreateVideoRequest } from "../api/videos.types";
+import { videosQueryKeys } from "../constants/videos.constants";
+import { DEFAULT_VIDEO_THUMBNAIL } from "../data/mockVideoData";
+import type { SelectedVideoDisplay } from "../models/video.types";
+import { videoService } from "../services/VideoService";
+import { buildOriginalPath } from "../utils/buildOriginalPath";
+import { formatDuration } from "../utils/formatDuration";
+import { readVideoDurationSeconds } from "../utils/readVideoDuration";
 import {
   VIDEO_FORMAT_LABELS,
   VIDEO_UPLOAD_CONFIG,
 } from "../validators/videoUpload.constants";
 import { validateVideoFile } from "../validators/videoUploadSchema";
+
+export type UploadFeedback = {
+  type: "success" | "error";
+  message: string;
+};
 
 function formatFileSize(bytes: number): string {
   if (bytes < 1024 ** 2) {
@@ -29,81 +40,107 @@ function formatFileSize(bytes: number): string {
   return `${Math.round(bytes / 1024 ** 2)} MB`;
 }
 
-function formatDuration(seconds: number): string {
-  if (!Number.isFinite(seconds) || seconds <= 0) {
-    return "--:--";
-  }
-  const mins = Math.floor(seconds / 60);
-  const secs = Math.floor(seconds % 60);
-  return `${String(mins).padStart(2, "0")}:${String(secs).padStart(2, "0")}`;
-}
-
 function getFileExtension(name: string): string {
   return name.split(".").pop()?.toUpperCase() ?? "—";
 }
 
-async function readVideoDuration(file: File): Promise<string> {
-  return new Promise((resolve) => {
-    const video = document.createElement("video");
-    video.preload = "metadata";
-
-    const objectUrl = URL.createObjectURL(file);
-
-    video.onloadedmetadata = () => {
-      URL.revokeObjectURL(objectUrl);
-      resolve(formatDuration(video.duration));
-    };
-
-    video.onerror = () => {
-      URL.revokeObjectURL(objectUrl);
-      resolve("04:32");
-    };
-
-    video.src = objectUrl;
-  });
-}
-
 export function useVideoUploadViewModel() {
+  const navigate = useNavigate();
   const isSidebarOpen = useDashboardStore((s) => s.isSidebarOpen);
   const toggleSidebar = useDashboardStore((s) => s.toggleSidebar);
   const setSidebarOpen = useDashboardStore((s) => s.setSidebarOpen);
   const setActiveMenuId = useDashboardStore((s) => s.setActiveMenuId);
 
+  const queryClient = useQueryClient();
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const [isDragging, setIsDragging] = useState(false);
   const [validationError, setValidationError] = useState<string | null>(null);
+  const [feedback, setFeedback] = useState<UploadFeedback | null>(null);
+  const [selectedFile, setSelectedFile] = useState<File | null>(null);
+  const [durationSeconds, setDurationSeconds] = useState<number | null>(null);
   const [selectedVideo, setSelectedVideo] =
     useState<SelectedVideoDisplay | null>(null);
-  const [isProcessing, setIsProcessing] = useState(false);
-  const [recentVideos, setRecentVideos] =
-    useState<VideoFile[]>(mockRecentVideos);
 
   useEffect(() => {
     setActiveMenuId("video");
   }, [setActiveMenuId]);
+
+  const recentVideosQuery = useQuery({
+    queryKey: videosQueryKeys.recent(),
+    queryFn: () => videoService.getRecentVideos(),
+  });
+
+  const recentVideos = useMemo(
+    () => recentVideosQuery.data ?? [],
+    [recentVideosQuery.data],
+  );
+
+  const resetFileInput = useCallback(() => {
+    if (fileInputRef.current) {
+      fileInputRef.current.value = "";
+    }
+  }, []);
+
+  const clearSelection = useCallback(() => {
+    setSelectedFile(null);
+    setDurationSeconds(null);
+    setSelectedVideo(null);
+    resetFileInput();
+  }, [resetFileInput]);
+
+  const createVideoMutation = useMutation({
+    mutationFn: (payload: CreateVideoRequest) =>
+      videoService.createVideo(payload),
+    onSuccess: async () => {
+      setFeedback({
+        type: "success",
+        message: "تم بدء معالجة الفيديو بنجاح",
+      });
+      clearSelection();
+      setValidationError(null);
+      await queryClient.invalidateQueries({ queryKey: videosQueryKeys.all });
+    },
+    onError: () => {
+      setFeedback({
+        type: "error",
+        message: "فشل بدء معالجة الفيديو، يرجى المحاولة مرة أخرى.",
+      });
+    },
+  });
 
   const processFile = useCallback(async (file: File) => {
     const validation = validateVideoFile(file);
 
     if (!validation.success) {
       setValidationError(validation.error ?? "ملف غير صالح");
-      setSelectedVideo(null);
+      setFeedback(null);
+      clearSelection();
       return;
     }
 
     setValidationError(null);
+    setFeedback(null);
 
-    const duration = await readVideoDuration(file);
+    try {
+      const duration = await readVideoDurationSeconds(file);
 
-    setSelectedVideo({
-      name: file.name,
-      format: getFileExtension(file.name),
-      formattedSize: formatFileSize(file.size),
-      duration,
-      thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
-    });
-  }, []);
+      setSelectedFile(file);
+      setDurationSeconds(duration);
+      setSelectedVideo({
+        name: file.name,
+        format: getFileExtension(file.name),
+        formattedSize: formatFileSize(file.size),
+        duration: formatDuration(duration),
+        thumbnailUrl: DEFAULT_VIDEO_THUMBNAIL,
+      });
+    } catch {
+      clearSelection();
+      setValidationError(
+        "تعذر قراءة مدة الفيديو. يرجى اختيار ملف فيديو صالح.",
+      );
+    }
+  }, [clearSelection]);
 
   const handleFileChange = useCallback(
     (event: ChangeEvent<HTMLInputElement>) => {
@@ -152,41 +189,32 @@ export function useVideoUploadViewModel() {
   );
 
   const clearSelectedVideo = useCallback(() => {
-    setSelectedVideo(null);
+    clearSelection();
     setValidationError(null);
-  }, []);
+    setFeedback(null);
+    createVideoMutation.reset();
+  }, [clearSelection, createVideoMutation]);
 
   const startProcessing = useCallback(() => {
-    if (!selectedVideo || isProcessing) return;
+    if (
+      !selectedFile ||
+      durationSeconds === null ||
+      createVideoMutation.isPending
+    ) {
+      return;
+    }
 
-    setIsProcessing(true);
+    setFeedback(null);
 
-    window.setTimeout(() => {
-      const newEntry: VideoFile = {
-        id: `rv-${Date.now()}`,
-        name: selectedVideo.name,
-        size: 0,
-        formattedSize: selectedVideo.formattedSize,
-        duration: selectedVideo.duration,
-        format: selectedVideo.format,
-        thumbnailUrl: selectedVideo.thumbnailUrl,
-        uploadedAt: new Date()
-          .toLocaleString("ar-EG", {
-            year: "numeric",
-            month: "2-digit",
-            day: "2-digit",
-            hour: "2-digit",
-            minute: "2-digit",
-          })
-          .replace(",", ""),
-        status: "processing",
-      };
+    const payload: CreateVideoRequest = {
+      original_path: buildOriginalPath(selectedFile.name),
+      name: selectedFile.name,
+      duration: durationSeconds,
+      size: selectedFile.size,
+    };
 
-      setRecentVideos((prev) => [newEntry, ...prev]);
-      setSelectedVideo(null);
-      setIsProcessing(false);
-    }, 1200);
-  }, [selectedVideo, isProcessing]);
+    createVideoMutation.mutate(payload);
+  }, [selectedFile, durationSeconds, createVideoMutation]);
 
   const handleFullscreen = useCallback(() => {
     if (!document.fullscreenElement) {
@@ -207,6 +235,13 @@ export function useVideoUploadViewModel() {
     [],
   );
 
+  const isProcessing = createVideoMutation.isPending;
+  const canStartProcessing =
+    Boolean(selectedFile) &&
+    durationSeconds !== null &&
+    Boolean(selectedVideo) &&
+    !isProcessing;
+
   return {
     user: mockDashboardData.user,
     menuItems: mockDashboardData.menuItems,
@@ -220,10 +255,14 @@ export function useVideoUploadViewModel() {
     uploadConfig,
     isDragging,
     validationError,
+    feedback,
     selectedVideo,
     isProcessing,
     recentVideos,
-    canStartProcessing: Boolean(selectedVideo) && !isProcessing,
+    isRecentVideosLoading: recentVideosQuery.isLoading,
+    isRecentVideosError: recentVideosQuery.isError,
+    refetchRecentVideos: recentVideosQuery.refetch,
+    canStartProcessing,
     openFilePicker,
     handleFileChange,
     handleDragEnter,
@@ -232,8 +271,8 @@ export function useVideoUploadViewModel() {
     handleDrop,
     clearSelectedVideo,
     startProcessing,
-    handlePreviewVideo: (_id: string) => {},
-    handlePlayVideo: (_id: string) => {},
-    handleMoreVideo: (_id: string) => {},
+    handleRowClick: (id: string) => {
+    navigate(buildAnalysisResultsPath(id)); 
+    },
   };
 }

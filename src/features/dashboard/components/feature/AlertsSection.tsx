@@ -19,7 +19,7 @@ export function AlertsSection({ alerts }: AlertsSectionProps) {
       }
       className="h-full"
     >
-      <div className="flex flex-col gap-2.5">
+      <div className="flex max-h-[420px] flex-col gap-2.5 overflow-y-auto pr-1">
         {alerts.map((alert) => (
           <AlertItem
             key={alert.id}

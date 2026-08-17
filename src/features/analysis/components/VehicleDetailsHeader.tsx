@@ -9,7 +9,6 @@ interface VehicleDetailsHeaderProps {
 export function VehicleDetailsHeader({ onBack }: VehicleDetailsHeaderProps) {
   return (
     <div className="flex flex-col gap-4">
-      {/* مسار التنقل (Breadcrumbs) */}
       <nav className="flex flex-wrap items-center gap-2 text-xs text-white/40">
         <Link to={AnalysisRoutes.results} className="transition hover:text-white/70">
           نتائج التحليل
@@ -22,7 +21,6 @@ export function VehicleDetailsHeader({ onBack }: VehicleDetailsHeaderProps) {
         <span className="font-medium text-white/70">تفاصيل المركبة</span>
       </nav>
 
-      {/* العنوان الرئيسي وزر الرجوع */}
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div className="min-w-0 flex-1 space-y-1">
           <h1 className="text-2xl font-bold tracking-tight text-white">تفاصيل المركبة</h1>

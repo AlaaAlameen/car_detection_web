@@ -9,14 +9,12 @@ export function VehicleInfoCard({ vehicle }: VehicleInfoCardProps) {
   return (
     <div className="rounded-xl border border-white/10 bg-white/5 p-4 sm:p-5">
       <div className="flex flex-col gap-5 lg:flex-row lg:items-stretch">
-        {/* الصورة */}
         <img
           src={vehicle.imageUrl}
           alt={vehicle.plateNumber}
           className="h-48 w-full rounded-xl object-cover ring-1 ring-white/10 lg:h-auto lg:w-64 lg:shrink-0"
         />
 
-        {/* كل المعلومات بجانب الصورة */}
         <div className="flex min-w-0 flex-1 flex-col justify-center gap-4">
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <div className="min-w-0">

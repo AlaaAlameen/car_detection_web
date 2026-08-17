@@ -1,5 +1,10 @@
 import { DashboardLayout, CardContainer } from "../../dashboard";
-import { VehiclesPagination } from "../../vehicles";
+import {
+  VehiclesEmptyState,
+  VehiclesErrorState,
+  VehiclesPagination,
+  VehiclesTableSkeleton,
+} from "../../vehicles";
 import { useProcessedVideosViewModel } from "../hooks/useProcessedVideosViewModel";
 import {
   VideosFilterBar,
@@ -10,6 +15,10 @@ import {
 
 export function ProcessedVideosPage() {
   const vm = useProcessedVideosViewModel();
+
+  const emptyMessage = vm.hasActiveFilters
+    ? "لا توجد فيديوهات مطابقة للبحث"
+    : "لا توجد فيديوهات معالجة";
 
   return (
     <DashboardLayout
@@ -36,20 +45,31 @@ export function ProcessedVideosPage() {
             onUploadClick={vm.handleUploadClick}
           />
 
-          <VideosTable
-            videos={vm.videos}
-            onPreview={vm.handlePreviewVideo}
-            onPlay={vm.handlePlayVideo}
-            onMore={vm.handleMoreVideo}
-          />
+          {vm.isLoading ? (
+            <VehiclesTableSkeleton message="جاري تحميل الفيديوهات..." />
+          ) : vm.isError ? (
+            <VehiclesErrorState
+              message="تعذر تحميل بيانات الفيديوهات"
+              onRetry={() => void vm.refetch()}
+            />
+          ) : vm.totalVideosCount === 0 || vm.totalCount === 0 ? (
+            <VehiclesEmptyState message={emptyMessage} />
+          ) : (
+            <>
+              <VideosTable
+                videos={vm.videos}
+                onRowClick={vm.handleRowClick}
+              />
 
-          <VehiclesPagination
-            currentPage={vm.currentPage}
-            totalPages={vm.totalPages}
-            pageNumbers={vm.pageNumbers}
-            totalCount={vm.totalCount}
-            onPageChange={vm.goToPage}
-          />
+              <VehiclesPagination
+                currentPage={vm.currentPage}
+                totalPages={vm.totalPages}
+                pageNumbers={vm.pageNumbers}
+                totalCount={vm.totalCount}
+                onPageChange={vm.goToPage}
+              />
+            </>
+          )}
         </CardContainer>
       </div>
     </DashboardLayout>

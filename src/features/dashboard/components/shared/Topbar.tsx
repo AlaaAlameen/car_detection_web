@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import type { TopbarUser } from "../../models/dashboard.types";
-import { BellIcon, FullscreenIcon, MenuIcon, SettingsIcon } from "./icons";
+import { BellIcon, FullscreenIcon, MenuIcon,  } from "./icons";
 
 interface TopbarProps {
   user: TopbarUser;
@@ -35,9 +35,9 @@ export function Topbar({ user, onMenuClick, onFullscreen }: TopbarProps) {
           <BellIcon className="h-[18px] w-[18px]" />
           <span className="absolute top-1.5 end-1.5 h-2 w-2 rounded-full bg-rose-500 ring-2 ring-[#0B1220]" />
         </IconButton>
-        <IconButton label="الإعدادات">
+        {/* <IconButton label="الإعدادات">
           <SettingsIcon className="h-[18px] w-[18px]" />
-        </IconButton>
+        </IconButton> */}
         <IconButton label="ملء الشاشة" onClick={onFullscreen}>
           <FullscreenIcon className="h-[18px] w-[18px]" />
         </IconButton>

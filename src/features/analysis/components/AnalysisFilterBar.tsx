@@ -2,7 +2,7 @@ import { Input } from "../../auth";
 import {
   alertTypeOptions,
   severityOptions,
-} from "../data/mockAnalysisData";
+} from "../constants/analysis.constants";
 import type { AnalysisFilters } from "../models/analysis.types";
 
 interface AnalysisFilterBarProps {

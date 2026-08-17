@@ -1,12 +1,10 @@
 import { Button, Input } from "../../auth";
-import {
-  vehicleColorOptions,
-  vehicleTypeOptions,
-} from "../data/mockVehiclesData";
 import type { VehiclesFilters } from "../models/vehicle.types";
 
 interface VehiclesFilterBarProps {
   filters: VehiclesFilters;
+  typeOptions: string[];
+  colorOptions: string[];
   onSearchChange: (value: string) => void;
   onTypeChange: (value: string) => void;
   onColorChange: (value: string) => void;
@@ -15,6 +13,8 @@ interface VehiclesFilterBarProps {
 
 export function VehiclesFilterBar({
   filters,
+  typeOptions,
+  colorOptions,
   onSearchChange,
   onTypeChange,
   onColorChange,
@@ -23,7 +23,6 @@ export function VehiclesFilterBar({
   return (
     <div className="flex flex-col gap-3">
       <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
-        {/* مجموعة البحث والفلاتر */}
         <div className="flex flex-1 flex-col gap-3 sm:flex-row sm:items-center">
           <div className="relative min-w-0 flex-1 sm:max-w-md">
             <Input
@@ -37,19 +36,18 @@ export function VehiclesFilterBar({
           <FilterSelect
             label="النوع"
             value={filters.type}
-            options={[...vehicleTypeOptions]}
+            options={typeOptions}
             onChange={onTypeChange}
           />
 
           <FilterSelect
             label="اللون"
             value={filters.color}
-            options={[...vehicleColorOptions]}
+            options={colorOptions}
             onChange={onColorChange}
           />
         </div>
 
-        {/* حاوية زر الإضافة لضمان ظهوره بشكل متناسق */}
         <div className="flex items-center justify-end">
           <Button
             type="button"
@@ -84,7 +82,11 @@ function FilterSelect({
         className="w-full appearance-none rounded-xl border border-white/10 bg-white/5 px-4 py-3 pe-9 text-sm text-white outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20"
       >
         {options.map((option) => (
-          <option key={option} value={option} className="bg-[#0f172a] text-white">
+          <option
+            key={option}
+            value={option}
+            className="bg-[#0f172a] text-white"
+          >
             {option === "الكل" ? label : option}
           </option>
         ))}

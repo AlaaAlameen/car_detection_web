@@ -25,3 +25,13 @@ export interface VideoUploadConfig {
   maxSizeBytes: number;
   maxSizeLabel: string;
 }
+export const VEHICLE_TYPE_OPTIONS = [
+  "سيدان",
+  "دفع رباعي",
+  "كروس أوفر",
+  "هاتشباك",
+  "شاحنة",
+  "حافلة",
+  "دراجة نارية",
+  "أخرى",
+];

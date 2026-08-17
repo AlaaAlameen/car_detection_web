@@ -4,12 +4,14 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
   variant?: "primary" | "secondary";
   isLoading?: boolean;
+  loadingLabel?: string;
 }
 
 export function Button({
   children,
   variant = "primary",
   isLoading = false,
+  loadingLabel = "جارٍ التحقق...",
   className = "",
   disabled,
   ...props
@@ -30,7 +32,7 @@ export function Button({
       disabled={disabled || isLoading}
       {...props}
     >
-      {isLoading ? "جارٍ التحقق..." : children}
+      {isLoading ? loadingLabel : children}
     </button>
   );
 }

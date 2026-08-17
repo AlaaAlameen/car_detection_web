@@ -4,7 +4,7 @@ const severityConfig: Record<
   AlertSeverity,
   { className: string }
 > = {
-  عالية: {
+ عالية : {
     className: "bg-rose-500/15 text-rose-400 ring-1 ring-rose-500/30",
   },
   متوسطة: {
@@ -17,10 +17,14 @@ const severityConfig: Record<
 };
 
 interface SeverityBadgeProps {
-  severity: AlertSeverity;
+  severity: AlertSeverity | null;
 }
 
 export function SeverityBadge({ severity }: SeverityBadgeProps) {
+  if (!severity) {
+    return <span className="text-sm text-white/40">—</span>;
+  }
+
   const config = severityConfig[severity];
 
   return (

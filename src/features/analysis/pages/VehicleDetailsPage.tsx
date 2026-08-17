@@ -6,6 +6,8 @@ import {
   VehicleDetailsSummaryCards,
   VehicleInfoCard,
 } from "../components";
+import { VehiclesTableSkeleton } from "../../vehicles";
+import { VehiclesErrorState } from "../../vehicles";
 
 export function VehicleDetailsPage() {
   const vm = useVehicleDetailsViewModel();
@@ -24,13 +26,24 @@ export function VehicleDetailsPage() {
       <div className="mx-auto flex max-w-[1600px] flex-col gap-4 sm:gap-5">
         <VehicleDetailsHeader onBack={vm.handleBack} />
 
-        <VehicleInfoCard vehicle={vm.vehicle} />
+        {vm.isLoading ? (
+          <VehiclesTableSkeleton message="جاري تحميل تفاصيل المركبة..." />
+        ) : vm.isError ? (
+          <VehiclesErrorState
+            message="تعذر تحميل تفاصيل المركبة"
+            onRetry={() => void vm.refetch()}
+          />
+        ) : vm.vehicle ? (
+          <>
+            <VehicleInfoCard vehicle={vm.vehicle} />
 
-        <CardContainer title="مقارنة البيانات">
-          <VehicleComparisonTable rows={vm.comparisonRows} />
-        </CardContainer>
+            <CardContainer title="مقارنة البيانات">
+              <VehicleComparisonTable rows={vm.comparisonRows} />
+            </CardContainer>
 
-        <VehicleDetailsSummaryCards cards={vm.summaryCards} />
+            <VehicleDetailsSummaryCards cards={vm.summaryCards} />
+          </>
+        ) : null}
       </div>
     </DashboardLayout>
   );

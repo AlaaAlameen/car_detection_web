@@ -5,7 +5,6 @@ interface AuthBrandPanelProps {
 export function AuthBrandPanel({ activeDot = 0 }: AuthBrandPanelProps) {
   return (
     <div className="relative flex min-h-[280px] w-full flex-col justify-between overflow-hidden bg-gradient-to-br from-blue-950 via-[#0B1220] to-violet-950 px-8 py-10 text-white md:min-h-screen md:w-1/2 md:px-12 md:py-14 lg:px-16">
-      {/* Decorative blobs */}
       <div className="pointer-events-none absolute -top-24 -right-24 h-72 w-72 rounded-full bg-blue-500/10 blur-2xl" />
       <div className="pointer-events-none absolute top-1/3 -left-16 h-64 w-64 rounded-full bg-violet-500/20 blur-3xl" />
       <div className="pointer-events-none absolute bottom-20 right-1/4 h-40 w-40 rounded-full bg-blue-400/15 blur-2xl" />
@@ -26,7 +25,6 @@ export function AuthBrandPanel({ activeDot = 0 }: AuthBrandPanelProps) {
           لرجال المرور وجهات الأمن.
         </p>
 
-        {/* Camera + vehicle data readout illustration */}
         <div className="relative mt-8 hidden h-72 w-full max-w-lg md:block lg:h-96 lg:max-w-xl">
           <svg
             viewBox="0 0 680 380"
@@ -46,7 +44,6 @@ export function AuthBrandPanel({ activeDot = 0 }: AuthBrandPanelProps) {
             <line x1="110" y1="65" x2="280" y2="210" stroke="#a78bfa" strokeWidth="1" strokeDasharray="4 4" opacity="0.6" />
             <line x1="110" y1="90" x2="280" y2="250" stroke="#a78bfa" strokeWidth="1" strokeDasharray="4 4" opacity="0.6" />
 
-            {/* Car */}
             <g transform="translate(220,255)">
               <rect x="0" y="-20" width="110" height="38" rx="10" fill="#f5f4ff" />
               <rect x="8" y="-32" width="42" height="22" rx="8" fill="#f5f4ff" />
@@ -58,7 +55,6 @@ export function AuthBrandPanel({ activeDot = 0 }: AuthBrandPanelProps) {
               </text>
             </g>
 
-            {/* Detection corner brackets on plate */}
             <g stroke="#a78bfa" strokeWidth="2" fill="none" strokeLinecap="round">
               <path d="M205 235 L205 218 L222 218" />
               <path d="M335 235 L335 218 L318 218" />
@@ -66,10 +62,8 @@ export function AuthBrandPanel({ activeDot = 0 }: AuthBrandPanelProps) {
               <path d="M335 273 L335 290 L318 290" />
             </g>
 
-            {/* Connector to data panel */}
             <line x1="335" y1="255" x2="400" y2="255" stroke="#a78bfa" strokeWidth="1" strokeDasharray="4 4" opacity="0.6" />
 
-            {/* Data readout panel — إحداثيات نسبية داخل مجموعة واحدة لضمان بقاء النص داخل الصندوق */}
             <g transform="translate(410,150)">
               <rect width="230" height="175" rx="12" fill="#3b2f7a" stroke="#6d5fd8" strokeWidth="0.5" />
               <line x1="18" y1="42" x2="212" y2="42" stroke="#6d5fd8" strokeWidth="0.5" opacity="0.5" />
